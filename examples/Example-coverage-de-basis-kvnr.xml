@@ -1,0 +1,12 @@
+<Coverage xmlns="http://hl7.org/fhir">
+  <meta>
+      <profile value="http://fhir.de/StructureDefinition/coverage-de-basis" />
+  </meta>
+  <identifier>
+    <system value="http://fhir.de/NamingSystem/gkv/kvnr" />
+    <value value="G995030566" />
+  </identifier>
+  <subscriber>
+    <reference value="Patient/12345" />
+  </subscriber>
+</Coverage>

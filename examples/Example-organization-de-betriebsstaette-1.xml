@@ -1,0 +1,10 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <meta>
+      <profile value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" />
+  </meta>
+  <identifier>
+    <system value="http://fhir.de/NamingSystem/kbv/bsnr" />
+    <value value="123456789" />
+  </identifier>
+  <name value="Gemeinschaftspraxis Dres. Mustermann und Beispielfrau" />
+</Organization>
