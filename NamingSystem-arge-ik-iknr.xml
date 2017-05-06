@@ -1,0 +1,27 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="Institutionskennzeichen (ARGE-IK)" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <responsible value="Arbeitsgemeinschaft Institutionskennzeichen (ARGE-IK)" />
+  <description value="Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können." />
+  <usage value="Das IK ist ein eindeutiges Merkmal für die Abrechnung mit den Trägern der Sozialversicherung." />
+  <uniqueId>
+    <type value="oid" />
+    <value value="1.2.276.0.76.4.5" />
+  </uniqueId>
+  <uniqueId>
+    <type value="uri" />
+    <value value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+    <preferred value="true" />
+    <period>
+      <start value="2017-01-01" />
+    </period>
+  </uniqueId>
+</NamingSystem>

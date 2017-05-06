@@ -1,0 +1,40 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Basis-Profil für die Verwendung der Organization-Resource in Deutschland.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <url value="http://fhir.de/StructureDefinition/organization-de-basis" />
+  <version value="0.1" />
+  <name value="organization-de-basis" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-05-06T10:17:38.8455048+02:00" />
+  <description value="Basis-Profil für die Verwendung der Organization-Resource in Deutschland." />
+  <copyright value="HL7 Deutschland e.V." />
+  <purpose value="Die Basisprofile enthalten Elemente, bei denen zu erwarten ist, dass sie in 80% der abgeleiteten Profile verwendung finden.&#xD;&#xA;Basisprofile werden i.d.R. nicht direkt implementiert, sondern für einen konkreten UseCase abgeleitet.&#xD;&#xA;Die Basis-Profile werden vom Technischen Komitee von HL7 Deutschland abgestimmt. " />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="Organization" />
+      <short value="Eine Gruppierung von Personen oder Organisationen zu einem bestimmten Zweck" />
+      <definition value="Eine formell oder informell anerkannte Gruppe von Personen oder Organisationen, vereint zum Zwecke einer gemeinschaftlichen Aktion. Umfasst Firmen, Institutionen, Gesellschaften, Abteilungen, Gemeinschaften, Gesundheits-Dienstleister usw." />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,28 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="Gesetzliche Krankenversichertennummer (GKV)" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <responsible value="Vertrauensstelle Krankenversichertennummer der GKV" />
+  <date value="2016-12-01" />
+  <description value="Die Krankenversichertennummer erhalten Versicherte der gesetzlichen Krankenversicherung." />
+  <usage value="Die Krankenversichertennummer erhalten Versicherte der gesetzlichen Krankenversicherung und besteht aus den zwei Teilen:  dem unveränderlichen Teil, z. B. A123456789 (10 Stellen) dem veränderlichen Teil (9 Stellen). Die vollständige Krankenversichertennummer enthält außerdem eine Prüfziffer, so dass sie insgesamt aus 20 Stellen besteht (10 Stellen persönlicher Teil + 9 Stellen Institutionskennzeichen + Prüfziffer)." />
+  <uniqueId>
+    <type value="oid" />
+    <value value="1.2.276.0.76.4.1" />
+  </uniqueId>
+  <uniqueId>
+    <type value="uri" />
+    <value value="http://fhir.de/NamingSystem/gkv/kvnr" />
+    <preferred value="true" />
+    <period>
+      <start value="2017-01-01" />
+    </period>
+  </uniqueId>
+</NamingSystem>

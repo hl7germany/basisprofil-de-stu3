@@ -1,0 +1,154 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+  <version value="0.2" />
+  <name value="betriebsstaetten-hierarchie" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-01-01T00:00:00+01:00" />
+  <description value="Extension zur Codierung der Hierarchieebene der Betriebstätte (Haupt/Neben) gemäß KBV" />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Organization" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <snapshot>
+    <element>
+      <path value="Extension" />
+      <short value="Betriebsstätten-Hierarchie (Haupt/Nebenbetriebsstätte)" />
+      <definition value="Für Betriebsstätten gemäß KBV ist die Angabe erforderlich, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt.&#xD;&#xA;Bei der Modellierung von Betriebsstätten als Organization-Resource ist daher eine Extension erforderlich um diese Eigenschaft abzubilden." />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element>
+      <path value="Extension.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references)." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="id" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.extension" />
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Extension.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <short value="identifies the meaning of the extension" />
+      <definition value="Source of the definition for the extension code - a logical name or a URL." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Extension.url" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Extension.valueCode" />
+      <short value="BSNR | NBSNR" />
+      <definition value="BSNR | NBSNR" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Extension" />
+      <short value="Betriebsstätten-Hierarchie (Haupt/Nebenbetriebsstätte)" />
+      <definition value="Für Betriebsstätten gemäß KBV ist die Angabe erforderlich, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt.&#xD;&#xA;Bei der Modellierung von Betriebsstätten als Organization-Resource ist daher eine Extension erforderlich um diese Eigenschaft abzubilden." />
+    </element>
+    <element>
+      <path value="Extension.url" />
+      <representation value="xmlAttr" />
+      <fixedUri value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+    </element>
+    <element>
+      <path value="Extension.valueCode" />
+      <short value="BSNR | NBSNR" />
+      <definition value="BSNR | NBSNR" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

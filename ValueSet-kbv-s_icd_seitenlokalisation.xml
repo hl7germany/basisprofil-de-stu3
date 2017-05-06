@@ -1,0 +1,42 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ValueSet/kbv/s_icd_seitenlokalisation" />
+  <version value="0.1" />
+  <name value="kbv-s_icd_seitenlokalisation" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-04-21T00:18:30+02:00" />
+  <description value="ValueSet zur Codierung der Seitenlokalisation gemäß KBV" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
+      <concept>
+        <code value="B" />
+        <display value="beiderseits" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="L" />
+        <display value="links" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="R" />
+        <display value="rechts" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
