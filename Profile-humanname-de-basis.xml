@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-05-06T18:16:37.717+02:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+  <version value="0.1" />
+  <name value="humanname-de-basis" />
+  <status value="draft" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-05-06T18:02:22.7230638+02:00" />
+  <purpose value="Humanname mit in Deutschland üblichen Erweiterungen" />
+  <fhirVersion value="3.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="HumanName" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="HumanName.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="HumanName.family.extension" />
+      <sliceName value="namenszusatz" />
+      <short value="Namenszusatz (KVK)" />
+      <definition value="Namenszusatz, z.B. Adelstitel als Bestandteil das Nachnamens, z.B. Gräfin, Prinz oder Fürst" />
+      <comment value="Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile &quot;Namenszusatz&quot; und &quot;Vorsatzwort&quot; getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt.&#xD;&#xA;Das Vorsatzwort kann durch die Core-Extension http://build.fhir.org/extension-humanname-own-name.html abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
+      </type>
+    </element>
+    <element>
+      <path value="HumanName.family.extension" />
+      <sliceName value="nachname" />
+      <short value="Nachname ohne Vor- und Zusätze" />
+      <definition value="Nachname ohne Vor- und Zusätze.&#xD;&#xA;Dient der alphabetischen Einordnung des Namens." />
+      <comment value="If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
+      </type>
+    </element>
+    <element>
+      <path value="HumanName.family.extension" />
+      <sliceName value="vorsatzwort" />
+      <short value="Vorsatzwort" />
+      <definition value="Vorsatzwort wie z.B.: von, van, zu" />
+      <comment value="An example of a voorvoegsel is the &quot;van&quot; in &quot;Ludwig van Beethoven&quot;. Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to specify it as a separate sub-component." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
+      </type>
+    </element>
+    <element>
+      <path value="HumanName.prefix.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="HumanName.prefix.extension" />
+      <sliceName value="prefix-qualifier" />
+      <short value="LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV" />
+      <definition value="Spezialisierung der Art des Präfixes, z.B. &quot;AC&quot; für Akademische Titel" />
+      <comment value="Used to indicate additional information about the name part and how it should be used." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
+      </type>
+      <isModifier value="false" />
+    </element>
+  </differential>
+</StructureDefinition>

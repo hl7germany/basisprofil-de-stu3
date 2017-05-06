@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-05-06T17:57:03.354+02:00" />
+  </meta>
+  <text>
+    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>Profil für die Repräsentation einer Betriebsstätte im Sinne der KBV als Organization-Resource</p>
+</div></text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <url value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" />
+  <name value="organization-de-betriebsstaette" />
+  <status value="draft" />
+  <description value="Profil für die Repräsentation einer Betriebsstätte im Sinne der KBV als Organization-Resource " />
+  <purpose value="Dieses Profil muss immer dann eingesetzt werden, wenn eine Organization-Resource verwendet wird, um eine Betriebsstätte im Sinne der KBV zu repräsentieren." />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/organization-de-basis" />
+  <differential>
+    <element>
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.extension:betriebsstaetten-hierarchie">
+      <path value="Organization.extension" />
+      <sliceName value="betriebsstaetten-hierarchie" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+      </type>
+    </element>
+    <element>
+      <path value="Organization.identifier" />
+      <sliceName value="betriebsstaettennummer" />
+    </element>
+    <element id="Organization.identifier:betriebsstaettennummer.system">
+      <path value="Organization.identifier.system" />
+      <short value="Namespace für Betriebsstättennnummern der KBV" />
+      <definition value="Die URL dient als eindeutiger Name des BSNR-Nummernkreises " />
+      <fixedUri value="http://fhir.de/NamingSystem/kbv/bsnr" />
+    </element>
+    <element id="Organization.identifier:betriebsstaettennummer.period.start">
+      <path value="Organization.identifier.period.start" />
+      <short value="Beginn der BSNR Gültigkeit" />
+    </element>
+    <element id="Organization.identifier:betriebsstaettennummer.period.end">
+      <path value="Organization.identifier.period.end" />
+      <short value="Ende der BSNR-Gültigkeit" />
+      <definition value="Ende der BSNR Gültigkeit. Leer, wenn laufend." />
+    </element>
+    <element id="Organization.identifier:betriebsstaettennummer.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Organization.identifier.assigner.display" />
+      <short value="Name der zuständigen Kassenärztlichen Vereinigung (KV)" />
+      <definition value="Name der zuständigen Kassenärztlichen Vereinigung (KV).&#xD;&#xA;z.B.: &quot;KV Baden-Württemberg&quot;" />
+    </element>
+    <element>
+      <path value="Organization.name" />
+      <short value="Name der Betriebsstätte" />
+      <definition value="Menschenlesbarer Name der Betriebsstätte, z.B.: &quot;Gemeinschaftspraxis Dr. Soundso&quot;" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <definition value="An address for the organization. " />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
