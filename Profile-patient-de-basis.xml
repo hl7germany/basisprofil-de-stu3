@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-05-06T22:45:11.312+01:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
+  <version value="0.1" />
+  <name value="patient-de-basis" />
+  <title value="Patient, deutsches Basisprofil" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2017-05-06T10:20:43.012545+01:00" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <description value="Basisprofil für die Verwendung der Patient Ressource in Deutschland" />
+  <purpose value="TBD" />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="Patient" />
+      <short value="Informationen über ein Individuum, das Gesundheitsleistungen erhält." />
+      <definition value="Demografische und andere administrative Informationen über ein Individuum, das Behandlungs- oder andere gesundheitsbezogene Leistungen erhält." />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <sliceName value="KrankenversichertennummerGKV" />
+      <short value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
+      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
+      <requirements value="Die gesetzliche Krankenversichertennummer ist ein zentrales Identififaktionsmerkmal im deutschen Gesundheitswesen." />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v2/0203" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="HC" />
+    </element>
+    <element>
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr" />
+    </element>
+    <element>
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier" />
+      <sliceName value="PatientenID" />
+      <short value="Einrichtungs- oder Verbund-interne Patienten-Identifikationsnummer" />
+      <definition value="Ein innerhalb der Einrichtung (Krankenhaus, einrichtungsübergrreifender Verbund o.dgl.) eindeutiger Identifikator eines Patienten." />
+    </element>
+    <element>
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding" />
+      <short value="Einrichtungs-interner Patienten-Identifikator" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v2/0203" />
+    </element>
+    <element>
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="MR" />
+    </element>
+    <element>
+      <path value="Patient.name" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </type>
+    </element>
+    <element>
+      <path value="Patient.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Animal" />
+      </extension>
+      <path value="Patient.animal" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Patient.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="StructureDefinition/organization-de-basis" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
