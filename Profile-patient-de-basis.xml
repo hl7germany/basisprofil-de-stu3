@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T21:57:05.825+01:00" />
+    <lastUpdated value="2017-05-07T22:11:49.279+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -4404,7 +4404,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value=" http://fhir.de/NamingSystem/gkv/kvnr" />
+      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -16003,7 +16003,7 @@
     <element id="Patient.identifier:KrankenversichertennummerGKV.system">
       <path value="Patient.identifier.system" />
       <min value="1" />
-      <fixedUri value=" http://fhir.de/NamingSystem/gkv/kvnr" />
+      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr" />
     </element>
     <element id="Patient.identifier:KrankenversichertennummerGKV.value">
       <path value="Patient.identifier.value" />
