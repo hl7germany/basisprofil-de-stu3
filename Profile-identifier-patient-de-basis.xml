@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T21:16:00.762+01:00" />
+    <lastUpdated value="2017-05-07T21:56:09.553+01:00" />
   </meta>
+  <text>
+    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Angepasstes Profil für Datentyp Identifier zur Verwendung im Kontext einen Patientenidentifiers</div></text>
   <url value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
-  <version value="0.1" />
   <name value="identifier-patient-de-basis" />
   <status value="draft" />
-  <date value="2017-05-07T12:54:59.6677844+02:00" />
+  <date value="2017-05-07T21:50:09.386944+01:00" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <description value="Angepasstes Profil für Datentyp Identifier zur Verwendung im Kontext einen Patientenidentifiers" />
-  <purpose value="Im Kontext des Patienten-IDentifiers sind nur spezielle Identifier-type-codes zulässig. Das im Standard als extensible angegebene ValueSet wird um einige Codes erweitert." />
+  <purpose value="Im Kontext des Patienten-Identifiers sind nur spezielle Identifier-type-codes zulässig. Das im Standard als extensible angegebene ValueSet wird um einige Codes erweitert." />
   <fhirVersion value="3.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

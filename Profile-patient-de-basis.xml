@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T21:14:46.23+01:00" />
+    <lastUpdated value="2017-05-07T21:57:05.825+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -15969,7 +15969,7 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV">
       <path value="Patient.identifier" />
       <sliceName value="KrankenversichertennummerGKV" />
       <short value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
@@ -15981,35 +15981,35 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.type">
       <path value="Patient.identifier.type" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.type.coding">
       <path value="Patient.identifier.type.coding" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.type.coding.system">
       <path value="Patient.identifier.type.coding.system" />
       <min value="1" />
       <fixedUri value="http://hl7.org/fhir/v2/0203" />
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.type.coding.code">
       <path value="Patient.identifier.type.coding.code" />
       <min value="1" />
       <fixedCode value="HC" />
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.system">
       <path value="Patient.identifier.system" />
       <min value="1" />
       <fixedUri value=" http://fhir.de/NamingSystem/gkv/kvnr" />
     </element>
-    <element>
+    <element id="Patient.identifier:KrankenversichertennummerGKV.value">
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID">
       <path value="Patient.identifier" />
       <sliceName value="PatientenID" />
       <short value="Einrichtungs- oder Verbund-interne Patienten-Identifikationsnummer" />
@@ -16019,30 +16019,30 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.type">
       <path value="Patient.identifier.type" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.type.coding">
       <path value="Patient.identifier.type.coding" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.type.coding.system">
       <path value="Patient.identifier.type.coding.system" />
       <min value="1" />
       <fixedUri value="http://hl7.org/fhir/v2/0203" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.type.coding.code">
       <path value="Patient.identifier.type.coding.code" />
       <min value="1" />
       <fixedCode value="HC" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.system">
       <path value="Patient.identifier.system" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Patient.identifier:PatientenID.value">
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
