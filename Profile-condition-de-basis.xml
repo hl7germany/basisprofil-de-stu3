@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-05-07T11:38:20.19+01:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pc" />
+  </extension>
+  <url value="http://fhir.de/StructureDefinition/condition-de-basis" />
+  <version value="0.1" />
+  <name value="condition-de-basis" />
+  <title value="Deutsches Basisprofil einer Condition" />
+  <status value="draft" />
+  <date value="2017-05-07T11:31:33.457269+01:00" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <description value="Deutsches Basisprofil einer Condition" />
+  <purpose value="Die Basisprofile enthalten Elemente, bei denen zu erwarten ist, dass sie in 80% der abgeleiteten Profile verwendung finden.&amp;#xD;&amp;#xA;Basisprofile werden i.d.R. nicht direkt implementiert, sondern für einen konkreten UseCase abgeleitet.&amp;#xD;&amp;#xA;Die Basis-Profile werden vom Technischen Komitee von HL7 Deutschland abgestimmt." />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+</StructureDefinition>
