@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T11:09:06.86+01:00" />
+    <lastUpdated value="2017-05-07T16:00:18.587+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -394,8 +394,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <short value="An identifier for this patient" />
-      <definition value="An identifier for this patient." />
+      <short value="An identifier intended for computation" />
+      <definition value="A technical identifier - identifies some entity uniquely and unambiguously." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
       <max value="*" />
@@ -406,6 +406,7 @@
       </base>
       <type>
         <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -416,6 +417,18 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierType" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/patient-identifier-type-de-basis" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1669,6 +1682,10 @@
       </base>
       <type>
         <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2935,6 +2952,10 @@
       </base>
       <type>
         <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13937,7 +13958,7 @@
       <short value="Informationen über ein Individuum, das Gesundheitsleistungen erhält." />
       <definition value="Demografische und andere administrative Informationen über ein Individuum, das Behandlungs- oder andere gesundheitsbezogene Leistungen erhält." />
     </element>
-    <element>
+    <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
@@ -13946,6 +13967,10 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
+      </type>
     </element>
     <element id="Patient.identifier:KrankenversichertennummerGKV">
       <path value="Patient.identifier" />
@@ -13954,6 +13979,13 @@
       <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
       <requirements value="Die gesetzliche Krankenversichertennummer ist ein zentrales Identififaktionsmerkmal im deutschen Gesundheitswesen." />
       <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier.type" />
@@ -13988,6 +14020,13 @@
       <sliceName value="PatientenID" />
       <short value="Einrichtungs- oder Verbund-interne Patienten-Identifikationsnummer" />
       <definition value="Ein innerhalb der Einrichtung (Krankenhaus, einrichtungsübergrreifender Verbund o.dgl.) eindeutiger Identifikator eines Patienten." />
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
+      </type>
     </element>
     <element>
       <path value="Patient.identifier.type" />
