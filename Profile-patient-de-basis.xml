@@ -2420,18 +2420,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-        <valueSetReference>
-          <reference value="http://fhir.de/ValueSet/patient-identifier-type-de-basis" />
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -2625,9 +2613,8 @@
           <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
-        <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
+          <reference value="http://fhir.de/ValueSet/patient-identifier-type-de-basis" />
         </valueSetReference>
       </binding>
       <mapping>
