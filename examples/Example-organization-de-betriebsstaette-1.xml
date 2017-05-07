@@ -1,37 +1,33 @@
 <Organization xmlns="http://hl7.org/fhir">
-  <meta>
-	<!--Die Angabe, zu welchen Profilen diese Resource konform ist, hilft den empfangenden Systemen, die richtige Verarbeitungsroutine auszuwählen-->
-      <profile value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" /> 
-  </meta>
-  <!-- Die Angabe, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt, ist verpflichtend-->
-  <extension url = "http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie">
-	<valueCode value = "BSNR"/>
-  </extension>
-  <!-- BSNR der Betriebsstätte mit optionaler Angabe des Gültigkeitszeitraumes und der zuständigen KV-->
-  <identifier>
-    <system value="http://fhir.de/NamingSystem/kbv/bsnr" />
-    <value value="123456789" /> 
-	<period>
-		<start value = "2015-01-01"/>
-	</period>
-	<assigner>
-		<display value="KV Baden-Württemberg"/>
-	</assigner>
-  </identifier>
-  <name value="Gemeinschaftspraxis Dres. Mustermann und Beispielfrau" />
-  <!-- die vollständige Adresszeile steht immer im line-Attribut. Für die explizite Angabe von Straße und Hausnummer können zusätzlich Extensions verwendet werden -->
-  <address>
-	<line value = "Musterstraße 1">
-		<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-			<valueString value="1"/>
-		</extension>
-		<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-			<valueString value="Musterstraße"/>
-		</extension>
-	</line>
-	<city value="Musterstadt"/>
-	<postalCode value="77777"/>
-	<country value="DE"/>
-  </address>
-  
+	<meta>
+		<!--Die Angabe, zu welchen Profilen diese Resource konform ist, hilft den empfangenden Systemen, die richtige Verarbeitungsroutine auszuwählen-->
+		<profile value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" /> 
+	</meta>
+
+	<identifier>
+		<system value="http://fhir.de/NamingSystem/kbv/bsnr" />
+		<value value="123456789" /> 
+		<period>
+			<start value = "2015-01-01"/>
+		</period>
+		<assigner>
+			<display value="KV Baden-Württemberg"/>
+		</assigner>
+	</identifier>
+	<name value="Gemeinschaftspraxis Dres. Mustermann und Beispielfrau" />
+	<!-- die vollständige Adresszeile steht immer im line-Attribut. Für die explizite Angabe von Straße und Hausnummer können zusätzlich Extensions verwendet werden -->
+	<address>
+		<line value = "Musterstraße 1">
+			<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="1"/>
+			</extension>
+			<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterstraße"/>
+			</extension>
+		</line>
+		<city value="Musterstadt"/>
+		<postalCode value="77777"/>
+		<country value="DE"/>
+	</address>
+
 </Organization>
