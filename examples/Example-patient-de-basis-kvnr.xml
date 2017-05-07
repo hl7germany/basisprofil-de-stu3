@@ -2,8 +2,13 @@
   <meta>
       <profile value="http://fhir.de/StructureDefinition/patient-de-basis" />
   </meta>
-  <text />
   <identifier>
+	<type>
+		<coding>
+			<system value = "http://hl7.org/fhir/v2/0203"/>
+			<code value = "HC"/>
+		</coding>
+	</type>
     <system value="http://fhir.de/NamingSystem/gkv/kvnr" />
     <value value="G995030566" />
   </identifier>
