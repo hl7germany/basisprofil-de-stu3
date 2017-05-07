@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T15:44:46.979+01:00" />
+    <lastUpdated value="2017-05-07T21:16:00.762+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/identifier-patient-de-basis" />
   <version value="0.1" />
