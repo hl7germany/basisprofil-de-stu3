@@ -1,4 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-05-07T10:42:31.986+02:00" />
+  </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
   <name value="address-de-basis" />
@@ -314,6 +318,18 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="children().count() &gt; id.count()" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="add-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
+      </constraint>
+      <constraint>
+        <key value="add-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Strasse.empty() or line.exists()" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -996,6 +1012,21 @@
   </snapshot>
   <differential>
     <element>
+      <path value="Address.line" />
+      <constraint>
+        <key value="add-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
+      </constraint>
+      <constraint>
+        <key value="add-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Strasse.empty() or line.exists()" />
+      </constraint>
+    </element>
+    <element>
       <path value="Address.line.extension" />
       <slicing>
         <discriminator>
@@ -1008,7 +1039,6 @@
     <element id="Address.line.extension:Hausnummer">
       <path value="Address.line.extension" />
       <sliceName value="Hausnummer" />
-      <short value="houseNumber" />
       <definition value="The number of a building, house or lot alongside the street. Also known as &quot;primary street number&quot;. This does not number the street but rather the building. " />
       <max value="1" />
       <type>
@@ -1019,8 +1049,6 @@
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
-      <short value="streetName" />
-      <definition value="streetName." />
       <max value="1" />
       <type>
         <code value="Extension" />

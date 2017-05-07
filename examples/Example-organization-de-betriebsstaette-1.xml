@@ -4,8 +4,7 @@
       <profile value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" /> 
   </meta>
   <!-- Die Angabe, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt, ist verpflichtend-->
-  <extension>
-	<url value = "http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie"/>
+  <extension url = "http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie">
 	<valueCode value = "BSNR"/>
   </extension>
   <!-- BSNR der Betriebsstätte mit optionaler Angabe des Gültigkeitszeitraumes und der zuständigen KV-->
@@ -23,12 +22,10 @@
   <!-- die vollständige Adresszeile steht immer im line-Attribut. Für die explizite Angabe von Straße und Hausnummer können zusätzlich Extensions verwendet werden -->
   <address>
 	<line value = "Musterstraße 1">
-		<extension>
-			<url value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"/>
+		<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
 			<valueString value="1"/>
 		</extension>
-		<extension>
-			<url value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"/>
+		<extension url ="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
 			<valueString value="Musterstraße"/>
 		</extension>
 	</line>
