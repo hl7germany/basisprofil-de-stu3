@@ -14,6 +14,9 @@
         <reference value="Patient/12345" />
     </beneficiary>
     <payor>
-        <reference value="Organization/67890" />
+        <identifier>
+            <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+            <value value="998765432" />
+        </identifier>
     </payor>
 </Coverage>
