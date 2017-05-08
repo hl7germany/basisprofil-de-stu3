@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-06T19:25:09.359+02:00" />
+    <lastUpdated value="2017-05-08T12:32:30.202+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/humanname-de-basis" />
   <version value="0.1" />
@@ -66,7 +66,7 @@
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" /> 
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element.id" />
@@ -232,7 +232,7 @@
     <element id="HumanName.family">
       <path value="HumanName.family" />
       <short value="Family name (often called 'Surname')" />
-      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father. " />
+      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)." />
       <alias value="surname" />
       <min value="0" />
@@ -358,7 +358,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1013,10 +1013,6 @@
   </snapshot>
   <differential>
     <element>
-      <path value="HumanName.family" />
-      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father. " />
-    </element>
-    <element>
       <path value="HumanName.family.extension" />
       <slicing>
         <discriminator>
@@ -1029,6 +1025,7 @@
     <element id="HumanName.family.extension:namenszusatz">
       <path value="HumanName.family.extension" />
       <sliceName value="namenszusatz" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
