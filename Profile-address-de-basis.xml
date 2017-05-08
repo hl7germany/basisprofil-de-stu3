@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-07T10:42:31.986+02:00" />
+    <lastUpdated value="2017-05-08T17:31:15.774+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -319,18 +319,6 @@
         <expression value="children().count() &gt; id.count()" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <constraint>
-        <key value="add-1" />
-        <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
-        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
-      </constraint>
-      <constraint>
-        <key value="add-2" />
-        <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
-        <expression value="line.extension:Strasse.empty() or line.exists()" />
-      </constraint>
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -465,6 +453,12 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
+      <constraint>
+        <key value="add-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -511,6 +505,12 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <constraint>
+        <key value="add-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Strasse.empty() or line.exists()" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1012,21 +1012,6 @@
   </snapshot>
   <differential>
     <element>
-      <path value="Address.line" />
-      <constraint>
-        <key value="add-1" />
-        <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
-        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
-      </constraint>
-      <constraint>
-        <key value="add-2" />
-        <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
-        <expression value="line.extension:Strasse.empty() or line.exists()" />
-      </constraint>
-    </element>
-    <element>
       <path value="Address.line.extension" />
       <slicing>
         <discriminator>
@@ -1045,6 +1030,12 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
+      <constraint>
+        <key value="add-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Hausnummer.empty() or line.exists()" />
+      </constraint>
     </element>
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
@@ -1054,6 +1045,12 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
+      <constraint>
+        <key value="add-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <expression value="line.extension:Strasse.empty() or line.exists()" />
+      </constraint>
     </element>
     <element>
       <path value="Address.state" />
