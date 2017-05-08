@@ -5483,7 +5483,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="HC" />
+      <fixedCode value="MR" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -16023,7 +16023,7 @@
     <element id="Patient.identifier:PatientenID.type.coding.code">
       <path value="Patient.identifier.type.coding.code" />
       <min value="1" />
-      <fixedCode value="HC" />
+      <fixedCode value="MR" />
     </element>
     <element id="Patient.identifier:PatientenID.system">
       <path value="Patient.identifier.system" />
