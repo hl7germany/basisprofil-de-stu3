@@ -456,7 +456,7 @@
       <constraint>
         <key value="add-1" />
         <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.exists()" />
       </constraint>
       <mapping>
@@ -509,7 +509,7 @@
       <constraint>
         <key value="add-2" />
         <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.exists()" />
       </constraint>
       <mapping>
