@@ -1,5 +1,5 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
-  <name value="Lebenslange Arztnummer (KBV)" />
+  <name value="kbv-lanr" />
   <status value="draft" />
   <kind value="identifier" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
