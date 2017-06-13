@@ -21,7 +21,7 @@
     <value value="http://fhir.de/NamingSystem/gkv/kvid-10" />
     <preferred value="true" />
     <period>
-      <start value="2018-01-01" />
+      <start value="2018-01-01" /> 
     </period>
   </uniqueId>
 </NamingSystem>
