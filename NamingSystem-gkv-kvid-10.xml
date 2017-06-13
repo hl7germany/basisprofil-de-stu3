@@ -1,0 +1,27 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="gkv-kvid-10" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <responsible value="Vertrauensstelle Krankenversichertennummer der GKV" />
+  <date value="2016-12-01" />
+  <description value="Die Versicherten-ID ist der 10-stellige unveränderliche Teil der 30-stelligen Krankenversichertennummer." />
+  <uniqueId>
+    <type value="oid" />
+    <value value="1.2.276.0.76.4.8" />
+  </uniqueId>
+  <uniqueId>
+    <type value="uri" />
+    <value value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    <preferred value="true" />
+    <period>
+      <start value="2018-01-01" />
+    </period>
+  </uniqueId>
+</NamingSystem>

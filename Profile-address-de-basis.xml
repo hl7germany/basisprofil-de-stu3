@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-09T10:08:24.102+02:00" />
+    <lastUpdated value="2017-05-09T12:38:45.163+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -456,7 +456,7 @@
       <constraint>
         <key value="add-1" />
         <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch Address.line gefüllt werden" />
+        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.exists()" />
       </constraint>
       <mapping>
@@ -509,7 +509,7 @@
       <constraint>
         <key value="add-2" />
         <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch Address.line gefüllt werden" />
+        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.exists()" />
       </constraint>
       <mapping>
@@ -609,7 +609,7 @@
       <comment value="District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead." />
       <alias value="County" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Address.district" />
         <min value="0" />
@@ -896,6 +896,10 @@
         <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.exists()" />
       </constraint>
+    </element>
+    <element>
+      <path value="Address.district" />
+      <max value="0" />
     </element>
     <element>
       <path value="Address.state" />
