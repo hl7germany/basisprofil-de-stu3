@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-08T11:46:57.919+02:00" />
+    <lastUpdated value="2017-06-13T22:25:53.159+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -4034,8 +4034,9 @@
       <path value="Coverage.grouping" />
       <short value="Additional coverage classifications" />
       <definition value="A suite of underwrite specific classifiers, for example may be used to identify a class of coverage or employer group, Policy, Plan." />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.grouping" />
         <min value="0" />
@@ -4618,11 +4619,11 @@
     <element id="Coverage.dependent">
       <path value="Coverage.dependent" />
       <short value="Dependent number" />
-      <definition value="A unique identifier for a dependent under the coverage." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <definition value="Identifikation einer unter dieser Police versicherten Partei&#xD;&#xA;Bsp: eine Familie ist mit der Police mit dem Identifier &quot;12345&quot; versichert&#xD;&#xA;Vater 12345a&#xD;&#xA;Mutter 12345b&#xD;&#xA;Kind 12345c&#xD;&#xA;a, b und c wären dann jeweils die &quot;dependents&quot;" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de&#xD;&#xA;" />
       <requirements value="For some coverage a single identifier is issued to the Subscriber and a dependent number issued to each beneficiary." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.dependent" />
         <min value="0" />
@@ -4657,10 +4658,10 @@
       <path value="Coverage.sequence" />
       <short value="The plan instance or sequence counter" />
       <definition value="An optional counter for a particular instance of the identified coverage which increments upon each renewal." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
       <requirements value="Some coverage, for example social plans, may be offered in short time increments, for example for a week or a month at a time, so while the rest of the plan details and identifiers may remain constant over time, the instance is incremented with each renewal and provided to the covered party on their 'card'." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.sequence" />
         <min value="0" />
@@ -4695,9 +4696,9 @@
       <path value="Coverage.order" />
       <short value="Relative order of the coverage" />
       <definition value="The order of applicability of this coverage relative to other coverages which are currently inforce. Note, there may be gaps in the numbering and this does not imply primary, secondard etc. as the specific positioning of coverages depends upon the episode of care." />
-      <comment value="32 bit number; for values larger than this, use decimal" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Für die Priorisierung der Versicherungsverhältnisse sollte statt dessen Account.coverage.priority verwendet werden, da die Priorisierung abhängig von Fall-  und Abrechnungsart unterschiedlich sein kann.&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.order" />
         <min value="0" />
@@ -4727,10 +4728,10 @@
     <element id="Coverage.network">
       <path value="Coverage.network" />
       <short value="Insurer network" />
-      <definition value="The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <definition value="Die Versicherungsleistungen sind an ein bestimmtes Netzwerk von Gesundheitsdienstleistern gebunden" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.network" />
         <min value="0" />
@@ -5053,6 +5054,36 @@
     <element>
       <path value="Coverage.payor.identifier" />
       <min value="1" />
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Group" />
+      </extension>
+      <path value="Coverage.grouping" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Coverage.dependent" />
+      <definition value="Identifikation einer unter dieser Police versicherten Partei&#xD;&#xA;Bsp: eine Familie ist mit der Police mit dem Identifier &quot;12345&quot; versichert&#xD;&#xA;Vater 12345a&#xD;&#xA;Mutter 12345b&#xD;&#xA;Kind 12345c&#xD;&#xA;a, b und c wären dann jeweils die &quot;dependents&quot;" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de&#xD;&#xA;" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Coverage.sequence" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Coverage.order" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Für die Priorisierung der Versicherungsverhältnisse sollte statt dessen Account.coverage.priority verwendet werden, da die Priorisierung abhängig von Fall-  und Abrechnungsart unterschiedlich sein kann.&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Coverage.network" />
+      <definition value="Die Versicherungsleistungen sind an ein bestimmtes Netzwerk von Gesundheitsdienstleistern gebunden" />
+      <comment value="Es git derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.de" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
