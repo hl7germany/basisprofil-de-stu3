@@ -10,9 +10,9 @@
     </telecom>
   </contact>
   <responsible value="Vertrauensstelle Krankenversichertennummer der GKV" />
-  <date value="2016-12-01" />
-  <description value="Die Krankenversichertennummer erhalten Versicherte der gesetzlichen Krankenversicherung." />
-  <usage value="Die Krankenversichertennummer erhalten Versicherte der gesetzlichen Krankenversicherung und besteht aus den zwei Teilen:  dem unveränderlichen Teil, z. B. A123456789 (10 Stellen) dem veränderlichen Teil (9 Stellen). Die vollständige Krankenversichertennummer enthält außerdem eine Prüfziffer, so dass sie insgesamt aus 20 Stellen besteht (10 Stellen persönlicher Teil + 9 Stellen Institutionskennzeichen + Prüfziffer)." />
+  <date value="2017-06-14" />
+  <description value="Die vollständige, bis zu 30-stellige, Krankenversichertennummer." />
+  <usage value="Die Krankenkasse verwendet für jeden Versicherten eine Krankenversichertennummer. Die Krankenversichertennummer besteht aus einem unveränderbaren Teil zur Identifikation des Versicherten (der 10-stelligen Krankenversicherten-ID), sowie einem veränderlichen Teil, der die Kassenzugehörigkeit in Form des Institutionskennzeichens der Krankenkasse (9 Stellen) und ggf. Daten zum Hauptversicherten (10 Stellen), sowie eine Prüfziffer (1 Stelle) enthält. Dieses NamingSystem wird für die vollständige, bis zu 30-stellige Krankenversichertennummer verwendet." />
   <uniqueId>
     <type value="oid" />
     <value value="1.2.276.0.76.4.1" />
