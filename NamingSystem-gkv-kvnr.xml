@@ -1,6 +1,6 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <name value="gkv-kvnr" />
-  <status value="draft" />
+  <status value="retired" />
   <kind value="identifier" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
