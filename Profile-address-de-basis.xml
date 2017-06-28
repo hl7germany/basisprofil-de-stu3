@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-28T21:52:01.666+02:00" />
+    <lastUpdated value="2017-06-28T22:02:41.599+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -293,7 +293,7 @@
     <element id="Address.line">
       <path value="Address.line" />
       <short value="Street name, number, direction &amp; P.O. Box etc." />
-      <definition value="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information." />
+      <definition value="Diese Komponente enthält Strasse und Hausnummer einschließlich aller Zusätze und Zustellungshinweise oder eine Postfachadresse." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="home | work | temp | old - purpose of this address." />
       <min value="0" />
@@ -1070,6 +1070,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Address.line">
+      <path value="Address.line" />
+      <definition value="Diese Komponente enthält Strasse und Hausnummer einschließlich aller Zusätze und Zustellungshinweise oder eine Postfachadresse." />
+    </element>
     <element>
       <path value="Address.line.extension" />
       <slicing>
@@ -1118,7 +1122,6 @@
       <sliceName value="Postfach" />
       <short value="Postfach" />
       <definition value="Postfach-Adresse.&#xD;&#xA;Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.&#xD;&#xA;Eine Postfach-Adresse darf nicht in Verbindung mit Address.type &quot;physical&quot; oder &quot;both&quot; verwendet werden." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
