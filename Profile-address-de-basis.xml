@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-28T23:09:20.044+02:00" />
+    <lastUpdated value="2017-06-28T23:21:00.174+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -510,7 +510,7 @@
         <key value="add-2" />
         <severity value="error" />
         <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.empty()" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.empty().not()" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -563,7 +563,7 @@
         <key value="add-3" />
         <severity value="error" />
         <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line=''" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line!=''" />
       </constraint>
       <constraint>
         <key value="add-4" />
@@ -1110,7 +1110,7 @@
         <key value="add-2" />
         <severity value="error" />
         <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.empty()" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.empty().not()" />
       </constraint>
     </element>
     <element id="Address.line.extension:Postfach">
@@ -1127,7 +1127,7 @@
         <key value="add-3" />
         <severity value="error" />
         <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line=''" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line!=''" />
       </constraint>
       <constraint>
         <key value="add-4" />
