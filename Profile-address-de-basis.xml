@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-09T12:38:45.163+02:00" />
+    <lastUpdated value="2017-06-28T21:52:01.666+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -34,7 +34,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -75,7 +75,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -113,7 +113,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -157,7 +157,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isModifier value="true" />
@@ -213,7 +213,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -269,7 +269,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -316,7 +316,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -362,7 +362,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -400,7 +400,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -422,8 +422,8 @@
     <element id="Address.line.extension:Hausnummer">
       <path value="Address.line.extension" />
       <sliceName value="Hausnummer" />
-      <short value="houseNumber" />
-      <definition value="The number of a building, house or lot alongside the street. Also known as &quot;primary street number&quot;. This does not number the street but rather the building. " />
+      <short value="Hausnummer" />
+      <definition value="Hausnummer, sowie Zusätze (Appartmentnummer, Etage...)&#xD;&#xA;Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -443,7 +443,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -456,7 +456,7 @@
       <constraint>
         <key value="add-1" />
         <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.exists()" />
       </constraint>
       <mapping>
@@ -476,7 +476,7 @@
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
       <short value="streetName" />
-      <definition value="streetName." />
+      <definition value="Strasse (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -496,7 +496,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -509,7 +509,7 @@
       <constraint>
         <key value="add-2" />
         <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.exists()" />
       </constraint>
       <mapping>
@@ -523,6 +523,65 @@
       <mapping>
         <identity value="rim" />
         <map value="ADXP[partType=STR]" />
+      </mapping>
+    </element>
+    <element id="Address.line.extension:Postfach">
+      <path value="Address.line.extension" />
+      <sliceName value="Postfach" />
+      <short value="Postfach" />
+      <definition value="Postfach-Adresse.&#xD;&#xA;Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.&#xD;&#xA;Eine Postfach-Adresse darf nicht in Verbindung mit Address.type &quot;physical&quot; oder &quot;both&quot; verwendet werden." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <constraint>
+        <key value="add-3" />
+        <severity value="error" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line.exists()" />
+      </constraint>
+      <constraint>
+        <key value="add-4" />
+        <severity value="error" />
+        <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or type='both' or type='physical'" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="ADXP[partType=POB]" />
       </mapping>
     </element>
     <element id="Address.line.value">
@@ -577,7 +636,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -627,7 +686,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -666,7 +725,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -716,7 +775,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -761,7 +820,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -818,7 +877,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -854,6 +913,161 @@
         <map value="./StartDate and ./EndDate" />
       </mapping>
     </element>
+    <element id="Address.period.id">
+      <path value="Address.period.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Address.period.extension">
+      <path value="Address.period.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Address.period.start">
+      <path value="Address.period.start" />
+      <short value="Starting time with inclusive boundary" />
+      <definition value="The start of the period. The boundary is inclusive." />
+      <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Period.start" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./low" />
+      </mapping>
+    </element>
+    <element id="Address.period.end">
+      <path value="Address.period.end" />
+      <short value="End time with inclusive boundary, if not ongoing" />
+      <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
+      <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Period.end" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <meaningWhenMissing value="If the end of the period is missing, it means that the period is ongoing" />
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./high" />
+      </mapping>
+    </element>
   </snapshot>
   <differential>
     <element>
@@ -869,7 +1083,8 @@
     <element id="Address.line.extension:Hausnummer">
       <path value="Address.line.extension" />
       <sliceName value="Hausnummer" />
-      <definition value="The number of a building, house or lot alongside the street. Also known as &quot;primary street number&quot;. This does not number the street but rather the building. " />
+      <short value="Hausnummer" />
+      <definition value="Hausnummer, sowie Zusätze (Appartmentnummer, Etage...)&#xD;&#xA;Bei Angabe einer Hausnummer in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -878,13 +1093,14 @@
       <constraint>
         <key value="add-1" />
         <severity value="error" />
-        <human value="Wenn die Extension Hausnummer verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.exists()" />
       </constraint>
     </element>
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
+      <definition value="Strasse (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -893,20 +1109,44 @@
       <constraint>
         <key value="add-2" />
         <severity value="error" />
-        <human value="Wenn die Extension Strasse verwendet wird, muss auch die Adress-Zeile gefüllt werden" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
         <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.exists()" />
       </constraint>
     </element>
-    <element>
+    <element id="Address.line.extension:Postfach">
+      <path value="Address.line.extension" />
+      <sliceName value="Postfach" />
+      <short value="Postfach" />
+      <definition value="Postfach-Adresse.&#xD;&#xA;Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.&#xD;&#xA;Eine Postfach-Adresse darf nicht in Verbindung mit Address.type &quot;physical&quot; oder &quot;both&quot; verwendet werden." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
+      </type>
+      <constraint>
+        <key value="add-3" />
+        <severity value="error" />
+        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line.exists()" />
+      </constraint>
+      <constraint>
+        <key value="add-4" />
+        <severity value="error" />
+        <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
+        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or type='both' or type='physical'" />
+      </constraint>
+    </element>
+    <element id="Address.district">
       <path value="Address.district" />
       <max value="0" />
     </element>
-    <element>
+    <element id="Address.state">
       <path value="Address.state" />
       <short value="Bundesland" />
       <definition value="Name (oder Kürzel) des Bundeslandes. Es obliegt abgeleiteten Profilen, dafür ein jeweils geeignetes ValueSet festzulegen" />
     </element>
-    <element>
+    <element id="Address.country">
       <path value="Address.country" />
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
