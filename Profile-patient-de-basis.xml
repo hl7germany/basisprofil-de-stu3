@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-29T22:06:14.45+02:00" />
+    <lastUpdated value="2017-06-29T22:09:31.341+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -2968,8 +2968,8 @@
     <element id="Patient.name">
       <path value="Patient.name" />
       <short value="Name of a human - parts and usage" />
-      <definition value="A human's name with the ability to identify parts and usage." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <definition value="A human's name with the ability to identify parts and usage.  " />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
       <min value="0" />
       <max value="*" />
@@ -12451,6 +12451,7 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
+      <definition value="A human's name with the ability to identify parts and usage.  " />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-29T22:05:48.107+02:00" />
+    <lastUpdated value="2017-06-29T22:09:29.125+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/humanname-de-basis" />
   <version value="0.1" />
@@ -27,7 +27,7 @@
       <path value="HumanName" />
       <short value="Name of a human - parts and usage" />
       <definition value="A human's name with the ability to identify parts and usage." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <min value="0" />
       <max value="*" />
       <base>
@@ -1038,6 +1038,7 @@
   <differential>
     <element id="HumanName">
       <path value="HumanName" />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <constraint>
         <key value="hum-1" />
         <severity value="error" />
