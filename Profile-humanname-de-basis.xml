@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-08T12:32:30.202+01:00" />
+    <lastUpdated value="2017-06-29T22:05:48.107+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/humanname-de-basis" />
   <version value="0.1" />
@@ -40,8 +40,32 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or prefix.hasValue()" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -81,7 +105,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -119,7 +143,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -159,7 +183,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isModifier value="true" />
@@ -212,7 +236,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -250,7 +274,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -292,7 +316,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -330,7 +354,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -373,7 +397,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -416,7 +440,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -467,7 +491,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -544,7 +568,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -586,7 +610,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -628,7 +652,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -666,7 +690,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -709,7 +733,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -781,7 +805,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -819,7 +843,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -876,7 +900,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -914,7 +938,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -954,7 +978,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -993,7 +1017,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="children().count() &gt; id.count()" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
@@ -1012,6 +1036,33 @@
     </element>
   </snapshot>
   <differential>
+    <element id="HumanName">
+      <path value="HumanName" />
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or prefix.hasValue()" />
+      </constraint>
+    </element>
     <element>
       <path value="HumanName.family.extension" />
       <slicing>

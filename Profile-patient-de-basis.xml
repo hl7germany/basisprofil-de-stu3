@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-29T21:29:15.452+02:00" />
+    <lastUpdated value="2017-06-29T22:06:14.45+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -2989,6 +2989,30 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or prefix.hasValue()" />
       </constraint>
       <isSummary value="true" />
       <mapping>
