@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-29T21:19:10.667+02:00" />
+    <lastUpdated value="2017-06-29T21:29:18.191+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -477,12 +477,6 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <constraint>
-        <key value="add-1" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.hasValue()" />
-      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -530,12 +524,6 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <constraint>
-        <key value="add-2" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.hasValue()" />
-      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -582,18 +570,6 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <constraint>
-        <key value="add-3" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line.hasValue()" />
-      </constraint>
-      <constraint>
-        <key value="add-4" />
-        <severity value="error" />
-        <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or type='both' or type='physical'" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -986,12 +962,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
-      <constraint>
-        <key value="add-1" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.hasValue()" />
-      </constraint>
     </element>
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
@@ -1002,12 +972,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
-      <constraint>
-        <key value="add-2" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.hasValue()" />
-      </constraint>
     </element>
     <element id="Address.line.extension:Postfach">
       <path value="Address.line.extension" />
@@ -1019,18 +983,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
       </type>
-      <constraint>
-        <key value="add-3" />
-        <severity value="error" />
-        <human value="Wenn diese Extension verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line.hasValue()" />
-      </constraint>
-      <constraint>
-        <key value="add-4" />
-        <severity value="error" />
-        <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or type='both' or type='physical'" />
-      </constraint>
     </element>
     <element id="Address.district">
       <path value="Address.district" />
