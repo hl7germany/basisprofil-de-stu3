@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-11T14:30:29.909+01:00" />
+    <lastUpdated value="2017-07-11T15:47:17.419+01:00" />
   </meta>
   <text>
     <status value="empty" /><div xmlns="http://www.w3.org/1999/xhtml">Erweiterung des Komplexen Datentyps Address zur Konformität mit der VSDM-Spezifikation (Versichertenstammdatenmanagement, "eGK-Datensatz")
@@ -877,7 +877,7 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
       <comment value="ISO 3166 3 letter codes can be used in place of a full country name." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.country" />
@@ -1180,6 +1180,7 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
     </element>
     <element id="Address.country">
       <path value="Address.country" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
   </differential>
