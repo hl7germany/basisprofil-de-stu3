@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-11T15:47:17.419+01:00" />
+    <lastUpdated value="2017-07-11T15:57:29.578+01:00" />
   </meta>
   <text>
     <status value="empty" /><div xmlns="http://www.w3.org/1999/xhtml">Erweiterung des Komplexen Datentyps Address zur Konformität mit der VSDM-Spezifikation (Versichertenstammdatenmanagement, "eGK-Datensatz")
 Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hinsichtlich Unterstützung und Kardinalität abgebildet sind.
 </div></text>
   <url value="http://fhir.de/StructureDefinition/address-de-vsdm" />
+  <version value="0.1.1" />
   <name value="address-de-vsdm" />
   <title value="Adresse gemäß deutscher VSDM-Spezifikation" />
   <status value="draft" />
@@ -496,7 +497,6 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -544,7 +544,6 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -592,7 +591,6 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -640,7 +638,6 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1146,26 +1143,6 @@ Das Profil stellt sicher, dass die erforderlichen Items des VSDM-Datensatzes hin
     <element id="Address.line">
       <path value="Address.line" />
       <max value="2" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Address.line.extension:Strasse">
-      <path value="Address.line.extension" />
-      <sliceName value="Strasse" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Address.line.extension:Hausnummer">
-      <path value="Address.line.extension" />
-      <sliceName value="Hausnummer" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Address.line.extension:Adresszusatz">
-      <path value="Address.line.extension" />
-      <sliceName value="Adresszusatz" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Address.line.extension:Postfach">
-      <path value="Address.line.extension" />
-      <sliceName value="Postfach" />
       <mustSupport value="true" />
     </element>
     <element id="Address.city">
