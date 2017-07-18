@@ -9,7 +9,7 @@
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/patient-de-vsdm" />
-  <version value="0.5.1" />
+  <version value="0.5.2" />
   <name value="patient-de-vsdm" />
   <title value="Patient, deutsches VSDM-Profil" />
   <status value="draft" />

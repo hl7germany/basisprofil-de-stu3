@@ -11,7 +11,7 @@
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" />
-  <version value="0.2" />
+  <version value="0.2.1" />
   <name value="organization-de-betriebsstaette" />
   <status value="draft" />
   <date value="2017-07-18" />

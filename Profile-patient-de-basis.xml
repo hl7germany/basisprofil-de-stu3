@@ -7,7 +7,7 @@
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
-  <version value="0.3.2" />
+  <version value="0.3.3" />
   <name value="patient-de-basis" />
   <title value="Patient, deutsches Basisprofil" />
   <status value="draft" />
