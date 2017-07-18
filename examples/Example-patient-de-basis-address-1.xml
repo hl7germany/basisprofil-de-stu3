@@ -5,14 +5,14 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Patient: Martha Mustermann</p>
+      <p>Patient: Martina Mustermann</p>
     </div>
   </text>
   <name>
     <use value="official" />
-    <text value="Martha Mustermann" />
+    <text value="Martina Mustermann" />
     <family value="Mustermann" />
-    <given value="Martha" />
+    <given value="Martina" />
   </name>
   <address>
       <use value="home" />
