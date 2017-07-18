@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-18T12:27:41.562+01:00" />
+    <lastUpdated value="2017-07-18T12:32:48.219+01:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, "eGK-Datensatz")</div></text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
   </extension>
-  <url value="http://fhir.de/StructureDefinition/Mypatient-de-basis" />
+  <url value="http://fhir.de/StructureDefinition/patient-de-vsdm" />
   <version value="0.5" />
   <name value="patient-de-vsdm" />
   <title value="Patient, deutsches VSDM-Profil" />
