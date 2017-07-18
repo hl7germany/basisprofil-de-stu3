@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-18T18:04:05.394+02:00" />
+    <lastUpdated value="2017-07-18T18:26:33.152+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
-  <version value="0.3.1" />
+  <version value="0.3.2" />
   <name value="patient-de-basis" />
   <title value="Patient, deutsches Basisprofil" />
   <status value="draft" />
@@ -3011,7 +3011,7 @@
         <key value="hum-4" />
         <severity value="error" />
         <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
-        <expression value="prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or prefix.hasValue()" />
+        <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4302,31 +4302,31 @@
         <key value="add-2" />
         <severity value="error" />
         <human value="Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or line.hasValue()" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())" />
       </constraint>
       <constraint>
         <key value="add-3" />
         <severity value="error" />
         <human value="Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or line.hasValue()" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())" />
       </constraint>
       <constraint>
         <key value="add-4" />
         <severity value="warning" />
         <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or type='postal' or type.empty()" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()" />
       </constraint>
       <constraint>
         <key value="add-5" />
         <severity value="error" />
         <human value="Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or line.hasValue()" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())" />
       </constraint>
       <constraint>
         <key value="add-6" />
         <severity value="warning" />
         <human value="Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or (line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty())" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))" />
       </constraint>
       <isSummary value="true" />
       <mapping>
