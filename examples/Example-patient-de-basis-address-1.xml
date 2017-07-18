@@ -31,7 +31,7 @@
           <valueString value="Hinterhof 2. Etage" />
         </extension>
       </line>
-      <city value="Musterstadt />
+      <city value="Musterstadt" />
       <postalCode value="12011" />
       <country value="DE" />
   </address>
