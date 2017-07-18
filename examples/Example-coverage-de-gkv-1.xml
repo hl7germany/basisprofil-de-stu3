@@ -1,0 +1,22 @@
+<Coverage xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
+    </meta>
+    <identifier>
+        <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+        <value value="G995030566" />
+    </identifier>
+    <status value="active" />
+    <subscriber>
+        <reference value="Patient/12345" />
+    </subscriber>
+    <beneficiary>
+        <reference value="Patient/12345" />
+    </beneficiary>
+    <payor>
+        <identifier>
+            <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+            <value value="998765432" />
+        </identifier>
+    </payor>
+</Coverage>
