@@ -44,7 +44,7 @@
           <valueString value="Postfach 4711" />
         </extension>
       </line>
-      <city value="Musterstadt />
+      <city value="Musterstadt" />
       <postalCode value="12013" />
       <country value="DE" />
   </address>
