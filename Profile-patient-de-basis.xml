@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-11T13:55:52.45+01:00" />
+    <lastUpdated value="2017-07-18T18:04:05.394+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
-  <version value="0.3" />
+  <version value="0.3.1" />
   <name value="patient-de-basis" />
   <title value="Patient, deutsches Basisprofil" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2017-07-11" />
+  <date value="2017-07-18" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <description value="Basisprofil für die Verwendung der Patient Ressource in Deutschland " />
   <purpose value="TBD" />
@@ -4296,7 +4296,7 @@
         <key value="add-1" />
         <severity value="error" />
         <human value="Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden" />
-        <expression value="line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or line.hasValue()" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())" />
       </constraint>
       <constraint>
         <key value="add-2" />
