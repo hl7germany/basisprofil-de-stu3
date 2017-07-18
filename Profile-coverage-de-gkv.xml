@@ -1118,7 +1118,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr-30" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
