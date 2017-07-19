@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-19T18:03:18.792+02:00" />
+    <lastUpdated value="2017-07-19T18:22:40.943+02:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -11,6 +11,7 @@
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" />
+  <version value="0.4" />
   <name value="organization-de-betriebsstaette" />
   <status value="draft" />
   <description value="Profil für die Repräsentation einer Betriebsstätte im Sinne der KBV als Organization-Resource" />
@@ -1201,7 +1202,7 @@
     <element id="Organization.identifier:Betriebsstaettennummer.value">
       <path value="Organization.identifier.value" />
       <short value="Betriebsstättennummer der Organisation" />
-      <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system." />
+      <definition value="Betriebsstättennummer der Organisation" />
       <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html)." />
       <min value="1" />
       <max value="1" />
@@ -1380,7 +1381,7 @@
     <element id="Organization.identifier:Betriebsstaettennummer.period.start">
       <path value="Organization.identifier.period.start" />
       <short value="Beginn der BSNR Gültigkeit" />
-      <definition value="Beginn der BSNR Gültigkeit " />
+      <definition value="Beginn der BSNR Gültigkeit" />
       <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
       <min value="0" />
       <max value="1" />
@@ -1418,7 +1419,7 @@
     <element id="Organization.identifier:Betriebsstaettennummer.period.end">
       <path value="Organization.identifier.period.end" />
       <short value="Ende der BSNR Gültigkeit" />
-      <definition value="Ende der BSNR Gültigkeit.&#xD;&#xA;Leer, falls laufend." />
+      <definition value="Ende der BSNR Gültigkeit. leer, falls aktuell gültig." />
       <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
       <min value="0" />
       <max value="1" />
@@ -2599,28 +2600,13 @@
         <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
       </type>
     </element>
-    <element id="Organization.identifier:betriebsstaettennummer.system">
+    <element id="Organization.identifier.system">
       <path value="Organization.identifier.system" />
-      <short value="Namespace für Betriebsstättennnummern der KBV" />
-      <definition value="Die URL dient als eindeutiger Name des BSNR-Nummernkreises " />
-      <fixedUri value="http://fhir.de/NamingSystem/kbv/bsnr" />
+      <min value="1" />
     </element>
-    <element id="Organization.identifier:betriebsstaettennummer.period.start">
-      <path value="Organization.identifier.period.start" />
-      <short value="Beginn der BSNR Gültigkeit" />
-    </element>
-    <element id="Organization.identifier:betriebsstaettennummer.period.end">
-      <path value="Organization.identifier.period.end" />
-      <short value="Ende der BSNR-Gültigkeit" />
-      <definition value="Ende der BSNR Gültigkeit. Leer, wenn laufend." />
-    </element>
-    <element id="Organization.identifier:betriebsstaettennummer.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Organization.identifier.assigner.display" />
-      <short value="Name der zuständigen Kassenärztlichen Vereinigung (KV)" />
-      <definition value="Name der zuständigen Kassenärztlichen Vereinigung (KV).&#xD;&#xA;z.B.: &quot;KV Baden-Württemberg&quot;" />
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
@@ -2636,17 +2622,18 @@
     <element id="Organization.identifier:Betriebsstaettennummer.value">
       <path value="Organization.identifier.value" />
       <short value="Betriebsstättennummer der Organisation" />
+      <definition value="Betriebsstättennummer der Organisation" />
       <min value="1" />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer.period.start">
       <path value="Organization.identifier.period.start" />
       <short value="Beginn der BSNR Gültigkeit" />
-      <definition value="Beginn der BSNR Gültigkeit " />
+      <definition value="Beginn der BSNR Gültigkeit" />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer.period.end">
       <path value="Organization.identifier.period.end" />
       <short value="Ende der BSNR Gültigkeit" />
-      <definition value="Ende der BSNR Gültigkeit.&#xD;&#xA;Leer, falls laufend." />
+      <definition value="Ende der BSNR Gültigkeit. leer, falls aktuell gültig." />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
