@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-18T18:26:33.152+02:00" />
+    <lastUpdated value="2017-07-19T17:10:23.999+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
   </extension>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
-  <version value="0.3.3" />
+  <version value="0.4" />
   <name value="patient-de-basis" />
   <title value="Patient, deutsches Basisprofil" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2017-07-18" />
+  <date value="2017-07-19" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <description value="Basisprofil für die Verwendung der Patient Ressource in Deutschland " />
   <purpose value="TBD" />
@@ -6840,12 +6840,12 @@
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name" />
-      <short value="A name associated with the contact person" />
-      <definition value="A name associated with the contact person." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <short value="Name of a human - parts and usage" />
+      <definition value="A human's name with the ability to identify parts and usage." />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Patient.contact.name" />
         <min value="0" />
@@ -6853,6 +6853,7 @@
       </base>
       <type>
         <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6861,6 +6862,30 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -7969,12 +7994,12 @@
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address" />
-      <short value="Address for the contact person" />
-      <definition value="Address for the contact person." />
+      <short value="An address expressed using postal conventions (as opposed to GPS or other location definition formats)" />
+      <definition value="An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world." />
       <comment value="Note: address is for postal addresses, not physical locations." />
       <requirements value="Need to keep track where the contact person can be contacted per postal mail or visited." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Patient.contact.address" />
         <min value="0" />
@@ -7982,6 +8007,7 @@
       </base>
       <type>
         <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7990,6 +8016,42 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="add-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())" />
+      </constraint>
+      <constraint>
+        <key value="add-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())" />
+      </constraint>
+      <constraint>
+        <key value="add-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())" />
+      </constraint>
+      <constraint>
+        <key value="add-4" />
+        <severity value="warning" />
+        <human value="Eine Postfach-Adresse darf nicht vom Type &quot;physical&quot; oder &quot;both&quot; sein." />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()" />
+      </constraint>
+      <constraint>
+        <key value="add-5" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())" />
+      </constraint>
+      <constraint>
+        <key value="add-6" />
+        <severity value="warning" />
+        <human value="Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden" />
+        <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -12779,6 +12841,20 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Patient.contact.name">
+      <path value="Patient.contact.name" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </type>
+    </element>
+    <element id="Patient.contact.address">
+      <path value="Patient.contact.address" />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
