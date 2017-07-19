@@ -11,7 +11,7 @@
   <status value="draft" />
   <date value="2017-06-13T22:28:37.3579933+02:00" />
   <description value="Profil für die Nutzung der Coverage-Resource zur Darstellung eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Coverage" />

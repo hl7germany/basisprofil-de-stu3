@@ -13,7 +13,7 @@
   <date value="2017-05-08T10:59:20.8861059+02:00" />
   <description value="Basis-Profil für die Nutzung der Coverage-Resource in Deutschland" />
   <purpose value="Coverage wird verwedet um Informationen über die Versicherung eines Patienten zu speichern/kommunizieren" />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Coverage" />

@@ -10,7 +10,7 @@
   <date value="2017-05-06T13:49:37.6325493+02:00" />
   <description value="Erweiterung des Komplexen Datentyps Address zur Verwendung im Kontext der Deutschen Basis-Profile" />
   <purpose value="Einige Systeme und Standards in Deutschland erfordern die separate Erfassung von Straße und Hausnummer.&#xD;&#xA;Die Erweiterung des Datentyps Address fügt hierfür die entsprechenden ISO-Extensions hinzu.&#xD;&#xA;Ob deren Verwendung in einem konkreten Kontext verpflichtend ist, muss in den abgeleiteten Profilen festgelegt werden." />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="Address" />

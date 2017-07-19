@@ -13,7 +13,7 @@
   <date value="2017-05-07T14:49:11.002719+01:00" />
   <description value="Deutsches Profil einer mit ICD-10-GM verschlüsselten Diagnose" />
   <purpose value="Dieses Profil muss immer dann eingesetzt werden, wenn ICD-10-GM abgebildet werden soll." />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />

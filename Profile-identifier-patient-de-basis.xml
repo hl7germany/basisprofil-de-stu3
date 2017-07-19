@@ -12,7 +12,7 @@
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <description value="Angepasstes Profil für Datentyp Identifier zur Verwendung im Kontext einen Patientenidentifiers" />
   <purpose value="Im Kontext des Patienten-Identifiers sind nur spezielle Identifier-type-codes zulässig. Das im Standard als extensible angegebene ValueSet wird um einige Codes erweitert." />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="Identifier" />

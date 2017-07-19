@@ -17,7 +17,7 @@
   <date value="2017-07-18" />
   <description value="Profil für die Repräsentation einer Betriebsstätte im Sinne der KBV als Organization-Resource" />
   <purpose value="Dieses Profil muss immer dann eingesetzt werden, wenn eine Organization-Resource verwendet wird, um eine Betriebsstätte im Sinne der KBV zu repräsentieren." />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />

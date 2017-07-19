@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <purpose value="Humanname mit in Deutschland üblichen Erweiterungen" />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="HumanName" />
