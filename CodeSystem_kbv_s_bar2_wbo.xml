@@ -5,7 +5,7 @@
 		<value value="urn:oid:1.2.276.0.76.5.114" />
 	</identifier>
 	<version value="1.10" />
-	<name value="kbv-s_bar2_wbo" />
+	<name value="kbv-s_bar2_wbo" /> 
 	<status value="unknown"/>
 	<publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
 	<content value="complete" />
