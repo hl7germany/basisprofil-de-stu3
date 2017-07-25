@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <url value="http://fhir.de/ValueSet/kbv/practitioner-specialty"/>
+  <version value="0.1-WORK"/>
+  <name value="practitioner-specialty (KBV)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+    <contact>
+        <telecom>
+            <system value="other" />
+            <value value="http://hl7.de/technische-komitees/fhir/" />
+        </telecom>
+    </contact>
+  <date value="2016-08-23T03:57:28+00:00"/>
+  <description value="ValueSet zur Codierung des Fachbereiches eines Leistungserbringers gemäß KBV"/>
+  <compose>
+	<include>
+		<system value="http://fhir.de/CodeSystem/kbv/s_bar2_wbo"/>
+     </include>
+  </compose>
+</ValueSet>
