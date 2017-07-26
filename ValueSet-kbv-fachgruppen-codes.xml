@@ -2,7 +2,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
     </meta>
-    <url value="http://fhir.de/ValueSet/kbv/identifier-type-de-basis"/>
+    <url value="http://fhir.de/ValueSet/kbv/fachgruppen-codes"/>
     <version value="0.1-WORK"/>
     <name value="kbv-fachgruppen-codes"/> 
     <status value="draft"/>
