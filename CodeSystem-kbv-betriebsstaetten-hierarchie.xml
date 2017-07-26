@@ -2,7 +2,7 @@
     <url value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie" />
     <version value="0.1-WORK" />
     <name value="kbv-betriebsstaetten-hierarchie" /> 
-    <status value="draft"/>
+    <status value="draft" />
     <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
     <content value="complete" />
     <concept>
