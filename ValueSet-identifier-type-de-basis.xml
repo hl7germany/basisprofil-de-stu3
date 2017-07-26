@@ -28,7 +28,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis-additions"/>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
         </include>
     </compose>
 </ValueSet>

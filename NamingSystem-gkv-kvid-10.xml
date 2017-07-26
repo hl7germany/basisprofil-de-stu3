@@ -16,7 +16,7 @@
     <responsible value="Vertrauensstelle Krankenversichertennummer der GKV" />
     <type>
         <coding>
-            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis-additions"/>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
             <code value="GKV" />
         </coding>
     </type>

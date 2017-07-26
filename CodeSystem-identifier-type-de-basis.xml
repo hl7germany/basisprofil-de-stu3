@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <url value="http://fhir.de/CodeSystem/identifier-type-de-basis-additions" />
+    <url value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
     <version value="0.1-WORK" />
-    <name value="identifier-type-de-basis-additions" /> 
+    <name value="identifier-type-de-basis" /> 
     <status value="draft"/>
     <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
     <content value="complete" />
