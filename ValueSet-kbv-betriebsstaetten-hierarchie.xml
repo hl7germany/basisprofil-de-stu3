@@ -1,35 +1,21 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
-  <version value="0.2" />
-  <name value="kbv-betriebsstaetten-hierarchie" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2017-04-03T00:03:00+00:00" />
-  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-  <contact>
-    <telecom>
-      <system value="other" />
-      <value value="http://hl7.de/technische-komitees/fhir/" />
-    </telecom>
-  </contact>
-  <description value="ValueSet zur Codierung der Betriebsstättenhierarchie (Haupt-/Nebenbetriebsstätte) gemäß KBV" />
-  <compose>
-    <include>
-      <system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie" />
-      <concept>
-        <code value="BSNR" />
-        <display value="Hauptbetriebsstätte" />
-        <designation>
-          <language value="de-DE" />
-        </designation>
-      </concept>
-      <concept>
-        <code value="NBSNR" />
-        <display value="Nebenbetriebsstätte" />
-        <designation>
-          <language value="de-DE" />
-        </designation>
-      </concept>
-    </include>
-  </compose>
+    <url value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
+    <version value="0.1-WORK" />
+    <name value="kbv-betriebsstaetten-hierarchie" />
+    <status value="draft" />
+    <experimental value="true" />
+    <date value="2017-07-26T15:54:00+00:00" />
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+    <contact>
+        <telecom>
+            <system value="other" />
+            <value value="http://hl7.de/technische-komitees/fhir/" />
+        </telecom>
+    </contact>
+    <description value="ValueSet zur Codierung der Betriebsstättenhierarchie (Haupt-/Nebenbetriebsstätte) gemäß KBV" />
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie" />
+        </include>
+    </compose>
 </ValueSet>
