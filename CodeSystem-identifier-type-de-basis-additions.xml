@@ -1,0 +1,16 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <url value="http://fhir.de/CodeSystem/identifier-type-de-basis-additions" />
+    <version value="0.1-WORK" />
+    <name value="identifier-type-de-basis-additions" /> 
+    <status value="draft"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+    <content value="complete" />
+    <concept>
+        <code value="GKV" />
+        <display value="Gesetzliche Krankenversicherung" />
+    </concept>
+    <concept>
+        <code value="PKV" />
+       	<display value="Private Krankenversicherung" />
+    </concept>
+</CodeSystem>
