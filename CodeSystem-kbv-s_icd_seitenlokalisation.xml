@@ -1,0 +1,33 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <url value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.276.0.76.3.1.1.5.1.22" />
+    </identifier>
+    <version value="1.00" />
+    <name value="kbv-s_icd_seitenlokalisation" /> 
+    <status value="active"/>
+    <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+    <content value="complete" />
+    <concept>
+        <code value="B" />
+        <display value="beiderseits" />
+        <designation>
+            <language value="de-DE" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="L" />
+        <display value="links" />
+        <designation>
+            <language value="de-DE" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="R" />
+        <display value="rechts" />
+        <designation>
+            <language value="de-DE" />
+        </designation>
+    </concept>
+</CodeSystem>

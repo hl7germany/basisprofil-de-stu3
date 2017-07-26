@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/ValueSet/kbv/s_icd_seitenlokalisation" />
-  <version value="0.1" />
+  <version value="0.1-WORK" />
   <name value="kbv-s_icd_seitenlokalisation" />
   <status value="draft" />
   <experimental value="true" />
@@ -16,27 +16,6 @@
   <compose>
     <include>
       <system value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
-      <concept>
-        <code value="B" />
-        <display value="beiderseits" />
-        <designation>
-          <language value="de-DE" />
-        </designation>
-      </concept>
-      <concept>
-        <code value="L" />
-        <display value="links" />
-        <designation>
-          <language value="de-DE" />
-        </designation>
-      </concept>
-      <concept>
-        <code value="R" />
-        <display value="rechts" />
-        <designation>
-          <language value="de-DE" />
-        </designation>
-      </concept>
     </include>
   </compose>
 </ValueSet>
