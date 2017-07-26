@@ -21,6 +21,13 @@
             <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
         </include>
         <include>
+            <system value="http://hl7.org/fhir/v2/0203"/>
+            <concept>
+                <code value="XX" />
+                <display value="Organisations-ID" />
+            </concept>
+        </include>
+        <include>
             <system value="http://fhir.de/CodeSystem/identifier-type-de-basis-additions"/>
         </include>
     </compose>
