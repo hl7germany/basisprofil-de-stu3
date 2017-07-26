@@ -8,15 +8,9 @@
     <concept>
         <code value="BSNR" />
         <display value="Hauptbetriebsstätte" />
-        <designation>
-            <language value="de-DE" />
-        </designation>
     </concept>
     <concept>
         <code value="NBSNR" />
         <display value="Nebenbetriebsstätte" />
-        <designation>
-            <language value="de-DE" />
-        </designation>
     </concept>
 </CodeSystem>

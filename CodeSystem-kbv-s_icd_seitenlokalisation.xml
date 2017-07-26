@@ -19,15 +19,9 @@
     <concept>
         <code value="L" />
         <display value="links" />
-        <designation>
-            <language value="de-DE" />
-        </designation>
     </concept>
     <concept>
         <code value="R" />
         <display value="rechts" />
-        <designation>
-            <language value="de-DE" />
-        </designation>
     </concept>
 </CodeSystem>
