@@ -3,9 +3,6 @@
   <meta>
     <lastUpdated value="2017-07-26T14:01:46.284+02:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fm" />
-  </extension>
   <url value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
   <name value="coverage-de-gkv" />
   <status value="draft" />

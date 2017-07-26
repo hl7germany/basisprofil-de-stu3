@@ -7,9 +7,6 @@
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>Basis-Profil für die Verwendung der Organization-Resource in Deutschland.</p>
 </div></text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pa" />
-  </extension>
   <url value="http://fhir.de/StructureDefinition/organization-de-basis" />
   <version value="0.3" />
   <name value="organization-de-basis" />

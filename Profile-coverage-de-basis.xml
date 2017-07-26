@@ -3,9 +3,6 @@
   <meta>
     <lastUpdated value="2017-07-26T14:01:13.038+02:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fm" />
-  </extension>
   <url value="http://fhir.de/StructureDefinition/coverage-de-basis" />
   <version value="0.1-WORK" />
   <name value="coverage-de-basis" />

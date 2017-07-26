@@ -7,9 +7,6 @@
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>Profil für die Repräsentation einer Betriebsstätte im Sinne der KBV als Organization-Resource</p>
 </div></text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pa" />
-  </extension>
   <url value="http://fhir.de/StructureDefinition/organization-de-betriebsstaette" />
   <version value="0.4" />
   <name value="organization-de-betriebsstaette" />
