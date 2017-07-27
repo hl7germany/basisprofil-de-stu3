@@ -12,9 +12,6 @@
     <concept>
         <code value="B" />
         <display value="beiderseits" />
-        <designation>
-            <language value="de-DE" />
-        </designation>
     </concept>
     <concept>
         <code value="L" />
