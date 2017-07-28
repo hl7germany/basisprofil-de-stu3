@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir">  
+  <url value="http://fhir.de/ValueSet/kbv/ebm" />
+  <version value="0.1-WORK" />
+  <name value="ebm" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-28-07" />
+  <publisher value="KBV - Kassenärztliche Bundesvereinigung" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="https://www.kbv.de/html/ssl/4595.php" />
+    </telecom>
+  </contact>
+  <description value="EINHEITLICHER BEWERTUNGSMASSSTAB (EBM)" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/kbv/ebm|2017-2" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/kbv/ebm|2017-1" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/kbv/ebm|2016-4" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/kbv/ebm|2016-3" />   
+    </include>
+  </compose>
+</ValueSet>
