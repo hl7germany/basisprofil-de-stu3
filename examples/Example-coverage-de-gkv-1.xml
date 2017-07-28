@@ -7,6 +7,12 @@
         <value value="G995030566998765432123456789098" />
     </identifier>
     <status value="active" />
+	<type>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/versicherungsart-de-basis"/>
+			<code value="GKV"/>
+		</coding>
+	</type>
     <subscriber>
         <reference value="Patient/12345" />
 		<identifier>
