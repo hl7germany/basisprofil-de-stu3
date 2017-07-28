@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir">  
+  <url value="http://fhir.de/ValueSet/dimdi/icd-10-de" />
+  <version value="0.1-WORK" />
+  <name value="icd-10-de" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-28-07" />
+  <publisher value="DIMDI - Deutsches Institut für Medizinische Dokumentation und Information" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="https://www.dimdi.de/dynamic/de/dimdi/contact.html" />
+    </telecom>
+  </contact>
+  <description value="Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme, 10. Revision, German Modification (ICD-10-GM)" />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-de|2017" />   
+    </include>
+	<include>
+      <system value="http://hl7.org/fhir/sid/icd-10-de|2016" />   
+    </include>
+	<include>
+      <system value="http://hl7.org/fhir/sid/icd-10-de|2015" />   
+    </include>
+	<include>
+      <system value="http://hl7.org/fhir/sid/icd-10-de|2014" />   
+    </include>
+  </compose>
+</ValueSet>

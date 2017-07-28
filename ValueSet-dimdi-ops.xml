@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir">  
+  <url value="http://fhir.de/ValueSet/dimdi/ops" />
+  <version value="0.1-WORK" />
+  <name value="ops" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-28-07" />
+  <publisher value="DIMDI - Deutsches Institut für Medizinische Dokumentation und Information" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="https://www.dimdi.de/dynamic/de/dimdi/contact.html" />
+    </telecom>
+  </contact>
+  <description value="Operationen- und Prozedurenschlüssel nach §301 SGB V - OPS Internationale Klassifikation der Prozeduren in der Medizin, alle Versionen; DIMDI, BMG" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/dimdi/ops|2017" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/dimdi/ops|2016" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/dimdi/ops|2015" />   
+    </include>
+	<include>
+      <system value="http://fhir.de/CodeSystem/dimdi/ops|2014" />   
+    </include>
+  </compose>
+</ValueSet>
