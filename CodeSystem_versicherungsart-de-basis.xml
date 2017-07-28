@@ -1,0 +1,28 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/CodeSystem/versicherungsart-de-basis" />
+	<version value="0.1-WORK" />
+	<name value="versicherungsart-de-basis" /> 
+	<status value="draft"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<content value="complete" />
+	<concept>
+		<code value="GKV" />
+		<display value="gesetzliche Krankenversicherung" />
+	</concept>
+	<concept>
+		<code value="PKV" />
+		<display value="private Krankenversicherung" />
+	</concept>
+	<concept>
+		<code value="BG" />
+		<display value="Berufsgenossenschaft" />
+	</concept>
+	<concept>
+		<code value="SEL" />
+		<display value="Selbstzahler" />
+	</concept>
+	<concept>
+		<code value="SOZ" />
+		<display value="Sozialamt" />
+	</concept>
+</CodeSystem>

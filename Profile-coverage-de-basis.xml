@@ -1,13 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-26T14:01:13.038+02:00" />
+    <lastUpdated value="2017-07-28T19:30:19.706+02:00" />
   </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fm" />
+  </extension>
   <url value="http://fhir.de/StructureDefinition/coverage-de-basis" />
   <version value="0.1-WORK" />
   <name value="coverage-de-basis" />
   <status value="draft" />
-  <date value="2017-07-26" />
+  <date value="2017-05-08T10:59:20.8861059+02:00" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <description value="Basis-Profil für die Nutzung der Coverage-Resource in Deutschland" />
   <purpose value="Coverage wird verwedet um Informationen über die Versicherung eines Patienten zu speichern/kommunizieren" />
   <fhirVersion value="3.0.1" />
@@ -1693,9 +1697,9 @@
     </element>
     <element id="Coverage.type">
       <path value="Coverage.type" />
-      <short value="Type of coverage such as medical or accident" />
-      <definition value="The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization." />
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
+      <short value="Versicherungsart" />
+      <definition value="Art der Versicherung: Selbstzahler, gesetzliche/private Versicherung, Berufsgenossenschaft oder Sozialamt" />
+      <comment value="28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standrad definierten preferred bindings, da die dort igen Codes nicht passen. " />
       <requirements value="The order of application of coverages is dependent on the types of coverage." />
       <min value="0" />
       <max value="1" />
@@ -1720,10 +1724,10 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="CoverageType" />
         </extension>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="The type of insurance: public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/coverage-type" />
+          <reference value="http://fhir.de/ValueSet/versicherungsart-de-basis" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -2490,11 +2494,12 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <profile value="http://fhir.de/StructureDefinition/patient-de-basis" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2789,6 +2794,7 @@
       </base>
       <type>
         <code value="Reference" />
+        <profile value="http://fhir.de/StructureDefinition/patient-de-basis" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
       <condition value="ele-1" />
@@ -5003,6 +5009,21 @@
       <path value="Coverage.status" />
       <min value="1" />
     </element>
+    <element id="Coverage.type">
+      <path value="Coverage.type" />
+      <short value="Versicherungsart" />
+      <definition value="Art der Versicherung: Selbstzahler, gesetzliche/private Versicherung, Berufsgenossenschaft oder Sozialamt" />
+      <comment value="28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standrad definierten preferred bindings, da die dort igen Codes nicht passen. " />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CoverageType" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/versicherungsart-de-basis" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="Coverage.policyHolder">
       <path value="Coverage.policyHolder" />
       <max value="0" />
@@ -5012,6 +5033,15 @@
       <short value="Hauptversicherte Person / Mitglied" />
       <definition value="Hauptversicherte Person (ggf. abweichend von beneficiary), z.B. bei Familienversicherung" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.de/StructureDefinition/patient-de-basis" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Coverage.subscriberId">
       <path value="Coverage.subscriberId" />
@@ -5022,6 +5052,11 @@
       <short value="Versicherte Person" />
       <definition value="Person, auf die sich die Versicherung bezieht. i.d.R. der Patient" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://fhir.de/StructureDefinition/patient-de-basis" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Coverage.payor">
       <path value="Coverage.payor" />

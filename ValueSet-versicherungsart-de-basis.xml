@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ValueSet/versicherungsart-de-basis" />
+  <version value="0.1-WORK" />
+  <name value="versicherungsart-de-basis" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-28-07" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="ValueSet für die in Deutschland üblichen Versicherungsarten" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/versicherungsart-de-basis" />
+      <concept>
+        <code value="GKV" />
+        <display value="gesetzliche Krankenversicherung" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="PKV" />
+        <display value="private Krankenversicherung" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+      <concept>
+        <code value="BG" />
+        <display value="Berufsgenossenschaft" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+	  <concept>
+        <code value="SOZ" />
+        <display value="Sozialamt" />
+        <designation>
+          <language value="de-DE" />
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
