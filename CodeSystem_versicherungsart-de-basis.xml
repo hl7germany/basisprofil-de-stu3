@@ -1,4 +1,4 @@
-<CodeSystem xmlns="http://hl7.org/fhir">
+<CodeSystem xmlns="http://hl7.org/fhir">  
 	<url value="http://fhir.de/CodeSystem/versicherungsart-de-basis" />
 	<version value="0.1-WORK" />
 	<name value="versicherungsart-de-basis" /> 
