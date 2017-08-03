@@ -3,9 +3,6 @@
   <meta>
     <lastUpdated value="2017-07-28T21:14:32.238+02:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fm" />
-  </extension>
   <url value="http://fhir.de/StructureDefinition/coverage-de-sel" />
   <name value="coverage-de-sel" />
   <status value="draft" />
