@@ -15,25 +15,25 @@
 	</type>
     <subscriber>
         <reference value="Patient/12345" />
-		<identifier>
-			<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
-			<value value="G995030566"/>
-		</identifier>
-		<display value= "Mustermann, Max"/>
+	<identifier>
+		<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+		<value value="G995030566"/>
+	</identifier>
+	<display value= "Mustermann, Max"/>
     </subscriber>
     <beneficiary>
         <reference value="Patient/12345" />
-		<identifier>
-			<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
-			<value value="G995030566"/>
-		</identifier>
-		<display value= "Mustermann, Max"/>
+	<identifier>
+		<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+		<value value="G995030566"/>
+	</identifier>
+	<display value= "Mustermann, Max"/>
     </beneficiary>
     <payor>
         <identifier>
             <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
             <value value="998765432" />
         </identifier>
-		<display value="AOK Mittelbaden"/>
+	<display value="AOK Mittelbaden"/>
     </payor>
 </Coverage>
