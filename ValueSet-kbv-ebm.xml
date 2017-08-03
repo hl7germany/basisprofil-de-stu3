@@ -30,5 +30,9 @@
 			<system value="http://fhir.de/CodeSystem/kbv/ebm" /> 
 			<version value = "2016-3"/>	  
 		</include>
+		<include>
+			<system value="http://fhir.de/CodeSystem/kbv/ebm" /> 
+			<version value = "..."/>	  
+		</include>
 	</compose>
 </ValueSet>
