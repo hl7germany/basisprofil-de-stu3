@@ -1,0 +1,21 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
+  <version value="0.1-WORK" />
+  <name value="deuev-anlage-7-namenszusaetze" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-08-05T00:11:35+02:00" />
+  <description value="ValueSet der gültigen Namenszusätze im Nachnamen lt. VSDM-Spezifikation" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze" />
+    </include>
+  </compose>
+</ValueSet>

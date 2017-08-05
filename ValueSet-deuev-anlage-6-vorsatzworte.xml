@@ -1,0 +1,21 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
+  <version value="0.1-WORK" />
+  <name value="deuev-anlage-6-vorsatzworte" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <date value="2017-08-05T00:11:35+02:00" />
+  <description value="ValueSet der gültigen Vorsatzworte im Nachnamen lt. VSDM-Spezifikation" />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte" />
+    </include>
+  </compose>
+</ValueSet>
