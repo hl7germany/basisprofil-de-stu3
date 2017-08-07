@@ -4,6 +4,13 @@
     <name value="kbv-betriebsstaetten-hierarchie" /> 
     <status value="draft" />
     <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+    <contact>
+        <telecom>
+            <system value="other" />
+            <value value="http://hl7.de/technische-komitees/fhir/" />
+        </telecom>
+    </contact>
+	<valueSet value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
     <content value="complete" />
     <concept>
         <code value="BSNR" />
