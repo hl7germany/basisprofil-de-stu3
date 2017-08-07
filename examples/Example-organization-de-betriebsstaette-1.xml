@@ -8,7 +8,6 @@
 		<valueCode value = "BSNR"/>
 	</extension>
 	<!-- BSNR der Betriebsstätte mit optionaler Angabe des Gültigkeitszeitraumes und der zuständigen KV-->
-
 	<identifier>
 		<system value="http://fhir.de/NamingSystem/kbv/bsnr" />
 		<value value="123456789" /> 
@@ -19,6 +18,13 @@
 			<display value="KV Baden-Württemberg"/>
 		</assigner>
 	</identifier>
+	<type>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/arge/ik-klassifikation" />
+			<code value="21" />
+			<display value="Kassenzahnärztliche Vereinigungen und Zahnärzte einschl. selbstabrechnender Zahnärzte (z.B. Gutachter)" />
+		</coding>
+	</type>
 	<name value="Gemeinschaftspraxis Dres. Mustermann und Beispielfrau" />
 	<!-- die vollständige Adresszeile steht immer im line-Attribut. Für die explizite Angabe von Straße und Hausnummer können zusätzlich Extensions verwendet werden -->
 	<address>
