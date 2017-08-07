@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">  
-	<url value="http://fhir.de/ValueSet/dimdi/icd-10-de" />
+	<url value="http://fhir.de/ValueSet/dimdi/icd-10-gm" />
 	<version value="0.1-WORK" />
 	<name value="icd-10-de" />
 	<status value="draft" />
@@ -15,20 +15,7 @@
 	<description value="Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme, 10. Revision, German Modification (ICD-10-GM)" />
 	<compose>
 		<include>
-			<system value="http://hl7.org/fhir/sid/icd-10-de" /> 
-			<version value = "2017"/>	  
-		</include>
-		<include>
-			<system value="http://hl7.org/fhir/sid/icd-10-de" />  
-			<version value = "2016"/>	  
-		</include>
-		<include>
-			<system value="http://hl7.org/fhir/sid/icd-10-de" />  
-			<version value = "2015"/>	  
-		</include>
-		<include>
-			<system value="http://hl7.org/fhir/sid/icd-10-de" />
-			<version value = "2014"/>	  
+			<system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm|*" /> 
 		</include>
 	</compose>
 </ValueSet>
