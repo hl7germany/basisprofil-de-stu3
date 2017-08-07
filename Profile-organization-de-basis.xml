@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-08-07T17:29:28.079+02:00" />
+    <lastUpdated value="2017-08-07T20:42:24.4+02:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -4456,6 +4456,10 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://fhir.de/ValueSet/arge/ik-klassifikation" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9395,6 +9399,13 @@
     <element id="Organization.identifier:Institutskennzeichen.value">
       <path value="Organization.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="Organization.type.coding">
+      <path value="Organization.type.coding" />
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://fhir.de/ValueSet/arge/ik-klassifikation" />
+      </binding>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
