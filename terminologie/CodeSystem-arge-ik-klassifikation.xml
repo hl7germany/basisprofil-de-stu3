@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/CodeSystem/arge/ik-klassifikation" />
+	<url value="http://fhir.de/CodeSystem/arge-ik/klassifikation" />
 	<version value="0.1-WORK" />
 	<name value="arge-ik-klassifikation" />
 	<status value="draft" />
@@ -12,7 +12,7 @@
 		</telecom>
 	</contact>
 	<description value="Klassifikationen und deren Geltungsbereiche, Regionalschlüssel, Seriennummern-Kontingente und Vergabestellen" />
-	<valueSet value="http://fhir.de/ValueSet/arge/ik-klassifikation" />
+	<valueSet value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
 	<content value="complete" />
 	<concept>
 		<code value="10" />
