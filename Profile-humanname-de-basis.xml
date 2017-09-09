@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-09T21:28:10.897+01:00" />
+    <lastUpdated value="2017-09-09T14:57:39.717-08:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/humanname-de-basis" />
   <version value="0.1" />
@@ -16,7 +16,7 @@
       <value value="http://hl7.de/technische-komitees/fhir/" />
     </telecom>
   </contact>
-  <purpose value="Personenname mit in Deutschland üblichen Erweiterungen" />
+  <description value="Personenname mit in Deutschland üblichen Erweiterungen" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
@@ -27,8 +27,8 @@
   <snapshot>
     <element id="HumanName">
       <path value="HumanName" />
-      <short value="Name of a human - parts and usage" />
-      <definition value="A human's name with the ability to identify parts and usage." />
+      <short value="Personenname" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <min value="0" />
       <max value="*" />
@@ -789,7 +789,7 @@
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
       <short value="Namensteile nach dem Nachnamen" />
-      <definition value="Namensteile nach dem Nachnamen, z.B." />
+      <definition value="Namensteile nach dem Nachnamen" />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
       <max value="*" />
@@ -1040,6 +1040,8 @@
   <differential>
     <element id="HumanName">
       <path value="HumanName" />
+      <short value="Personenname" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <constraint>
         <key value="hum-1" />
@@ -1142,7 +1144,7 @@
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
       <short value="Namensteile nach dem Nachnamen" />
-      <definition value="Namensteile nach dem Nachnamen, z.B." />
+      <definition value="Namensteile nach dem Nachnamen" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,18 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-26T13:59:52.134+02:00" />
+    <lastUpdated value="2017-09-09T14:58:40.178-08:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
-  <version value="0.1-WORK" />
+  <version value="0.1" />
   <name value="patient-de-basis" />
   <title value="Patient, deutsches Basisprofil" />
   <status value="draft" />
-  <experimental value="false" />
-  <date value="2017-07-26" />
+  <date value="2017-09-15" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
   <description value="Basisprofil für die Verwendung der Patient Ressource in Deutschland " />
-  <purpose value="TBD" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -23,7 +27,7 @@
   <snapshot>
     <element id="Patient">
       <path value="Patient" />
-      <short value="Informationen über ein Individuum, das Gesundheitsleistungen erhält." />
+      <short value="Patient" />
       <definition value="Demografische und andere administrative Informationen über ein Individuum, das Behandlungs- oder andere gesundheitsbezogene Leistungen erhält." />
       <alias value="SubjectOfCare Client Resident" />
       <min value="0" />
@@ -391,8 +395,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <short value="An identifier for this patient" />
-      <definition value="An identifier for this patient." />
+      <short value="Identifikator für diesen Patienten" />
+      <definition value="Identifikator für diesen Patienten" />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
       <max value="*" />
@@ -1655,7 +1659,7 @@
       <path value="Patient.identifier" />
       <sliceName value="VersichertenID_GKV" />
       <short value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
-      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
+      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet (10-stellige, unveränderliche Nummer)." />
       <requirements value="Die gesetzliche Krankenversichertennummer ist ein zentrales Identififaktionsmerkmal im deutschen Gesundheitswesen." />
       <min value="0" />
       <max value="1" />
@@ -2961,8 +2965,8 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
-      <short value="Name of a human - parts and usage" />
-      <definition value="A human's name with the ability to identify parts and usage.  " />
+      <short value="Personenname nach deutschem Profil" />
+      <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
       <min value="0" />
@@ -4264,8 +4268,8 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
-      <short value="An address expressed using postal conventions (as opposed to GPS or other location definition formats)" />
-      <definition value="An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world." />
+      <short value="Adresse nach deutschem Profil" />
+      <definition value="Adresse nach deutschem Profil.&#xD;&#xA;Die in diesem Profil verwendeten Extensions bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird." />
       <comment value="Note: address is for postal addresses, not physical locations." />
       <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification." />
       <min value="0" />
@@ -4279,6 +4283,16 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
+      <example>
+        <label value="Beispiel für einfache Adresse" />
+        <valueAddress>
+          <use value="home" />
+          <type value="postal" />
+          <line value="Musterweg 42" />
+          <city value="Musterhausen" />
+          <postalCode value="99999" />
+        </valueAddress>
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6835,8 +6849,8 @@
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name" />
-      <short value="Name of a human - parts and usage" />
-      <definition value="A human's name with the ability to identify parts and usage." />
+      <short value="Personenname nach deutschem Profil." />
+      <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person." />
       <min value="0" />
@@ -7989,8 +8003,8 @@
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address" />
-      <short value="An address expressed using postal conventions (as opposed to GPS or other location definition formats)" />
-      <definition value="An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world." />
+      <short value="Adresse nach deutschem Profil." />
+      <definition value="Adresse nach deutschem Profil.&#xD;&#xA;Die in diesem Profil verwendeten Extensions bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird." />
       <comment value="Note: address is for postal addresses, not physical locations." />
       <requirements value="Need to keep track where the contact person can be contacted per postal mail or visited." />
       <min value="0" />
@@ -8004,6 +8018,16 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
+      <example>
+        <label value="Beispiel für einfache Adresse" />
+        <valueAddress>
+          <use value="home" />
+          <type value="postal" />
+          <line value="Musterweg 42" />
+          <city value="Musterhausen" />
+          <postalCode value="99999" />
+        </valueAddress>
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12071,8 +12095,8 @@
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
-      <short value="Organization that is the custodian of the patient record" />
-      <definition value="Organization that is the custodian of the patient record." />
+      <short value="haupt-behandelnde Organisation nach deutschem Profil" />
+      <definition value="haupt-behandelnde Organisation nach deutschem Profil.&#xD;&#xA;Dieses Profil enthält für Deutschland spezififische Besonderheiten und Extensions." />
       <comment value="There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association)." />
       <requirements value="Need to know who recognizes this patient record, manages and updates it." />
       <min value="0" />
@@ -12774,7 +12798,7 @@
   <differential>
     <element id="Patient">
       <path value="Patient" />
-      <short value="Informationen über ein Individuum, das Gesundheitsleistungen erhält." />
+      <short value="Patient" />
       <definition value="Demografische und andere administrative Informationen über ein Individuum, das Behandlungs- oder andere gesundheitsbezogene Leistungen erhält." />
     </element>
     <element id="Patient.identifier">
@@ -12786,12 +12810,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="Identifikator für diesen Patienten" />
+      <definition value="Identifikator für diesen Patienten" />
     </element>
     <element id="Patient.identifier:VersichertenID_GKV">
       <path value="Patient.identifier" />
       <sliceName value="VersichertenID_GKV" />
       <short value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
-      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet." />
+      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet (10-stellige, unveränderliche Nummer)." />
       <requirements value="Die gesetzliche Krankenversichertennummer ist ein zentrales Identififaktionsmerkmal im deutschen Gesundheitswesen." />
       <max value="1" />
     </element>
@@ -12820,7 +12846,8 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
-      <definition value="A human's name with the ability to identify parts and usage.  " />
+      <short value="Personenname nach deutschem Profil" />
+      <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
@@ -12828,6 +12855,8 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address" />
+      <short value="Adresse nach deutschem Profil" />
+      <definition value="Adresse nach deutschem Profil.&#xD;&#xA;Die in diesem Profil verwendeten Extensions bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird." />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
@@ -12835,6 +12864,8 @@
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name" />
+      <short value="Personenname nach deutschem Profil." />
+      <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
@@ -12842,6 +12873,8 @@
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address" />
+      <short value="Adresse nach deutschem Profil." />
+      <definition value="Adresse nach deutschem Profil.&#xD;&#xA;Die in diesem Profil verwendeten Extensions bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird." />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
@@ -12857,6 +12890,8 @@
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
+      <short value="haupt-behandelnde Organisation nach deutschem Profil" />
+      <definition value="haupt-behandelnde Organisation nach deutschem Profil.&#xD;&#xA;Dieses Profil enthält für Deutschland spezififische Besonderheiten und Extensions." />
       <type>
         <code value="Reference" />
         <targetProfile value="StructureDefinition/organization-de-basis" />
