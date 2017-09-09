@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-09T12:44:56.86-07:00" />
+    <lastUpdated value="2017-09-09T14:05:09.896-07:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -2234,7 +2234,7 @@
       <path value="Coverage.policyHolder" />
       <short value="Owner of the policy" />
       <definition value="The party who 'owns' the insurance policy,  may be an individual, corporation or the subscriber's employer." />
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
+      <comment value="Es gibt derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.org" />
       <min value="0" />
       <max value="0" />
       <base>
@@ -5039,6 +5039,7 @@
     </element>
     <element id="Coverage.policyHolder">
       <path value="Coverage.policyHolder" />
+      <comment value="Es gibt derzeit in DE keine Verwendung für dieses Attribut&#xD;&#xA;(Konsens Interop-Forum 12.6.2017)&#xD;&#xA;Falls es UseCases gibt, die dieses Attribut benötigen, bitte Info auf chat.fhir.org" />
       <max value="0" />
     </element>
     <element id="Coverage.subscriber">
