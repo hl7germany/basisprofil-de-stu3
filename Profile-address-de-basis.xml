@@ -362,10 +362,6 @@
 			</type>
 			<orderMeaning value="The order in which lines should appear in an address label" />
 			<example>
-				<label value="General" />
-				<valueString value="137 Nowhere Street" />
-			</example>
-			<example>
 				<label value="BeipielLine" />
 				<valueString value="Musterweg 42" >
 					<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
