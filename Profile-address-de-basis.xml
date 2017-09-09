@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-07-18T18:21:57.685+02:00" />
+    <lastUpdated value="2017-09-09T10:19:24.88-07:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -29,6 +29,24 @@
         <min value="0" />
         <max value="*" />
       </base>
+      <example>
+        <label value="Beispieladresse" />
+        <valueAddress>
+          <use value="home" />
+          <type value="postal" />
+          <text value="Bla" />
+          <line value="Musterweg 42">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Musterweg 42" />
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="42" />
+            </extension>
+          </line>
+          <city value="Karlsruhe" />
+          <postalCode value="77815" />
+        </valueAddress>
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -171,7 +189,7 @@
     <element id="Address.use">
       <path value="Address.use" />
       <short value="home | work | temp | old - purpose of this address" />
-      <definition value="The purpose of this address." />
+      <definition value="The purpose of this address. " />
       <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old." />
       <requirements value="Allows an appropriate address to be chosen from a list of many." />
       <min value="0" />
@@ -1131,6 +1149,24 @@
   <differential>
     <element id="Address">
       <path value="Address" />
+      <example>
+        <label value="Beispieladresse" />
+        <valueAddress>
+          <use value="home" />
+          <type value="postal" />
+          <text value="Bla" />
+          <line value="Musterweg 42">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Musterweg 42" />
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="42" />
+            </extension>
+          </line>
+          <city value="Karlsruhe" />
+          <postalCode value="77815" />
+        </valueAddress>
+      </example>
       <constraint>
         <key value="add-1" />
         <severity value="error" />
@@ -1168,7 +1204,11 @@
         <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))" />
       </constraint>
     </element>
-    <element>
+    <element id="Address.use">
+      <path value="Address.use" />
+      <definition value="The purpose of this address. " />
+    </element>
+    <element id="Address.line.extension">
       <path value="Address.line.extension" />
       <slicing>
         <discriminator>
