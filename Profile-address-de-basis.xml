@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-09T12:08:44.181-07:00" />
+    <lastUpdated value="2017-09-09T12:18:45.666-07:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -348,9 +348,9 @@
     <element id="Address.line">
       <path value="Address.line" />
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung" />
-      <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensiond nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
+      <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="home | work | temp | old - purpose of this address." />
+      <requirements value=" " />
       <min value="0" />
       <max value="*" />
       <base>
@@ -488,8 +488,8 @@
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
-      <short value="streetName" />
-      <definition value="Strasse (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
+      <short value="Strassenname (ohne Hausnummer)" />
+      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -583,7 +583,7 @@
       <path value="Address.line.extension" />
       <sliceName value="Adresszusatz" />
       <short value="Adresszusatz" />
-      <definition value="Zusätzliche Informationen, wie z.B. &quot;3. Etage&quot;, &quot;Appartment C&quot;" />
+      <definition value="Zusätzliche Informationen, wie z.B. &quot;3. Etage&quot;, &quot;Appartment C&quot;&#xD;&#xA;Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1213,7 +1213,8 @@
     <element id="Address.line">
       <path value="Address.line" />
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung" />
-      <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensiond nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
+      <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
+      <requirements value=" " />
       <example>
         <label value="Beipiel für Adresszeile mit Extensions für Straße und Hausnummer" />
         <valueString value="Musterweg 42">
@@ -1239,7 +1240,8 @@
     <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
-      <definition value="Strasse (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
+      <short value="Strassenname (ohne Hausnummer)" />
+      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. " />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -1261,7 +1263,7 @@
       <path value="Address.line.extension" />
       <sliceName value="Adresszusatz" />
       <short value="Adresszusatz" />
-      <definition value="Zusätzliche Informationen, wie z.B. &quot;3. Etage&quot;, &quot;Appartment C&quot;" />
+      <definition value="Zusätzliche Informationen, wie z.B. &quot;3. Etage&quot;, &quot;Appartment C&quot;&#xD;&#xA;Bei Angabe einer Zusatzinformation in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <max value="1" />
       <type>
         <code value="Extension" />
