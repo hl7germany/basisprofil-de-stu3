@@ -7,7 +7,8 @@
     <version value="1.00"/>
     <name value="kbv-s-bar2-arztnrfachgruppe"/>
     <status value="draft"/>
-    <date value="2017-08-07"/>
+    <experimental value="true"/>
+    <date value="2017-09-15"/>
     <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
     <contact>
         <telecom>
@@ -15,6 +16,8 @@
             <value value="http://hl7.de/technische-komitees/fhir/"/>
         </telecom>
     </contact>
+    <description value="Liste der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
+    <copyright value="Kassenärztliche Bundesvereinigung"/>
     <valueSet value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
     <content value="complete"/>
     <concept>

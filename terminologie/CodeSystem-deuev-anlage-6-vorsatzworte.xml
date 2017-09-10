@@ -12,6 +12,7 @@
             <value value="http://hl7.de/technische-komitees/fhir/" />
         </telecom>
     </contact>
+    <description value="Tabelle der gültigen Vorsatzworte"/>
     <copyright value="GKV-Spitzenverband" />
     <content value="complete" />
     <concept>

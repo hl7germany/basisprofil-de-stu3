@@ -1,9 +1,19 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <url value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze" />
     <version value="2.25" />
-    <name value="deuev-anlage-7-namenszusaetze" /> 
+    <name value="deuev-anlage-7-namenszusaetze" />
     <status value="draft" />
-    <publisher value="GKV-Spitzenverband" />
+    <experimental value="true" />
+    <date value="2017-09-15" />
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+    <contact>
+        <telecom>
+            <system value="other" />
+            <value value="http://hl7.de/technische-komitees/fhir/" />
+        </telecom>
+    </contact>
+    <description value="Tabelle der gültigen Namenszusätze"/>
+    <copyright value="GKV-Spitzenverband" />
     <content value="complete" />
     <concept>
         <code value="Bar" />

@@ -3,7 +3,8 @@
 	<version value="2.56" />
 	<name value="deuev-anlage-8-laenderkennzeichen" />
 	<status value="draft" />
-	<date value="2017-08-07" />
+	<experimental value="true" />
+	<date value="2017-09-15" />
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
 	<contact>
 		<telecom>
@@ -11,7 +12,8 @@
 			<value value="http://hl7.de/technische-komitees/fhir/" />
 		</telecom>
 	</contact>
-	<description value="Staatsangehörigkeit und Länderkennzeichen für Auslandsanschriften    Diese Übersicht basiert auf dem in der Staats- und Gebietssystematik des statistischen Bundesamtes verwendeten Schlüsselverzeichnis.     Insofern wird bei den folgenden verwendeten Bezeichnungen, ihrer Auswahl und der Art der Wiedergabe des Inhalts nicht zum völker- oder staatsrechtlichen Status von Ländern, Hoheitsgebieten, Städten oder Gebieten oder ihrer Behörden oder zum Verlauf ihrer Grenzen oder Grenzlinien Stellung genommen. " />
+	<description value="Staatsangehörigkeit und Länderkennzeichen für Auslandsanschriften. Diese Übersicht basiert auf dem in der Staats- und Gebietssystematik des statistischen Bundesamtes verwendeten Schlüsselverzeichnis. Insofern wird bei den folgenden verwendeten Bezeichnungen, ihrer Auswahl und der Art der Wiedergabe des Inhalts nicht zum völker- oder staatsrechtlichen Status von Ländern, Hoheitsgebieten, Städten oder Gebieten oder ihrer Behörden oder zum Verlauf ihrer Grenzen oder Grenzlinien Stellung genommen." />
+	<copyright value="GKV-Spitzenverband" />
 	<content value="complete" />
 	<concept>
 		<code value="D" />

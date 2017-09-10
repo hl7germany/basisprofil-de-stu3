@@ -7,7 +7,8 @@
     <version value="1.00"/>
     <name value="kbv-s-icd-seitenlokalisation"/>
     <status value="draft"/>
-    <date value="2017-08-07"/>
+    <experimental value="true"/>
+    <date value="2017-09-15"/>
     <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
     <contact>
         <telecom>
@@ -17,6 +18,7 @@
     </contact>
     <description
             value=" Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
+    <copyright value="Kassenärztliche Bundesvereinigung"/>
     <valueSet value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation"/>
     <content value="complete"/>
     <concept>
