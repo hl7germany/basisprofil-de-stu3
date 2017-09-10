@@ -31,7 +31,7 @@
         <value value="http://fhir.de/NamingSystem/kbv/bsnr" />
         <preferred value="true" />
         <period>
-            <start value="2017-09-01" />
+            <start value="2017-09-15" />
         </period>
     </uniqueId>
 </NamingSystem>
