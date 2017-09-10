@@ -1,1 +1,34 @@
-<CodeSystem xmlns="http://hl7.org/fhir"><url value="http://fhir.de/CodeSystem/kbv/s-icd-seitenlokalisation" /><identifier><system value="urn:ietf:rfc:3986" /><value value="1.2.276.0.76.3.1.1.5.1.22" /></identifier><version value="1.00" /><name value="kbv-s-icd-seitenlokalisation" /><status value="draft" /><date value="2017-08-07" /><publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" /><contact><telecom><system value="other" /><value value="http://hl7.de/technische-komitees/fhir/" /></telecom></contact><description value=" Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  " /><valueSet value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation" /><content value="complete" /><concept><code value="B" /><display value="beiderseits" /></concept><concept><code value="L" /><display value="links" /></concept><concept><code value="R" /><display value="rechts" /></concept></CodeSystem>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <url value="http://fhir.de/CodeSystem/kbv/s-icd-seitenlokalisation"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="1.2.276.0.76.3.1.1.5.1.22"/>
+    </identifier>
+    <version value="1.00"/>
+    <name value="kbv-s-icd-seitenlokalisation"/>
+    <status value="draft"/>
+    <date value="2017-08-07"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+    <contact>
+        <telecom>
+            <system value="other"/>
+            <value value="http://hl7.de/technische-komitees/fhir/"/>
+        </telecom>
+    </contact>
+    <description
+            value=" Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
+    <valueSet value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation"/>
+    <content value="complete"/>
+    <concept>
+        <code value="B"/>
+        <display value="beiderseits"/>
+    </concept>
+    <concept>
+        <code value="L"/>
+        <display value="links"/>
+    </concept>
+    <concept>
+        <code value="R"/>
+        <display value="rechts"/>
+    </concept>
+</CodeSystem>
