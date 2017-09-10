@@ -18,15 +18,9 @@ out/
 # JIRA plugin
 atlassian-ide-plugin.xml
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
 .DS_Store
-.gitignore
 .idea/
-utilized_extension/*.xml
+
 ### Eclipse template
 
 .metadata
@@ -85,3 +79,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### manual excludes
+*.xsd
+utilized_extension/*.xml

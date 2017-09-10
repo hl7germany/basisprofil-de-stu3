@@ -1,9 +1,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<url value="http://fhir.de/CodeSystem/arge-ik/klassifikation" />
-	<version value="0.1-WORK" />
+	<version value="0.1" />
 	<name value="arge-ik-klassifikation" />
 	<status value="draft" />
-	<date value="2017-08-07" />
+	<experimental value="true" />
+	<date value="2017-09-15" />
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
 	<contact>
 		<telecom>
@@ -12,6 +13,7 @@
 		</telecom>
 	</contact>
 	<description value="Klassifikationen und deren Geltungsbereiche, Regionalschlüssel, Seriennummern-Kontingente und Vergabestellen" />
+	<copyright value="HL7 Deutschland e.V." />
 	<valueSet value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
 	<content value="complete" />
 	<concept>
