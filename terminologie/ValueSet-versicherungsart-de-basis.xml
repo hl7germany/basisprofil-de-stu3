@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">  
   <url value="http://fhir.de/ValueSet/versicherungsart-de-basis" />
-  <version value="0.1-WORK" />
+  <version value="0.1" /> 
   <name value="versicherungsart-de-basis" />
   <status value="draft" />
   <experimental value="true" />
