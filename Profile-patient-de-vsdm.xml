@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-11T10:17:41.816-08:00" />
+    <lastUpdated value="2017-09-11T10:38:06.975-08:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, "eGK-Datensatz")</div></text>
@@ -28,7 +28,7 @@
     <element id="Patient">
       <path value="Patient" />
       <short value="Patient im Kontext des deutschen VSDM" />
-      <definition value="Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;)" />
+      <definition value="Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;).&#xD;&#xA;Elemente, die als &quot;must-support&quot; gekennzeichnet sind, repräsentieren die optionalen Informationen aus der der VSDM-Spezifikation." />
       <alias value="SubjectOfCare Client Resident" />
       <min value="0" />
       <max value="*" />
@@ -5919,7 +5919,7 @@
     <element id="Patient">
       <path value="Patient" />
       <short value="Patient im Kontext des deutschen VSDM" />
-      <definition value="Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;)" />
+      <definition value="Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;).&#xD;&#xA;Elemente, die als &quot;must-support&quot; gekennzeichnet sind, repräsentieren die optionalen Informationen aus der der VSDM-Spezifikation." />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
