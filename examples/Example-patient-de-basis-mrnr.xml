@@ -10,7 +10,7 @@
 		</coding>
 	</type>
     <system value="http://meinKrankenhaus.de/patient-identifier" />
-    <value value="123456" />
+    <value value="12345678" />
   </identifier>
   <name>
     <family value="Mustermann" />
