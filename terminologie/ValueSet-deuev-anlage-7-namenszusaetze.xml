@@ -1,21 +1,361 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
-  <version value="0.1-WORK" />
-  <name value="deuev-anlage-7-namenszusaetze" />
-  <status value="draft" />
-  <experimental value="true" />
-  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-  <contact>
-    <telecom>
-      <system value="other" />
-      <value value="http://hl7.de/technische-komitees/fhir/" />
-    </telecom>
-  </contact>
-  <date value="2017-08-05T00:11:35+02:00" />
-  <description value="ValueSet der gültigen Namenszusätze im Nachnamen lt. VSDM-Spezifikation" />
-  <compose>
-    <include>
-      <system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze" />
-    </include>
-  </compose>
+	<url value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze"/>
+	<version value="0.1"/>
+	<name value="deuev-anlage-7-namenszusaetze"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="ValueSet der gültigen Namenszusätze im Nachnamen lt. VSDM-Spezifikation"/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<compose>
+		<include>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="urn:uuid:cab6eecb-b8ce-44c7-8595-4812bf416a88"/>
+		<timestamp value="2017-09-11T23:26:46+02:00"/>
+		<total value="66"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze|2.25"/>
+		</parameter>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Bar"/>
+			<display value="Bar"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Baron"/>
+			<display value="Baron"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Baroness"/>
+			<display value="Baroness"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Baronesse"/>
+			<display value="Baronesse"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Baronin"/>
+			<display value="Baronin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Brand"/>
+			<display value="Brand"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Burggraf"/>
+			<display value="Burggraf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Burggräfin"/>
+			<display value="Burggräfin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Condesa"/>
+			<display value="Condesa"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Earl"/>
+			<display value="Earl"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Edle"/>
+			<display value="Edle"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Edler"/>
+			<display value="Edler"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Erbgraf"/>
+			<display value="Erbgraf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Erbgräfin"/>
+			<display value="Erbgräfin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Erbprinz"/>
+			<display value="Erbprinz"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Erbprinzessin"/>
+			<display value="Erbprinzessin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Ffr"/>
+			<display value="Ffr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freifr"/>
+			<display value="Freifr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freifräulein"/>
+			<display value="Freifräulein"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freifrau"/>
+			<display value="Freifrau"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freih"/>
+			<display value="Freih"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freiherr"/>
+			<display value="Freiherr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Freiin"/>
+			<display value="Freiin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frf"/>
+			<display value="Frf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frf."/>
+			<display value="Frf."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frfr"/>
+			<display value="Frfr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frfr."/>
+			<display value="Frfr."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frh"/>
+			<display value="Frh"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frh."/>
+			<display value="Frh."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frhr"/>
+			<display value="Frhr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Frhr."/>
+			<display value="Frhr."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fst"/>
+			<display value="Fst"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fst."/>
+			<display value="Fst."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fstn"/>
+			<display value="Fstn"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fstn."/>
+			<display value="Fstn."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fürst"/>
+			<display value="Fürst"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Fürstin Graf"/>
+			<display value="Fürstin Graf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Gräfin"/>
+			<display value="Gräfin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Grf"/>
+			<display value="Grf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Grfn"/>
+			<display value="Grfn"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Grossherzog"/>
+			<display value="Grossherzog"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Großherzog"/>
+			<display value="Großherzog"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Grossherzogin"/>
+			<display value="Grossherzogin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Großherzogin"/>
+			<display value="Großherzogin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Gr Markgraf"/>
+			<display value="Gr Markgraf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Herzog"/>
+			<display value="Herzog"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Herzogin"/>
+			<display value="Herzogin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Markgräfin"/>
+			<display value="Markgräfin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Marques"/>
+			<display value="Marques"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Marquis"/>
+			<display value="Marquis"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Marschall"/>
+			<display value="Marschall"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Ostoja"/>
+			<display value="Ostoja"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Prinz"/>
+			<display value="Prinz"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Prinzessin"/>
+			<display value="Prinzessin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Przin"/>
+			<display value="Przin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Jhr"/>
+			<display value="Jhr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Jhr."/>
+			<display value="Jhr."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Jonkheer"/>
+			<display value="Jonkheer"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Junker Rabe"/>
+			<display value="Junker Rabe"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Reichsgraf"/>
+			<display value="Reichsgraf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Reichsgräfin"/>
+			<display value="Reichsgräfin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Ritter"/>
+			<display value="Ritter"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Rr"/>
+			<display value="Rr"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Landgraf"/>
+			<display value="Landgraf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Landgräfin Truchsess"/>
+			<display value="Landgräfin Truchsess"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-7-namenszusaetze"/>
+			<code value="Truchseß"/>
+			<display value="Truchseß"/>
+		</contains>
+	</expansion>
 </ValueSet>

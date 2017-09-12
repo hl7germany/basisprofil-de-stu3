@@ -1,38 +1,22 @@
-<ValueSet xmlns="http://hl7.org/fhir">  
-	<url value="http://fhir.de/ValueSet/kbv/ebm" />
-	<version value="0.1-WORK" />
-	<name value="ebm" />
-	<status value="draft" />
-	<experimental value="true" />
-	<date value="2017-28-07" />
-	<publisher value="KBV - Kassenärztliche Bundesvereinigung" />
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/ValueSet/kbv/ebm"/>
+	<version value="0.1"/>
+	<name value="ebm"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
-			<system value="other" />
-			<value value="https://www.kbv.de/html/ssl/4595.php" />
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value="EINHEITLICHER BEWERTUNGSMASSSTAB (EBM)" />
+	<description value="Einheitlicher Bewertungsmaßstab (EBM)"/>
+	<copyright value="HL7 Deutschland e.V."/>
 	<compose>
 		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/ebm" />
-			<version value = "2017-2"/>
-		</include>
-		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/ebm" />
-			<version value = "2017-1"/>
-		</include>
-		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/ebm" /> 
-			<version value = "2016-4"/>	  
-		</include>
-		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/ebm" /> 
-			<version value = "2016-3"/>	  
-		</include>
-		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/ebm" /> 
-			<version value = "..."/>	  
+			<system value="http://fhir.de/CodeSystem/kbv/ebm|*"/>
 		</include>
 	</compose>
 </ValueSet>

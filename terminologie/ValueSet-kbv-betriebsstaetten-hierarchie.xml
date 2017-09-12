@@ -1,21 +1,41 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
-    <version value="0.1-WORK" />
-    <name value="kbv-betriebsstaetten-hierarchie" />
-    <status value="draft" />
-    <experimental value="true" />
-    <date value="2017-07-26T15:54:00+00:00" />
-    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-    <contact>
-        <telecom>
-            <system value="other" />
-            <value value="http://hl7.de/technische-komitees/fhir/" />
-        </telecom>
-    </contact>
-    <description value="ValueSet zur Codierung der Betriebsstättenhierarchie (Haupt-/Nebenbetriebsstätte) gemäß KBV" />
-    <compose>
-        <include>
-            <system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie" />
-        </include>
-    </compose>
+	<url value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie"/>
+	<version value="0.1"/>
+	<name value="kbv-betriebsstaetten-hierarchie"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="ValueSet zur Codierung der Betriebsstättenhierarchie (Haupt-/Nebenbetriebsstätte) gemäß KBV"/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<compose>
+		<include>
+			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="urn:uuid:a8afedb0-8f46-4ab9-b2e5-a13f235bebbd"/>
+		<timestamp value="2017-09-12T18:35:10+02:00"/>
+		<total value="2"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie|0.1"/>
+		</parameter>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+			<code value="BSNR"/>
+			<display value="Hauptbetriebsstätte"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+			<code value="NBSNR"/>
+			<display value="Nebenbetriebsstätte"/>
+		</contains>
+	</expansion>
 </ValueSet>

@@ -1,21 +1,966 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
-  <version value="0.1-WORK" />
-  <name value="deuev-anlage-6-vorsatzworte" />
-  <status value="draft" />
-  <experimental value="true" />
-  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-  <contact>
-    <telecom>
-      <system value="other" />
-      <value value="http://hl7.de/technische-komitees/fhir/" />
-    </telecom>
-  </contact>
-  <date value="2017-08-05T00:11:35+02:00" />
-  <description value="ValueSet der gültigen Vorsatzworte im Nachnamen lt. VSDM-Spezifikation" />
-  <compose>
-    <include>
-      <system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte" />
-    </include>
-  </compose>
+	<url value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte"/>
+	<version value="0.1"/>
+	<name value="deuev-anlage-6-vorsatzworte"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="ValueSet der gültigen Vorsatzworte im Nachnamen lt. VSDM-Spezifikation"/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<compose>
+		<include>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="urn:uuid:d580a259-8575-436c-85c8-b734c83c5682"/>
+		<timestamp value="2017-09-12T18:10:27+02:00"/>
+		<total value="187"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte|2.30"/>
+		</parameter>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="a"/>
+			<display value="a"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aan de"/>
+			<display value="aan de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aan den"/>
+			<display value="aan den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="al"/>
+			<display value="al"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="am"/>
+			<display value="am"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="an"/>
+			<display value="an"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="an der"/>
+			<display value="an der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="auf"/>
+			<display value="auf"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="auf dem"/>
+			<display value="auf dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="auf der"/>
+			<display value="auf der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="auf m"/>
+			<display value="auf m"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aufm"/>
+			<display value="aufm"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="auff m"/>
+			<display value="auff m"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aus"/>
+			<display value="aus"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aus dem"/>
+			<display value="aus dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aus den"/>
+			<display value="aus den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="aus der"/>
+			<display value="aus der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="b"/>
+			<display value="b"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="be"/>
+			<display value="be"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="bei"/>
+			<display value="bei"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="bei der"/>
+			<display value="bei der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="beim"/>
+			<display value="beim"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ben"/>
+			<display value="ben"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="bey"/>
+			<display value="bey"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="bey der"/>
+			<display value="bey der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="che"/>
+			<display value="che"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="cid"/>
+			<display value="cid"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="d"/>
+			<display value="d"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="d."/>
+			<display value="d."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="d'"/>
+			<display value="d'"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="da"/>
+			<display value="da"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="da costa"/>
+			<display value="da costa"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="da las"/>
+			<display value="da las"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="da silva"/>
+			<display value="da silva"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dal"/>
+			<display value="dal"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dall"/>
+			<display value="dall"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dall'"/>
+			<display value="dall'"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dalla"/>
+			<display value="dalla"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dalle"/>
+			<display value="dalle"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dallo"/>
+			<display value="dallo"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="das"/>
+			<display value="das"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de"/>
+			<display value="de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="degli"/>
+			<display value="degli"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dei"/>
+			<display value="dei"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="den"/>
+			<display value="den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de l '"/>
+			<display value="de l '"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de la"/>
+			<display value="de la"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de las"/>
+			<display value="de las"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de le"/>
+			<display value="de le"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="de los"/>
+			<display value="de los"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="del"/>
+			<display value="del"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="del coz"/>
+			<display value="del coz"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="deli"/>
+			<display value="deli"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dell"/>
+			<display value="dell"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dell'"/>
+			<display value="dell'"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="della"/>
+			<display value="della"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="delle"/>
+			<display value="delle"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="delli"/>
+			<display value="delli"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dello"/>
+			<display value="dello"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="der"/>
+			<display value="der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="des"/>
+			<display value="des"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="di"/>
+			<display value="di"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dit"/>
+			<display value="dit"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="do"/>
+			<display value="do"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="do ceu"/>
+			<display value="do ceu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="don"/>
+			<display value="don"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="don le"/>
+			<display value="don le"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dos"/>
+			<display value="dos"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dos santos"/>
+			<display value="dos santos"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="du"/>
+			<display value="du"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="dy"/>
+			<display value="dy"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="m"/>
+			<display value="m"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="mc"/>
+			<display value="mc"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="mac"/>
+			<display value="mac"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="n"/>
+			<display value="n"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="o"/>
+			<display value="o"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="o'"/>
+			<display value="o'"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op"/>
+			<display value="op"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op de"/>
+			<display value="op de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op den"/>
+			<display value="op den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op gen"/>
+			<display value="op gen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op het"/>
+			<display value="op het"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op te"/>
+			<display value="op te"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="op ten"/>
+			<display value="op ten"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="oude"/>
+			<display value="oude"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="pla"/>
+			<display value="pla"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="pro"/>
+			<display value="pro"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="s"/>
+			<display value="s"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="st."/>
+			<display value="st."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="el"/>
+			<display value="el"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="g"/>
+			<display value="g"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="gen"/>
+			<display value="gen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="gil"/>
+			<display value="gil"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="gli"/>
+			<display value="gli"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="grosse"/>
+			<display value="grosse"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="große"/>
+			<display value="große"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="i"/>
+			<display value="i"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="im"/>
+			<display value="im"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in"/>
+			<display value="in"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in de"/>
+			<display value="in de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in den"/>
+			<display value="in den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in der"/>
+			<display value="in der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in het"/>
+			<display value="in het"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="in't"/>
+			<display value="in't"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="kl"/>
+			<display value="kl"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="kleine"/>
+			<display value="kleine"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="l"/>
+			<display value="l"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="l."/>
+			<display value="l."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="l'"/>
+			<display value="l'"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="la"/>
+			<display value="la"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="le"/>
+			<display value="le"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="lee"/>
+			<display value="lee"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="li"/>
+			<display value="li"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="lo"/>
+			<display value="lo"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="t"/>
+			<display value="t"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="te"/>
+			<display value="te"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ten"/>
+			<display value="ten"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ter"/>
+			<display value="ter"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="thi"/>
+			<display value="thi"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="tho"/>
+			<display value="tho"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="thom"/>
+			<display value="thom"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="thor"/>
+			<display value="thor"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="thum"/>
+			<display value="thum"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="to"/>
+			<display value="to"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="tom"/>
+			<display value="tom"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="tor"/>
+			<display value="tor"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="tu"/>
+			<display value="tu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="tum"/>
+			<display value="tum"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="unten"/>
+			<display value="unten"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="unter"/>
+			<display value="unter"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="unterm"/>
+			<display value="unterm"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v."/>
+			<display value="v."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v. d."/>
+			<display value="v. d."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v. dem"/>
+			<display value="v. dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v. den"/>
+			<display value="v. den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v. der"/>
+			<display value="v. der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v.d."/>
+			<display value="v.d."/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v.dem"/>
+			<display value="v.dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v.den"/>
+			<display value="v.den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="v.der"/>
+			<display value="v.der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van"/>
+			<display value="van"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van de"/>
+			<display value="van de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van dem"/>
+			<display value="van dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van den"/>
+			<display value="van den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van der"/>
+			<display value="van der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vande"/>
+			<display value="vande"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vandem"/>
+			<display value="vandem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vanden"/>
+			<display value="vanden"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vander"/>
+			<display value="vander"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van gen"/>
+			<display value="van gen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van het"/>
+			<display value="van het"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="van t"/>
+			<display value="van t"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ven"/>
+			<display value="ven"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ven der"/>
+			<display value="ven der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="ver"/>
+			<display value="ver"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vo"/>
+			<display value="vo"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vom"/>
+			<display value="vom"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vom und zu"/>
+			<display value="vom und zu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von"/>
+			<display value="von"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von und zu"/>
+			<display value="von und zu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von und zu der"/>
+			<display value="von und zu der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von und zur"/>
+			<display value="von und zur"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von de"/>
+			<display value="von de"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von dem"/>
+			<display value="von dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von den"/>
+			<display value="von den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von der"/>
+			<display value="von der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von la"/>
+			<display value="von la"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von zu"/>
+			<display value="von zu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von zum"/>
+			<display value="von zum"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von zur"/>
+			<display value="von zur"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vonde"/>
+			<display value="vonde"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vonden"/>
+			<display value="vonden"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vondem"/>
+			<display value="vondem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vonder"/>
+			<display value="vonder"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von einem"/>
+			<display value="von einem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="von mast"/>
+			<display value="von mast"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vor"/>
+			<display value="vor"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vor dem"/>
+			<display value="vor dem"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vor den"/>
+			<display value="vor den"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vor der"/>
+			<display value="vor der"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vorm"/>
+			<display value="vorm"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="vorn"/>
+			<display value="vorn"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="y"/>
+			<display value="y"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="y del"/>
+			<display value="y del"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="zu"/>
+			<display value="zu"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="zum"/>
+			<display value="zum"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
+			<code value="zur"/>
+			<display value="zur"/>
+		</contains>
+	</expansion>
 </ValueSet>

@@ -1,628 +1,631 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <url value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="1.2.276.0.76.3.1.1.5.2.23"/>
-    </identifier>
-    <version value="1.00"/>
-    <name value="kbv-s-bar2-arztnrfachgruppe"/>
-    <status value="draft"/>
-    <date value="2017-08-07"/>
-    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
-    <contact>
-        <telecom>
-            <system value="other"/>
-            <value value="http://hl7.de/technische-komitees/fhir/"/>
-        </telecom>
-    </contact>
-    <compose>
-        <include>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-        </include>
-    </compose>
-    <expansion>
-        <identifier value="63d7791d-8a9c-438e-6af3-ee9f764ef16b"/>
-        <timestamp value="2017-08-07T17:40:32"/>
-        <total value="100"/>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="00"/>
-            <display value="ungültiger Wert"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="01"/>
-            <display value="Allgemeinmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="02"/>
-            <display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="03"/>
-            <display value="hausärztliche Innere Medizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="04"/>
-            <display value="Anästhesiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="05"/>
-            <display value="Augenheilkunde"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="06"/>
-            <display value="Chirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="07"/>
-            <display value="Gefäßchirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="08"/>
-            <display value="Visceralchirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="09"/>
-            <display value="Kinderchirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="10"/>
-            <display value="Orthopädie (und Unfallchirurgie)"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="11"/>
-            <display value="SP Unfallchirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="12"/>
-            <display value="Rheumatologie (der ehemaligen Orthopädie)"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="13"/>
-            <display value="Plastische Chirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="14"/>
-            <display value="Thoraxchirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="15"/>
-            <display value="Frauenheilkunde"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="16"/>
-            <display value="Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="17"/>
-            <display value="Gynäkologische Onkologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="18"/>
-            <display value="Spezielle Geburtshilfe und Perinatalmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="19"/>
-            <display value="Hals-Nasen-Ohrenheilkunde"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="20"/>
-            <display value="Phoniatrie/Pädaudiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="21"/>
-            <display value="Haut- und Geschlechtskrankheiten"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="22"/>
-            <display value="Humangenetik"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="23"/>
-            <display value="fachärztliche Innere Medizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="24"/>
-            <display value="Angiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="25"/>
-            <display value="Endokrinologie/Diabetologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="26"/>
-            <display value="Gastroenterologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="27"/>
-            <display value="Hämatologie/Onkologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="28"/>
-            <display value="Kardiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="29"/>
-            <display value="Nephrologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="30"/>
-            <display value="Pneumologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="31"/>
-            <display value="Rheumatologie (der Inneren Medizin)"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="32"/>
-            <display value="Geriatrie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="33"/>
-            <display value="Infektiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="34"/>
-            <display value="hausärztliche Kinder- und Jugendmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="35"/>
-            <display value="hausärztliche Kinder-Hämatologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="36"/>
-            <display value="hausärztliche Kinder-Kardiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="37"/>
-            <display value="hausärztliche Neonatologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="38"/>
-            <display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="39"/>
-            <display value="hausärztliche Kinder-Pneumologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="40"/>
-            <display value="fachärztliche Kinder- und Jugendmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="41"/>
-            <display value="fachärztliche Kinder-Hämatologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="42"/>
-            <display value="fachärztliche Kinder-Kardiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="43"/>
-            <display value="fachärztliche Neonatologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="44"/>
-            <display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="45"/>
-            <display value="fachärztliche Kinder-Pneumologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="46"/>
-            <display value="Kinder- und Jugendmedizin mit Schwerpunkt u. Teilnahme an der HA/FA-Versorgung"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="47"/>
-            <display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="48"/>
-            <display value="Laboratoriumsmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="49"/>
-            <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="50"/>
-            <display value="Mund-Kiefer-Gesichtschirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="51"/>
-            <display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="52"/>
-            <display value="Neurochirurgie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="53"/>
-            <display value="Neurologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="54"/>
-            <display value="Nuklearmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="55"/>
-            <display value="Neuropathologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="56"/>
-            <display value="Pathologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="57"/>
-            <display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="58"/>
-            <display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="59"/>
-            <display value="Forensische Psychiatrie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="60"/>
-            <display value="Psychosomatische Medizin und Psychotherapie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="61"/>
-            <display value="Psychotherapeutisch tätiger Arzt"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="62"/>
-            <display value="Radiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="63"/>
-            <display value="Kinderradiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="64"/>
-            <display value="Neuroradiologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="65"/>
-            <display value="Strahlentherapie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="66"/>
-            <display value="Transfusionsmedizin"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="67"/>
-            <display value="Urologie"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="68"/>
-            <display value="Psychologischer Psychotherapeut"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="69"/>
-            <display value="Kinder- und Jugendlichen-Psychotherapeut"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="70"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="71"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="72"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="73"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="74"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="75"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="76"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="77"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="78"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="79"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="80"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="81"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="82"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="83"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="84"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="85"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="86"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="87"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="88"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="89"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="90"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="91"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="92"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="93"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="94"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="95"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="96"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="97"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="98"/>
-            <display value="zur freien Verfügung für die KVen"/>
-        </contains>
-        <contains>
-            <system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-            <version value="1.00"/>
-            <code value="99"/>
-            <display value="weitere Fachgruppen"/>
-        </contains>
-    </expansion>
+	<url value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="1.2.276.0.76.3.1.1.5.2.23"/>
+	</identifier>
+	<version value="0.1"/>
+	<name value="kbv-s-bar2-arztnrfachgruppe"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="ValueSet der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<compose>
+		<include>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="63d7791d-8a9c-438e-6af3-ee9f764ef16b"/>
+		<timestamp value="2017-08-07"/>
+		<total value="100"/>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="00"/>
+			<display value="ungültiger Wert"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="01"/>
+			<display value="Allgemeinmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="02"/>
+			<display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="03"/>
+			<display value="hausärztliche Innere Medizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="04"/>
+			<display value="Anästhesiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="05"/>
+			<display value="Augenheilkunde"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="06"/>
+			<display value="Chirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="07"/>
+			<display value="Gefäßchirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="08"/>
+			<display value="Visceralchirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="09"/>
+			<display value="Kinderchirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="10"/>
+			<display value="Orthopädie (und Unfallchirurgie)"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="11"/>
+			<display value="SP Unfallchirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="12"/>
+			<display value="Rheumatologie (der ehemaligen Orthopädie)"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="13"/>
+			<display value="Plastische Chirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="14"/>
+			<display value="Thoraxchirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="15"/>
+			<display value="Frauenheilkunde"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="16"/>
+			<display value="Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="17"/>
+			<display value="Gynäkologische Onkologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="18"/>
+			<display value="Spezielle Geburtshilfe und Perinatalmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="19"/>
+			<display value="Hals-Nasen-Ohrenheilkunde"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="20"/>
+			<display value="Phoniatrie/Pädaudiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="21"/>
+			<display value="Haut- und Geschlechtskrankheiten"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="22"/>
+			<display value="Humangenetik"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="23"/>
+			<display value="fachärztliche Innere Medizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="24"/>
+			<display value="Angiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="25"/>
+			<display value="Endokrinologie/Diabetologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="26"/>
+			<display value="Gastroenterologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="27"/>
+			<display value="Hämatologie/Onkologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="28"/>
+			<display value="Kardiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="29"/>
+			<display value="Nephrologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="30"/>
+			<display value="Pneumologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="31"/>
+			<display value="Rheumatologie (der Inneren Medizin)"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="32"/>
+			<display value="Geriatrie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="33"/>
+			<display value="Infektiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="34"/>
+			<display value="hausärztliche Kinder- und Jugendmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="35"/>
+			<display value="hausärztliche Kinder-Hämatologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="36"/>
+			<display value="hausärztliche Kinder-Kardiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="37"/>
+			<display value="hausärztliche Neonatologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="38"/>
+			<display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="39"/>
+			<display value="hausärztliche Kinder-Pneumologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="40"/>
+			<display value="fachärztliche Kinder- und Jugendmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="41"/>
+			<display value="fachärztliche Kinder-Hämatologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="42"/>
+			<display value="fachärztliche Kinder-Kardiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="43"/>
+			<display value="fachärztliche Neonatologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="44"/>
+			<display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="45"/>
+			<display value="fachärztliche Kinder-Pneumologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="46"/>
+			<display value="Kinder- und Jugendmedizin mit Schwerpunkt u. Teilnahme an der HA/FA-Versorgung"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="47"/>
+			<display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="48"/>
+			<display value="Laboratoriumsmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="49"/>
+			<display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="50"/>
+			<display value="Mund-Kiefer-Gesichtschirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="51"/>
+			<display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="52"/>
+			<display value="Neurochirurgie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="53"/>
+			<display value="Neurologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="54"/>
+			<display value="Nuklearmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="55"/>
+			<display value="Neuropathologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="56"/>
+			<display value="Pathologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="57"/>
+			<display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="58"/>
+			<display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="59"/>
+			<display value="Forensische Psychiatrie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="60"/>
+			<display value="Psychosomatische Medizin und Psychotherapie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="61"/>
+			<display value="Psychotherapeutisch tätiger Arzt"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="62"/>
+			<display value="Radiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="63"/>
+			<display value="Kinderradiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="64"/>
+			<display value="Neuroradiologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="65"/>
+			<display value="Strahlentherapie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="66"/>
+			<display value="Transfusionsmedizin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="67"/>
+			<display value="Urologie"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="68"/>
+			<display value="Psychologischer Psychotherapeut"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="69"/>
+			<display value="Kinder- und Jugendlichen-Psychotherapeut"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="70"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="71"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="72"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="73"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="74"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="75"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="76"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="77"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="78"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="79"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="80"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="81"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="82"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="83"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="84"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="85"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="86"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="87"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="88"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="89"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="90"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="91"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="92"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="93"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="94"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="95"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="96"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="97"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="98"/>
+			<display value="zur freien Verfügung für die KVen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+			<version value="1.00"/>
+			<code value="99"/>
+			<display value="weitere Fachgruppen"/>
+		</contains>
+	</expansion>
 </ValueSet>
