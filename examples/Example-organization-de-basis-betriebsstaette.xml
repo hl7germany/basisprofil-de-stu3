@@ -20,7 +20,7 @@
 	</identifier>
 	<type>
 		<coding>
-			<system value="http://fhir.de/CodeSystem/arge-ik/ik-klassifikation" />
+			<system value="http://fhir.de/CodeSystem/arge-ik/klassifikation" />
 			<code value="21" />
 			<display value="Kassenzahnärztliche Vereinigungen und Zahnärzte einschl. selbstabrechnender Zahnärzte (z.B. Gutachter)" />
 		</coding>
