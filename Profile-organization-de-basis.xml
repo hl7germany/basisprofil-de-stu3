@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-13T11:17:52.023-08:00" />
+    <lastUpdated value="2017-09-13T11:25:41.559-08:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/organization-de-basis" />
   <version value="0.1" />
@@ -4318,10 +4318,10 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="OrganizationType" />
         </extension>
-        <strength value="example" />
+        <strength value="extensible" />
         <description value="Used to categorize the organization" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/organization-type" />
+          <reference value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4460,10 +4460,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="extensible" />
-        <valueSetUri value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9430,15 +9426,20 @@
       <path value="Organization.type" />
       <short value="Art(en) der Organisation" />
       <definition value="Art(en) der Organisation" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="OrganizationType" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Organization.type.coding">
       <path value="Organization.type.coding" />
       <short value="IK Klassifikation der Organisation" />
       <definition value="IK Klassifikation der Organisation" />
-      <binding>
-        <strength value="extensible" />
-        <valueSetUri value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
-      </binding>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
