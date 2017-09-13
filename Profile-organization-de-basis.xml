@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-10T10:22:41.763-08:00" />
+    <lastUpdated value="2017-09-13T11:17:52.023-08:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/organization-de-basis" />
   <version value="0.1" />
@@ -4462,7 +4462,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://fhir.de/ValueSet/arge/ik-klassifikation" />
+        <valueSetUri value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9437,7 +9437,7 @@
       <definition value="IK Klassifikation der Organisation" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://fhir.de/ValueSet/arge/ik-klassifikation" />
+        <valueSetUri value="http://fhir.de/ValueSet/arge-ik/klassifikation" />
       </binding>
     </element>
     <element id="Organization.name">
