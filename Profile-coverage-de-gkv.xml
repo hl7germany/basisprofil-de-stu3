@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-13T15:33:36.021-08:00" />
+    <lastUpdated value="2017-09-13T15:41:36.865-08:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -30,7 +30,7 @@
     <element id="Coverage">
       <path value="Coverage" />
       <short value="Versicherungsdaten" />
-      <definition value="Angaben zur Versicherung oder zur Kostenübernahme durch den Patienten selbst oder durch Dritte" />
+      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -6361,6 +6361,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Coverage">
+      <path value="Coverage" />
+      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
+    </element>
     <element id="Coverage.identifier">
       <path value="Coverage.identifier" />
       <slicing>
