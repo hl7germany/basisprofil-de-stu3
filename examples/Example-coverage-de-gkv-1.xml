@@ -1,39 +1,39 @@
 <Coverage xmlns="http://hl7.org/fhir">
-    <meta>
-        <profile value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
-    </meta>
-    <identifier>
-        <system value="http://fhir.de/NamingSystem/gkv/kvnr-30" />
-        <value value="G995030566998765432123456789098" />
-    </identifier>
-    <status value="active" />
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/coverage-de-gkv"/>
+	</meta>
+	<identifier>
+		<system value="http://fhir.de/NamingSystem/gkv/kvnr-30"/>
+		<value value="G995030566998765432123456789098"/>
+	</identifier>
+	<status value="active"/>
 	<type>
 		<coding>
 			<system value="http://fhir.de/CodeSystem/versicherungsart-de-basis"/>
 			<code value="GKV"/>
 		</coding>
 	</type>
-    <subscriber>
-        <reference value="Patient/12345" />
-	<identifier>
-		<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
-		<value value="G995030566"/>
-	</identifier>
-	<display value= "Mustermann, Max"/>
-    </subscriber>
-    <beneficiary>
-        <reference value="Patient/12345" />
-	<identifier>
-		<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
-		<value value="G995030566"/>
-	</identifier>
-	<display value= "Mustermann, Max"/>
-    </beneficiary>
-    <payor>
-        <identifier>
-            <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-            <value value="998765432" />
-        </identifier>
-	<display value="AOK Mittelbaden"/>
-    </payor>
+	<subscriber>
+		<reference value="Patient/12345"/>
+		<identifier>
+			<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+			<value value="G995030566"/>
+		</identifier>
+		<display value="Mustermann, Max"/>
+	</subscriber>
+	<beneficiary>
+		<reference value="Patient/12345"/>
+		<identifier>
+			<system value="http://fhir.de/NamingSystem/gkv/kvid-10"/>
+			<value value="G995030566"/>
+		</identifier>
+		<display value="Mustermann, Max"/>
+	</beneficiary>
+	<payor>
+		<identifier>
+			<system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
+			<value value="998765432"/>
+		</identifier>
+		<display value="AOK Mittelbaden"/>
+	</payor>
 </Coverage>

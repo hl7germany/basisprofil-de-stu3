@@ -1,27 +1,27 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <url value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
-    <version value="0.1" />
-    <name value="identifier-type-de-basis" />
-    <status value="draft" />
-    <experimental value="true" />
-    <date value="2017-09-15" />
-    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-    <contact>
-        <telecom>
-            <system value="other" />
-            <value value="http://hl7.de/technische-komitees/fhir/" />
-        </telecom>
-    </contact>
-    <description value="Liste der Identfikatorentypen des deutschen Basisprofils welche die Standardtypen ergänzen." />
-    <copyright value="HL7 Deutschland e.V." />
-	<valueSet value="http://fhir.de/ValueSet/identifier-type-de-basis" />
-    <content value="complete" />
-    <concept>
-        <code value="GKV" />
-        <display value="Gesetzliche Krankenversicherung" />
-    </concept>
-    <concept>
-        <code value="PKV" />
-       	<display value="Private Krankenversicherung" />
-    </concept>
+	<url value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+	<version value="0.1"/>
+	<name value="identifier-type-de-basis"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="Liste der Identfikatorentypen des deutschen Basisprofils welche die Standardtypen ergänzen."/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<valueSet value="http://fhir.de/ValueSet/identifier-type-de-basis"/>
+	<content value="complete"/>
+	<concept>
+		<code value="GKV"/>
+		<display value="Gesetzliche Krankenversicherung"/>
+	</concept>
+	<concept>
+		<code value="PKV"/>
+		<display value="Private Krankenversicherung"/>
+	</concept>
 </CodeSystem>

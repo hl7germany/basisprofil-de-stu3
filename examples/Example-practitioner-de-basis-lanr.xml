@@ -1,14 +1,14 @@
 <Practitioner xmlns="http://hl7.org/fhir">
-  <meta>
-    <profile value="http://fhir.de/StructureDefinition/practitioner-de-basis" />
-  </meta>
-  <identifier>
-    <system value="http://fhir.de/NamingSystem/kbv/lanr" />
-    <value value="123456701" />
-  </identifier>
-  <name>
-    <family value="Mustermann" />
-    <given value="Max" />
-    <prefix value="Dr. med." />
-  </name>
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/practitioner-de-basis"/>
+	</meta>
+	<identifier>
+		<system value="http://fhir.de/NamingSystem/kbv/lanr"/>
+		<value value="123456701"/>
+	</identifier>
+	<name>
+		<family value="Mustermann"/>
+		<given value="Max"/>
+		<prefix value="Dr. med."/>
+	</name>
 </Practitioner>

@@ -1,29 +1,29 @@
 <Condition xmlns="http://hl7.org/fhir">
-    <meta>
-      <profile value="http://fhir.de/StructureDefinition/condition-de-icd10gm" />
-    </meta>
-  <text>
-    <status value="generated" />
-    <div  xmlns="http://www.w3.org/1999/xhtml">Schnittwunde am Unterarm, links</div>
-  </text>
-  <code>
-    <coding>
-      <system value="http://hl7.org/fhir/sid/icd-10-de" />
-      <version value="2017" />
-      <code value="S51.9" />
-      <display value="Schnittwunde am Unterarm" />
-    </coding>
-    <text value="Schnittwunde am Unterarm" />
-  </code>
-  <bodySite>
-    <coding>
-      <system value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
-      <code value="L" />
-      <display value="links" />
-    </coding>
-    <text value="links" />
-  </bodySite>
-  <subject>
-    <reference value="Patient/12345" />
-  </subject>
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/condition-de-icd10gm"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Schnittwunde am Unterarm, links</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/sid/icd-10-de"/>
+			<version value="2017"/>
+			<code value="S51.9"/>
+			<display value="Schnittwunde am Unterarm"/>
+		</coding>
+		<text value="Schnittwunde am Unterarm"/>
+	</code>
+	<bodySite>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation"/>
+			<code value="L"/>
+			<display value="links"/>
+		</coding>
+		<text value="links"/>
+	</bodySite>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
 </Condition>

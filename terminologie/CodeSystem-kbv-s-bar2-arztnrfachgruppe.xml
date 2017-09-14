@@ -1,423 +1,423 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <url value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="1.2.276.0.76.3.1.1.5.2.23"/>
-    </identifier>
-    <version value="1.00"/>
-    <name value="kbv-s-bar2-arztnrfachgruppe"/>
-    <status value="draft"/>
-    <experimental value="true"/>
-    <date value="2017-09-15"/>
-    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
-    <contact>
-        <telecom>
-            <system value="other"/>
-            <value value="http://hl7.de/technische-komitees/fhir/"/>
-        </telecom>
-    </contact>
-    <description value="Liste der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
-    <copyright value="Kassenärztliche Bundesvereinigung"/>
-    <valueSet value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
-    <content value="complete"/>
-    <concept>
-        <code value="00"/>
-        <display value="ungültiger Wert"/>
-    </concept>
-    <concept>
-        <code value="01"/>
-        <display value="Allgemeinmedizin"/>
-    </concept>
-    <concept>
-        <code value="02"/>
-        <display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
-    </concept>
-    <concept>
-        <code value="03"/>
-        <display value="hausärztliche Innere Medizin"/>
-    </concept>
-    <concept>
-        <code value="04"/>
-        <display value="Anästhesiologie"/>
-    </concept>
-    <concept>
-        <code value="05"/>
-        <display value="Augenheilkunde"/>
-    </concept>
-    <concept>
-        <code value="06"/>
-        <display value="Chirurgie"/>
-    </concept>
-    <concept>
-        <code value="07"/>
-        <display value="Gefäßchirurgie"/>
-    </concept>
-    <concept>
-        <code value="08"/>
-        <display value="Visceralchirurgie"/>
-    </concept>
-    <concept>
-        <code value="09"/>
-        <display value="Kinderchirurgie"/>
-    </concept>
-    <concept>
-        <code value="10"/>
-        <display value="Orthopädie (und Unfallchirurgie)"/>
-    </concept>
-    <concept>
-        <code value="11"/>
-        <display value="SP Unfallchirurgie"/>
-    </concept>
-    <concept>
-        <code value="12"/>
-        <display value="Rheumatologie (der ehemaligen Orthopädie)"/>
-    </concept>
-    <concept>
-        <code value="13"/>
-        <display value="Plastische Chirurgie"/>
-    </concept>
-    <concept>
-        <code value="14"/>
-        <display value="Thoraxchirurgie"/>
-    </concept>
-    <concept>
-        <code value="15"/>
-        <display value="Frauenheilkunde"/>
-    </concept>
-    <concept>
-        <code value="16"/>
-        <display value="Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
-    </concept>
-    <concept>
-        <code value="17"/>
-        <display value="Gynäkologische Onkologie"/>
-    </concept>
-    <concept>
-        <code value="18"/>
-        <display value="Spezielle Geburtshilfe und Perinatalmedizin"/>
-    </concept>
-    <concept>
-        <code value="19"/>
-        <display value="Hals-Nasen-Ohrenheilkunde"/>
-    </concept>
-    <concept>
-        <code value="20"/>
-        <display value="Phoniatrie/Pädaudiologie"/>
-    </concept>
-    <concept>
-        <code value="21"/>
-        <display value="Haut- und Geschlechtskrankheiten"/>
-    </concept>
-    <concept>
-        <code value="22"/>
-        <display value="Humangenetik"/>
-    </concept>
-    <concept>
-        <code value="23"/>
-        <display value="fachärztliche Innere Medizin"/>
-    </concept>
-    <concept>
-        <code value="24"/>
-        <display value="Angiologie"/>
-    </concept>
-    <concept>
-        <code value="25"/>
-        <display value="Endokrinologie/Diabetologie"/>
-    </concept>
-    <concept>
-        <code value="26"/>
-        <display value="Gastroenterologie"/>
-    </concept>
-    <concept>
-        <code value="27"/>
-        <display value="Hämatologie/Onkologie"/>
-    </concept>
-    <concept>
-        <code value="28"/>
-        <display value="Kardiologie"/>
-    </concept>
-    <concept>
-        <code value="29"/>
-        <display value="Nephrologie"/>
-    </concept>
-    <concept>
-        <code value="30"/>
-        <display value="Pneumologie"/>
-    </concept>
-    <concept>
-        <code value="31"/>
-        <display value="Rheumatologie (der Inneren Medizin)"/>
-    </concept>
-    <concept>
-        <code value="32"/>
-        <display value="Geriatrie"/>
-    </concept>
-    <concept>
-        <code value="33"/>
-        <display value="Infektiologie"/>
-    </concept>
-    <concept>
-        <code value="34"/>
-        <display value="hausärztliche Kinder- und Jugendmedizin"/>
-    </concept>
-    <concept>
-        <code value="35"/>
-        <display value="hausärztliche Kinder-Hämatologie"/>
-    </concept>
-    <concept>
-        <code value="36"/>
-        <display value="hausärztliche Kinder-Kardiologie"/>
-    </concept>
-    <concept>
-        <code value="37"/>
-        <display value="hausärztliche Neonatologie"/>
-    </concept>
-    <concept>
-        <code value="38"/>
-        <display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
-    </concept>
-    <concept>
-        <code value="39"/>
-        <display value="hausärztliche Kinder-Pneumologie"/>
-    </concept>
-    <concept>
-        <code value="40"/>
-        <display value="fachärztliche Kinder- und Jugendmedizin"/>
-    </concept>
-    <concept>
-        <code value="41"/>
-        <display value="fachärztliche Kinder-Hämatologie"/>
-    </concept>
-    <concept>
-        <code value="42"/>
-        <display value="fachärztliche Kinder-Kardiologie"/>
-    </concept>
-    <concept>
-        <code value="43"/>
-        <display value="fachärztliche Neonatologie"/>
-    </concept>
-    <concept>
-        <code value="44"/>
-        <display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
-    </concept>
-    <concept>
-        <code value="45"/>
-        <display value="fachärztliche Kinder-Pneumologie"/>
-    </concept>
-    <concept>
-        <code value="46"/>
-        <display value="Kinder- und Jugendmedizin mit Schwerpunkt u. Teilnahme an der HA/FA-Versorgung"/>
-    </concept>
-    <concept>
-        <code value="47"/>
-        <display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
-    </concept>
-    <concept>
-        <code value="48"/>
-        <display value="Laboratoriumsmedizin"/>
-    </concept>
-    <concept>
-        <code value="49"/>
-        <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
-    </concept>
-    <concept>
-        <code value="50"/>
-        <display value="Mund-Kiefer-Gesichtschirurgie"/>
-    </concept>
-    <concept>
-        <code value="51"/>
-        <display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
-    </concept>
-    <concept>
-        <code value="52"/>
-        <display value="Neurochirurgie"/>
-    </concept>
-    <concept>
-        <code value="53"/>
-        <display value="Neurologie"/>
-    </concept>
-    <concept>
-        <code value="54"/>
-        <display value="Nuklearmedizin"/>
-    </concept>
-    <concept>
-        <code value="55"/>
-        <display value="Neuropathologie"/>
-    </concept>
-    <concept>
-        <code value="56"/>
-        <display value="Pathologie"/>
-    </concept>
-    <concept>
-        <code value="57"/>
-        <display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
-    </concept>
-    <concept>
-        <code value="58"/>
-        <display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
-    </concept>
-    <concept>
-        <code value="59"/>
-        <display value="Forensische Psychiatrie"/>
-    </concept>
-    <concept>
-        <code value="60"/>
-        <display value="Psychosomatische Medizin und Psychotherapie"/>
-    </concept>
-    <concept>
-        <code value="61"/>
-        <display value="Psychotherapeutisch tätiger Arzt"/>
-    </concept>
-    <concept>
-        <code value="62"/>
-        <display value="Radiologie"/>
-    </concept>
-    <concept>
-        <code value="63"/>
-        <display value="Kinderradiologie"/>
-    </concept>
-    <concept>
-        <code value="64"/>
-        <display value="Neuroradiologie"/>
-    </concept>
-    <concept>
-        <code value="65"/>
-        <display value="Strahlentherapie"/>
-    </concept>
-    <concept>
-        <code value="66"/>
-        <display value="Transfusionsmedizin"/>
-    </concept>
-    <concept>
-        <code value="67"/>
-        <display value="Urologie"/>
-    </concept>
-    <concept>
-        <code value="68"/>
-        <display value="Psychologischer Psychotherapeut"/>
-    </concept>
-    <concept>
-        <code value="69"/>
-        <display value="Kinder- und Jugendlichen-Psychotherapeut"/>
-    </concept>
-    <concept>
-        <code value="70"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="71"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="72"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="73"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="74"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="75"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="76"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="77"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="78"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="79"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="80"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="81"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="82"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="83"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="84"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="85"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="86"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="87"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="88"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="89"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="90"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="91"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="92"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="93"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="94"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="95"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="96"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="97"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="98"/>
-        <display value="zur freien Verfügung für die KVen"/>
-    </concept>
-    <concept>
-        <code value="99"/>
-        <display value="weitere Fachgruppen"/>
-    </concept>
+	<url value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="1.2.276.0.76.3.1.1.5.2.23"/>
+	</identifier>
+	<version value="1.00"/>
+	<name value="kbv-s-bar2-arztnrfachgruppe"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-09-15"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="Liste der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
+	<copyright value="Kassenärztliche Bundesvereinigung"/>
+	<valueSet value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
+	<content value="complete"/>
+	<concept>
+		<code value="00"/>
+		<display value="ungültiger Wert"/>
+	</concept>
+	<concept>
+		<code value="01"/>
+		<display value="Allgemeinmedizin"/>
+	</concept>
+	<concept>
+		<code value="02"/>
+		<display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
+	</concept>
+	<concept>
+		<code value="03"/>
+		<display value="hausärztliche Innere Medizin"/>
+	</concept>
+	<concept>
+		<code value="04"/>
+		<display value="Anästhesiologie"/>
+	</concept>
+	<concept>
+		<code value="05"/>
+		<display value="Augenheilkunde"/>
+	</concept>
+	<concept>
+		<code value="06"/>
+		<display value="Chirurgie"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="Gefäßchirurgie"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Visceralchirurgie"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Kinderchirurgie"/>
+	</concept>
+	<concept>
+		<code value="10"/>
+		<display value="Orthopädie (und Unfallchirurgie)"/>
+	</concept>
+	<concept>
+		<code value="11"/>
+		<display value="SP Unfallchirurgie"/>
+	</concept>
+	<concept>
+		<code value="12"/>
+		<display value="Rheumatologie (der ehemaligen Orthopädie)"/>
+	</concept>
+	<concept>
+		<code value="13"/>
+		<display value="Plastische Chirurgie"/>
+	</concept>
+	<concept>
+		<code value="14"/>
+		<display value="Thoraxchirurgie"/>
+	</concept>
+	<concept>
+		<code value="15"/>
+		<display value="Frauenheilkunde"/>
+	</concept>
+	<concept>
+		<code value="16"/>
+		<display value="Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
+	</concept>
+	<concept>
+		<code value="17"/>
+		<display value="Gynäkologische Onkologie"/>
+	</concept>
+	<concept>
+		<code value="18"/>
+		<display value="Spezielle Geburtshilfe und Perinatalmedizin"/>
+	</concept>
+	<concept>
+		<code value="19"/>
+		<display value="Hals-Nasen-Ohrenheilkunde"/>
+	</concept>
+	<concept>
+		<code value="20"/>
+		<display value="Phoniatrie/Pädaudiologie"/>
+	</concept>
+	<concept>
+		<code value="21"/>
+		<display value="Haut- und Geschlechtskrankheiten"/>
+	</concept>
+	<concept>
+		<code value="22"/>
+		<display value="Humangenetik"/>
+	</concept>
+	<concept>
+		<code value="23"/>
+		<display value="fachärztliche Innere Medizin"/>
+	</concept>
+	<concept>
+		<code value="24"/>
+		<display value="Angiologie"/>
+	</concept>
+	<concept>
+		<code value="25"/>
+		<display value="Endokrinologie/Diabetologie"/>
+	</concept>
+	<concept>
+		<code value="26"/>
+		<display value="Gastroenterologie"/>
+	</concept>
+	<concept>
+		<code value="27"/>
+		<display value="Hämatologie/Onkologie"/>
+	</concept>
+	<concept>
+		<code value="28"/>
+		<display value="Kardiologie"/>
+	</concept>
+	<concept>
+		<code value="29"/>
+		<display value="Nephrologie"/>
+	</concept>
+	<concept>
+		<code value="30"/>
+		<display value="Pneumologie"/>
+	</concept>
+	<concept>
+		<code value="31"/>
+		<display value="Rheumatologie (der Inneren Medizin)"/>
+	</concept>
+	<concept>
+		<code value="32"/>
+		<display value="Geriatrie"/>
+	</concept>
+	<concept>
+		<code value="33"/>
+		<display value="Infektiologie"/>
+	</concept>
+	<concept>
+		<code value="34"/>
+		<display value="hausärztliche Kinder- und Jugendmedizin"/>
+	</concept>
+	<concept>
+		<code value="35"/>
+		<display value="hausärztliche Kinder-Hämatologie"/>
+	</concept>
+	<concept>
+		<code value="36"/>
+		<display value="hausärztliche Kinder-Kardiologie"/>
+	</concept>
+	<concept>
+		<code value="37"/>
+		<display value="hausärztliche Neonatologie"/>
+	</concept>
+	<concept>
+		<code value="38"/>
+		<display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+	</concept>
+	<concept>
+		<code value="39"/>
+		<display value="hausärztliche Kinder-Pneumologie"/>
+	</concept>
+	<concept>
+		<code value="40"/>
+		<display value="fachärztliche Kinder- und Jugendmedizin"/>
+	</concept>
+	<concept>
+		<code value="41"/>
+		<display value="fachärztliche Kinder-Hämatologie"/>
+	</concept>
+	<concept>
+		<code value="42"/>
+		<display value="fachärztliche Kinder-Kardiologie"/>
+	</concept>
+	<concept>
+		<code value="43"/>
+		<display value="fachärztliche Neonatologie"/>
+	</concept>
+	<concept>
+		<code value="44"/>
+		<display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+	</concept>
+	<concept>
+		<code value="45"/>
+		<display value="fachärztliche Kinder-Pneumologie"/>
+	</concept>
+	<concept>
+		<code value="46"/>
+		<display value="Kinder- und Jugendmedizin mit Schwerpunkt u. Teilnahme an der HA/FA-Versorgung"/>
+	</concept>
+	<concept>
+		<code value="47"/>
+		<display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
+	</concept>
+	<concept>
+		<code value="48"/>
+		<display value="Laboratoriumsmedizin"/>
+	</concept>
+	<concept>
+		<code value="49"/>
+		<display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+	</concept>
+	<concept>
+		<code value="50"/>
+		<display value="Mund-Kiefer-Gesichtschirurgie"/>
+	</concept>
+	<concept>
+		<code value="51"/>
+		<display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
+	</concept>
+	<concept>
+		<code value="52"/>
+		<display value="Neurochirurgie"/>
+	</concept>
+	<concept>
+		<code value="53"/>
+		<display value="Neurologie"/>
+	</concept>
+	<concept>
+		<code value="54"/>
+		<display value="Nuklearmedizin"/>
+	</concept>
+	<concept>
+		<code value="55"/>
+		<display value="Neuropathologie"/>
+	</concept>
+	<concept>
+		<code value="56"/>
+		<display value="Pathologie"/>
+	</concept>
+	<concept>
+		<code value="57"/>
+		<display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
+	</concept>
+	<concept>
+		<code value="58"/>
+		<display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
+	</concept>
+	<concept>
+		<code value="59"/>
+		<display value="Forensische Psychiatrie"/>
+	</concept>
+	<concept>
+		<code value="60"/>
+		<display value="Psychosomatische Medizin und Psychotherapie"/>
+	</concept>
+	<concept>
+		<code value="61"/>
+		<display value="Psychotherapeutisch tätiger Arzt"/>
+	</concept>
+	<concept>
+		<code value="62"/>
+		<display value="Radiologie"/>
+	</concept>
+	<concept>
+		<code value="63"/>
+		<display value="Kinderradiologie"/>
+	</concept>
+	<concept>
+		<code value="64"/>
+		<display value="Neuroradiologie"/>
+	</concept>
+	<concept>
+		<code value="65"/>
+		<display value="Strahlentherapie"/>
+	</concept>
+	<concept>
+		<code value="66"/>
+		<display value="Transfusionsmedizin"/>
+	</concept>
+	<concept>
+		<code value="67"/>
+		<display value="Urologie"/>
+	</concept>
+	<concept>
+		<code value="68"/>
+		<display value="Psychologischer Psychotherapeut"/>
+	</concept>
+	<concept>
+		<code value="69"/>
+		<display value="Kinder- und Jugendlichen-Psychotherapeut"/>
+	</concept>
+	<concept>
+		<code value="70"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="71"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="72"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="73"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="74"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="75"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="76"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="77"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="78"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="79"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="80"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="81"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="82"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="83"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="84"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="85"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="86"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="87"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="88"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="89"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="90"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="91"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="92"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="93"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="94"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="95"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="96"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="97"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="98"/>
+		<display value="zur freien Verfügung für die KVen"/>
+	</concept>
+	<concept>
+		<code value="99"/>
+		<display value="weitere Fachgruppen"/>
+	</concept>
 </CodeSystem>

@@ -1,23 +1,23 @@
 <Condition xmlns="http://hl7.org/fhir">
-    <meta>
-        <profile value="http://fhir.de/StructureDefinition/condition-de-icd10gm" />
-    </meta>
-  <text>
-    <status value="generated" />
-    <div  xmlns="http://www.w3.org/1999/xhtml">Verdacht auf Herzinfarkt</div>
-  </text>
-  <clinicalStatus value="active" />
-  <verificationStatus value="provisional" />
-  <code>
-    <coding>
-      <system value="http://hl7.org/fhir/sid/icd-10-de" />
-      <version value="2017" />
-      <code value="I21.9" />
-      <display value="Herzinfarkt" />
-    </coding>
-    <text value="Herzinfarkt" />
-  </code>
-  <subject>
-    <reference value="Patient/12345" />
-  </subject>
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/condition-de-icd10gm"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Verdacht auf Herzinfarkt</div>
+	</text>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="provisional"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/sid/icd-10-de"/>
+			<version value="2017"/>
+			<code value="I21.9"/>
+			<display value="Herzinfarkt"/>
+		</coding>
+		<text value="Herzinfarkt"/>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
 </Condition>
