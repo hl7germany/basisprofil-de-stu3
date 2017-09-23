@@ -82,4 +82,5 @@ nbdist/
 
 ### manual excludes
 *.xsd
-utilized_extension/*.xml
+definitions.xml/
+
