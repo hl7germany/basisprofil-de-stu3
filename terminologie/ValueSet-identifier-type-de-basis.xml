@@ -3,11 +3,11 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
 	</meta>
 	<url value="http://fhir.de/ValueSet/identifier-type-de-basis"/>
-	<version value="0.1"/>
+	<version value="0.2-WORK"/>
 	<name value="identifier-type-de-basis"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-09-15"/>
+	<date value="2017-09-29"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
@@ -27,15 +27,19 @@
 				<code value="XX"/>
 				<display value="Organisations-ID"/>
 			</concept>
+			<concept>
+				<code value="RI"/>
+				<display value="Resource identifier"/>
+			</concept>
 		</include>
 		<include>
 			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
 		</include>
 	</compose>
 	<expansion>
-		<identifier value="urn:uuid:51ac02c6-2808-4f56-8f51-7bf955d17fa8"/>
-		<timestamp value="2017-09-12T18:13:17+02:00"/>
-		<total value="20"/>
+		<identifier value="urn:uuid:6984f695-8278-4f83-9f9e-ed8da80df028"/>
+		<timestamp value="2017-09-29T11:34:15+02:00"/>
+		<total value="21"/>
 		<parameter>
 			<name value="version"/>
 			<valueUri value="http://hl7.org/fhir/ValueSet/identifier-type|3.0.1"/>
@@ -141,6 +145,11 @@
 			<system value="http://hl7.org/fhir/v2/0203"/>
 			<code value="XX"/>
 			<display value="Organisations-ID"/>
+		</contains>
+		<contains>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<code value="RI"/>
+			<display value="Resource identifier"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
