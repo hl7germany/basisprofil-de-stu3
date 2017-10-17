@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-11T10:41:06.975-08:00" />
+    <lastUpdated value="2017-10-17T17:16:02.624+02:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, "eGK-Datensatz")</div></text>
@@ -2598,161 +2598,6 @@
         <map value="./StartDate and ./EndDate" />
       </mapping>
     </element>
-    <element id="Patient.name.period.id">
-      <path value="Patient.name.period.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Patient.name.period.extension">
-      <path value="Patient.name.period.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Patient.name.period.start">
-      <path value="Patient.name.period.start" />
-      <short value="Starting time with inclusive boundary" />
-      <definition value="The start of the period. The boundary is inclusive." />
-      <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Period.start" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="per-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="DR.1" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./low" />
-      </mapping>
-    </element>
-    <element id="Patient.name.period.end">
-      <path value="Patient.name.period.end" />
-      <short value="End time with inclusive boundary, if not ongoing" />
-      <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
-      <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Period.end" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <meaningWhenMissing value="If the end of the period is missing, it means that the period is ongoing" />
-      <condition value="ele-1" />
-      <condition value="per-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="DR.2" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./high" />
-      </mapping>
-    </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
       <short value="A contact detail for the individual" />
@@ -3756,7 +3601,7 @@
     <element id="Patient.address.state">
       <path value="Patient.address.state" />
       <short value="Bundesland" />
-      <definition value="Name (oder Kürzel) des Bundeslandes. Es obliegt abgeleiteten Profilen, dafür ein jeweils geeignetes ValueSet festzulegen." />
+      <definition value="Name (oder Kürzel) des Bundeslandes." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <alias value="Province" />
       <alias value="Territory" />
@@ -3779,6 +3624,10 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://fhir.de/ValueSet/iso/3166-2-laendercodes" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -3963,161 +3812,6 @@
       <mapping>
         <identity value="servd" />
         <map value="./StartDate and ./EndDate" />
-      </mapping>
-    </element>
-    <element id="Patient.address.period.id">
-      <path value="Patient.address.period.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Patient.address.period.extension">
-      <path value="Patient.address.period.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Patient.address.period.start">
-      <path value="Patient.address.period.start" />
-      <short value="Starting time with inclusive boundary" />
-      <definition value="The start of the period. The boundary is inclusive." />
-      <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Period.start" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="per-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="DR.1" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./low" />
-      </mapping>
-    </element>
-    <element id="Patient.address.period.end">
-      <path value="Patient.address.period.end" />
-      <short value="End time with inclusive boundary, if not ongoing" />
-      <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
-      <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Period.end" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <meaningWhenMissing value="If the end of the period is missing, it means that the period is ongoing" />
-      <condition value="ele-1" />
-      <condition value="per-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="DR.2" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./high" />
       </mapping>
     </element>
     <element id="Patient.maritalStatus">
@@ -5943,6 +5637,16 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name.family.extension">
+      <path value="Patient.name.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.name.family.extension:namenszusatz">
       <path value="Patient.name.family.extension" />
       <sliceName value="namenszusatz" />
@@ -5984,6 +5688,16 @@
     <element id="Patient.name.prefix">
       <path value="Patient.name.prefix" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension">
+      <path value="Patient.name.prefix.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
