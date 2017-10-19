@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/CodeSystem/iso/3166-2-laendercodes"/>
+	<url value="http://fhir.de/CodeSystem/iso/3166-2-de-laendercodes"/>
 	<version value="0.2-WORK"/>
 	<name value="CodeSystem-iso-3166-2-laendercodes"/>
 	<status value="draft"/>
@@ -14,7 +14,7 @@
 	</contact>
 	<description value="Die Liste der ISO-3166-2-Codes für Deutschland enthält die Codes für die deutschen Länder."/>
 	<copyright value="International Organization for Standardization"/>
-	<valueSet value="http://fhir.de/ValueSet/iso/3166-2-Laendercodes"/>
+	<valueSet value="http://fhir.de/ValueSet/iso/3166-2-de-laendercodes"/>
 	<content value="complete"/>
 	<concept>
 		<code value="DE-BW"/>
