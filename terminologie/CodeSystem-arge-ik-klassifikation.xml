@@ -1,4 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
 	<url value="http://fhir.de/CodeSystem/arge-ik/klassifikation"/>
 	<version value="0.1"/>
 	<name value="arge-ik-klassifikation"/>
@@ -14,6 +17,7 @@
 	</contact>
 	<description value="Klassifikationen und deren Geltungsbereiche, Regionalschlüssel, Seriennummern-Kontingente und Vergabestellen"/>
 	<copyright value="HL7 Deutschland e.V."/>
+	<caseSensitive value="false"/>
 	<valueSet value="http://fhir.de/ValueSet/arge-ik/klassifikation"/>
 	<content value="complete"/>
 	<concept>

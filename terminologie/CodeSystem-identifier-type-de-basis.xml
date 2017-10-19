@@ -1,4 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
 	<url value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
 	<version value="0.1"/>
 	<name value="identifier-type-de-basis"/>
@@ -14,6 +17,7 @@
 	</contact>
 	<description value="Liste der Identfikatorentypen des deutschen Basisprofils welche die Standardtypen ergänzen."/>
 	<copyright value="HL7 Deutschland e.V."/>
+	<caseSensitive value="false"/>
 	<valueSet value="http://fhir.de/ValueSet/identifier-type-de-basis"/>
 	<content value="complete"/>
 	<concept>

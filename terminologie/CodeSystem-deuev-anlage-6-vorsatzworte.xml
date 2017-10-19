@@ -1,4 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
 	<url value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
 	<version value="2.30"/>
 	<name value="deuev-anlage-6-vorsatzworte"/>
@@ -14,6 +17,7 @@
 	</contact>
 	<description value="Tabelle der gültigen Vorsatzworte"/>
 	<copyright value="GKV-Spitzenverband"/>
+	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
 		<code value="a"/>

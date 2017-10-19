@@ -1,4 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
 	<url value="http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"/>
 	<version value="2.56"/>
 	<name value="deuev-anlage-8-laenderkennzeichen"/>
@@ -15,6 +18,7 @@
 	<description
 			value="Staatsangehörigkeit und Länderkennzeichen für Auslandsanschriften. Diese Übersicht basiert auf dem in der Staats- und Gebietssystematik des statistischen Bundesamtes verwendeten Schlüsselverzeichnis. Insofern wird bei den folgenden verwendeten Bezeichnungen, ihrer Auswahl und der Art der Wiedergabe des Inhalts nicht zum völker- oder staatsrechtlichen Status von Ländern, Hoheitsgebieten, Städten oder Gebieten oder ihrer Behörden oder zum Verlauf ihrer Grenzen oder Grenzlinien Stellung genommen."/>
 	<copyright value="GKV-Spitzenverband"/>
+	<caseSensitive value="false"/>
 	<content value="complete"/>
 	<concept>
 		<code value="D"/>

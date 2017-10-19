@@ -1,4 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
 	<url value="http://fhir.de/CodeSystem/kbv/s-bar2-arztnrfachgruppe"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
@@ -18,6 +21,7 @@
 	</contact>
 	<description value="Liste der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
+	<caseSensitive value="false"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
 	<content value="complete"/>
 	<concept>
