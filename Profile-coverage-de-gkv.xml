@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-14T13:58:42.794-08:00" />
+    <lastUpdated value="2017-10-20T12:40:10.965+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -401,7 +401,7 @@
       <comment value="TODO: Constraint, der prüft, dass mindestens entweder eine VersichertenID oder eine Krankenversichertennummer angegeben wurde." />
       <requirements value="This value may uniquely identify the coverage or it may be used in conjunction with the additional identifiers below." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Coverage.identifier" />
         <min value="0" />
@@ -6369,7 +6369,6 @@
       <definition value="Ein gesetzliches Versicherungsverhältnis sollte stets durch die eindeutige 30-stellige Versichertennummer identifiziert werden. Ist diese nicht bekannt, so wird die 10-stellige VersichertenID statt dessen verwendet." />
       <comment value="TODO: Constraint, der prüft, dass mindestens entweder eine VersichertenID oder eine Krankenversichertennummer angegeben wurde." />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="Coverage.identifier.type">
       <path value="Coverage.identifier.type" />
