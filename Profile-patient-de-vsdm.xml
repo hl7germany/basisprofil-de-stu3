@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-17T17:16:02.624+02:00" />
+    <lastUpdated value="2017-10-20T11:03:21.076+02:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, "eGK-Datensatz")</div></text>
@@ -3626,7 +3626,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://fhir.de/ValueSet/iso/3166-2-laendercodes" />
+        <valueSetUri value="http://fhir.de/ValueSet/iso/bundeslaender" />
       </binding>
       <mapping>
         <identity value="rim" />
