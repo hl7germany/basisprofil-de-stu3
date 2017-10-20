@@ -1,0 +1,93 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
+	<identifier>
+	<system value="urn:ietf:rfc:3986" />
+	<value value="1.2.276.0.76.5.233" />
+	</identifier>
+	<version value="1.06" />
+	<name value="kbv-s-kbv-kv" />
+	<status value="draft" />
+	<date value="2017-10-20" />
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<contact>
+	<telecom>
+	<system value="other" />
+	<value value="http://hl7.de/technische-komitees/fhir/" />
+	</telecom>
+	</contact>
+	<caseSensitive value="true" />
+	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
+	<content value="complete" />
+	<concept>
+	<code value="01" />
+	<display value="Schleswig-Holstein" />
+	</concept>
+	<concept>
+	<code value="02" />
+	<display value="Hamburg" />
+	</concept>
+	<concept>
+	<code value="03" />
+	<display value="Bremen" />
+	</concept>
+	<concept>
+	<code value="17" />
+	<display value="Niedersachsen" />
+	</concept>
+	<concept>
+	<code value="20" />
+	<display value="Westfalen-Lippe" />
+	</concept>
+	<concept>
+	<code value="38" />
+	<display value="Nordrhein" />
+	</concept>
+	<concept>
+	<code value="46" />
+	<display value="Hessen" />
+	</concept>
+	<concept>
+	<code value="51" />
+	<display value="Rheinland-Pfalz" />
+	</concept>
+	<concept>
+	<code value="52" />
+	<display value="Baden-Württemberg" />
+	</concept>
+	<concept>
+	<code value="71" />
+	<display value="Bayerns" />
+	</concept>
+	<concept>
+	<code value="72" />
+	<display value="Berlin" />
+	</concept>
+	<concept>
+	<code value="73" />
+	<display value="Saarland" />
+	</concept>
+	<concept>
+	<code value="74" />
+	<display value="KBV" />
+	</concept>
+	<concept>
+	<code value="78" />
+	<display value="Mecklenburg-Vorpommern" />
+	</concept>
+	<concept>
+	<code value="83" />
+	<display value="Brandenburg" />
+	</concept>
+	<concept>
+	<code value="88" />
+	<display value="Sachsen-Anhalt" />
+	</concept>
+	<concept>
+	<code value="93" />
+	<display value="Thüringen" />
+	</concept>
+	<concept>
+	<code value="98" />
+	<display value="Sachsen" />
+	</concept>
+</CodeSystem>

@@ -1,11 +1,11 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-versichertenstatus" />
+	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
 	<identifier>
 	<system value="urn:ietf:rfc:3986" />
-	<value value="2.16.840.1.113883.3.7.1.1" />
+	<value value="1.2.276.0.76.5.223" />
 	</identifier>
-	<version value="1.02" />
-	<name value="kbv-s-kbv-versichertenstatus" />
+	<version value="1.01" />
+	<name value="kbv-s-kbv-dmp" />
 	<status value="draft" />
 	<date value="2017-10-20" />
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
@@ -15,20 +15,31 @@
 	<value value="http://hl7.de/technische-komitees/fhir/" />
 	</telecom>
 	</contact>
-	<description value="Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.  " />
 	<caseSensitive value="true" />
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
+	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
 	<content value="complete" />
 	<concept>
 	<code value="1" />
-	<display value="Mitglieder" />
+	<display value="DM2" />
+	</concept>
+	<concept>
+	<code value="2" />
+	<display value="BRK" />
 	</concept>
 	<concept>
 	<code value="3" />
-	<display value="Familienangehoerige" />
+	<display value="KHK" />
+	</concept>
+	<concept>
+	<code value="4" />
+	<display value="DM1" />
 	</concept>
 	<concept>
 	<code value="5" />
-	<display value="Rentner" />
+	<display value="Asthma" />
+	</concept>
+	<concept>
+	<code value="6" />
+	<display value="COPD" />
 	</concept>
 </CodeSystem>

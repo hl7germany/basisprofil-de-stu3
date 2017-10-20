@@ -1,0 +1,67 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+	<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
+	<identifier>
+	<system value="urn:ietf:rfc:3986" />
+	<value value="1.2.276.0.76.5.223" />
+	</identifier>
+	<version value="0.2-WORK" />
+	<name value="kbv-s-kbv-dmp" />
+	<status value="draft" />
+	<date value="2017-10-20" />
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<contact>
+	<telecom>
+	<system value="other" />
+	<value value="http://hl7.de/technische-komitees/fhir/" />
+	</telecom>
+	</contact>
+	<compose>
+	<include>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	</include>
+	</compose>
+	<expansion>
+	<identifier value="a37c3b9e-66e4-4a47-7cbb-c5ade01a7096" />
+	<timestamp value="2017-10-20" />
+	<total value="6" />
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="1" />
+	<display value="DM2" />
+	</contains>
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="2" />
+	<display value="BRK" />
+	</contains>
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="3" />
+	<display value="KHK" />
+	</contains>
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="4" />
+	<display value="DM1" />
+	</contains>
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="5" />
+	<display value="Asthma" />
+	</contains>
+	<contains>
+	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<version value="1.01" />
+	<code value="6" />
+	<display value="COPD" />
+	</contains>
+	</expansion>
+</ValueSet>
