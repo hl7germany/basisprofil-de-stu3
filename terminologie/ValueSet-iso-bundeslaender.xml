@@ -2,9 +2,9 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
-	<url value="http://fhir.de/ValueSet/bundeslaender"/>
+	<url value="http://fhir.de/ValueSet/iso/bundeslaender"/>
 	<version value="0.2-WORK"/>
-	<name value="iso-3166-2:de-laendercodes"/>
+	<name value="iso-bundeslaender"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2017-10-16"/>
