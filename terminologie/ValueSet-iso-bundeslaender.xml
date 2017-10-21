@@ -25,7 +25,7 @@
 	   <expansion>
             <identifier value="urn:uuid:f159f737-ded4-4caa-bf3c-863fa01199f8"/>
             <timestamp value="2017-10-16T11:20:43+02:00"/>
-            <total value="16"/>l7 jahr
+            <total value="16"/>
             <parameter>
                 <name value="version"/>
                 <valueUri value="urn:iso:std:iso:3166-2:de|0.2-WORK"/>
