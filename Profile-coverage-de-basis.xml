@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <meta>
-    <lastUpdated value="2017-09-14T13:57:49.455-08:00" />
-  </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
   </extension>
@@ -731,8 +728,8 @@
     </element>
     <element id="Coverage.beneficiary">
       <path value="Coverage.beneficiary" />
-      <short value="Versicherte Person" />
-      <definition value="Person, auf die sich die Versicherung bezieht, &#xD;&#xA;i.d.R. der Patient" />
+      <short value="Begünstigte Person" />
+      <definition value="Person, auf die sich die Kostenübernahme bezieht (der Patient)" />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="1" />
       <max value="1" />
@@ -1802,8 +1799,8 @@
     </element>
     <element id="Coverage.beneficiary">
       <path value="Coverage.beneficiary" />
-      <short value="Versicherte Person" />
-      <definition value="Person, auf die sich die Versicherung bezieht, &#xD;&#xA;i.d.R. der Patient" />
+      <short value="Begünstigte Person" />
+      <definition value="Person, auf die sich die Kostenübernahme bezieht (der Patient)" />
       <min value="1" />
       <type>
         <code value="Reference" />
