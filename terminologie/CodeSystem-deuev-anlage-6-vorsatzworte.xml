@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="hhttp://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
 	<url value="http://fhir.de/CodeSystem/deuev/anlage-6-vorsatzworte"/>
 	<version value="2.30"/>

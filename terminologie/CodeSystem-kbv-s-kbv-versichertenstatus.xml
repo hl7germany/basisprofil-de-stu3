@@ -1,34 +1,39 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-versichertenstatus" />
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+	</meta>
+	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-versichertenstatus"/>
 	<identifier>
-	<system value="urn:ietf:rfc:3986" />
-	<value value="2.16.840.1.113883.3.7.1.1" />
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="2.16.840.1.113883.3.7.1.1"/>
 	</identifier>
-	<version value="1.02" />
-	<name value="kbv-s-kbv-versichertenstatus" />
-	<status value="draft" />
-	<date value="2017-10-20" />
-	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<version value="1.02"/>
+	<name value="kbv-s-kbv-versichertenstatus"/>
+	<status value="draft"/>
+	<date value="2017-10-20"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
-	<telecom>
-	<system value="other" />
-	<value value="http://hl7.de/technische-komitees/fhir/" />
-	</telecom>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
 	</contact>
-	<description value="Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.  " />
-	<caseSensitive value="true" />
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
-	<content value="complete" />
+	<description
+			value="Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.  "/>
+	<copyright value="Kassenärztliche Bundesvereinigung"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus"/>
+	<content value="complete"/>
 	<concept>
-	<code value="1" />
-	<display value="Mitglieder" />
+		<code value="1"/>
+		<display value="Mitglieder"/>
 	</concept>
 	<concept>
-	<code value="3" />
-	<display value="Familienangehoerige" />
+		<code value="3"/>
+		<display value="Familienangehoerige"/>
 	</concept>
 	<concept>
-	<code value="5" />
-	<display value="Rentner" />
+		<code value="5"/>
+		<display value="Rentner"/>
 	</concept>
 </CodeSystem>

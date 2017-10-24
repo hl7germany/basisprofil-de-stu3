@@ -1,139 +1,139 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-	<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
+	<url value="http://fhir.de/ValueSet/kbv/s-kbv-kv"/>
 	<identifier>
-	<system value="urn:ietf:rfc:3986" />
-	<value value="1.2.276.0.76.5.233" />
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="1.2.276.0.76.5.233"/>
 	</identifier>
-	<version value="0.2-WORK" />
-	<name value="kbv-s-kbv-kv" />
-	<status value="draft" />
-	<date value="2017-10-20" />
-	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<version value="0.2-WORK"/>
+	<name value="kbv-s-kbv-kv"/>
+	<status value="draft"/>
+	<date value="2017-10-20"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
-	<telecom>
-	<system value="other" />
-	<value value="http://hl7.de/technische-komitees/fhir/" />
-	</telecom>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
 	</contact>
 	<compose>
-	<include>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	</include>
+		<include>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+		</include>
 	</compose>
 	<expansion>
-	<identifier value="c6e7dc7d-ed9a-450f-6131-f595d2f9d798" />
-	<timestamp value="2017-10-20" />
-	<total value="18" />
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="01" />
-	<display value="Schleswig-Holstein" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="02" />
-	<display value="Hamburg" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="03" />
-	<display value="Bremen" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="17" />
-	<display value="Niedersachsen" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="20" />
-	<display value="Westfalen-Lippe" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="38" />
-	<display value="Nordrhein" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="46" />
-	<display value="Hessen" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="51" />
-	<display value="Rheinland-Pfalz" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="52" />
-	<display value="Baden-Württemberg" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="71" />
-	<display value="Bayerns" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="72" />
-	<display value="Berlin" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="73" />
-	<display value="Saarland" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="74" />
-	<display value="KBV" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="78" />
-	<display value="Mecklenburg-Vorpommern" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="83" />
-	<display value="Brandenburg" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="88" />
-	<display value="Sachsen-Anhalt" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="93" />
-	<display value="Thüringen" />
-	</contains>
-	<contains>
-	<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv" />
-	<version value="1.06" />
-	<code value="98" />
-	<display value="Sachsen" />
-	</contains>
+		<identifier value="c6e7dc7d-ed9a-450f-6131-f595d2f9d798"/>
+		<timestamp value="2017-10-20"/>
+		<total value="18"/>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="01"/>
+			<display value="Schleswig-Holstein"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="02"/>
+			<display value="Hamburg"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="03"/>
+			<display value="Bremen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="17"/>
+			<display value="Niedersachsen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="20"/>
+			<display value="Westfalen-Lippe"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="38"/>
+			<display value="Nordrhein"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="46"/>
+			<display value="Hessen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="51"/>
+			<display value="Rheinland-Pfalz"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="52"/>
+			<display value="Baden-Württemberg"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="71"/>
+			<display value="Bayerns"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="72"/>
+			<display value="Berlin"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="73"/>
+			<display value="Saarland"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="74"/>
+			<display value="KBV"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="78"/>
+			<display value="Mecklenburg-Vorpommern"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="83"/>
+			<display value="Brandenburg"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="88"/>
+			<display value="Sachsen-Anhalt"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="93"/>
+			<display value="Thüringen"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+			<version value="1.06"/>
+			<code value="98"/>
+			<display value="Sachsen"/>
+		</contains>
 	</expansion>
 </ValueSet>

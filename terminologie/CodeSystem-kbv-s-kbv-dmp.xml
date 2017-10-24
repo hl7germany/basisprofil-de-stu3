@@ -1,45 +1,50 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp" />
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+	</meta>
+	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
 	<identifier>
-	<system value="urn:ietf:rfc:3986" />
-	<value value="1.2.276.0.76.5.223" />
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="1.2.276.0.76.5.223"/>
 	</identifier>
-	<version value="1.01" />
-	<name value="kbv-s-kbv-dmp" />
-	<status value="draft" />
-	<date value="2017-10-20" />
-	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<version value="1.01"/>
+	<name value="kbv-s-kbv-dmp"/>
+	<status value="draft"/>
+	<date value="2017-10-20"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
-	<telecom>
-	<system value="other" />
-	<value value="http://hl7.de/technische-komitees/fhir/" />
-	</telecom>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
 	</contact>
-	<caseSensitive value="true" />
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
-	<content value="complete" />
+	<description value="Codes des DMP Status eines Versicherten. "/>
+	<copyright value="Kassenärztliche Bundesvereinigung"/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp"/>
+	<content value="complete"/>
 	<concept>
-	<code value="1" />
-	<display value="DM2" />
+		<code value="1"/>
+		<display value="DM2"/>
 	</concept>
 	<concept>
-	<code value="2" />
-	<display value="BRK" />
+		<code value="2"/>
+		<display value="BRK"/>
 	</concept>
 	<concept>
-	<code value="3" />
-	<display value="KHK" />
+		<code value="3"/>
+		<display value="KHK"/>
 	</concept>
 	<concept>
-	<code value="4" />
-	<display value="DM1" />
+		<code value="4"/>
+		<display value="DM1"/>
 	</concept>
 	<concept>
-	<code value="5" />
-	<display value="Asthma" />
+		<code value="5"/>
+		<display value="Asthma"/>
 	</concept>
 	<concept>
-	<code value="6" />
-	<display value="COPD" />
+		<code value="6"/>
+		<display value="COPD"/>
 	</concept>
 </CodeSystem>
