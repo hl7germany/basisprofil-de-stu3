@@ -5,7 +5,7 @@
 	<url value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="1.2.276.0.76.3.1.1.5.2.23"/>
+		<value value="urn:oid:1.2.276.0.76.3.1.1.5.2.23"/>
 	</identifier>
 	<version value="0.1"/>
 	<name value="kbv-s-bar2-arztnrfachgruppe"/>

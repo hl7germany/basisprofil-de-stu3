@@ -5,7 +5,7 @@
 	<url value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="2.16.840.1.113883.3.7.1.1"/>
+		<value value="urn:oid:2.16.840.1.113883.3.7.1.1"/>
 	</identifier>
 	<version value="0.2-WORK"/>
 	<name value="kbv-s-kbv-versichertenstatus"/>
