@@ -10,6 +10,7 @@
 	<version value="1.06"/>
 	<name value="kbv-s-kbv-kv"/>
 	<status value="draft"/>
+	<experimental value="true"/>
 	<date value="2017-10-20"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
