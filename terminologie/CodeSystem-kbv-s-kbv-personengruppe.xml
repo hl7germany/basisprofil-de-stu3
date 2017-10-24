@@ -19,7 +19,7 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value="Personengruppenschlüssel der KBV"/>
+	<description value="Der Personengruppenschlüssel  gibt an, welcher Personengruppe ein Versicherter angehört. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 2. Stelle."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-personengruppe"/>

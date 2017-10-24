@@ -19,7 +19,7 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value="Codes des DMP Status eines Versicherten. "/>
+	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 3. Stelle."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp"/>

@@ -10,6 +10,7 @@
 	<version value="0.2-WORK"/>
 	<name value="kbv-s-kbv-personengruppe"/>
 	<status value="draft"/>
+	<experimental value="true"/>
 	<date value="2017-10-20"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
@@ -18,6 +19,7 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
+	<description value="Der Personengruppenschlüssel  gibt an, welcher Personengruppe ein Versicherter angehört. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 2. Stelle."/>
 	<compose>
 		<include>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-personengruppe"/>

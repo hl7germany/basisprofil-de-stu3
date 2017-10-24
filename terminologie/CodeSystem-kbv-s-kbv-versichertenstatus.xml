@@ -20,7 +20,7 @@
 		</telecom>
 	</contact>
 	<description
-			value="Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.  "/>
+			value="Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus"/>
