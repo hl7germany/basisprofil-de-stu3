@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-24T21:51:16.227+02:00" />
+    <lastUpdated value="2017-10-24T21:55:09.504+02:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -426,7 +426,7 @@
     <element id="Coverage.extension:kostenerstattung">
       <path value="Coverage.extension" />
       <sliceName value="kostenerstattung" />
-      <short value="Optional Extensions Element" />
+      <short value="Optional Extensions Element " />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -6522,7 +6522,7 @@
     <element id="Coverage.extension:kostenerstattung">
       <path value="Coverage.extension" />
       <sliceName value="kostenerstattung" />
-      <short value="Optional Extensions Element" />
+      <short value="Optional Extensions Element " />
       <definition value="Optional Extension Element - found in all resources." />
       <min value="0" />
       <max value="1" />
