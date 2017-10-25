@@ -5,7 +5,8 @@
   </meta>
   <url value="http://fhir.de/StructureDefinition/organization-de-basis" />
   <version value="0.2-Work" />
-  <name value="Organisation, deutsches Basisprofil" />
+  <name value="organization-de-basis" />
+  <title value="Organisation, deutsches Basisprofil" />
   <status value="draft" />
   <date value="2017-09-15" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />

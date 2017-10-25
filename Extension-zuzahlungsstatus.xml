@@ -5,6 +5,7 @@
   </meta>
   <url value="http://fhir.de/StructureDefinition/zuzahlungsstatus" />
   <name value="zuzahlungsstatus" />
+  <title value="Deutsche Zuzahlungsstatus Extension" />
   <status value="draft" />
   <date value="2017-10-21T23:35:37.548+02:00" />
   <fhirVersion value="3.0.1" />

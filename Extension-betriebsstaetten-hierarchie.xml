@@ -6,6 +6,7 @@
   <url value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
   <version value="0.1" />
   <name value="betriebsstaetten-hierarchie" />
+  <title value="Extension zur Erfassung der Betriebstättenhierarchie gemäß KBV"/>
   <status value="draft" />
   <experimental value="true" />
   <date value="2017-09-15" />

@@ -3,8 +3,6 @@
   <meta>
     <lastUpdated value="2017-07-19T16:55:52.985+02:00" />
   </meta>
-  <text>
-    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose</div></text>
   <url value="http://fhir.de/StructureDefinition/condition-de-icd10gm" />
   <version value="0.2" />
   <name value="condition-de-icd10gm" />

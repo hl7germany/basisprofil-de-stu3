@@ -3,8 +3,6 @@
   <meta>
     <lastUpdated value="2017-10-20T11:03:21.076+02:00" />
   </meta>
-  <text>
-    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, "eGK-Datensatz")</div></text>
   <url value="http://fhir.de/StructureDefinition/patient-de-vsdm" />
   <name value="patient-de-vsdm" />
   <title value="Patient, deutsches VSDM-Profil" />

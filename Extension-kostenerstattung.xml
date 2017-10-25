@@ -5,6 +5,7 @@
   </meta>
   <url value="http://fhir.de/StructureDefinition/kostenerstattung" />
   <name value="kostenerstattung" />
+  <title value="TODO"/>
   <status value="draft" />
   <date value="2017-10-21T23:54:41.587+02:00" />
   <fhirVersion value="3.0.1" />

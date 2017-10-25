@@ -3,8 +3,6 @@
   <meta>
     <lastUpdated value="2017-07-19T16:40:24.988+02:00" />
   </meta>
-  <text>
-    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Deutsches Basisprofil einer Condition</div></text>
   <url value="http://fhir.de/StructureDefinition/condition-de-basis" />
   <version value="0.2" />
   <name value="condition-de-basis" />

@@ -6,6 +6,7 @@
   <url value="http://fhir.de/StructureDefinition/coverage-de-sel" />
   <version value="0.1" />
   <name value="coverage-de-sel" />
+  <title value="Coverage, deutsches Selbstzahlerprofil" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2017-09-15" />

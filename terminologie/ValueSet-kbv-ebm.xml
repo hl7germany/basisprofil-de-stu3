@@ -4,7 +4,7 @@
 	</meta>
 	<url value="http://fhir.de/ValueSet/kbv/ebm"/>
 	<version value="0.1"/>
-	<name value="ebm"/>
+	<name value="kbv-ebm"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2017-09-15"/>

@@ -6,6 +6,7 @@
   <url value="http://fhir.de/StructureDefinition/zusatzinfos-gkv" />
   <version value="0.2-WORK" />
   <name value="zusatzinfos-gkv" />
+  <title value="Deutsches Zuzahlungsstatus Extension" />
   <status value="draft" />
   <date value="2017-10-21T23:20:58.564+02:00" />
   <fhirVersion value="3.0.1" />

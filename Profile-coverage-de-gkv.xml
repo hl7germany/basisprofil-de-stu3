@@ -9,6 +9,7 @@
   <url value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
   <version value="0.1" />
   <name value="coverage-de-gkv" />
+  <title value="Coverage, deutsches GKV Profil" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2017-09-15" />
