@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-27T21:16:02.221+02:00" />
+    <lastUpdated value="2017-10-27T21:42:48.765+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
   <version value="0.2-WORK" />
@@ -135,9 +135,9 @@
     <element id="Extension.extension:versichertenart">
       <path value="Extension.extension" />
       <sliceName value="versichertenart" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <short value="Versichertenart" />
+      <definition value="Gibt die Versichertenart des Versicherten an." />
+      <comment value="  " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -331,8 +331,8 @@
       <path value="Extension.extension" />
       <sliceName value="wop" />
       <short value="Kennzeichen Wohnortprinzip" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
+      <comment value="  " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -523,8 +523,8 @@
       <path value="Extension.extension" />
       <sliceName value="kostenerstattung" />
       <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <definition value="Gibt an, welche Kostenerstattungen der Versicherte nach § 13 SGB V gewählt hat." />
+      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -644,7 +644,7 @@
       <sliceName value="aerztlicheVersorgung" />
       <short value="Kostenerstattung für die ärztliche Versorgung" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für die ärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für ärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für ärztliche Versorgung &#xD;" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -832,7 +832,7 @@
       <sliceName value="zahnaerztlicheVersorgung" />
       <short value="Kostenerstattung für zahnärztliche" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für zahnärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für zahnärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für zahnärztliche Versorgung &#xD;" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1020,7 +1020,7 @@
       <sliceName value="stationaererBereich" />
       <short value=" Kostenerstattung für den stationären" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für den stationären&#xD;&#xA;Bereich an.&#xD;&#xA;1 (true) = Kostenerstattung für stationären Bereich&#xD;&#xA;0 (false) = keine Kostenerstattung für stationären Bereich " />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1208,7 +1208,7 @@
       <sliceName value="veranlassteLeistungen" />
       <short value="Kostenerstattung für veranlasste Leistungen" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für veranlasste&#xD;&#xA;Leistungen an.&#xD;&#xA;1 (true) = Kostenerstattung für veranlasste Leistungen&#xD;&#xA;0 (false) = keine Kostenerstattung für veranlasste Leistungen " />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1760,6 +1760,9 @@
     <element id="Extension.extension:versichertenart">
       <path value="Extension.extension" />
       <sliceName value="versichertenart" />
+      <short value="Versichertenart" />
+      <definition value="Gibt die Versichertenart des Versicherten an." />
+      <comment value="  " />
       <max value="1" />
     </element>
     <element id="Extension.extension:versichertenart.url">
@@ -1788,6 +1791,8 @@
       <path value="Extension.extension" />
       <sliceName value="wop" />
       <short value="Kennzeichen Wohnortprinzip" />
+      <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
+      <comment value="  " />
       <max value="1" />
     </element>
     <element id="Extension.extension:wop.url">
@@ -1810,6 +1815,8 @@
     <element id="Extension.extension:kostenerstattung">
       <path value="Extension.extension" />
       <sliceName value="kostenerstattung" />
+      <definition value="Gibt an, welche Kostenerstattungen der Versicherte nach § 13 SGB V gewählt hat." />
+      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension">
@@ -1827,6 +1834,7 @@
       <sliceName value="aerztlicheVersorgung" />
       <short value="Kostenerstattung für die ärztliche Versorgung" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für die ärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für ärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für ärztliche Versorgung &#xD;" />
+      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:aerztlicheVersorgung.url">
@@ -1847,6 +1855,7 @@
       <sliceName value="zahnaerztlicheVersorgung" />
       <short value="Kostenerstattung für zahnärztliche" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für zahnärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für zahnärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für zahnärztliche Versorgung &#xD;" />
+      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung.url">
@@ -1867,6 +1876,7 @@
       <sliceName value="stationaererBereich" />
       <short value=" Kostenerstattung für den stationären" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für den stationären&#xD;&#xA;Bereich an.&#xD;&#xA;1 (true) = Kostenerstattung für stationären Bereich&#xD;&#xA;0 (false) = keine Kostenerstattung für stationären Bereich " />
+      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:stationaererBereich.url">
@@ -1887,6 +1897,7 @@
       <sliceName value="veranlassteLeistungen" />
       <short value="Kostenerstattung für veranlasste Leistungen" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für veranlasste&#xD;&#xA;Leistungen an.&#xD;&#xA;1 (true) = Kostenerstattung für veranlasste Leistungen&#xD;&#xA;0 (false) = keine Kostenerstattung für veranlasste Leistungen " />
+      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:veranlassteLeistungen.url">
