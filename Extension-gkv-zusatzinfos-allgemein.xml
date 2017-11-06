@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-27T23:06:10.265+02:00" />
+    <lastUpdated value="2017-11-06T18:15:20.959+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
   <version value="0.2-WORK" />
@@ -9,7 +9,7 @@
   <title value="Extension für allgemeine VSDM-Daten von eGKs" />
   <status value="draft" />
   <date value="2017-10-21T23:20:58.564+02:00" />
-  <description value=" " />
+  <description value=" Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
