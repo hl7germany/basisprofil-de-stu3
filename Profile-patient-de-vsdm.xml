@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-20T11:03:21.076+02:00" />
+    <lastUpdated value="2017-11-06T19:38:55.335+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-de-vsdm" />
   <name value="patient-de-vsdm" />
@@ -1938,6 +1938,7 @@
     </element>
     <element id="Patient.name.family.extension:namenszusatz.value[x]">
       <path value="Patient.name.family.extension.valueString" />
+      <sliceName value="valueString" />
       <short value="Namenszusatz" />
       <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
       <comment value="A stream of bytes, base64 encoded" />
@@ -1959,6 +1960,12 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1967,14 +1974,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-    </element>
-    <element id="Patient.name.family.extension:namenszusatz.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <sliceName value="valueString" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
-      </binding>
     </element>
     <element id="Patient.name.family.extension:nachname">
       <path value="Patient.name.family.extension" />
@@ -2194,6 +2193,7 @@
     </element>
     <element id="Patient.name.family.extension:vorsatzwort.value[x]">
       <path value="Patient.name.family.extension.valueString" />
+      <sliceName value="valueString" />
       <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <comment value="A stream of bytes, base64 encoded" />
@@ -2215,6 +2215,12 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -2223,14 +2229,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-    </element>
-    <element id="Patient.name.family.extension:vorsatzwort.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <sliceName value="valueString" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
-      </binding>
     </element>
     <element id="Patient.name.family.value">
       <path value="Patient.name.family.value" />
@@ -5635,16 +5633,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name.family.extension">
-      <path value="Patient.name.family.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Patient.name.family.extension:namenszusatz">
       <path value="Patient.name.family.extension" />
       <sliceName value="namenszusatz" />
@@ -5652,11 +5640,13 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.family.extension:namenszusatz.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
+      <path value="Patient.name.family.extension.valueString" />
       <sliceName value="valueString" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/deuev/anlage-7-namenszusaetze" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Patient.name.family.extension:nachname">
@@ -5671,11 +5661,13 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.family.extension:vorsatzwort.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
+      <path value="Patient.name.family.extension.valueString" />
       <sliceName value="valueString" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
+        <valueSetReference>
+          <reference value="http://fhir.de/ValueSet/deuev/anlage-6-vorsatzworte" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Patient.name.given">
@@ -5686,16 +5678,6 @@
     <element id="Patient.name.prefix">
       <path value="Patient.name.prefix" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.prefix.extension">
-      <path value="Patient.name.prefix.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
