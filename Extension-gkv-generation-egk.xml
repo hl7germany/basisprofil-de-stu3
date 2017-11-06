@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-10-27T23:12:56.636+02:00" />
+    <lastUpdated value="2017-11-06T17:47:49.566+01:00" />
   </meta>
-  <url value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk" />
-  <name value="gkv-einlesedatum-egk" />
-  <title value="Extension zur Erfassung des eGK-Einlesedatums" />
+  <url value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
+  <name value="gkv-generation-egk" />
+  <title value="Extension zur Erfassung der Generation der eGK" />
   <status value="draft" />
-  <date value="2017-10-27T21:16:34.54+02:00" />
+  <date value="2017-11-06" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,8 +19,8 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte  " />
       <min value="0" />
       <max value="*" />
       <base>
@@ -146,7 +146,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -164,11 +164,11 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.value[x]:valueDateTime">
-      <path value="Extension.valueDateTime" />
-      <sliceName value="valueDateTime" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+    <element id="Extension.value[x]:valueCode">
+      <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte" />
       <comment value="  " />
       <min value="1" />
       <max value="1" />
@@ -178,8 +178,9 @@
         <max value="1" />
       </base>
       <type>
-        <code value="dateTime" />
+        <code value="code" />
       </type>
+      <patternCode value="[1|1\+|2]" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -199,18 +200,26 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte  " />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
     </element>
-    <element id="Extension.value[x]:valueDateTime">
-      <path value="Extension.valueDateTime" />
-      <sliceName value="valueDateTime" />
+    <element id="Extension.value[x]:valueCode">
+      <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte" />
       <comment value="  " />
       <min value="1" />
       <type>
-        <code value="dateTime" />
+        <code value="code" />
       </type>
+      <patternCode value="[1|1\+|2]" />
     </element>
   </differential>
 </StructureDefinition>
