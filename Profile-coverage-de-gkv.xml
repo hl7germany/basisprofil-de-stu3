@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-06T17:48:08.97+01:00" />
+    <lastUpdated value="2017-11-06T18:06:46.416+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fm" />
@@ -381,6 +381,92 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Coverage.extension:generation-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="generation-egk" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte  " />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Coverage.extension:version-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="version-egk" />
+      <short value="eGK Version (z.B.  5.2.0)" />
+      <definition value="Extension zur Erfassung der Version des VSDM-Datensatzes auf der eGK" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/version-egk" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
       <path value="Coverage.extension" />
       <sliceName value="gkv-zusatzinfo-geschuetzt" />
@@ -467,54 +553,11 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Coverage.extension:generation-egk">
+    <element id="Coverage.extension:gkv-onlinepruefung-egk">
       <path value="Coverage.extension" />
-      <sliceName value="generation-egk" />
-      <short value="eGK Generation ( 1 | 1+ | 2 )" />
-      <definition value="Angabe der Generation der Versichertenkarte  " />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Coverage.extension:version-egk">
-      <path value="Coverage.extension" />
-      <sliceName value="version-egk" />
-      <short value="eGK Version (z.B.  5.2.0)" />
-      <definition value="Extension zur Erfassung der Version des VSDM-Datensatzes auf der eGK" />
+      <sliceName value="gkv-onlinepruefung-egk" />
+      <short value="Informationen zur Onlineprüfung und -aktualisierung " />
+      <definition value="Informationen zur Onlineprüfung und -aktualisierung " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -527,7 +570,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/version-egk" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8577,24 +8620,6 @@
         <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk" />
       </type>
     </element>
-    <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
-      <path value="Coverage.extension" />
-      <sliceName value="gkv-zusatzinfo-geschuetzt" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt" />
-      </type>
-    </element>
-    <element id="Coverage.extension:gkv-zusatzinfos-allgemein">
-      <path value="Coverage.extension" />
-      <sliceName value="gkv-zusatzinfos-allgemein" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
-      </type>
-    </element>
     <element id="Coverage.extension:generation-egk">
       <path value="Coverage.extension" />
       <sliceName value="generation-egk" />
@@ -8617,6 +8642,36 @@
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/gkv/version-egk" />
+      </type>
+    </element>
+    <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-zusatzinfo-geschuetzt" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt" />
+      </type>
+    </element>
+    <element id="Coverage.extension:gkv-zusatzinfos-allgemein">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-zusatzinfos-allgemein" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
+      </type>
+    </element>
+    <element id="Coverage.extension:gkv-onlinepruefung-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-onlinepruefung-egk" />
+      <short value="Informationen zur Onlineprüfung und -aktualisierung " />
+      <definition value="Informationen zur Onlineprüfung und -aktualisierung " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk" />
       </type>
     </element>
     <element id="Coverage.identifier">
