@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-06T18:13:46.664+01:00" />
+    <lastUpdated value="2017-11-07T17:59:17.163+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk" />
   <version value="0.2-WORK" />
@@ -132,9 +132,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Timestamp">
+    <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
-      <sliceName value="Timestamp" />
+      <sliceName value="timestamp" />
       <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <comment value=" " />
@@ -174,7 +174,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Timestamp.id">
+    <element id="Extension.extension:timestamp.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -203,7 +203,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:Timestamp.extension">
+    <element id="Extension.extension:timestamp.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -252,7 +252,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Timestamp.url">
+    <element id="Extension.extension:timestamp.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -268,7 +268,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="Timestamp" />
+      <fixedUri value="timestamp" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -286,12 +286,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Timestamp.value[x]:valueDateTime">
+    <element id="Extension.extension:timestamp.value[x]:valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <sliceName value="valueDateTime" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
+      <short value="Zeitpunkt der Onlineprüfung " />
+      <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
+      <comment value="  " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -323,9 +323,9 @@
         <map value="3006" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis">
+    <element id="Extension.extension:ergebnis">
       <path value="Extension.extension" />
-      <sliceName value="Ergebnis" />
+      <sliceName value="ergebnis" />
       <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
       <comment value=" " />
@@ -365,7 +365,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis.id">
+    <element id="Extension.extension:ergebnis.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -394,7 +394,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis.extension">
+    <element id="Extension.extension:ergebnis.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -443,7 +443,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis.url">
+    <element id="Extension.extension:ergebnis.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -459,7 +459,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="Ergebnis" />
+      <fixedUri value="ergebnis" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -477,12 +477,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis.value[x]:valueCode">
+    <element id="Extension.extension:ergebnis.value[x]:valueCode">
       <path value="Extension.extension.valueCode" />
       <sliceName value="valueCode" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
+      <short value="Ergebniscode" />
+      <definition value="Ergebniscode (1-6)" />
+      <comment value=" " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -515,201 +515,9 @@
         <map value="3010" />
       </mapping>
     </element>
-    <element id="Extension.extension:CDMVersion">
+    <element id="Extension.extension:errorCode">
       <path value="Extension.extension" />
-      <sliceName value="CDMVersion" />
-      <short value="CDM Version (X.Y.Z)" />
-      <definition value="CDM Version" />
-      <comment value=" " />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:CDMVersion.id">
-      <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:CDMVersion.extension">
-      <path value="Extension.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:CDMVersion.url">
-      <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
-      <short value="identifies the meaning of the extension" />
-      <definition value="Source of the definition for the extension code - a logical name or a URL." />
-      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Extension.url" />
-        <min value="1" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <fixedUri value="CDMVersion" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:CDMVersion.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Extension.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="code" />
-      </type>
-      <patternCode value="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3011" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:ErrorCode">
-      <path value="Extension.extension" />
-      <sliceName value="ErrorCode" />
+      <sliceName value="errorCode" />
       <short value="Error-Code" />
       <definition value="ErrorCode" />
       <comment value=" " />
@@ -749,7 +557,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:ErrorCode.id">
+    <element id="Extension.extension:errorCode.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -778,7 +586,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:ErrorCode.extension">
+    <element id="Extension.extension:errorCode.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -827,7 +635,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:ErrorCode.url">
+    <element id="Extension.extension:errorCode.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -843,7 +651,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="ErrorCode" />
+      <fixedUri value="errorCode" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -861,12 +669,12 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:ErrorCode.value[x]:valueCode">
+    <element id="Extension.extension:errorCode.value[x]:valueCode">
       <path value="Extension.extension.valueCode" />
       <sliceName value="valueCode" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
+      <short value="errorCode" />
+      <definition value="errorCode" />
+      <comment value="maximal fünstelliger numerischer Code" />
       <min value="1" />
       <max value="1" />
       <base>
@@ -899,9 +707,9 @@
         <map value="3012" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst">
+    <element id="Extension.extension:pruefzifferFachdienst">
       <path value="Extension.extension" />
-      <sliceName value="PruefzifferFachdienst" />
+      <sliceName value="pruefzifferFachdienst" />
       <short value="Prüfziffer des Fachdienstes" />
       <definition value="Prüfziffer des Fachdienstes" />
       <comment value=" " />
@@ -941,7 +749,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.id">
+    <element id="Extension.extension:pruefzifferFachdienst.id">
       <path value="Extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -970,7 +778,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.extension">
+    <element id="Extension.extension:pruefzifferFachdienst.extension">
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -1019,7 +827,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.url">
+    <element id="Extension.extension:pruefzifferFachdienst.url">
       <path value="Extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -1035,7 +843,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="PruefzifferFachdienst" />
+      <fixedUri value="pruefzifferFachdienst" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1053,7 +861,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.value[x]:valueString">
+    <element id="Extension.extension:pruefzifferFachdienst.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -1279,22 +1087,25 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:Timestamp">
+    <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
-      <sliceName value="Timestamp" />
+      <sliceName value="timestamp" />
       <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:Timestamp.url">
+    <element id="Extension.extension:timestamp.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Timestamp" />
+      <fixedUri value="timestamp" />
     </element>
-    <element id="Extension.extension:Timestamp.value[x]:valueDateTime">
+    <element id="Extension.extension:timestamp.value[x]:valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <sliceName value="valueDateTime" />
+      <short value="Zeitpunkt der Onlineprüfung " />
+      <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
+      <comment value="  " />
       <min value="1" />
       <type>
         <code value="dateTime" />
@@ -1304,22 +1115,25 @@
         <map value="3006" />
       </mapping>
     </element>
-    <element id="Extension.extension:Ergebnis">
+    <element id="Extension.extension:ergebnis">
       <path value="Extension.extension" />
-      <sliceName value="Ergebnis" />
+      <sliceName value="ergebnis" />
       <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
       <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:Ergebnis.url">
+    <element id="Extension.extension:ergebnis.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Ergebnis" />
+      <fixedUri value="ergebnis" />
     </element>
-    <element id="Extension.extension:Ergebnis.value[x]:valueCode">
+    <element id="Extension.extension:ergebnis.value[x]:valueCode">
       <path value="Extension.extension.valueCode" />
       <sliceName value="valueCode" />
+      <short value="Ergebniscode" />
+      <definition value="Ergebniscode (1-6)" />
+      <comment value=" " />
       <min value="1" />
       <type>
         <code value="code" />
@@ -1330,48 +1144,25 @@
         <map value="3010" />
       </mapping>
     </element>
-    <element id="Extension.extension:CDMVersion">
+    <element id="Extension.extension:errorCode">
       <path value="Extension.extension" />
-      <sliceName value="CDMVersion" />
-      <short value="CDM Version (X.Y.Z)" />
-      <definition value="CDM Version" />
-      <comment value=" " />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:CDMVersion.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="CDMVersion" />
-    </element>
-    <element id="Extension.extension:CDMVersion.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
-      <min value="1" />
-      <type>
-        <code value="code" />
-      </type>
-      <patternCode value="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3011" />
-      </mapping>
-    </element>
-    <element id="Extension.extension:ErrorCode">
-      <path value="Extension.extension" />
-      <sliceName value="ErrorCode" />
+      <sliceName value="errorCode" />
       <short value="Error-Code" />
       <definition value="ErrorCode" />
       <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:ErrorCode.url">
+    <element id="Extension.extension:errorCode.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="ErrorCode" />
+      <fixedUri value="errorCode" />
     </element>
-    <element id="Extension.extension:ErrorCode.value[x]:valueCode">
+    <element id="Extension.extension:errorCode.value[x]:valueCode">
       <path value="Extension.extension.valueCode" />
       <sliceName value="valueCode" />
+      <short value="errorCode" />
+      <definition value="errorCode" />
+      <comment value="maximal fünstelliger numerischer Code" />
       <min value="1" />
       <type>
         <code value="code" />
@@ -1382,19 +1173,19 @@
         <map value="3012" />
       </mapping>
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst">
+    <element id="Extension.extension:pruefzifferFachdienst">
       <path value="Extension.extension" />
-      <sliceName value="PruefzifferFachdienst" />
+      <sliceName value="pruefzifferFachdienst" />
       <short value="Prüfziffer des Fachdienstes" />
       <definition value="Prüfziffer des Fachdienstes" />
       <comment value=" " />
       <max value="1" />
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.url">
+    <element id="Extension.extension:pruefzifferFachdienst.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="PruefzifferFachdienst" />
+      <fixedUri value="pruefzifferFachdienst" />
     </element>
-    <element id="Extension.extension:PruefzifferFachdienst.value[x]:valueString">
+    <element id="Extension.extension:pruefzifferFachdienst.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
       <min value="1" />
