@@ -14,7 +14,7 @@
 	<subject>
 		<reference value="Patient/Example-patient-de-basis-address-1"/>
 	</subject>
-	<occurenceDateTime value="2017-11-07"/>
+	<occurrenceDateTime value="2017-11-07"/>
 	<quantity>
 		<value value="1"/>
 	</quantity>
