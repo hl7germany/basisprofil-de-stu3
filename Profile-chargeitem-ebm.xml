@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-08T16:08:56.182+01:00" />
+    <lastUpdated value="2017-11-08T18:58:00.445+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/ChargeItem-ebm" />
   <version value="0.2-WORK" />
@@ -2352,6 +2352,7 @@
       <type>
         <code value="code" />
       </type>
+      <patternCode value="[0-9]{5}[A-Z]{0,1}" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7603,6 +7604,10 @@
         <strength value="required" />
         <valueSetUri value="http://fhir.de/ValueSet/kbv/ebm" />
       </binding>
+    </element>
+    <element id="ChargeItem.code.coding.code">
+      <path value="ChargeItem.code.coding.code" />
+      <patternCode value="[0-9]{5}[A-Z]{0,1}" />
     </element>
     <element id="ChargeItem.subject">
       <path value="ChargeItem.subject" />
