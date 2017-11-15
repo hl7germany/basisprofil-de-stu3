@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-15T14:22:08.717+01:00" />
+    <lastUpdated value="2017-11-15T14:26:32.443+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -111,10 +111,12 @@
       </mapping>
       <mapping>
         <identity value="KVDT" />
+        <language value="de" />
         <map value="KVDT" />
       </mapping>
       <mapping>
         <identity value="BDT" />
+        <language value="de" />
         <map value="Obj_Anschrift" />
       </mapping>
     </element>
@@ -1880,10 +1882,12 @@
       </constraint>
       <mapping>
         <identity value="KVDT" />
+        <language value="de" />
         <map value="KVDT" />
       </mapping>
       <mapping>
         <identity value="BDT" />
+        <language value="de" />
         <map value="Obj_Anschrift" />
       </mapping>
     </element>
