@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-08T18:49:02.537+01:00" />
+    <lastUpdated value="2017-12-05T18:51:42.007+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-de-basis" />
   <version value="0.1" />
@@ -2992,6 +2992,7 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+      <meaningWhenMissing value=" " />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4386,6 +4387,12 @@
         <identity value="cda" />
         <map value=".addr" />
       </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <language value="de" />
+        <map value="KVDT" />
+        <comment value="test" />
+      </mapping>
     </element>
     <element id="Patient.address.id">
       <path value="Patient.address.id" />
@@ -4821,6 +4828,14 @@
         <identity value="rim" />
         <map value="ADXP[partType=STR]" />
       </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3107" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3107" />
+      </mapping>
     </element>
     <element id="Patient.address.line.extension:Strasse.id">
       <path value="Patient.address.line.extension.id" />
@@ -4966,14 +4981,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3107" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3107" />
-      </mapping>
     </element>
     <element id="Patient.address.line.extension:Hausnummer">
       <path value="Patient.address.line.extension" />
@@ -5020,6 +5027,14 @@
       <mapping>
         <identity value="rim" />
         <map value="ADXP[partType=BNR]" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3109" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3109" />
       </mapping>
     </element>
     <element id="Patient.address.line.extension:Hausnummer.id">
@@ -5166,14 +5181,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3109" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3109" />
-      </mapping>
     </element>
     <element id="Patient.address.line.extension:Adresszusatz">
       <path value="Patient.address.line.extension" />
@@ -5220,6 +5227,14 @@
       <mapping>
         <identity value="rim" />
         <map value="ADXP[partType=ADL]" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3115" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3115" />
       </mapping>
     </element>
     <element id="Patient.address.line.extension:Adresszusatz.id">
@@ -5366,14 +5381,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3115" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3115" />
-      </mapping>
     </element>
     <element id="Patient.address.line.extension:Postfach">
       <path value="Patient.address.line.extension" />
@@ -5420,6 +5427,14 @@
       <mapping>
         <identity value="rim" />
         <map value="ADXP[partType=POB]" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3123" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3123" />
       </mapping>
     </element>
     <element id="Patient.address.line.extension:Postfach.id">
@@ -5565,14 +5580,6 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="2123" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3123" />
       </mapping>
     </element>
     <element id="Patient.address.line.value">
@@ -9087,6 +9094,12 @@
       <mapping>
         <identity value="cda" />
         <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <language value="de" />
+        <map value="KVDT" />
+        <comment value="test" />
       </mapping>
     </element>
     <element id="Patient.contact.address.id">
@@ -13844,6 +13857,7 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+      <meaningWhenMissing value=" " />
     </element>
     <element id="Patient.telecom.system">
       <path value="Patient.telecom.system" />
