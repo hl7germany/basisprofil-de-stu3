@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-15T14:36:02.709+01:00" />
+    <lastUpdated value="2017-12-05T14:12:54.507+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -122,12 +122,6 @@
         <language value="de" />
         <map value="KVDT" />
         <comment value="test" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <language value="de" />
-        <map value="Obj_Anschrift" />
-        <comment value="test2" />
       </mapping>
     </element>
     <element id="Address.id">
@@ -564,6 +558,14 @@
         <identity value="rim" />
         <map value="ADXP[partType=STR]" />
       </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3107" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3107" />
+      </mapping>
     </element>
     <element id="Address.line.extension:Strasse.id">
       <path value="Address.line.extension.id" />
@@ -763,6 +765,14 @@
       <mapping>
         <identity value="rim" />
         <map value="ADXP[partType=BNR]" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3109" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3109" />
       </mapping>
     </element>
     <element id="Address.line.extension:Hausnummer.id">
@@ -1896,12 +1906,6 @@
         <map value="KVDT" />
         <comment value="test" />
       </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <language value="de" />
-        <map value="Obj_Anschrift" />
-        <comment value="test2" />
-      </mapping>
     </element>
     <element id="Address.type">
       <path value="Address.type" />
@@ -1955,6 +1959,14 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3107" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3107" />
+      </mapping>
     </element>
     <element id="Address.line.extension:Strasse.value[x]">
       <path value="Address.line.extension.valueString" />
@@ -1978,6 +1990,14 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3109" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3109" />
+      </mapping>
     </element>
     <element id="Address.line.extension:Hausnummer.value[x]">
       <path value="Address.line.extension.valueString" />
