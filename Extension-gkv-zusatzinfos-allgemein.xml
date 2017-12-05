@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-11-06T18:15:20.959+01:00" />
+    <lastUpdated value="2017-12-05T18:33:36.883+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
   <version value="0.2-WORK" />
@@ -181,6 +181,10 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3108" />
+      </mapping>
     </element>
     <element id="Extension.extension:versichertenart.id">
       <path value="Extension.extension.id" />
@@ -330,10 +334,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3108" />
-      </mapping>
     </element>
     <element id="Extension.extension:wop">
       <path value="Extension.extension" />
@@ -375,6 +375,10 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3116" />
       </mapping>
     </element>
     <element id="Extension.extension:wop.id">
@@ -454,10 +458,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-	  <mapping>
-        <identity value="KVDT" />
-        <map value="3116" />
-      </mapping>
     </element>
     <element id="Extension.extension:wop.url">
       <path value="Extension.extension.url" />
@@ -529,7 +529,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      
     </element>
     <element id="Extension.extension:kostenerstattung">
       <path value="Extension.extension" />
@@ -1776,7 +1775,7 @@
       <definition value="Gibt die Versichertenart des Versicherten an." />
       <comment value="  " />
       <max value="1" />
-	  <mapping>
+      <mapping>
         <identity value="KVDT" />
         <map value="3108" />
       </mapping>
@@ -1798,7 +1797,6 @@
         <strength value="required" />
         <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
       </binding>
-      
     </element>
     <element id="Extension.extension:wop">
       <path value="Extension.extension" />
@@ -1807,7 +1805,7 @@
       <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
       <comment value="  " />
       <max value="1" />
-	  <mapping>
+      <mapping>
         <identity value="KVDT" />
         <map value="3116" />
       </mapping>
@@ -1827,7 +1825,6 @@
         <strength value="required" />
         <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
       </binding>
-      
     </element>
     <element id="Extension.extension:kostenerstattung">
       <path value="Extension.extension" />
