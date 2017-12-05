@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-12-05T14:16:04.699+01:00" />
+    <lastUpdated value="2017-12-05T18:00:58.645+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -23,11 +23,11 @@
   <fhirVersion value="3.0.1" />
   <mapping>
     <identity value="KVDT" />
-    <name value="KVDT Name" />
+    <name value="KVDT Mapping" />
   </mapping>
   <mapping>
     <identity value="BDT" />
-    <name value="BDT Name" />
+    <name value="BDT Mapping" />
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />

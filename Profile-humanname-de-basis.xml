@@ -20,6 +20,14 @@
   <description value="Personenname mit in Deutschland üblichen Erweiterungen" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KVDT" />
+    <name value="KVDT Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="BDT" />
+    <name value="BDT Mapping" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="HumanName" />
@@ -1590,6 +1598,14 @@
       <path value="HumanName.family.extension" />
       <sliceName value="namenszusatz" />
       <max value="1" />
+	  <mapping>
+        <identity value="KVDT" />
+        <map value="3100" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3100" />
+      </mapping>
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
@@ -1598,20 +1614,21 @@
     <element id="HumanName.family.extension:namenszusatz.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3100" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3100" />
-      </mapping>
+      
     </element>
     <element id="HumanName.family.extension:nachname">
       <path value="HumanName.family.extension" />
       <sliceName value="nachname" />
       <short value="Nachname ohne Vor- und Zusätze" />
       <definition value="Nachname ohne Vor- und Zusätze.&#xD;&#xA;Dient z.B. der alphabetischen Einordnung des Namens." />
+	  <mapping>
+        <identity value="KVDT" />
+        <map value="3101" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3101" />
+      </mapping>
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
@@ -1620,21 +1637,22 @@
     <element id="HumanName.family.extension:nachname.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3101" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3101" />
-      </mapping>
+      
     </element>
     <element id="HumanName.family.extension:vorsatzwort">
       <path value="HumanName.family.extension" />
       <sliceName value="vorsatzwort" />
       <short value="Vorsatzwort" />
       <definition value="Vorsatzwort wie z.B.: von, van, zu&#xD;&#xA;Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
-      <type>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3120" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3120" />
+      </mapping>
+	  <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
       </type>
@@ -1642,14 +1660,7 @@
     <element id="HumanName.family.extension:vorsatzwort.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
-      <mapping>
-        <identity value="BDT" />
-        <map value="3120" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3120" />
-      </mapping>
+      
     </element>
     <element id="HumanName.given">
       <path value="HumanName.given" />

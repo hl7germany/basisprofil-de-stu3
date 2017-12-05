@@ -11,6 +11,14 @@
   <date value="2017-10-21T23:20:58.564+02:00" />
   <description value=" Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
   <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KVDT" />
+    <name value="KVDT Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="BDT" />
+    <name value="BDT Mapping" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -446,6 +454,10 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+	  <mapping>
+        <identity value="KVDT" />
+        <map value="3116" />
+      </mapping>
     </element>
     <element id="Extension.extension:wop.url">
       <path value="Extension.extension.url" />
@@ -517,10 +529,7 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3116" />
-      </mapping>
+      
     </element>
     <element id="Extension.extension:kostenerstattung">
       <path value="Extension.extension" />
@@ -1767,6 +1776,10 @@
       <definition value="Gibt die Versichertenart des Versicherten an." />
       <comment value="  " />
       <max value="1" />
+	  <mapping>
+        <identity value="KVDT" />
+        <map value="3108" />
+      </mapping>
     </element>
     <element id="Extension.extension:versichertenart.url">
       <path value="Extension.extension.url" />
@@ -1785,10 +1798,7 @@
         <strength value="required" />
         <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
       </binding>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3108" />
-      </mapping>
+      
     </element>
     <element id="Extension.extension:wop">
       <path value="Extension.extension" />
@@ -1797,6 +1807,10 @@
       <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
       <comment value="  " />
       <max value="1" />
+	  <mapping>
+        <identity value="KVDT" />
+        <map value="3116" />
+      </mapping>
     </element>
     <element id="Extension.extension:wop.url">
       <path value="Extension.extension.url" />
@@ -1813,10 +1827,7 @@
         <strength value="required" />
         <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
       </binding>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3116" />
-      </mapping>
+      
     </element>
     <element id="Extension.extension:kostenerstattung">
       <path value="Extension.extension" />
