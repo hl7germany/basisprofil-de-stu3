@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-12-05T18:51:29.658+01:00" />
+    <lastUpdated value="2017-12-05T18:56:56.374+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-de-vsdm" />
+  <version value="0.2-WORK" />
   <name value="patient-de-vsdm" />
   <title value="Patient, deutsches VSDM-Profil" />
   <status value="draft" />

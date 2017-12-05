@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-12-05T18:00:58.645+01:00" />
+    <lastUpdated value="2017-12-05T18:57:04.234+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/address-de-basis" />
   <version value="0.1" />
@@ -116,12 +116,6 @@
       <mapping>
         <identity value="servd" />
         <map value="Address" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <language value="de" />
-        <map value="KVDT" />
-        <comment value="test" />
       </mapping>
     </element>
     <element id="Address.id">
@@ -1884,12 +1878,6 @@
         <human value="Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden" />
         <expression value="line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))" />
       </constraint>
-      <mapping>
-        <identity value="KVDT" />
-        <language value="de" />
-        <map value="KVDT" />
-        <comment value="test" />
-      </mapping>
     </element>
     <element id="Address.type">
       <path value="Address.type" />
