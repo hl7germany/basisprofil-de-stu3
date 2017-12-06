@@ -1,0 +1,34 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/namingsystem-de-basis"/>
+	</meta>
+	<name value="kzv-54-zahnarztnummer"/>
+	<status value="draft"/>
+	<kind value="identifier"/>
+	<date value="2017-12-06"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<responsible value="Kassenzahnärztliche Vereinigung Sachsen-Anhalt (KZV Sachsen-Anhalt)"/>
+	<type>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+            <code value="ZANR"/>
+		</coding>
+	</type>
+	<description
+			value="Dieses NamingSystem wird für Zahnarztnummern (Zahnarzt-Abrechnungsnummern) verwendet, die von der KZV Sachsen-Anhalt für ihren Abrechnungsbereich herausgegeben werden. Die Zahnarztnummer ist 1- bis 6-stellig numerisch."/>
+	<usage value="Das NamingSystem wird zur Verwendung in Identifiern von Zahnarztpraxen (Organizations) ####TODO - ENDGÜLTIGE KLÄRUNG STEHT NOCH AUS, vgl. https://chat.fhir.org/#narrow/stream/german.20(d-a-ch)/topic/Leistungserbringer ab 06.12.2017### verwendet."/>
+	<uniqueId>
+		<type value="uri"/>
+		<value value="http://fhir.de/NamingSystem/kzv/54/zahnarztnummer"/>
+		<preferred value="true"/>
+		<period>
+			<start value="2017-12-06"/>
+		</period>
+	</uniqueId>
+</NamingSystem>

@@ -3,11 +3,11 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
 	<url value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
-	<version value="0.1"/>
+	<version value="0.2-WORK"/>
 	<name value="identifier-type-de-basis"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-09-15"/>
+	<date value="2017-12-06"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
@@ -27,5 +27,9 @@
 	<concept>
 		<code value="PKV"/>
 		<display value="Private Krankenversicherung"/>
+	</concept>
+	<concept>
+		<code value="ZANR"/>
+		<display value="Zahnarztnummer"/>
 	</concept>
 </CodeSystem>

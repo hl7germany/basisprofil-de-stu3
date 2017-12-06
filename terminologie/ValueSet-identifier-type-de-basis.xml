@@ -7,7 +7,7 @@
 	<name value="identifier-type-de-basis"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-09-29"/>
+	<date value="2017-12-06"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
@@ -161,5 +161,10 @@
 			<code value="PKV"/>
 			<display value="Private Krankenversicherung"/>
 		</contains>
+        <concept>
+			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+            <code value="ZANR"/>
+            <display value="Zahnarztnummer"/>
+        </concept>
 	</expansion>
 </ValueSet>
