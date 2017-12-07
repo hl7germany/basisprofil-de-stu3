@@ -22,7 +22,7 @@
 	</type>
 	<description
 			value="Dieses NamingSystem wird für Zahnarztnummern (Zahnarzt-Abrechnungsnummern) verwendet, die von der KZV Nordrhein für ihren Abrechnungsbereich herausgegeben werden. Die Zahnarztnummer ist 1- bis 6-stellig numerisch."/>
-	<usage value="Das NamingSystem wird zur Verwendung in Identifiern von Zahnärzten (Practitioner) verwendet."/>
+	<usage value="Das NamingSystem wird in Identifiern von Zahnärzten (Practitioner) verwendet."/>
 	<uniqueId>
 		<type value="uri"/>
 		<value value="http://fhir.de/NamingSystem/kzv/13/zahnarztnummer"/>
