@@ -1,0 +1,20 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/practitioner-de-basis"/>
+	</meta>
+	<identifier>
+        <type>
+            <coding>
+                <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+                <code value="ZANR" />
+            </coding>
+        </type>
+		<system value="http://fhir.de/NamingSystem/kzv/20/zahnarztnummer"/>
+		<value value="123456"/>
+	</identifier>
+	<name>
+		<family value="Zahner"/>
+		<given value="Zacharias"/>
+		<prefix value="Dr. med. dent."/>
+	</name>
+</Practitioner>
