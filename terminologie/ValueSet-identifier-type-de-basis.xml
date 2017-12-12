@@ -161,10 +161,10 @@
 			<code value="PKV"/>
 			<display value="Private Krankenversicherung"/>
 		</contains>
-        <concept>
+        <contains>
 			<system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
             <code value="ZANR"/>
             <display value="Zahnarztnummer"/>
-        </concept>
+        </contains>
 	</expansion>
 </ValueSet>
