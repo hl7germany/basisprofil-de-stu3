@@ -5,9 +5,9 @@
 	<url value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
 	<version value="0.1"/>
 	<name value="kbv-betriebsstaetten-hierarchie"/>
-	<status value="draft"/>
+	<status value="retired"/>
 	<experimental value="true"/>
-	<date value="2017-09-15"/>
+	<date value="2018-01-27"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>

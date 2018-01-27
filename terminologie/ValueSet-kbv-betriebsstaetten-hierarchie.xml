@@ -19,24 +19,28 @@
 	<copyright value="HL7 Deutschland e.V."/>
 	<compose>
 		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+			<system value="http://hl7.org/fhir/v2/0203"/>
+			<concept>
+                <code value="BSNR"/>
+                <display value="Hauptbetriebsstätte"/>
+			</concept>
+			<concept>
+                <code value="NBSNR"/>
+                <display value="Nebenbetriebsstätte"/>
+			</concept>
 		</include>
 	</compose>
 	<expansion>
 		<identifier value="urn:uuid:a8afedb0-8f46-4ab9-b2e5-a13f235bebbd"/>
 		<timestamp value="2017-09-12T18:35:10+02:00"/>
 		<total value="2"/>
-		<parameter>
-			<name value="version"/>
-			<valueUri value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie|0.1"/>
-		</parameter>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+			<system value="http://hl7.org/fhir/v2/0203"/>
 			<code value="BSNR"/>
 			<display value="Hauptbetriebsstätte"/>
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/betriebsstaetten-hierarchie"/>
+			<system value="http://hl7.org/fhir/v2/0203"/>
 			<code value="NBSNR"/>
 			<display value="Nebenbetriebsstätte"/>
 		</contains>
