@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-01-29T09:25:32.966-06:00" />
+    <lastUpdated value="2018-01-29T09:27:00.124-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/condition-de-icd10gm" />
-  <version value="0.2" />
+  <version value="0.2-WORK" />
   <name value="condition-de-icd10gm" />
   <title value="Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose" />
   <status value="draft" />
-  <date value="2017-07-19T16:41:35.2276502+02:00" />
+  <date value="2017-01-29" />
   <description value="Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
