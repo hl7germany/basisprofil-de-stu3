@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-01-31T16:56:49.78-06:00" />
+    <lastUpdated value="2018-01-31T17:26:05.795-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/encounter-khentgg-extension" />
   <version value="0.2-WORK" />
@@ -138,7 +138,7 @@
       <path value="Extension.extension" />
       <sliceName value="entgeltbereich" />
       <short value="DRG | PSY" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <definition value="In diesem Feld ist anzugeben, welchem Entgeltbereich (KHEntgG oder BPflV oder PIA) der Behandlungsfall zugeordnet ist; entscheidend ist dabei das für den Fall abgerechnete Entgelt. Ein Fall darf ausschließlich einem Entgeltbereich zugeordnet sein. Bei einem Wechsel in einen anderen Entgeltbereich ist für jeden Entgeltbereich ein eigenständiger Fall, ggf. unter Einbeziehung einer Rückverlegung, zu übermitteln. &#xD;&#xA; &#xD;&#xA;Der Entgeltbereich ist wie folgt anzugeben: DRG Entgelt nach KHEntgG, i.d.R. DRG-Fallpauschale (KHEntgG-Entgeltbereich) PSY Entgelt nach BPflV für psychiatrische Einrichtungen und psychosomatische Einrichtungen gem. § 17d Abs. 1 KHG (BPflV-Entgeltbereich). PIA Entgelt nach § 120 SGB V für psychiatrische Institutsambulanzen gemäß § 118 SGB V (PIAEntgeltbereich). Bei Angaben für (ambulante) PIA-Fälle gilt stets folgender Grundsatz: Datenfelder/Merkmale, die nur für Fälle im DRG-Entgeltbereich oder PSY-Entgeltbereich gelten und als MUSS-Angaben mit Vorgabewerten festgelegt sind, werden immer ohne Angabe (leer) übermittelt. Vorstationäre Leistungen werden dem Entgeltbereich zugeordnet, der für den Fall bei stationärem Aufenthalt gelten würde. Begleitpersonen und mitaufgenommene Pflegekräfte werden dem Entgeltbereich der begleiteten Person zugeordnet. &#xD;&#xA; " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -328,8 +328,8 @@
     <element id="Extension.extension:64bModell">
       <path value="Extension.extension" />
       <sliceName value="64bModell" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Vertragskennzeichen § 64b-Modellvorhaben " />
+      <definition value="Das Vertragskennzeichen § 64b-Modellvorhaben muss bei der Übermittlung der fallbezogenen Daten nach § 21 KHEntgG zur Kennzeichnung derjenigen Patienten verwendet werden, die in das Modellvorhaben einbezogen sind. Es ist das vom DRG-Institut vergebene Vertragskennzeichen zu übermitteln. Für Patienten, die in ein Modellvorhaben nach § 64b SGB V einbezogen sind, ist unter Angabe des Vertragskennzeichens für das Modellvorhaben   bei voll- oder teilstationärer Versorgung ein Datensatz für den Entgeltbereich „PSY“;   bei ambulanter Behandlung durch eine Psychiatrische Institutsambulanz ein Datensatz für den Entgeltbereich „PIA“,  bei spezifischen Leistungen des Modellvorhabens zusätzlich die Datei „Modellvorhaben“ zu übermitteln. (Siehe hierzu:  Vereinbarung nach § 64b Abs. 3 SGB V über Art und Umfang der zu meldenden Daten von Modellvorhaben zur Versorgung psychisch kranker Menschen sowie zur Meldung von Modellvorhaben an das DRGInstitut zwischen dem GKV-Spitzenverband, dem PKV-Verband und der DKG vom 27.2.2013 sowie Hinweise zur Datei „Modellvorhaben“) " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -519,8 +519,8 @@
     <element id="Extension.extension:dialyseAnz">
       <path value="Extension.extension" />
       <sliceName value="dialyseAnz" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Anzahl interkurrenter Dialysen " />
+      <definition value="Bei Patientenaufnahme zur stationären Behandlung einer Erkrankung und zusätzlicher Dialysebehandlung aufgrund chronischer Niereninsuffizienz ist die Anzahl interkurrenter Dialysen anzugeben.  &#xD;&#xA; " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -710,8 +710,8 @@
     <element id="Extension.extension:beatmungH">
       <path value="Extension.extension" />
       <sliceName value="beatmungH" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Beatmungsstunden " />
+      <definition value="Die Beatmungsstunden sind als Gesamtbeatmungszeit für den Krankenhausfall entsprechend DKR anzugeben. Der Wert entspricht der Angabe „Beatmungsstunden“ in der Entlassungsanzeige (Segment DAU). " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -901,8 +901,8 @@
     <element id="Extension.extension:vorstatBehD">
       <path value="Extension.extension" />
       <sliceName value="vorstatBehD" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Behandlungstage vorstationär " />
+      <definition value="Bei vorstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen vorstationäre Leistungen erbracht wurden. " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1092,8 +1092,8 @@
     <element id="Extension.extension:nachstatBehD">
       <path value="Extension.extension" />
       <sliceName value="nachstatBehD" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="Behandlungstage nachstationär " />
+      <definition value="Bei nachstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen nachstationäre Leistungen erbracht wurden. &#xD;&#xA; " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1284,7 +1284,7 @@
       <path value="Extension.extension" />
       <sliceName value="extBehD" />
       <short value="Belegungstage in einem anderen Entgeltbereich" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <definition value="Bei einem Wechsel zwischen den Entgeltbereichen in Folge einer internen oder externen Verlegung mit anschließender Wiederaufnahme bzw. Rückverlegung in den ursprünglichen Entgeltbereich sind die Belegungstage in dem anderen Entgeltbereich (BPflV oder KHEntgG oder Besondere Einrichtung) anzugeben. &#xD;&#xA; &#xD;&#xA;Zu den Belegungstagen zählen der Aufnahmetag und jeder weitere Tag des Aufenthalts im anderen Entgeltbereich ohne den Verlegungstag, unabhängig davon, ob der Verlegungstag bei PEPP-Abrechnung abgerechnet wird. &#xD;&#xA; " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1475,7 +1475,7 @@
       <path value="Extension.extension" />
       <sliceName value="beurlaubungD" />
       <short value="Beurlaubungstage im BPflV-Entgeltbereich" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <definition value="Es sind ggf. Tage einer Abwesenheit aufgrund geplanter Beurlaubung anzugeben. " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1666,7 +1666,7 @@
       <path value="Extension.extension" />
       <sliceName value="modellKenz" />
       <short value="Kennung Besonderer Fall Modellvorhaben" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <definition value="In diesem Feld sind Fälle mit der Kennung ‚1‘ zu markieren, wenn die Behandlung im Rahmen eines Modellvorhabens nach § 64b SGB V erfolgt und spezifische Leistungen (z. B. Hometreatment oder stationsersetzende Leistungen) in der Definition des jeweiligen Modellvorhabens erbracht werden, die nicht der &#xD;&#xA;Vereinbarung nach § 21 KHEntgG – Anlage  Fortschreibung vom 22. Dezember 2017 &#xD;&#xA;v21-KHEntgG_A-2018_2017_Endfassung.docx Seite 20 von 36 &#xD;&#xA;allgemeinen voll- oder teilstationären Versorgung bzw. der ambulanten Versorgung einer PIA entsprechen. Die Kennung ‚0‘ ist für Fälle im Rahmen der Modellvorhaben zu verwenden, bei denen die Leistungserbringung der der Regelabrechnung entspricht. Erfolgt die Behandlung nicht im Rahmen eines Modellvorhabens nach § 64b SGB V, ist das Feld leer zu lassen. " />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2046,6 +2046,7 @@
       <path value="Extension.extension" />
       <sliceName value="entgeltbereich" />
       <short value="DRG | PSY" />
+      <definition value="In diesem Feld ist anzugeben, welchem Entgeltbereich (KHEntgG oder BPflV oder PIA) der Behandlungsfall zugeordnet ist; entscheidend ist dabei das für den Fall abgerechnete Entgelt. Ein Fall darf ausschließlich einem Entgeltbereich zugeordnet sein. Bei einem Wechsel in einen anderen Entgeltbereich ist für jeden Entgeltbereich ein eigenständiger Fall, ggf. unter Einbeziehung einer Rückverlegung, zu übermitteln. &#xD;&#xA; &#xD;&#xA;Der Entgeltbereich ist wie folgt anzugeben: DRG Entgelt nach KHEntgG, i.d.R. DRG-Fallpauschale (KHEntgG-Entgeltbereich) PSY Entgelt nach BPflV für psychiatrische Einrichtungen und psychosomatische Einrichtungen gem. § 17d Abs. 1 KHG (BPflV-Entgeltbereich). PIA Entgelt nach § 120 SGB V für psychiatrische Institutsambulanzen gemäß § 118 SGB V (PIAEntgeltbereich). Bei Angaben für (ambulante) PIA-Fälle gilt stets folgender Grundsatz: Datenfelder/Merkmale, die nur für Fälle im DRG-Entgeltbereich oder PSY-Entgeltbereich gelten und als MUSS-Angaben mit Vorgabewerten festgelegt sind, werden immer ohne Angabe (leer) übermittelt. Vorstationäre Leistungen werden dem Entgeltbereich zugeordnet, der für den Fall bei stationärem Aufenthalt gelten würde. Begleitpersonen und mitaufgenommene Pflegekräfte werden dem Entgeltbereich der begleiteten Person zugeordnet. &#xD;&#xA; " />
       <min value="1" />
       <max value="1" />
       <mapping>
@@ -2068,6 +2069,8 @@
     <element id="Extension.extension:64bModell">
       <path value="Extension.extension" />
       <sliceName value="64bModell" />
+      <short value="Vertragskennzeichen § 64b-Modellvorhaben " />
+      <definition value="Das Vertragskennzeichen § 64b-Modellvorhaben muss bei der Übermittlung der fallbezogenen Daten nach § 21 KHEntgG zur Kennzeichnung derjenigen Patienten verwendet werden, die in das Modellvorhaben einbezogen sind. Es ist das vom DRG-Institut vergebene Vertragskennzeichen zu übermitteln. Für Patienten, die in ein Modellvorhaben nach § 64b SGB V einbezogen sind, ist unter Angabe des Vertragskennzeichens für das Modellvorhaben   bei voll- oder teilstationärer Versorgung ein Datensatz für den Entgeltbereich „PSY“;   bei ambulanter Behandlung durch eine Psychiatrische Institutsambulanz ein Datensatz für den Entgeltbereich „PIA“,  bei spezifischen Leistungen des Modellvorhabens zusätzlich die Datei „Modellvorhaben“ zu übermitteln. (Siehe hierzu:  Vereinbarung nach § 64b Abs. 3 SGB V über Art und Umfang der zu meldenden Daten von Modellvorhaben zur Versorgung psychisch kranker Menschen sowie zur Meldung von Modellvorhaben an das DRGInstitut zwischen dem GKV-Spitzenverband, dem PKV-Verband und der DKG vom 27.2.2013 sowie Hinweise zur Datei „Modellvorhaben“) " />
       <max value="1" />
     </element>
     <element id="Extension.extension:64bModell.url">
@@ -2088,6 +2091,8 @@
     <element id="Extension.extension:dialyseAnz">
       <path value="Extension.extension" />
       <sliceName value="dialyseAnz" />
+      <short value="Anzahl interkurrenter Dialysen " />
+      <definition value="Bei Patientenaufnahme zur stationären Behandlung einer Erkrankung und zusätzlicher Dialysebehandlung aufgrund chronischer Niereninsuffizienz ist die Anzahl interkurrenter Dialysen anzugeben.  &#xD;&#xA; " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2108,6 +2113,8 @@
     <element id="Extension.extension:beatmungH">
       <path value="Extension.extension" />
       <sliceName value="beatmungH" />
+      <short value="Beatmungsstunden " />
+      <definition value="Die Beatmungsstunden sind als Gesamtbeatmungszeit für den Krankenhausfall entsprechend DKR anzugeben. Der Wert entspricht der Angabe „Beatmungsstunden“ in der Entlassungsanzeige (Segment DAU). " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2128,6 +2135,8 @@
     <element id="Extension.extension:vorstatBehD">
       <path value="Extension.extension" />
       <sliceName value="vorstatBehD" />
+      <short value="Behandlungstage vorstationär " />
+      <definition value="Bei vorstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen vorstationäre Leistungen erbracht wurden. " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2148,6 +2157,8 @@
     <element id="Extension.extension:nachstatBehD">
       <path value="Extension.extension" />
       <sliceName value="nachstatBehD" />
+      <short value="Behandlungstage nachstationär " />
+      <definition value="Bei nachstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen nachstationäre Leistungen erbracht wurden. &#xD;&#xA; " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2169,6 +2180,7 @@
       <path value="Extension.extension" />
       <sliceName value="extBehD" />
       <short value="Belegungstage in einem anderen Entgeltbereich" />
+      <definition value="Bei einem Wechsel zwischen den Entgeltbereichen in Folge einer internen oder externen Verlegung mit anschließender Wiederaufnahme bzw. Rückverlegung in den ursprünglichen Entgeltbereich sind die Belegungstage in dem anderen Entgeltbereich (BPflV oder KHEntgG oder Besondere Einrichtung) anzugeben. &#xD;&#xA; &#xD;&#xA;Zu den Belegungstagen zählen der Aufnahmetag und jeder weitere Tag des Aufenthalts im anderen Entgeltbereich ohne den Verlegungstag, unabhängig davon, ob der Verlegungstag bei PEPP-Abrechnung abgerechnet wird. &#xD;&#xA; " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2190,6 +2202,7 @@
       <path value="Extension.extension" />
       <sliceName value="beurlaubungD" />
       <short value="Beurlaubungstage im BPflV-Entgeltbereich" />
+      <definition value="Es sind ggf. Tage einer Abwesenheit aufgrund geplanter Beurlaubung anzugeben. " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
@@ -2211,6 +2224,7 @@
       <path value="Extension.extension" />
       <sliceName value="modellKenz" />
       <short value="Kennung Besonderer Fall Modellvorhaben" />
+      <definition value="In diesem Feld sind Fälle mit der Kennung ‚1‘ zu markieren, wenn die Behandlung im Rahmen eines Modellvorhabens nach § 64b SGB V erfolgt und spezifische Leistungen (z. B. Hometreatment oder stationsersetzende Leistungen) in der Definition des jeweiligen Modellvorhabens erbracht werden, die nicht der &#xD;&#xA;Vereinbarung nach § 21 KHEntgG – Anlage  Fortschreibung vom 22. Dezember 2017 &#xD;&#xA;v21-KHEntgG_A-2018_2017_Endfassung.docx Seite 20 von 36 &#xD;&#xA;allgemeinen voll- oder teilstationären Versorgung bzw. der ambulanten Versorgung einer PIA entsprechen. Die Kennung ‚0‘ ist für Fälle im Rahmen der Modellvorhaben zu verwenden, bei denen die Leistungserbringung der der Regelabrechnung entspricht. Erfolgt die Behandlung nicht im Rahmen eines Modellvorhabens nach § 64b SGB V, ist das Feld leer zu lassen. " />
       <max value="1" />
       <mapping>
         <identity value="KHEntgG" />
