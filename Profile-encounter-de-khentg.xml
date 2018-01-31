@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value=" " />
   <meta>
-    <lastUpdated value="2018-01-31T16:58:01.55-06:00" />
+    <lastUpdated value="2018-01-31T17:16:37.322-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/encounter-de-khentgg" />
   <version value="0.2-WORK" />
@@ -2189,7 +2189,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -2277,7 +2277,7 @@
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.display" />
         <min value="0" />
@@ -2319,7 +2319,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -2364,7 +2364,7 @@
       <comment value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="CodeableConcept.text" />
         <min value="0" />
@@ -2500,7 +2500,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comment value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -2711,7 +2711,7 @@
       <definition value="Organization that issued/manages the identifier." />
       <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.assigner" />
         <min value="0" />
@@ -3012,7 +3012,7 @@
       <definition value="The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them." />
       <comment value="The current status is always found in the current version of the resource, not the status history." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.statusHistory" />
         <min value="0" />
@@ -3398,7 +3398,7 @@
       <definition value="inpatient | outpatient | ambulatory | emergency +." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.class" />
         <min value="0" />
@@ -3415,7 +3415,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -3541,7 +3541,7 @@
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.system" />
         <min value="0" />
@@ -3582,7 +3582,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -3624,7 +3624,7 @@
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.code" />
         <min value="0" />
@@ -3711,7 +3711,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4075,7 +4075,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -4204,7 +4204,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4721,7 +4721,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -4763,7 +4763,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -4804,7 +4804,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -4892,7 +4892,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4978,7 +4978,7 @@
       <definition value="Indicates the urgency of the encounter." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.priority" />
         <min value="0" />
@@ -5759,7 +5759,7 @@
       <definition value="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.episodeOfCare" />
         <min value="0" />
@@ -6001,7 +6001,7 @@
       <definition value="The referral request this encounter satisfies (incoming referral)." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.incomingReferral" />
         <min value="0" />
@@ -6237,7 +6237,7 @@
       <short value="List of participants involved in the encounter" />
       <definition value="The list of people responsible for providing the service." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.participant" />
         <min value="0" />
@@ -7378,7 +7378,7 @@
       <definition value="The appointment that scheduled this encounter." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.appointment" />
         <min value="0" />
@@ -7839,7 +7839,7 @@
       <definition value="Quantity of time the encounter lasted. This excludes the time during leaves of absence." />
       <comment value="May differ from the time the Encounter.period lasted because of leave of absence." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.length" />
         <min value="0" />
@@ -9683,7 +9683,7 @@
       <definition value="The set of accounts that may be used for billing for this Encounter." />
       <comment value="The billing system may choose to allocate billable items associated with the Encounter to different referenced Accounts based on internal business rules." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.account" />
         <min value="0" />
@@ -10074,7 +10074,7 @@
       <short value="Pre-admission identifier" />
       <definition value="Pre-admission identifier." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.preAdmissionIdentifier" />
         <min value="0" />
@@ -11573,7 +11573,7 @@
       <definition value="From where patient was admitted (physician referral, transfer)." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.admitSource" />
         <min value="0" />
@@ -12625,7 +12625,7 @@
       <comment value="For example a patient may request both a dairy-free and nut-free diet preference (not mutually exclusive)." />
       <requirements value="Used to track patient's diet restrictions and/or preference. For a complete description of the nutrition needs of a patient during their stay, one should use the nutritionOrder resource which links to Encounter." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.dietPreference" />
         <min value="0" />
@@ -13150,7 +13150,7 @@
       <definition value="Special courtesies (VIP, board member)." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.specialCourtesy" />
         <min value="0" />
@@ -13675,7 +13675,7 @@
       <definition value="Any special requests that have been made for this hospitalization encounter, such as the provision of specific equipment or other things." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.specialArrangement" />
         <min value="0" />
@@ -14200,7 +14200,7 @@
       <definition value="Location to which the patient is discharged." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.hospitalization.destination" />
         <min value="0" />
@@ -14971,7 +14971,7 @@
       <definition value="List of locations where  the patient has been during this encounter." />
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Encounter.location" />
         <min value="0" />
@@ -15741,7 +15741,7 @@
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.reference" />
         <min value="0" />
@@ -15864,7 +15864,7 @@
       <definition value="Another Encounter of which this encounter is a part of (administratively or in time)." />
       <comment value="This is also used for associating a child's encounter back to the mother's encounter.&#xD;&#xD;Refer to the Notes section in the Patient resource for further details." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Encounter.partOf" />
         <min value="0" />
@@ -16149,10 +16149,32 @@
       <min value="1" />
       <fixedUri value="http://hl7.org/fhir/v2/0203" />
     </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.version">
+      <path value="Encounter.identifier.type.coding.version" />
+      <max value="0" />
+    </element>
     <element id="Encounter.identifier:Fallnummer.type.coding.code">
       <path value="Encounter.identifier.type.coding.code" />
       <min value="1" />
       <fixedCode value="MR" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.identifier.type.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.userSelected">
+      <path value="Encounter.identifier.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.identifier.type.text" />
+      <max value="0" />
     </element>
     <element id="Encounter.identifier:Fallnummer.system">
       <path value="Encounter.identifier.system" />
@@ -16166,9 +16188,41 @@
         <map value="KH –internes Kennzeichen des Behandlungsfalls" />
       </mapping>
     </element>
+    <element id="Encounter.identifier:Fallnummer.period">
+      <path value="Encounter.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.assigner">
+      <path value="Encounter.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.statusHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="StatusHistory" />
+      </extension>
+      <path value="Encounter.statusHistory" />
+      <max value="0" />
+    </element>
     <element id="Encounter.class">
       <path value="Encounter.class" />
-      <mustSupport value="true" />
+      <max value="0" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Encounter.class.system">
+      <path value="Encounter.class.system" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.version">
+      <path value="Encounter.class.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.code">
+      <path value="Encounter.class.code" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.userSelected">
+      <path value="Encounter.class.userSelected" />
+      <max value="0" />
     </element>
     <element id="Encounter.classHistory">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -16176,6 +16230,14 @@
       </extension>
       <path value="Encounter.classHistory" />
       <mustSupport value="true" />
+    </element>
+    <element id="Encounter.classHistory.class.version">
+      <path value="Encounter.classHistory.class.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.classHistory.class.userSelected">
+      <path value="Encounter.classHistory.class.userSelected" />
+      <max value="0" />
     </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
@@ -16186,6 +16248,26 @@
         <map value="Aufnahmegrund" />
       </mapping>
     </element>
+    <element id="Encounter.type.coding.system">
+      <path value="Encounter.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.type.coding.version">
+      <path value="Encounter.type.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.type.coding.code">
+      <path value="Encounter.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.type.coding.userSelected">
+      <path value="Encounter.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.priority">
+      <path value="Encounter.priority" />
+      <max value="0" />
+    </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
       <min value="1" />
@@ -16194,6 +16276,22 @@
     <element id="Encounter.subject.reference">
       <path value="Encounter.subject.reference" />
       <min value="1" />
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.incomingReferral">
+      <path value="Encounter.incomingReferral" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <max value="0" />
     </element>
     <element id="Encounter.period">
       <path value="Encounter.period" />
@@ -16215,6 +16313,10 @@
         <map value="Entlassungs-/Verlegungsdatum" />
       </mapping>
     </element>
+    <element id="Encounter.length">
+      <path value="Encounter.length" />
+      <max value="0" />
+    </element>
     <element id="Encounter.reason">
       <path value="Encounter.reason" />
       <mustSupport value="true" />
@@ -16223,9 +16325,17 @@
         <map value="Aufnahmeanlass" />
       </mapping>
     </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <max value="0" />
+    </element>
     <element id="Encounter.hospitalization">
       <path value="Encounter.hospitalization" />
       <mustSupport value="true" />
+    </element>
+    <element id="Encounter.hospitalization.preAdmissionIdentifier">
+      <path value="Encounter.hospitalization.preAdmissionIdentifier" />
+      <max value="0" />
     </element>
     <element id="Encounter.hospitalization.origin">
       <path value="Encounter.hospitalization.origin" />
@@ -16243,6 +16353,10 @@
         <map value="Institutionskennzeichen des verlegenden Krankenhauses" />
       </mapping>
     </element>
+    <element id="Encounter.hospitalization.admitSource">
+      <path value="Encounter.hospitalization.admitSource" />
+      <max value="0" />
+    </element>
     <element id="Encounter.hospitalization.reAdmission">
       <path value="Encounter.hospitalization.reAdmission" />
       <mustSupport value="true" />
@@ -16250,6 +16364,22 @@
         <identity value="KHEntgG" />
         <map value="Fallzusammenführungsgrund" />
       </mapping>
+    </element>
+    <element id="Encounter.hospitalization.dietPreference">
+      <path value="Encounter.hospitalization.dietPreference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.specialCourtesy">
+      <path value="Encounter.hospitalization.specialCourtesy" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.specialArrangement">
+      <path value="Encounter.hospitalization.specialArrangement" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.destination">
+      <path value="Encounter.hospitalization.destination" />
+      <max value="0" />
     </element>
     <element id="Encounter.hospitalization.dischargeDisposition">
       <path value="Encounter.hospitalization.dischargeDisposition" />
@@ -16259,9 +16389,17 @@
         <map value="Entlassungs-/Verlegungsgrund" />
       </mapping>
     </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <max value="0" />
+    </element>
     <element id="Encounter.serviceProvider">
       <path value="Encounter.serviceProvider" />
       <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider.reference">
+      <path value="Encounter.serviceProvider.reference" />
+      <max value="0" />
     </element>
     <element id="Encounter.serviceProvider.identifier">
       <path value="Encounter.serviceProvider.identifier" />
@@ -16273,6 +16411,10 @@
         <identity value="KHEntgG" />
         <map value="Institutionskennzeichen Krankenhaus" />
       </mapping>
+    </element>
+    <element id="Encounter.partOf">
+      <path value="Encounter.partOf" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
