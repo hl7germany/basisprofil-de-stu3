@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-02-01T10:37:16.859-06:00" />
+    <lastUpdated value="2018-02-01T11:01:15.072-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-khentgg-extension" />
   <version value="0.2-WORK" />
   <name value="patient-khentgg-extension" />
-  <title value="Encounter-Extension für §21 KHEntgG Datenübermittlung" />
+  <title value="Patient-Extension für §21 KHEntgG Datenübermittlung" />
   <status value="draft" />
   <date value="2018-01-31T16:36:22.191-06:00" />
   <fhirVersion value="3.0.1" />
