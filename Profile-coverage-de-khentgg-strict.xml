@@ -1,44 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-02-01T15:50:10.963-06:00" />
+    <lastUpdated value="2018-02-01T15:51:01.415-06:00" />
   </meta>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fm" />
-  </extension>
-  <url value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
-  <version value="0.2-WORK" />
-  <name value="coverage-de-gkv" />
-  <title value="Coverage, deutsches GKV-Profil" />
+  <url value="http://fhir.de/StructureDefinition/coverage-de-khentgg-strict" />
+  <name value="coverage-de-khentgg-strict" />
+  <title value="Coverage-Profil für Datenübermittlung gemäß §21 KHEntgG" />
   <status value="draft" />
-  <experimental value="true" />
-  <date value="2017-09-15" />
-  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
-  <contact>
-    <telecom>
-      <system value="other" />
-      <value value="http://hl7.de/technische-komitees/fhir/" />
-    </telecom>
-  </contact>
-  <description value="Profil für die Nutzung der Coverage-Resource zur Darstellung eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
-  <copyright value="HL7 Deutschland e.V." />
+  <date value="2018-02-01T14:46:09.833-06:00" />
   <fhirVersion value="3.0.1" />
-  <mapping>
-    <identity value="KVDT" />
-    <name value="KVDT Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="BDT" />
-    <name value="BDT Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="KHEntgG" />
-    <name value="Datensatzbeschreibung nach Krankenhaus-Entgelt-Gesetz" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Coverage" />
-  <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-basis" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
+  <derivation value="constraint" />
   <snapshot>
     <element id="Coverage">
       <path value="Coverage" />
@@ -2362,7 +2337,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -2405,7 +2380,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -2448,7 +2423,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -2491,7 +2466,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -2534,7 +2509,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -2577,7 +2552,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -5214,7 +5189,7 @@
       <definition value="Die vollständige, bis zu 30-stellige Krankenversichertennummer." />
       <requirements value="This value may uniquely identify the coverage or it may be used in conjunction with the additional identifiers below." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.identifier" />
         <min value="0" />
@@ -6482,7 +6457,7 @@
       <definition value="Wird für Registermeldungen verwendet" />
       <requirements value="This value may uniquely identify the coverage or it may be used in conjunction with the additional identifiers below." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.identifier" />
         <min value="0" />
@@ -9144,7 +9119,7 @@
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="To determine relationship between the patient and the subscriber." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.relationship" />
         <min value="0" />
@@ -9890,7 +9865,7 @@
       <comment value="Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.&#xD;&#xA;" />
       <requirements value="Need to identify the issuer to target for processing and for coordination of benefit processing." />
       <min value="1" />
-      <max value="2" />
+      <max value="1" />
       <base>
         <path value="Coverage.payor" />
         <min value="0" />
@@ -10296,7 +10271,7 @@
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.reference" />
         <min value="0" />
@@ -10429,7 +10404,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to identify the issuer to target for processing and for coordination of benefit processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coverage.payor" />
         <min value="0" />
@@ -11431,7 +11406,7 @@
       <definition value="The policy(s) which constitute this insurance coverage." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Coverage.contract" />
         <min value="0" />
@@ -11672,343 +11647,70 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Coverage">
-      <path value="Coverage" />
-      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
-    </element>
-    <element id="Coverage.extension">
-      <path value="Coverage.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Coverage.extension:einlesedatum-egk">
       <path value="Coverage.extension" />
       <sliceName value="einlesedatum-egk" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Coverage.extension:generation-egk">
       <path value="Coverage.extension" />
       <sliceName value="generation-egk" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/generation-egk" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Coverage.extension:version-egk">
       <path value="Coverage.extension" />
       <sliceName value="version-egk" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/version-egk" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
       <path value="Coverage.extension" />
       <sliceName value="gkv-zusatzinfo-geschuetzt" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Coverage.extension:gkv-zusatzinfos-allgemein">
       <path value="Coverage.extension" />
       <sliceName value="gkv-zusatzinfos-allgemein" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Coverage.extension:gkv-onlinepruefung-egk">
       <path value="Coverage.extension" />
       <sliceName value="gkv-onlinepruefung-egk" />
-      <short value="Informationen zur Onlineprüfung und -aktualisierung " />
-      <definition value="Informationen zur Onlineprüfung und -aktualisierung  " />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk" />
-      </type>
-    </element>
-    <element id="Coverage.identifier">
-      <path value="Coverage.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <short value="Primärer Identifier der Versicherung" />
-      <definition value="Ein gesetzliches Versicherungsverhältnis sollte stets durch die eindeutige 30-stellige Versichertennummer identifiziert werden. Ist diese nicht bekannt, so wird die 10-stellige VersichertenID statt dessen verwendet." />
-      <comment value="TODO: Constraint, der prüft, dass mindestens entweder eine VersichertenID oder eine Krankenversichertennummer angegeben wurde." />
-      <min value="1" />
-    </element>
-    <element id="Coverage.identifier.type">
-      <path value="Coverage.identifier.type" />
       <max value="0" />
-    </element>
-    <element id="Coverage.identifier:VersichertenID">
-      <path value="Coverage.identifier" />
-      <sliceName value="VersichertenID" />
-      <short value="Versicherten-ID" />
-      <definition value="Die Versicherten-ID ist der 10-stellige unveränderliche Teil der 30-stelligen Krankenversichertennummer. Sie wird häufig ebenfalls als Krankenversichertennummer bezeichnet. Der Term 'Versicherten-ID' wird hier in Übereinstimmung mit der Gematik-Spezifikation für das VSDM verwendet." />
-      <max value="1" />
-      <mapping>
-        <identity value="KHEntgG" />
-        <map value="Krankenversichertennummer (Versicherten –ID)" />
-      </mapping>
-    </element>
-    <element id="Coverage.identifier:VersichertenID.use">
-      <path value="Coverage.identifier.use" />
-      <max value="0" />
-    </element>
-    <element id="Coverage.identifier:VersichertenID.type">
-      <path value="Coverage.identifier.type" />
-      <max value="0" />
-    </element>
-    <element id="Coverage.identifier:VersichertenID.system">
-      <path value="Coverage.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvid-10" />
-    </element>
-    <element id="Coverage.identifier:VersichertenID.value">
-      <path value="Coverage.identifier.value" />
-      <min value="1" />
     </element>
     <element id="Coverage.identifier:Krankenversichertennummer">
       <path value="Coverage.identifier" />
       <sliceName value="Krankenversichertennummer" />
-      <short value="Krankenversichertennummer" />
-      <definition value="Die vollständige, bis zu 30-stellige Krankenversichertennummer." />
-      <max value="1" />
-    </element>
-    <element id="Coverage.identifier:Krankenversichertennummer.use">
-      <path value="Coverage.identifier.use" />
       <max value="0" />
-    </element>
-    <element id="Coverage.identifier:Krankenversichertennummer.type">
-      <path value="Coverage.identifier.type" />
-      <max value="0" />
-    </element>
-    <element id="Coverage.identifier:Krankenversichertennummer.system">
-      <path value="Coverage.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr-30" />
-    </element>
-    <element id="Coverage.identifier:Krankenversichertennummer.value">
-      <path value="Coverage.identifier.value" />
-      <min value="1" />
     </element>
     <element id="Coverage.identifier:PseudoVersichertenID">
       <path value="Coverage.identifier" />
       <sliceName value="PseudoVersichertenID" />
-      <short value="pseudonymisierte VersichertenID" />
-      <definition value="Wird für Registermeldungen verwendet" />
-      <max value="1" />
-    </element>
-    <element id="Coverage.identifier:PseudoVersichertenID.use">
-      <path value="Coverage.identifier.use" />
       <max value="0" />
     </element>
-    <element id="Coverage.identifier:PseudoVersichertenID.type">
-      <path value="Coverage.identifier.type" />
+    <element id="Coverage.relationship">
+      <path value="Coverage.relationship" />
       <max value="0" />
-    </element>
-    <element id="Coverage.identifier:PseudoVersichertenID.system">
-      <path value="Coverage.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://fhir.de/NamingSystem/gkv/pseudo-kvid" />
-    </element>
-    <element id="Coverage.identifier:PseudoVersichertenID.value">
-      <path value="Coverage.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Coverage.type">
-      <path value="Coverage.type" />
-      <comment value="28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standrad definierten preferred bindings, da die dortigen Codes nicht passen. " />
-      <min value="1" />
-    </element>
-    <element id="Coverage.type.coding.system">
-      <path value="Coverage.type.coding.system" />
-      <fixedUri value="http://fhir.de/CodeSystem/versicherungsart-de-basis" />
-    </element>
-    <element id="Coverage.type.coding.code">
-      <path value="Coverage.type.coding.code" />
-      <fixedCode value="GKV" />
-    </element>
-    <element id="Coverage.subscriber.identifier">
-      <path value="Coverage.subscriber.identifier" />
-      <short value="VersichertenID (10-stellig) des Hauptversicherten" />
-      <patternIdentifier>
-        <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
-      </patternIdentifier>
-    </element>
-    <element id="Coverage.subscriber.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Coverage.subscriber.display" />
-      <short value="Name des Hauptversicherten" />
-    </element>
-    <element id="Coverage.beneficiary">
-      <path value="Coverage.beneficiary" />
-      <comment value="Die Angabe der 10-stelligen Krankenversichertennummer ist verpflichtend. Durch die Referenz auf eine Patient-Resource können weitere Informationen zum Patienten hinterlegt werden." />
-    </element>
-    <element id="Coverage.beneficiary.identifier">
-      <path value="Coverage.beneficiary.identifier" />
-      <short value="Identifier der versicherten Person" />
-      <min value="1" />
-      <patternIdentifier>
-        <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
-      </patternIdentifier>
-    </element>
-    <element id="Coverage.beneficiary.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Coverage.beneficiary.display" />
-      <short value="Name der Versicherten Person" />
-      <definition value="Die Angabe des Namens des Versicherten dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die KV-Nummer relevant." />
-    </element>
-    <element id="Coverage.period.start">
-      <path value="Coverage.period.start" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4133" />
-      </mapping>
-    </element>
-    <element id="Coverage.period.end">
-      <path value="Coverage.period.end" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4110" />
-      </mapping>
     </element>
     <element id="Coverage.payor">
       <path value="Coverage.payor" />
-      <slicing>
-        <description value="1. Kostenträger&#xD;&#xA;2. Abrechnender Kostenträger" />
-        <ordered value="true" />
-        <rules value="closed" />
-      </slicing>
-      <definition value="Gibt den Kostenträger des Versicherten an. Die Angabe der IK-Nummer als logische Referenz sowie des Namend als Display ist zwingend erforderlich.&#xD;&#xA;Die Referenz auf eine Resource vom Typ Organization, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional.&#xD;&#xA;Sofern eine zweite Referenz auf einen Kostenträger existiert, so handelt es sich hierbei um den abrechnenden Kostenträger" />
-      <comment value="Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.&#xD;&#xA;" />
-      <max value="2" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis" />
-      </type>
-    </element>
-    <element id="Coverage.payor.reference">
-      <path value="Coverage.payor.reference" />
-      <definition value="&#xD;" />
-    </element>
-    <element id="Coverage.payor.identifier">
-      <path value="Coverage.payor.identifier" />
-      <short value="IK-Nummer des Versicherers" />
-      <definition value="Die Angabe der IK-Nummer des Versicherers ist verpflichtend. " />
-      <min value="1" />
-      <fixedIdentifier>
-        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-      </fixedIdentifier>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4111 Gibt den Kostenträger des Versicherten an. Die Angabe der IK-Nummer als logische Referenz sowie des Namend als Display ist zwingend erforderlich." />
-      </mapping>
-    </element>
-    <element id="Coverage.payor.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Coverage.payor.display" />
-      <short value="Name des Versicherers" />
-      <definition value="Die Angabe des Namens des Versicherers dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die IK-Nummer relevant " />
-      <min value="1" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4134 (abrechnender Kostenträger = 1. Priorität)" />
-      </mapping>
+      <max value="1" />
     </element>
     <element id="Coverage.payor:Kostentraeger">
       <path value="Coverage.payor" />
       <sliceName value="Kostentraeger" />
-      <definition value="Gibt den Kostenträger des Versicherten an. Die Angabe der IK-Nummer als logische Referenz sowie des Namend als Display ist zwingend erforderlich. Die Referenz auf eine Resource vom Typ Organization, die weitere Details zur Versicherung enthalten kann (z.B. Adresse, Kontaktdaten) ist optional. Sofern eine zweite Referenz auf einen Kostenträger existiert, so handelt es sich hierbei um den abrechnenden Kostenträger" />
-      <min value="1" />
-      <max value="1" />
     </element>
-    <element id="Coverage.payor:Kostentraeger.identifier">
-      <path value="Coverage.payor.identifier" />
-      <short value="IK-Nummer des Versicherers" />
-      <definition value=" " />
-      <requirements value=" " />
-      <min value="1" />
-      <patternIdentifier>
-        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-      </patternIdentifier>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4111" />
-      </mapping>
-      <mapping>
-        <identity value="KHEntgG" />
-        <map value="Institutionskennzeichen der Krankenkasse" />
-      </mapping>
-    </element>
-    <element id="Coverage.payor:Kostentraeger.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Coverage.payor.display" />
-      <short value="Name des Versicherers" />
-      <definition value="Die Angabe des Namens des Versicherers dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die IK-Nummer relevant " />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4134" />
-      </mapping>
+    <element id="Coverage.payor:Kostentraeger.reference">
+      <path value="Coverage.payor.reference" />
+      <max value="0" />
     </element>
     <element id="Coverage.payor:abrechnenderKostentraeger">
       <path value="Coverage.payor" />
       <sliceName value="abrechnenderKostentraeger" />
-      <max value="1" />
+      <max value="0" />
     </element>
-    <element id="Coverage.payor:abrechnenderKostentraeger.identifier">
-      <path value="Coverage.payor.identifier" />
-      <short value="IK-Nummer des abrechnenden Kostenträgers" />
-      <definition value="Die Angabe der IK-Nummer des abrechnenden Kostenträgers ist verpflichtend." />
-      <min value="1" />
-      <patternIdentifier>
-        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
-      </patternIdentifier>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4111" />
-        <comment value="(Priorität 1)" />
-      </mapping>
-    </element>
-    <element id="Coverage.payor:abrechnenderKostentraeger.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Coverage.payor.display" />
-      <short value="Name des Versicherers" />
-      <definition value="Die Angabe des Namens des Versicherers dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die IK-Nummer relevant " />
-      <min value="1" />
-      <mapping>
-        <identity value="KVDT" />
-        <map value="4134" />
-        <comment value="(Priorität 1)" />
-      </mapping>
+    <element id="Coverage.contract">
+      <path value="Coverage.contract" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
