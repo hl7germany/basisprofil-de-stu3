@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-04-08T13:51:58.623+01:00" />
+    <lastUpdated value="2018-04-08T14:05:14.857+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/condition-de-basis" />
   <version value="0.2-WORK" />
