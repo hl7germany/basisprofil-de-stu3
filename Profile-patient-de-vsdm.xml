@@ -1131,10 +1131,6 @@
       <type>
         <code value="uri" />
       </type>
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1176,10 +1172,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="123456" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2396,10 +2388,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/NamingSystem/gkv/kvid-10" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2441,10 +2429,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="123456" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5399,10 +5383,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="home" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5455,10 +5435,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="both" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5515,10 +5491,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="137 Nowhere Street, Erewhon 9132" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5562,10 +5534,6 @@
         <code value="string" />
       </type>
       <orderMeaning value="The order in which lines should appear in an address label" />
-      <example>
-        <label value="General" />
-        <valueString value="137 Nowhere Street" />
-      </example>
       <example>
         <label value="Beipiel für Adresszeile mit Extensions für Straße und Hausnummer" />
         <valueString value="Musterweg 42">
@@ -6541,10 +6509,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="Erewhon" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6600,10 +6564,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="Madison" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6693,10 +6653,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="9132" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6810,13 +6766,6 @@
       <type>
         <code value="Period" />
       </type>
-      <example>
-        <label value="General" />
-        <valuePeriod>
-          <start value="2010-03-23" />
-          <end value="2010-07-01" />
-        </valuePeriod>
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7748,10 +7697,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="text/plain; charset=UTF-8, image/png" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7801,10 +7746,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="en-AU" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7894,10 +7835,6 @@
       <type>
         <code value="uri" />
       </type>
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/logo-small.png" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -8007,10 +7944,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="Official Corporate Logo" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10115,10 +10048,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="home" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10171,10 +10100,6 @@
       <type>
         <code value="code" />
       </type>
-      <example>
-        <label value="General" />
-        <valueCode value="both" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10227,10 +10152,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="137 Nowhere Street, Erewhon 9132" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10274,10 +10195,6 @@
         <code value="string" />
       </type>
       <orderMeaning value="The order in which lines should appear in an address label" />
-      <example>
-        <label value="General" />
-        <valueString value="137 Nowhere Street" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10324,10 +10241,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="Erewhon" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10374,10 +10287,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="Madison" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10463,10 +10372,6 @@
       <type>
         <code value="string" />
       </type>
-      <example>
-        <label value="General" />
-        <valueString value="9132" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10558,13 +10463,6 @@
       <type>
         <code value="Period" />
       </type>
-      <example>
-        <label value="General" />
-        <valuePeriod>
-          <start value="2010-03-23" />
-          <end value="2010-07-01" />
-        </valuePeriod>
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
