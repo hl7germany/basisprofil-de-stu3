@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-11-08T18:33:28.283+01:00" />
@@ -492,7 +492,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -542,6 +542,39 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:namenszusatz.valueString:valueString">
+      <path value="HumanName.family.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Namenszusatz" />
+      <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -730,6 +763,39 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="HumanName.family.extension:nachname.valueString:valueString">
+      <path value="HumanName.family.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="HumanName.family.extension:vorsatzwort">
       <path value="HumanName.family.extension" />
       <sliceName value="vorsatzwort" />
@@ -900,6 +966,66 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+    </element>
+    <element id="HumanName.family.extension:vorsatzwort.valueString:valueString">
+      <path value="HumanName.family.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="HumanName.family.value">
+      <path value="HumanName.family.value" />
+      <representation value="xmlAttr" />
+      <short value="Primitive value for string" />
+      <definition value="Primitive value for string" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="string.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string" />
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576" />
     </element>
     <element id="HumanName.given">
       <path value="HumanName.given" />
@@ -1241,6 +1367,76 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="HumanName.prefix.extension:prefix-qualifier.valueCode:valueCode">
+      <path value="HumanName.prefix.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EntityNamePartQualifier" />
+        </extension>
+        <strength value="required" />
+        <description value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/name-part-qualifier" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="HumanName.prefix.value">
+      <path value="HumanName.prefix.value" />
+      <representation value="xmlAttr" />
+      <short value="Primitive value for string" />
+      <definition value="Primitive value for string" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="string.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string" />
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576" />
+    </element>
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
       <short value="Namensteile nach dem Nachnamen" />
@@ -1414,6 +1610,10 @@
         <identity value="BDT" />
         <map value="3100" />
       </mapping>
+    </element>
+    <element id="HumanName.family.extension:namenszusatz.valueString:valueString">
+      <path value="HumanName.family.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="HumanName.family.extension:nachname">
       <path value="HumanName.family.extension" />
