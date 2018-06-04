@@ -15,6 +15,6 @@ Eine formelle Abstimmung folgt.
 
 Einige Profile finden sich in mehreren Versionen in diesem Repository.
 
-Es ist zu beachten, dass Profile, deren Status als "retired" gekennzeichnet sind, nicht mehr verwendet werden sollten.
+Es ist zu beachten, dass Profile, deren Status als "retired" gekennzeichnet sind, nicht mehr verwendet werden sollten. Diese befinden sich im Unterordner "retired".
 
 Insbesondere sollten auch abgeleitete Profile spätestens mit Version 1.0 (geplante erste ballotierte, stabile Fassung) der deutschen Basisprofile angepasst werden und von diesem Versionsstand ableiten!
