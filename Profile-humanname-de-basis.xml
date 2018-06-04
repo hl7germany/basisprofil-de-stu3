@@ -541,7 +541,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
+      <fixedUri value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
