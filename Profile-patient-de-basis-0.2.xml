@@ -2688,7 +2688,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Strasse">
+    <element id="Patient.address.line.extension:Strasse.value[x]:valueString">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -2697,7 +2697,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Element.extension" />
+        <path value="Extension.value[x]" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -2888,7 +2888,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Hausnummer">
+    <element id="Patient.address.line.extension:Hausnummer.value[x]:valueString">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -2897,7 +2897,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Element.extension" />
+        <path value="Extension.value[x]" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -3088,7 +3088,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Adresszusatz">
+    <element id="Patient.address.line.extension:Adresszusatz.value[x]:valueString">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -3097,7 +3097,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Element.extension" />
+        <path value="Extension.value[x]" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -3288,7 +3288,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Postfach">
+    <element id="Patient.address.line.extension:Postfach.value[x]:valueString">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -3297,7 +3297,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Element.extension" />
+        <path value="Extension.value[x]" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -3320,6 +3320,33 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+    </element>
+    <element id="Patient.address.line.value">
+      <path value="Patient.address.line.value" />
+      <representation value="xmlAttr" />
+      <short value="Primitive value for string" />
+      <definition value="Primitive value for string" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="string.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string" />
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576" />
     </element>
     <element id="Patient.address.city">
       <path value="Patient.address.city" />
@@ -5308,7 +5335,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="StructureDefinition/organization-de-basis/0.2" />
+        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5742,7 +5769,7 @@
       <definition value="haupt-behandelnde Organisation nach deutschem Profil.&#xD;&#xA;Dieses Profil enthält für Deutschland spezififische Besonderheiten und Extensions." />
       <type>
         <code value="Reference" />
-        <targetProfile value="StructureDefinition/organization-de-basis/0.2" />
+        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2" />
       </type>
     </element>
   </differential>
