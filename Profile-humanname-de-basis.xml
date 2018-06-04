@@ -901,30 +901,21 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.value">
-      <path value="HumanName.family.value" />
+    <element id="HumanName.family">
+      <path value="HumanName.family" />
       <representation value="xmlAttr" />
       <short value="Primitive value for string" />
       <definition value="Primitive value for string" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="string.value" />
+        <path value="HumanName.family" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
-            <valueString value="string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
-            <valueString value="xsd:string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
-            <valueString value="xsd:string" />
-          </extension>
-        </code>
+          <code value="string" />
       </type>
       <maxLength value="1048576" />
     </element>
