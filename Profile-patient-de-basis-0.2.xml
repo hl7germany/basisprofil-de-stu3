@@ -3321,15 +3321,15 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.value">
-      <path value="Patient.address.line.value" />
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
       <representation value="xmlAttr" />
       <short value="Primitive value for string" />
       <definition value="Primitive value for string" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="string.value" />
+        <path value="Address.line" />
         <min value="0" />
         <max value="1" />
       </base>
