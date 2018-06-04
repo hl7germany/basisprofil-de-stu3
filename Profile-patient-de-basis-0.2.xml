@@ -3321,22 +3321,6 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line">
-      <path value="Patient.address.line" />
-      <short value="Address line" />
-      <definition value="Address line" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Address.line" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <maxLength value="1048576" />
-    </element>
     <element id="Patient.address.city">
       <path value="Patient.address.city" />
       <short value="Name of city, town etc." />
