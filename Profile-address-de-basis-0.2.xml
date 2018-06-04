@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-12-05T18:57:04.234+01:00" />
@@ -673,7 +673,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.line.extension:Strasse.valueString:valueString">
+    <element id="Address.line.extension:Strasse">
       <path value="Address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -682,7 +682,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -873,7 +873,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.line.extension:Hausnummer.valueString:valueString">
+    <element id="Address.line.extension:Hausnummer">
       <path value="Address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -882,7 +882,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -1073,7 +1073,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.line.extension:Adresszusatz.valueString:valueString">
+    <element id="Address.line.extension:Adresszusatz">
       <path value="Address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -1082,7 +1082,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -1273,7 +1273,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.line.extension:Postfach.valueString:valueString">
+    <element id="Address.line.extension:Postfach">
       <path value="Address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -1282,7 +1282,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>

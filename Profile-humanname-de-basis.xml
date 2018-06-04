@@ -618,7 +618,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.extension:nachname.valueString:valueString">
+    <element id="HumanName.family.extension:nachname">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -627,7 +627,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -822,7 +822,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.extension:vorsatzwort.valueString:valueString">
+    <element id="HumanName.family.extension:vorsatzwort">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -831,7 +831,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -1222,7 +1222,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.valueCode:valueCode">
+    <element id="HumanName.prefix.extension:prefix-qualifier">
       <path value="HumanName.prefix.extension.valueCode" />
       <sliceName value="valueCode" />
       <short value="Value of extension" />
@@ -1231,7 +1231,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
