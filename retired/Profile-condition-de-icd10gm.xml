@@ -6,11 +6,11 @@
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose</div></text>
   <url value="http://fhir.de/StructureDefinition/condition-de-icd10gm" />
-  <version value="0.2" />
+  <version value="0.1" />
   <name value="condition-de-icd10gm" />
   <title value="Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose" />
   <status value="retired" />
-  <date value="2017-07-19T16:41:35.2276502+02:00" />
+  <date value="2018-06-04T19:04:00.000+02:00" />
   <description value="Deutsches Basisprofil einer mit ICD-10-GM codierten Diagnose" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
