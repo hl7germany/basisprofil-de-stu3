@@ -1,6 +1,6 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="http://fhir.de/StructureDefinition/condition-de-basis"/>
+		<profile value="http://fhir.de/StructureDefinition/condition-de-basis/0.2"/>
 	</meta>
 	<text>
 		<status value="generated"/>

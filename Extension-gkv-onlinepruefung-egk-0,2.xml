@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-11-07T17:59:17.163+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk/0.2" />
+  <version value="0.2-WORK" />
+  <name value="gkv-onlinepruefung-egk-0.2" />
+  <title value="Informationen zur Onlineprüfung und -aktualisierung (Version 0.2)" />
+  <status value="draft" />
+  <date value="2017-11-06T17:51:25.722+01:00" />
+  <description value="Informationen zur Onlineprüfung und -aktualisierung &#xD;&#xA;Vgl.: Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf] - Kapitel 2.4.1" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Coverage" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:timestamp">
+      <path value="Extension.extension" />
+      <sliceName value="timestamp" />
+      <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
+      <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:timestamp.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="timestamp" />
+    </element>
+    <element id="Extension.extension:timestamp.value[x]:valueDateTime">
+      <path value="Extension.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <short value="Zeitpunkt der Onlineprüfung " />
+      <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
+      <comment value="  " />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3006" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:ergebnis">
+      <path value="Extension.extension" />
+      <sliceName value="ergebnis" />
+      <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
+      <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ergebnis.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ergebnis" />
+    </element>
+    <element id="Extension.extension:ergebnis.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="Ergebniscode" />
+      <definition value="Ergebniscode (1-6)" />
+      <comment value=" " />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[1-6]" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3010" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:errorCode">
+      <path value="Extension.extension" />
+      <sliceName value="errorCode" />
+      <short value="Error-Code" />
+      <definition value="ErrorCode" />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:errorCode.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="errorCode" />
+    </element>
+    <element id="Extension.extension:errorCode.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="errorCode" />
+      <definition value="errorCode" />
+      <comment value="maximal fünstelliger numerischer Code" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[0-9]{1,5}" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3012" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:pruefzifferFachdienst">
+      <path value="Extension.extension" />
+      <sliceName value="pruefzifferFachdienst" />
+      <short value="Prüfziffer des Fachdienstes" />
+      <definition value="Prüfziffer des Fachdienstes" />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:pruefzifferFachdienst.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="pruefzifferFachdienst" />
+    </element>
+    <element id="Extension.extension:pruefzifferFachdienst.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3013" />
+      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

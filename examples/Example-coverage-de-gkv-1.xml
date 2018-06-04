@@ -1,6 +1,6 @@
 <Coverage xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="http://fhir.de/StructureDefinition/coverage-de-gkv"/>
+		<profile value="http://fhir.de/StructureDefinition/coverage-de-gkv/0.2"/>
 	</meta>
 	<identifier>
 		<system value="http://fhir.de/NamingSystem/gkv/kvnr-30"/>

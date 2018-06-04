@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-12-05T18:56:56.374+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/patient-de-vsdm/0.2" />
+  <version value="0.2-WORK" />
+  <name value="patient-de-vsdm-0.2" />
+  <title value="Patient, deutsches VSDM-Profil (Version 0.2)" />
+  <status value="draft" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Basisprofil für die Verwendung der Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;).&#xD;&#xA;Elemente, die als &quot;must-support&quot; gekennzeichnet sind, repräsentieren die optionalen Informationen aus der der VSDM-Spezifikation." />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KVDT" />
+    <name value="KVDT Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="BDT" />
+    <name value="BDT Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/patient-de-basis/0.2" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <short value="Patient im Kontext des deutschen VSDM" />
+      <definition value="Patient Ressource im Kontext des deutschen VSDM (Versichertenstammdatenmanagement, &quot;eGK-Datensatz&quot;).&#xD;&#xA;Elemente, die als &quot;must-support&quot; gekennzeichnet sind, repräsentieren die optionalen Informationen aus der der VSDM-Spezifikation." />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:VersichertenID_GKV">
+      <path value="Patient.identifier" />
+      <sliceName value="VersichertenID_GKV" />
+      <definition value="Die Krankenversichertennummer wie auf der eGK abgebildet (10-stellige, unveränderliche Nummer).&#xD;&#xA;Für dieses Profil muss diese Nummer angegeben werden." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:namenszusatz">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="namenszusatz" />
+      <definition value="Namenszusatz, z.B. Adelstitel als Bestandteil das Nachnamens, z.B. Gräfin, Prinz oder Fürst.&#xD;&#xA;Im Kontext von VSDM sind ausschließlich die Namenszusätze aus DEÜV Anlage 7 zulässig." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:nachname">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="nachname" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:vorsatzwort">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="vorsatzwort" />
+      <definition value="Vorsatzwort zum Nachnamen, z.B. &quot;von&quot; &quot;van der&quot;, &quot;zu&quot; usw.&#xD;&#xA;Im Kontext von VSDM sind ausschließlich die Vorsatzwörter aus DEÜV Anlage 6 zulässig." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix">
+      <path value="Patient.name.prefix" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier">
+      <path value="Patient.name.prefix.extension" />
+      <sliceName value="prefix-qualifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <definition value="Geschlecht.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt.&#xD;&#xA;" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <short value="Geburtsdatum" />
+      <definition value="Geburtsdatum&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Strasse">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Strasse" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Hausnummer">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Hausnummer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Adresszusatz">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Adresszusatz" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Postfach">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Postfach" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.city">
+      <path value="Patient.address.city" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.country">
+      <path value="Patient.address.country" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

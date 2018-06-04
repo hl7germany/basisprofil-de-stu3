@@ -1,6 +1,6 @@
 <ChargeItem xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="http://fhir.de/StructureDefinition/ChargeItem-ebm"/>
+		<profile value="http://fhir.de/StructureDefinition/chargeitem-ebm/0.2"/>
 	</meta>
 	<status value="billable"/>
 	<code>

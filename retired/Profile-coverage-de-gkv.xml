@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-09-14T13:58:42.794-08:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fm" />
+  </extension>
+  <url value="http://fhir.de/StructureDefinition/coverage-de-gkv" />
+  <version value="0.1" />
+  <name value="coverage-de-gkv" />
+  <status value="retired" />
+  <experimental value="true" />
+  <date value="2017-09-15" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Profil für die Nutzung der Coverage-Resource zur Darstellung eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Coverage" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-basis" />
+  <differential>
+    <element id="Coverage">
+      <path value="Coverage" />
+      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
+    </element>
+    <element id="Coverage.identifier">
+      <path value="Coverage.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Primärer Identifier der Versicherung" />
+      <definition value="Ein gesetzliches Versicherungsverhältnis sollte stets durch die eindeutige 30-stellige Versichertennummer identifiziert werden. Ist diese nicht bekannt, so wird die 10-stellige VersichertenID statt dessen verwendet." />
+      <comment value="TODO: Constraint, der prüft, dass mindestens entweder eine VersichertenID oder eine Krankenversichertennummer angegeben wurde." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Coverage.identifier.type">
+      <path value="Coverage.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:VersichertenID">
+      <path value="Coverage.identifier" />
+      <sliceName value="VersichertenID" />
+      <short value="Versicherten-ID" />
+      <definition value="Die Versicherten-ID ist der 10-stellige unveränderliche Teil der 30-stelligen Krankenversichertennummer. Sie wird häufig ebenfalls als Krankenversichertennummer bezeichnet. Der Term 'Versicherten-ID' wird hier in Übereinstimmung mit der Gematik-Spezifikation für das VSDM verwendet." />
+      <max value="1" />
+    </element>
+    <element id="Coverage.identifier:VersichertenID.use">
+      <path value="Coverage.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:VersichertenID.type">
+      <path value="Coverage.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:VersichertenID.system">
+      <path value="Coverage.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    </element>
+    <element id="Coverage.identifier:VersichertenID.value">
+      <path value="Coverage.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer">
+      <path value="Coverage.identifier" />
+      <sliceName value="Krankenversichertennummer" />
+      <short value="Krankenversichertennummer" />
+      <definition value="Die vollständige, bis zu 30-stellige Krankenversichertennummer." />
+      <max value="1" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer.use">
+      <path value="Coverage.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer.type">
+      <path value="Coverage.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer.system">
+      <path value="Coverage.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/NamingSystem/gkv/kvnr-30" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer.value">
+      <path value="Coverage.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Coverage.type">
+      <path value="Coverage.type" />
+      <comment value="28.07.2017 (zulip): TC Konsens bzgl. Verwendung eines eigenen ValueSets anstelle des im Standrad definierten preferred bindings, da die dortigen Codes nicht passen. " />
+      <min value="1" />
+    </element>
+    <element id="Coverage.type.coding.system">
+      <path value="Coverage.type.coding.system" />
+      <fixedUri value="http://fhir.de/CodeSystem/versicherungsart-de-basis" />
+    </element>
+    <element id="Coverage.type.coding.code">
+      <path value="Coverage.type.coding.code" />
+      <fixedCode value="GKV" />
+    </element>
+    <element id="Coverage.beneficiary">
+      <path value="Coverage.beneficiary" />
+      <comment value="Die Angabe der 10-stelligen Krankenversichertennummer ist verpflichtend. Durch die Referenz auf eine Patient-Resource können weitere Informationen zum Patienten hinterlegt werden." />
+    </element>
+    <element id="Coverage.beneficiary.identifier">
+      <path value="Coverage.beneficiary.identifier" />
+      <short value="Identifier der versicherten Person" />
+      <min value="1" />
+      <fixedIdentifier>
+        <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+      </fixedIdentifier>
+    </element>
+    <element id="Coverage.beneficiary.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Coverage.beneficiary.display" />
+      <short value="Name der Versicherten Person" />
+      <definition value="Die Angabe des Namens des Versicherten dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die KV-Nummer relevant." />
+      <min value="1" />
+    </element>
+    <element id="Coverage.payor">
+      <path value="Coverage.payor" />
+      <comment value="Die Angabe der IK-Nummer des Versicherers in payor.identifier ist verpflichtend. Weitere Angaben zum Versicherer (Name, Adresse) können in einer Organization-Resource hinterlegt werden, auf die hier referenziert wird.&#xD;&#xA;" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis" />
+      </type>
+    </element>
+    <element id="Coverage.payor.identifier">
+      <path value="Coverage.payor.identifier" />
+      <short value="IK-Nummer des Versicherers" />
+      <definition value="Die Angabe der IK-Nummer des Versicherers ist verpflichtend. " />
+      <fixedIdentifier>
+        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+      </fixedIdentifier>
+    </element>
+    <element id="Coverage.payor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Coverage.payor.display" />
+      <short value="Name des Versicherers" />
+      <definition value="Die Angabe des Namens des Versicherers dient der geeigenten Darstellung für den Benutzer. Technisch ist ausschließlich die IK-Nummer relevant " />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

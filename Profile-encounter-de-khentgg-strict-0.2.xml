@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-01T15:51:23.893-06:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/encounter-de-khentgg-strict/0.2" />
+  <version value="0.2-WORK" />
+  <name value="encounter-de-khentg-strict-0.2" />
+  <title value="Encounter-Profil für Datenübermittlung gemäß §21 KHEntgG (Version 0.2)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-01-31T15:56:31.845-06:00" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KHEntgG" />
+    <name value="Datensatzbeschreibung nach Krankenhaus-Entgelt-Gesetz" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter.extension">
+      <path value="Encounter.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Encounter.extension:extension-khentgg">
+      <path value="Encounter.extension" />
+      <sliceName value="extension-khentgg" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/encounter-khentgg-extension/0.2" />
+      </type>
+    </element>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Encounter.identifier:Fallnummer">
+      <path value="Encounter.identifier" />
+      <sliceName value="Fallnummer" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.use">
+      <path value="Encounter.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type">
+      <path value="Encounter.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.system">
+      <path value="Encounter.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v2/0203" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.version">
+      <path value="Encounter.identifier.type.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.code">
+      <path value="Encounter.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="MR" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.identifier.type.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.coding.userSelected">
+      <path value="Encounter.identifier.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.identifier.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.system">
+      <path value="Encounter.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.value">
+      <path value="Encounter.identifier.value" />
+      <min value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="KH –internes Kennzeichen des Behandlungsfalls" />
+      </mapping>
+    </element>
+    <element id="Encounter.identifier:Fallnummer.period">
+      <path value="Encounter.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier:Fallnummer.assigner">
+      <path value="Encounter.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.statusHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="StatusHistory" />
+      </extension>
+      <path value="Encounter.statusHistory" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+      <max value="0" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Encounter.class.system">
+      <path value="Encounter.class.system" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.version">
+      <path value="Encounter.class.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.code">
+      <path value="Encounter.class.code" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class.userSelected">
+      <path value="Encounter.class.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.classHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ClassHistory" />
+      </extension>
+      <path value="Encounter.classHistory" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.classHistory.class.version">
+      <path value="Encounter.classHistory.class.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.classHistory.class.userSelected">
+      <path value="Encounter.classHistory.class.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
+      <short value="Aufnahmegrund" />
+      <definition value="Aufnahmegrund&#xD;&#xA;01xx Krankenhausbehandlung, vollstationär&#xD;&#xA;02xx Krankenhausbehandlung, vollstationär mit vorausgegangener vorstationärer Behandlung&#xD;&#xA;03xx Krankenhausbehandlung, teilstationär&#xD;&#xA;04xx vorstationäre Behandlung ohne anschließende vollstationäre Behandlung&#xD;&#xA;05xx stationäre Entbindung&#xD;&#xA;06xx Geburt&#xD;&#xA;08xx Stationäre Aufnahme zur Organentnahme" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Aufnahmegrund" />
+      </mapping>
+    </element>
+    <element id="Encounter.type.coding.system">
+      <path value="Encounter.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.type.coding.version">
+      <path value="Encounter.type.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.type.coding.code">
+      <path value="Encounter.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.type.coding.userSelected">
+      <path value="Encounter.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.priority">
+      <path value="Encounter.priority" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject.reference">
+      <path value="Encounter.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.incomingReferral">
+      <path value="Encounter.incomingReferral" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.period.start">
+      <path value="Encounter.period.start" />
+      <min value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Aufnahmedatum" />
+      </mapping>
+    </element>
+    <element id="Encounter.period.end">
+      <path value="Encounter.period.end" />
+      <short value="Entlassungs-/Verlegungsdatum " />
+      <definition value="Es ist das Entlassungs-/Verlegungsdatum (Tag und Uhrzeit) aus der vollstationären oder teilstationären Behandlung anzugeben. (Bei interner Verlegung in einen anderen Entgeltbereich ohne nachfolgende Rückverlegung wird das Verlegungsdatum angegeben; die Behandlungsepisode in dem anderen Entgeltbereich wird als gesonderter Fall dokumentiert.) Bei nur vorstationär behandelten Fällen ist das Entlassungsdatum der letzte vorstationäre Behandlungstag. " />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Entlassungs-/Verlegungsdatum" />
+      </mapping>
+    </element>
+    <element id="Encounter.length">
+      <path value="Encounter.length" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.reason">
+      <path value="Encounter.reason" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Aufnahmeanlass" />
+      </mapping>
+    </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization">
+      <path value="Encounter.hospitalization" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.hospitalization.preAdmissionIdentifier">
+      <path value="Encounter.hospitalization.preAdmissionIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.origin">
+      <path value="Encounter.hospitalization.origin" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.hospitalization.origin.identifier">
+      <path value="Encounter.hospitalization.origin.identifier" />
+      <min value="1" />
+      <patternIdentifier>
+        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Institutionskennzeichen des verlegenden Krankenhauses" />
+      </mapping>
+    </element>
+    <element id="Encounter.hospitalization.admitSource">
+      <path value="Encounter.hospitalization.admitSource" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.reAdmission">
+      <path value="Encounter.hospitalization.reAdmission" />
+      <short value="Fallzusammenführungsgrund " />
+      <definition value="Liegt eine Fallzusammenführung vor, ist der Grund der Zusammenführung nach folgendem Schlüssel anzugeben: &#xD;&#xA;OG  Wiederaufnahme nach § 2 Abs. 1 FPV1 &#xD;&#xA;MD  Wiederaufnahme nach § 2 Abs. 2 FPV1 &#xD;&#xA;KO  Wiederaufnahme nach § 2 Abs. 3 FPV1 (Komplikation) &#xD;&#xA;RU  Rückverlegung nach § 3 Abs. 3 FPV1 &#xD;&#xA;WR  Kombinierte Fallzusammenführung nach § 3 Abs. 3 FPV1 &#xD;&#xA;MF  Fallzusammenführung nach FPV1 von mehr als zwei Fällen mit mehr als einem Fallzusammenführungsgrund ohne Rückverlegung &#xD;&#xA;PW Wiederaufnahme nach § 2 Abs. 1 PEPPV2 &#xD;&#xA;PR Rückverlegung nach § 3 Abs. 2 PEPPV2 &#xD;&#xA;PM Fallzusammenführung nach PEPPV2 von Fallepisoden mit mehr als einem Fallzusammenführungsgrund &#xD;&#xA;ZO  Wiederaufnahme nach § 2 Abs. 1 FPV1 bei 2 Eintagesfällen für die 2 Belegungstage gem. Klarstellung Nr. 10 abgerechnet werden &#xD;&#xA;ZM  Wiederaufnahme nach § 2 Abs. 2 FPV1 bei 2 Eintagesfällen für die 2 Belegungstage gem. Klarstellung Nr. 10 abgerechnet werden &#xD;&#xA;ZK  Wiederaufnahme nach § 2 Abs. 3 FPV1 (Komplikation) bei 2 Eintagesfällen für die 2 Belegungstage gem. Klarstellung Nr. 10 abgerechnet werden &#xD;&#xA;ZR  Rückverlegung nach § 3 Abs. 3 FPV1 bei 2 Eintagesfällen für die 2 Belegungstage gem. Klarstellung Nr. 10 abgerechnet werden &#xD;&#xA;ZW  Kombinierte Fallzusammenführung nach § 3 Abs. 3 FPV1 bei 2 Eintagesfällen für die 2 Belegungstage gem. Klarstellung Nr. 10 abgerechnet werden &#xD;&#xA; " />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Fallzusammenführungsgrund" />
+      </mapping>
+    </element>
+    <element id="Encounter.hospitalization.dietPreference">
+      <path value="Encounter.hospitalization.dietPreference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.specialCourtesy">
+      <path value="Encounter.hospitalization.specialCourtesy" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.specialArrangement">
+      <path value="Encounter.hospitalization.specialArrangement" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.destination">
+      <path value="Encounter.hospitalization.destination" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization.dischargeDisposition">
+      <path value="Encounter.hospitalization.dischargeDisposition" />
+      <short value="Entlassungs-/Verlegungsgrund " />
+      <definition value="01x Behandlung regulär beendet &#xD;&#xA;02x Behandlung regulär beendet, nachstationäre Behandlung vorgesehen &#xD;&#xA;03x Behandlung aus sonstigen Gründen beendet &#xD;&#xA;04x Behandlung gegen ärztlichen Rat beendet &#xD;&#xA;059 Zuständigkeitswechsel des Kostenträgers (bei tagesbezogenen Entgelten) &#xD;&#xA;069 Verlegung in ein anderes Krankenhaus &#xD;&#xA;079 Tod &#xD;&#xA;089 Verlegung in ein anderes Krankenhaus im Rahmen einer Kooperation &#xD;&#xA;099 Entlassung in eine Rehabilitationseinrichtung &#xD;&#xA;109 Entlassung in eine Pflegeeinrichtung &#xD;&#xA;119 Entlassung in ein Hospiz &#xD;&#xA;139 externe Verlegung zur psychiatrischen Behandlung &#xD;&#xA;14x Behandlung aus sonstigen Gründen beendet, nachstationäre Behandlung vorgesehen &#xD;&#xA;15x Behandlung gegen ärztlichen Rat beendet, nachstationäre Behandlung vorgesehen &#xD;&#xA;179 interne Verlegung mit Wechsel zwischen den Entgeltbereichen der DRG-Fallpauschalen, nach der BPflV oder für besondere Einrichtungen nach § 17b Abs. 1 Satz 15 KHG &#xD;&#xA;229 Fallabschluss (interne Verlegung) bei Wechsel zwischen voll- und teilstationärer Behandlung 239 Beginn eines externen Aufenthalts mit Abwesenheit über Mitternacht (BPflV-Bereich, für verlegende Fachabteilung) &#xD;&#xA;249 Beendigung eines externen Aufenthalts mit Abwesenheit über Mitternacht (BPflV-Bereich, für Pseudo-Fachabteilung 0003) &#xD;&#xA;259 Entlassung zum Jahresende bei Aufnahme im Vorjahr (für Zwecke der Abrechnung, § 4 PEPPV) &#xD;&#xA;                                                         &#xD;&#xA;Hinweise: Es ist der Entlassungs-/Verlegungsgrund entsprechend Schlüssel 5 der Anlage 2 zur § 301-Vereinbarung anzugeben. Als 3. Stelle (‚x’) sind die nach Schlüssel 5 möglichen Werte (‚1’, ‚2’ oder ‚9’) anzugeben. Der Entlassungs-/Verlegungsgrund kann entfallen bei Begleitpersonen und mitaufgenommenen Pflegekräften (Aufnahmeanlass ‚B’). In allen anderen Fällen ist der Entlassungs-/Verlegungsgrund eine MussAngabe (bei Neugeborenen mit Aufnahmeanlass ‚G’ ist z.B. ‚019’ anzugeben). Der Entlassungsgrund ‚179’ (interne Verlegung mit Wechsel …) dokumentiert, dass der Krankenhausfall als DRG-Fall abgeschlossen ist. &#xD;&#xA; " />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Entlassungs-/Verlegungsgrund" />
+      </mapping>
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceProvider">
+      <path value="Encounter.serviceProvider" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider.reference">
+      <path value="Encounter.serviceProvider.reference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceProvider.identifier">
+      <path value="Encounter.serviceProvider.identifier" />
+      <patternIdentifier>
+        <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Institutionskennzeichen Krankenhaus" />
+      </mapping>
+    </element>
+    <element id="Encounter.partOf">
+      <path value="Encounter.partOf" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

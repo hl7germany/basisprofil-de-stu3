@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-01T11:01:15.072-06:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/patient-khentgg-extension/0.2" />
+  <version value="0.2-WORK" />
+  <name value="patient-khentgg-extension-0.2" />
+  <title value="Patient-Extension für §21 KHEntgG Datenübermittlung (Version 0.2)" />
+  <status value="draft" />
+  <date value="2018-01-31T16:36:22.191-06:00" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KHEntgG" />
+    <name value="Datensatzbeschreibung nach Krankenhaus-Entgelt-Gesetz" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Patient" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:64bModell">
+      <path value="Extension.extension" />
+      <sliceName value="64bModell" />
+      <short value="Vertragskennzeichen § 64b-Modellvorhaben " />
+      <definition value="Das Vertragskennzeichen § 64b-Modellvorhaben muss bei der Übermittlung der fallbezogenen Daten nach § 21 KHEntgG zur Kennzeichnung derjenigen Patienten verwendet werden, die in das Modellvorhaben einbezogen sind. Es ist das vom DRG-Institut vergebene Vertragskennzeichen zu übermitteln. Für Patienten, die in ein Modellvorhaben nach § 64b SGB V einbezogen sind, ist unter Angabe des Vertragskennzeichens für das Modellvorhaben  &#xD;&#xA; bei voll- oder teilstationärer Versorgung ein Datensatz für den Entgeltbereich „PSY“;  &#xD;&#xA; bei ambulanter Behandlung durch eine Psychiatrische Institutsambulanz ein Datensatz für den Entgeltbereich „PIA“, &#xD;&#xA; bei spezifischen Leistungen des Modellvorhabens zusätzlich die Datei „Modellvorhaben“ &#xD;&#xA;zu übermitteln. (Siehe hierzu:  Vereinbarung nach § 64b Abs. 3 SGB V über Art und Umfang der zu meldenden Daten von Modellvorhaben zur Versorgung psychisch kranker Menschen sowie zur Meldung von Modellvorhaben an das DRGInstitut zwischen dem GKV-Spitzenverband, dem PKV-Verband und der DKG vom 27.2.2013 sowie Hinweise zur Datei „Modellvorhaben“) " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:64bModell.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="64bModell" />
+    </element>
+    <element id="Extension.extension:64bModell.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Vertragskennzeichen § 64b –Modellvorhaben" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:modellKenz">
+      <path value="Extension.extension" />
+      <sliceName value="modellKenz" />
+      <short value="Kennung Besonderer Fall Modellvorhaben" />
+      <definition value="In diesem Feld sind Fälle mit der Kennung ‚1‘ zu markieren, wenn die Behandlung im Rahmen eines Modellvorhabens nach § 64b SGB V erfolgt und spezifische Leistungen (z. B. Hometreatment oder stationsersetzende Leistungen) in der Definition des jeweiligen Modellvorhabens erbracht werden, die nicht der &#xD;&#xA;Vereinbarung nach § 21 KHEntgG – Anlage  Fortschreibung vom 22. Dezember 2017 &#xD;&#xA;v21-KHEntgG_A-2018_2017_Endfassung.docx Seite 20 von 36 &#xD;&#xA;allgemeinen voll- oder teilstationären Versorgung bzw. der ambulanten Versorgung einer PIA entsprechen. Die Kennung ‚0‘ ist für Fälle im Rahmen der Modellvorhaben zu verwenden, bei denen die Leistungserbringung der der Regelabrechnung entspricht. Erfolgt die Behandlung nicht im Rahmen eines Modellvorhabens nach § 64b SGB V, ist das Feld leer zu lassen. " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Kennung Besonderer Fall Modellvorhaben" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:modellKenz.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="modellKenz" />
+    </element>
+    <element id="Extension.extension:modellKenz.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/patient-khentgg-extension/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

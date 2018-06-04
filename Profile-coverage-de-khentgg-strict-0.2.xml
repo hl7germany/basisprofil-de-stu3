@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-01T15:51:01.415-06:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/coverage-de-khentgg-strict/0.2" />
+  <name value="coverage-de-khentgg-strict-0." />
+  <title value="Coverage-Profil für Datenübermittlung gemäß §21 KHEntgG (Version 0.2)" />
+  <status value="draft" />
+  <date value="2018-02-01T14:46:09.833-06:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Coverage" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-gkv/0.2" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Coverage.extension:einlesedatum-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="einlesedatum-egk" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.extension:generation-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="generation-egk" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.extension:version-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="version-egk" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-zusatzinfo-geschuetzt" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.extension:gkv-zusatzinfos-allgemein">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-zusatzinfos-allgemein" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.extension:gkv-onlinepruefung-egk">
+      <path value="Coverage.extension" />
+      <sliceName value="gkv-onlinepruefung-egk" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:Krankenversichertennummer">
+      <path value="Coverage.identifier" />
+      <sliceName value="Krankenversichertennummer" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.identifier:PseudoVersichertenID">
+      <path value="Coverage.identifier" />
+      <sliceName value="PseudoVersichertenID" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.relationship">
+      <path value="Coverage.relationship" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.payor">
+      <path value="Coverage.payor" />
+      <max value="1" />
+    </element>
+    <element id="Coverage.payor:Kostentraeger">
+      <path value="Coverage.payor" />
+      <sliceName value="Kostentraeger" />
+    </element>
+    <element id="Coverage.payor:Kostentraeger.reference">
+      <path value="Coverage.payor.reference" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.payor:abrechnenderKostentraeger">
+      <path value="Coverage.payor" />
+      <sliceName value="abrechnenderKostentraeger" />
+      <max value="0" />
+    </element>
+    <element id="Coverage.contract">
+      <path value="Coverage.contract" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

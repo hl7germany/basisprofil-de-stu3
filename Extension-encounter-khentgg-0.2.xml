@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-01T10:37:12.126-06:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/encounter-khentgg-extension/0.2" />
+  <version value="0.2-WORK" />
+  <name value="encounter-khentgg-extension-0.2" />
+  <title value="Encounter-Extension für §21 KHEntgG Datenübermittlung (Version 0.2)" />
+  <status value="draft" />
+  <date value="2018-01-31T16:36:22.191-06:00" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KHEntgG" />
+    <name value="Datensatzbeschreibung nach Krankenhaus-Entgelt-Gesetz" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Encounter" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:entgeltbereich">
+      <path value="Extension.extension" />
+      <sliceName value="entgeltbereich" />
+      <short value="DRG | PSY | PIA" />
+      <definition value="In diesem Feld ist anzugeben, welchem Entgeltbereich (KHEntgG oder BPflV oder PIA) der Behandlungsfall zugeordnet ist; entscheidend ist dabei das für den Fall abgerechnete Entgelt. Ein Fall darf ausschließlich einem Entgeltbereich zugeordnet sein. Bei einem Wechsel in einen anderen Entgeltbereich ist für jeden Entgeltbereich ein eigenständiger Fall, ggf. unter Einbeziehung einer Rückverlegung, zu übermitteln. &#xD;&#xA; &#xD;&#xA;Der Entgeltbereich ist wie folgt anzugeben: DRG Entgelt nach KHEntgG, i.d.R. DRG-Fallpauschale (KHEntgG-Entgeltbereich) PSY Entgelt nach BPflV für psychiatrische Einrichtungen und psychosomatische Einrichtungen gem. § 17d Abs. 1 KHG (BPflV-Entgeltbereich). PIA Entgelt nach § 120 SGB V für psychiatrische Institutsambulanzen gemäß § 118 SGB V (PIAEntgeltbereich). Bei Angaben für (ambulante) PIA-Fälle gilt stets folgender Grundsatz: Datenfelder/Merkmale, die nur für Fälle im DRG-Entgeltbereich oder PSY-Entgeltbereich gelten und als MUSS-Angaben mit Vorgabewerten festgelegt sind, werden immer ohne Angabe (leer) übermittelt. Vorstationäre Leistungen werden dem Entgeltbereich zugeordnet, der für den Fall bei stationärem Aufenthalt gelten würde. Begleitpersonen und mitaufgenommene Pflegekräfte werden dem Entgeltbereich der begleiteten Person zugeordnet. &#xD;&#xA; " />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Entgeltbereich" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:entgeltbereich.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="entgeltbereich" />
+    </element>
+    <element id="Extension.extension:entgeltbereich.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:dialyseAnz">
+      <path value="Extension.extension" />
+      <sliceName value="dialyseAnz" />
+      <short value="Anzahl interkurrenter Dialysen " />
+      <definition value="Bei Patientenaufnahme zur stationären Behandlung einer Erkrankung und zusätzlicher Dialysebehandlung aufgrund chronischer Niereninsuffizienz ist die Anzahl interkurrenter Dialysen anzugeben.  &#xD;&#xA; " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Anzahl interkurrenter Dialysen" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:dialyseAnz.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dialyseAnz" />
+    </element>
+    <element id="Extension.extension:dialyseAnz.value[x]:valuePositiveInt">
+      <path value="Extension.extension.valuePositiveInt" />
+      <sliceName value="valuePositiveInt" />
+      <type>
+        <code value="positiveInt" />
+      </type>
+    </element>
+    <element id="Extension.extension:beatmungH">
+      <path value="Extension.extension" />
+      <sliceName value="beatmungH" />
+      <short value="Beatmungsstunden " />
+      <definition value="Die Beatmungsstunden sind als Gesamtbeatmungszeit für den Krankenhausfall entsprechend DKR anzugeben. Der Wert entspricht der Angabe „Beatmungsstunden“ in der Entlassungsanzeige (Segment DAU). " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Beatmungsstunden" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:beatmungH.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="beatmungH" />
+    </element>
+    <element id="Extension.extension:beatmungH.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
+      <type>
+        <code value="Duration" />
+      </type>
+    </element>
+    <element id="Extension.extension:beatmungH.value[x]:valueDuration.value">
+      <path value="Extension.extension.valueDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:beatmungH.value[x]:valueDuration.system">
+      <path value="Extension.extension.valueDuration.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:beatmungH.value[x]:valueDuration.code">
+      <path value="Extension.extension.valueDuration.code" />
+      <min value="1" />
+      <fixedCode value="h" />
+    </element>
+    <element id="Extension.extension:vorstatBehD">
+      <path value="Extension.extension" />
+      <sliceName value="vorstatBehD" />
+      <short value="Behandlungstage vorstationär " />
+      <definition value="Bei vorstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen vorstationäre Leistungen erbracht wurden. " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Behandlungstage vorstationär" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:vorstatBehD.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="vorstatBehD" />
+    </element>
+    <element id="Extension.extension:vorstatBehD.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
+      <type>
+        <code value="Duration" />
+      </type>
+    </element>
+    <element id="Extension.extension:vorstatBehD.value[x]:valueDuration.value">
+      <path value="Extension.extension.valueDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:vorstatBehD.value[x]:valueDuration.comparator">
+      <path value="Extension.extension.valueDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:vorstatBehD.value[x]:valueDuration.system">
+      <path value="Extension.extension.valueDuration.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:vorstatBehD.value[x]:valueDuration.code">
+      <path value="Extension.extension.valueDuration.code" />
+      <min value="1" />
+      <fixedCode value="d" />
+    </element>
+    <element id="Extension.extension:nachstatBehD">
+      <path value="Extension.extension" />
+      <sliceName value="nachstatBehD" />
+      <short value="Behandlungstage nachstationär " />
+      <definition value="Bei nachstationärer Behandlung ist die Anzahl der erbrachten Behandlungstage anzugeben, an denen nachstationäre Leistungen erbracht wurden. &#xD;&#xA; " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Behandlungstage nachstationär" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:nachstatBehD.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="nachstatBehD" />
+    </element>
+    <element id="Extension.extension:nachstatBehD.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
+      <type>
+        <code value="Duration" />
+      </type>
+    </element>
+    <element id="Extension.extension:nachstatBehD.value[x]:valueDuration.value">
+      <path value="Extension.extension.valueDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:nachstatBehD.value[x]:valueDuration.comparator">
+      <path value="Extension.extension.valueDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:nachstatBehD.value[x]:valueDuration.system">
+      <path value="Extension.extension.valueDuration.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:nachstatBehD.value[x]:valueDuration.code">
+      <path value="Extension.extension.valueDuration.code" />
+      <min value="1" />
+      <fixedCode value="d" />
+    </element>
+    <element id="Extension.extension:extBehD">
+      <path value="Extension.extension" />
+      <sliceName value="extBehD" />
+      <short value="Belegungstage in einem anderen Entgeltbereich" />
+      <definition value="Bei einem Wechsel zwischen den Entgeltbereichen in Folge einer internen oder externen Verlegung mit anschließender Wiederaufnahme bzw. Rückverlegung in den ursprünglichen Entgeltbereich sind die Belegungstage in dem anderen Entgeltbereich (BPflV oder KHEntgG oder Besondere Einrichtung) anzugeben. &#xD;&#xA; &#xD;&#xA;Zu den Belegungstagen zählen der Aufnahmetag und jeder weitere Tag des Aufenthalts im anderen Entgeltbereich ohne den Verlegungstag, unabhängig davon, ob der Verlegungstag bei PEPP-Abrechnung abgerechnet wird. &#xD;&#xA; " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Belegungstage in einem anderen Entgeltbereich" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:extBehD.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="extBehD" />
+    </element>
+    <element id="Extension.extension:extBehD.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
+      <type>
+        <code value="Duration" />
+      </type>
+    </element>
+    <element id="Extension.extension:extBehD.value[x]:valueDuration.value">
+      <path value="Extension.extension.valueDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:extBehD.value[x]:valueDuration.comparator">
+      <path value="Extension.extension.valueDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:extBehD.value[x]:valueDuration.system">
+      <path value="Extension.extension.valueDuration.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:extBehD.value[x]:valueDuration.code">
+      <path value="Extension.extension.valueDuration.code" />
+      <min value="1" />
+      <fixedCode value="d" />
+    </element>
+    <element id="Extension.extension:beurlaubungD">
+      <path value="Extension.extension" />
+      <sliceName value="beurlaubungD" />
+      <short value="Beurlaubungstage im BPflV-Entgeltbereich" />
+      <definition value="Es sind ggf. Tage einer Abwesenheit aufgrund geplanter Beurlaubung anzugeben. " />
+      <max value="1" />
+      <mapping>
+        <identity value="KHEntgG" />
+        <map value="Beurlaubungstage im BPflV-Entgeltbereich" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:beurlaubungD.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="beurlaubungD" />
+    </element>
+    <element id="Extension.extension:beurlaubungD.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
+      <type>
+        <code value="Duration" />
+      </type>
+    </element>
+    <element id="Extension.extension:beurlaubungD.value[x]:valueDuration.value">
+      <path value="Extension.extension.valueDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:beurlaubungD.value[x]:valueDuration.comparator">
+      <path value="Extension.extension.valueDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:beurlaubungD.value[x]:valueDuration.system">
+      <path value="Extension.extension.valueDuration.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:beurlaubungD.value[x]:valueDuration.code">
+      <path value="Extension.extension.valueDuration.code" />
+      <min value="1" />
+      <fixedCode value="d" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/encounter-khentgg-extension/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

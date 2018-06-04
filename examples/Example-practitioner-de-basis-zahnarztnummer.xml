@@ -1,6 +1,6 @@
 <Practitioner xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="http://fhir.de/StructureDefinition/practitioner-de-basis"/>
+		<profile value="http://fhir.de/StructureDefinition/practitioner-de-basis/0.2"/>
 	</meta>
 	<identifier>
         <type>

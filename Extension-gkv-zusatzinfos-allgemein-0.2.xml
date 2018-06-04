@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-12-05T18:33:36.883+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein/0.2" />
+  <version value="0.2-WORK" />
+  <name value="gkv-zusatzinfos-allgemein-0.2" />
+  <title value="Extension für allgemeine VSDM-Daten von eGKs (Version 0.2)" />
+  <status value="draft" />
+  <date value="2017-10-21T23:20:58.564+02:00" />
+  <description value=" Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KVDT" />
+    <name value="KVDT Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="BDT" />
+    <name value="BDT Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Coverage" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:versichertenart">
+      <path value="Extension.extension" />
+      <sliceName value="versichertenart" />
+      <short value="Versichertenart" />
+      <definition value="Gibt die Versichertenart des Versicherten an." />
+      <comment value="  " />
+      <max value="1" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3108" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:versichertenart.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="versichertenart" />
+    </element>
+    <element id="Extension.extension:versichertenart.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="1=Mitglied, 3=Familienversicherter, 5=Rentner" />
+      <definition value="Gibt die Versichertenart des Versicherten an.&#xD;&#xA;1=Mitglied&#xD;&#xA;3=Familienversicherter&#xD;&#xA;5=Rentner" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
+      </binding>
+    </element>
+    <element id="Extension.extension:wop">
+      <path value="Extension.extension" />
+      <sliceName value="wop" />
+      <short value="Kennzeichen Wohnortprinzip" />
+      <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
+      <comment value="  " />
+      <max value="1" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3116" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:wop.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="wop" />
+    </element>
+    <element id="Extension.extension:wop.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
+      </binding>
+    </element>
+    <element id="Extension.extension:kostenerstattung">
+      <path value="Extension.extension" />
+      <sliceName value="kostenerstattung" />
+      <definition value="Gibt an, welche Kostenerstattungen der Versicherte nach § 13 SGB V gewählt hat." />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:aerztlicheVersorgung">
+      <path value="Extension.extension.extension" />
+      <sliceName value="aerztlicheVersorgung" />
+      <short value="Kostenerstattung für die ärztliche Versorgung" />
+      <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für die ärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für ärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für ärztliche Versorgung &#xD;" />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:aerztlicheVersorgung.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="aerztlicheVersorgung" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:aerztlicheVersorgung.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[01]" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung">
+      <path value="Extension.extension.extension" />
+      <sliceName value="zahnaerztlicheVersorgung" />
+      <short value="Kostenerstattung für zahnärztliche" />
+      <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für zahnärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für zahnärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für zahnärztliche Versorgung &#xD;" />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="zahnaerztlicheVersorgung" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[01]" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:stationaererBereich">
+      <path value="Extension.extension.extension" />
+      <sliceName value="stationaererBereich" />
+      <short value=" Kostenerstattung für den stationären" />
+      <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für den stationären&#xD;&#xA;Bereich an.&#xD;&#xA;1 (true) = Kostenerstattung für stationären Bereich&#xD;&#xA;0 (false) = keine Kostenerstattung für stationären Bereich " />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:stationaererBereich.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="stationaererBereich" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:stationaererBereich.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[01]" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:veranlassteLeistungen">
+      <path value="Extension.extension.extension" />
+      <sliceName value="veranlassteLeistungen" />
+      <short value="Kostenerstattung für veranlasste Leistungen" />
+      <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für veranlasste&#xD;&#xA;Leistungen an.&#xD;&#xA;1 (true) = Kostenerstattung für veranlasste Leistungen&#xD;&#xA;0 (false) = keine Kostenerstattung für veranlasste Leistungen " />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:veranlassteLeistungen.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="veranlassteLeistungen" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.extension:veranlassteLeistungen.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[01]" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="kostenerstattung" />
+    </element>
+    <element id="Extension.extension:kostenerstattung.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

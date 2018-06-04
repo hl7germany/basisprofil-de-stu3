@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-12-05T18:08:57.049+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt/0.2" />
+  <version value="0.2-WORK" />
+  <name value="gkv-zusatzinfos-geschuetzt-0.2" />
+  <title value="Extension für geschützte VSDM-Daten von eGKs (Version 0.2)" />
+  <status value="draft" />
+  <date value="2017-10-21T23:20:58.564+02:00" />
+  <description value="Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="KVDT" />
+    <name value="KVDT Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="BDT" />
+    <name value="BDT Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Coverage" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:besonderePersonengruppe">
+      <path value="Extension.extension" />
+      <sliceName value="besonderePersonengruppe" />
+      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;4 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;6 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;7 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;8 = SVAKennzeichnung, Pauschal, &#xD;&#xA;9 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
+      <comment value=" " />
+      <max value="1" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="4131" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:besonderePersonengruppe.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="besonderePersonengruppe" />
+    </element>
+    <element id="Extension.extension:besonderePersonengruppe.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-personengruppe" />
+      </binding>
+    </element>
+    <element id="Extension.extension:dmpKennzeichnung">
+      <path value="Extension.extension" />
+      <sliceName value="dmpKennzeichnung" />
+      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;1 = Diabetes mellitus Typ 2, &#xD;&#xA;2 = Brustkrebs, &#xD;&#xA;3 = Koronare Herzkrankheit, &#xD;&#xA;4 = Diabetes mellitus Typ 1, &#xD;&#xA;5 = Asthma bronchiale, &#xD;&#xA;6 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
+      <comment value=" " />
+      <max value="1" />
+      <mapping>
+        <identity value="KVDT" />
+        <map value="4132" />
+      </mapping>
+    </element>
+    <element id="Extension.extension:dmpKennzeichnung.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dmpKennzeichnung" />
+    </element>
+    <element id="Extension.extension:dmpKennzeichnung.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
+      </binding>
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch">
+      <path value="Extension.extension" />
+      <sliceName value="ruhenderLeistungsanspruch" />
+      <short value="Ruhender Leistungsanspruch" />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:beginn">
+      <path value="Extension.extension.extension" />
+      <sliceName value="beginn" />
+      <short value="Beginn des ruhenden Leistungsanspruchs " />
+      <definition value="Gibt den Beginn des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:beginn.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="beginn" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:beginn.value[x]:valueDate">
+      <path value="Extension.extension.extension.valueDate" />
+      <sliceName value="valueDate" />
+      <min value="1" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:ende">
+      <path value="Extension.extension.extension" />
+      <sliceName value="ende" />
+      <short value="Ende des ruhenden Leistungsanspruchs" />
+      <definition value="Gibt das Ende des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:ende.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="ende" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:ende.value[x]:valueDate">
+      <path value="Extension.extension.extension.valueDate" />
+      <sliceName value="valueDate" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:art">
+      <path value="Extension.extension.extension" />
+      <sliceName value="art" />
+      <short value="Art des Ruhens" />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:art.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="art" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.extension:art.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[12]" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ruhenderLeistungsanspruch" />
+    </element>
+    <element id="Extension.extension:ruhenderLeistungsanspruch.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus">
+      <path value="Extension.extension" />
+      <sliceName value="zuzahlungsstatus" />
+      <short value="Zuzahlungsstaus" />
+      <definition value="Gibt an, ob und bis wann für den Versicherten eine Befreiung von der Zuzahlungspflicht nach&#xD;&#xA;§ 62 Abs. 3 SGB V vorliegt. " />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:status">
+      <path value="Extension.extension.extension" />
+      <sliceName value="status" />
+      <definition value="Gibt an, ob für den Versicheren eine Befreiung von der Zuzahlungspflicht nach $ 62 SGB V vorliegt.&#xD;&#xA;1 = von Zuzahlung befreit&#xD;&#xA;2 = von Zuzahlung nicht befreit" />
+      <comment value="  " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:status.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="status" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:status.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[01]" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:gueltigBis">
+      <path value="Extension.extension.extension" />
+      <sliceName value="gueltigBis" />
+      <definition value="Gibt die gültigkeit der Befreiung von der Zuzahlungspflicht nach $62 SGB V an.&#xD;&#xA;Wird nur angegeben, wenn der Status Zuzahlung mit 1 (=befreit) angegeben ist." />
+      <comment value="  " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:gueltigBis.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="gueltigBis" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.extension:gueltigBis.value[x]:valueDate">
+      <path value="Extension.extension.extension.valueDate" />
+      <sliceName value="valueDate" />
+      <min value="1" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="zuzahlungsstatus" />
+    </element>
+    <element id="Extension.extension:zuzahlungsstatus.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:selektivvertraege">
+      <path value="Extension.extension" />
+      <sliceName value="selektivvertraege" />
+      <short value="Angaben zu Selektivverträgen" />
+      <definition value="Gibt an, welche Selektivverträge für den Versicherten vorliegen" />
+      <comment value="  " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension">
+      <path value="Extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:aerztlich">
+      <path value="Extension.extension.extension" />
+      <sliceName value="aerztlich" />
+      <short value="Kennzeichen ärztlicher Selektivvertrag" />
+      <definition value="Gibt an, ob für den Versicheren ein ärztlicher Selektivvertrag vorliegt.&#xD;&#xA;1 = ärztlicher Selektivvertrag liegt vor&#xD;&#xA;0 = ärztlicher Selektivvertrag liegt nicht vor&#xD;&#xA;9 = ärztliches Selektivvertragskennzeichen wird nicht genutzt" />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:aerztlich.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="aerztlich" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:aerztlich.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[019]" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:zahnaerztlich">
+      <path value="Extension.extension.extension" />
+      <sliceName value="zahnaerztlich" />
+      <short value="Kennzeichen zahnärztlicher Selektivvertrag" />
+      <definition value="Gibt an, ob für den Versicheren ein ärztlicher Selektivvertrag vorliegt.&#xD;&#xA;1 = zahnärztlicher Selektivvertrag liegt vor&#xD;&#xA;0 = zahnärztlicher Selektivvertrag liegt nicht vor&#xD;&#xA;9 = zahnärztliches Selektivvertragskennzeichen wird nicht genutzt" />
+      <comment value=" " />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:zahnaerztlich.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="zahnaerztlich" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:zahnaerztlich.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[019]" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:art">
+      <path value="Extension.extension.extension" />
+      <sliceName value="art" />
+      <short value="Atr des Selektivvertrages" />
+      <definition value="Die Angaben gelten für folgende Selektivverträge:&#xD;&#xA;1. Stelle: Hausarztzentrierte Versorgung (§73b)&#xD;&#xA;2. Stelle: Besondere ambulante ärztliche Versorgung (§73c)&#xD;&#xA;3. Stelle: Strukturierte Behandlungsprogramme (§137f)&#xD;&#xA;4. Stelle: Integrierte Versorgung (§140a) &#xD;&#xA;&#xD;&#xA;Die Stellen 1 und 3 koennen den Wert = 1 (true) nur annehmen, wenn Aerztlich&#xD;&#xA;= 1 (true) ist.&#xD;&#xA;Die Stellen 2 und 4 können sowohl zur Kennzeichnung ärztlicher als auch&#xD;&#xA;zahnärztlicher Selektivverträge genutzt werden.&#xD;&#xA;Beispiel: 1000&#xD;&#xA;Es liegt ein Selektivvertrag für die Hausarztzentrierte Versorgung nach §73b&#xD;&#xA;vor. " />
+      <comment value=" " />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:art.url">
+      <path value="Extension.extension.extension.url" />
+      <fixedUri value="art" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.extension:art.value[x]:valueCode">
+      <path value="Extension.extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[0-1]{4}" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="selektivvertraege" />
+    </element>
+    <element id="Extension.extension:selektivvertraege.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

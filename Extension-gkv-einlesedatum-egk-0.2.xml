@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-10-27T23:12:56.636+02:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
+  <version value="0.2-WORK" />
+  <name value="gkv-einlesedatum-egk-0.2" />
+  <title value="Extension zur Erfassung des eGK-Einlesedatums (Version 0.2)" />
+  <status value="draft" />
+  <date value="2017-10-27T21:16:34.54+02:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Coverage" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
+    </element>
+    <element id="Extension.value[x]:valueDateTime">
+      <path value="Extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <comment value="  " />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

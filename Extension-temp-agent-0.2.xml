@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-11-07T10:34:13.031+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/temp/agent/0.2" />
+  <version value="0.2-WORK" />
+  <name value="agent-0.2" />
+  <title value="agent-Extension für STU3 DocumentReference (Version 0.2)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2017-11-07" />
+  <description value="Temporäre Extension, für die Prä-Adoption des in R4 vorhandenen DocumentReference.agent Elementes.&#xD;&#xA;BITTE NUR IN VERSION STU3 VERWENDEN!!!&#xD;&#xA;Ab R4 muss statt dessen das agent-Element verwendet werden." />
+  <purpose value="Temporäre Extension, für die Prä-Adoption des in R4 vorhandenen DocumentReference.agent Elementes.&#xD;&#xA;BITTE NUR IN VERSION STU3 VERWENDEN!!!&#xD;&#xA;Ab R4 muss statt dessen das agent-Element verwendet werden." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="DocumentReference" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/participation-role-type" />
+      </binding>
+    </element>
+    <element id="Extension.extension:who">
+      <path value="Extension.extension" />
+      <sliceName value="who" />
+    </element>
+    <element id="Extension.extension:who.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="who" />
+    </element>
+    <element id="Extension.extension:who.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <comment value=" " />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/temp/agent/0.2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

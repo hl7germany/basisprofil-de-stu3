@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-11-06T17:47:49.566+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/gkv/generation-egk/0.2" />
+  <version value="0.2-WORK" />
+  <name value="gkv-generation-egk-0.2" />
+  <title value="Extension zur Erfassung der Generation der eGK (Version 0.2)" />
+  <status value="draft" />
+  <date value="2017-11-06" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Coverage" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte  " />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/gkv/generation-egk/0.2" />
+    </element>
+    <element id="Extension.value[x]:valueCode">
+      <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte" />
+      <comment value="  " />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <patternCode value="[1|1\+|2]" />
+    </element>
+  </differential>
+</StructureDefinition>

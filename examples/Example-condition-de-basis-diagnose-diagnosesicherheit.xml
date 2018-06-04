@@ -1,11 +1,19 @@
 <Condition xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="http://fhir.de/StructureDefinition/condition-de-basis"/>
+		<profile value="http://fhir.de/StructureDefinition/condition-de-basis/0.2"/>
 	</meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">Verdacht auf Herzinfarkt</div>
 	</text>
+    <extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit/0.2">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://fhir.de/CodeSystem/kbv/s-icd-diagnosesicherheit" />
+                <code value="V" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
 	<clinicalStatus value="active"/>
 	<verificationStatus value="provisional"/>
 	<code>

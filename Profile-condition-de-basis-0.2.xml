@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-04-08T14:05:14.857+01:00" />
+  </meta>
+  <url value="http://fhir.de/StructureDefinition/condition-de-basis/0.2" />
+  <version value="0.2-WORK" />
+  <name value="condition-de-basis-0.2" />
+  <title value="Deutsches Basisprofil einer Condition (Version 0.2)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-04-08" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <description value="Deutsches Basisprofil einer Condition (Gesundheitszustand, Erkrankung)" />
+  <purpose value="Die Basisprofile enthalten Elemente, bei denen zu erwarten ist, dass sie in 80% der abgeleiteten Profile verwendung finden.&amp;#xD;&amp;#xA;Basisprofile werden i.d.R. nicht direkt implementiert, sondern für einen konkreten UseCase abgeleitet.&amp;#xD;&amp;#xA;Die Basis-Profile werden vom Technischen Komitee von HL7 Deutschland abgestimmt." />
+  <copyright value="HL7 Deutschland e.V." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.extension">
+      <path value="Condition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.extension:Diagnosesicherheit">
+      <path value="Condition.extension" />
+      <sliceName value="Diagnosesicherheit" />
+      <short value="Diagnosesicherheit lt. ICD-10-GM" />
+      <definition value="Diese Extension kann zur Angabe der Diagnosesicherung in ICD-10-GM-Codierung verwendet werden.&#xD;&#xA;Die Angabe der äquivalenten Werte für clinicalStatus und verificationStatus ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Die Äquivalente gelten wie folgt:&#xD;&#xA;&quot;A&quot; (ausgeschlossen) =&gt; clinicalStatus = leer, verificationStatus=&quot;refuted&quot;&#xD;&#xA;&quot;G&quot; (gesicherte Diagnose) =&gt; clinicalStatus = &quot;active&quot;, verificationStatus=&quot;confirmed&quot;&#xD;&#xA;&quot;V&quot; (Verdacht auf / zum Ausschluss von) =&gt; clinicalStatus = &quot;active&quot;, verificationStatus=&quot;provisional&quot;&#xD;&#xA;&quot;Z&quot; (Zustand nach) =&gt; clinicalStatus = &quot;resolved&quot;, verificationStatus=&quot;confirmed&quot;" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit/0.2" />
+      </type>
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM">
+      <path value="Condition.code.coding" />
+      <sliceName value="ICD-10-GM" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/dimdi/icd-10-gm" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.extension">
+      <path value="Condition.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.extension:Haupt-Code_Kreuz-Code">
+      <path value="Condition.code.coding.extension" />
+      <sliceName value="Haupt-Code_Kreuz-Code" />
+      <short value="Der Haupt- bzw. Kreuz-Code" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/icd-10-gm-haupt-kreuz/0.2" />
+      </type>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.extension:Stern-Code">
+      <path value="Condition.code.coding.extension" />
+      <sliceName value="Stern-Code" />
+      <short value="Stern-Code" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/icd-10-gm-stern/0.2" />
+      </type>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.extension:Ausrufezeichen-Code">
+      <path value="Condition.code.coding.extension" />
+      <sliceName value="Ausrufezeichen-Code" />
+      <short value="Ausrufezeichen-Code" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/icd-10-gm-ausrufezeichen/0.2" />
+      </type>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.system">
+      <path value="Condition.code.coding.system" />
+      <short value="ICD-10-GM" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.version">
+      <path value="Condition.code.coding.version" />
+      <short value="Die Jahresversion von ICD-10-GM. Angegeben wird immer die vierstellige Jahreszahl (z.B. &quot;2017&quot;)" />
+      <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt." />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM.code">
+      <path value="Condition.code.coding.code" />
+      <short value="Der ICD-10-Code" />
+      <definition value="Der ICD-10-Code, einschließlich verbundener Codes (Kreuz-Stern-Notation, Ausrufezeichen-Notation. Vgl. hierzu auch die Dokumentation zu iCD in der FHIR-Spezifikation.&#xD;&#xA;Die Einzelbestandteile von postkoordinierten Codes (einzelne ICD-10-GM-Codes) können über die im Profil definierten Extensions einzeln dokumentiert werden. Die Angabe des postkoordinierten Codes ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Seitenlokalisaion und Diagnosesichrheit sollten, soweit vorhanden, in den Elementen bodySite bzw. clinicalStatus/verificationStatus codiert werden. Für die Diagnosesicherkeit kann zusätzlich auch die entsprechende Extension verwendet werden. Die Angabe von clinicalStatus und/oder verificationStatus ist jedoch in diesen Fällen zwingend, da es sich hierbei um modifizierende Angaben (modyfiers) handelt.&#xD;&#xA;&#xD;&#xA;" />
+      <min value="1" />
+    </element>
+    <element id="Condition.bodySite.extension">
+      <path value="Condition.bodySite.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.bodySite.extension:Lokalisations-Referenz">
+      <path value="Condition.bodySite.extension" />
+      <sliceName value="Lokalisations-Referenz" />
+      <short value="Lokalisations-Referenz" />
+      <definition value="Referenz auf eine Lokalisation.&#xD;&#xA;Zur detaillierteren Darstellung von Lokalisationen mittels der BodySite-Ressource&#xD;&#xA;&#xD;&#xA;Hinweis: ab FHIR R4 wird diese Ressource als BodyStructure bezeichnet, dementsprechend ändert sich dann auch der Name der Extension!" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/body-site-instance" />
+      </type>
+    </element>
+    <element id="Condition.bodySite.extension:Lokalisations-Referenz.valueReference:valueReference">
+      <path value="Condition.bodySite.extension.valueReference" />
+      <sliceName value="valueReference" />
+    </element>
+    <element id="Condition.bodySite.coding">
+      <path value="Condition.bodySite.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation">
+      <path value="Condition.bodySite.coding" />
+      <sliceName value="ICD-10-GM-Seitenlokalisation" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s_icd_seitenlokalisation" />
+      </binding>
+    </element>
+    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation.system">
+      <path value="Condition.bodySite.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
+    </element>
+    <element id="Condition.bodySite.coding:ICD-10-GM-Seitenlokalisation.code">
+      <path value="Condition.bodySite.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/patient-de-basis/0.2" />
+      </type>
+    </element>
+    <element id="Condition.asserter">
+      <path value="Condition.asserter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/patient-de-basis/0.2" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://fhir.de/StructureDefinition/practitioner-de-basis/0.2" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

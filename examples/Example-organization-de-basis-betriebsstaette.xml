@@ -1,7 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
 	<meta>
 		<!--Die Angabe, zu welchen Profilen diese Resource konform ist, hilft den empfangenden Systemen, die richtige Verarbeitungsroutine auszuwählen-->
-		<profile value="http://fhir.de/StructureDefinition/organization-de-basis"/>
+		<profile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2"/>
 	</meta>
 	<!-- Die Angabe, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt, ist verpflichtend-->
 	<extension url="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie">
