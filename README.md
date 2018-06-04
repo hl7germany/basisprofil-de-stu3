@@ -10,3 +10,11 @@ Die Diskussion der Profile findet auf Zulip statt. Implementierer und Interessen
 Die derzeit veröffentlichten Profile und Resourcen sind experimentell!
 
 Eine formelle Abstimmung folgt.
+
+## Hinweis zur Versionierung
+
+Einige Profile finden sich in mehreren Versionen in diesem Repository.
+
+Es ist zu beachten, dass Profile, deren Status als "retired" gekennzeichnet sind, nicht mehr verwendet werden sollten.
+
+Insbesondere sollten auch abgeleitete Profile spätestens mit Version 1.0 (geplante erste ballotierte, stabile Fassung) der deutschen Basisprofile angepasst werden und von diesem Versionsstand ableiten!
