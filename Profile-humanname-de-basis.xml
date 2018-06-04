@@ -1241,33 +1241,6 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.prefix.value">
-      <path value="HumanName.prefix.value" />
-      <representation value="xmlAttr" />
-      <short value="Primitive value for string" />
-      <definition value="Primitive value for string" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="string.value" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
-            <valueString value="string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
-            <valueString value="xsd:string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
-            <valueString value="xsd:string" />
-          </extension>
-        </code>
-      </type>
-      <maxLength value="1048576" />
-    </element>
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
       <short value="Namensteile nach dem Nachnamen" />
