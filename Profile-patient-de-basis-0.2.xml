@@ -2688,7 +2688,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Strasse.value[x]:valueString">
+    <element id="Patient.address.line.extension:Strasse">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -2697,7 +2697,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -2888,7 +2888,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Hausnummer.value[x]:valueString">
+    <element id="Patient.address.line.extension:Hausnummer">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -2897,7 +2897,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -3088,7 +3088,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Adresszusatz.value[x]:valueString">
+    <element id="Patient.address.line.extension:Adresszusatz">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -3097,7 +3097,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -3288,7 +3288,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.address.line.extension:Postfach.value[x]:valueString">
+    <element id="Patient.address.line.extension:Postfach">
       <path value="Patient.address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -3297,7 +3297,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.value[x]" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="1" />
       </base>
