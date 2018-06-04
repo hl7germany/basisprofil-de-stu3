@@ -1013,7 +1013,7 @@
         <max value="1" />
       </base>
       <type>
-        <code>
+        <code value="string">
           <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
             <valueString value="string" />
           </extension>
@@ -1268,7 +1268,7 @@
         <max value="1" />
       </base>
       <type>
-        <code>
+        <code value="string">
           <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
             <valueString value="string" />
           </extension>
