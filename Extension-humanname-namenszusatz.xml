@@ -6,7 +6,7 @@
   <url value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
   <version value="0.1" />
   <name value="humanname-namenszusatz" />
-  <title value="Extension zur Erfassung der VSDM Namensbestandteile"/>
+  <title value="Extension zur Erfassung der VSDM Namensbestandteile" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2017-09-15" />
@@ -175,8 +175,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.value[x]">
+    <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
+      <sliceName value="valueString" />
       <short value="Namenszusatz" />
       <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
       <comment value="A stream of bytes, base64 encoded" />
@@ -219,8 +220,9 @@
       <path value="Extension.url" />
       <fixedUri value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
     </element>
-    <element id="Extension.value[x]">
+    <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
+      <sliceName value="valueString" />
       <short value="Namenszusatz" />
       <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
       <type>

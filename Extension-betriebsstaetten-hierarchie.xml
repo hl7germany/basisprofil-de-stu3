@@ -6,7 +6,7 @@
   <url value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
   <version value="0.1" />
   <name value="betriebsstaetten-hierarchie" />
-  <title value="Extension zur Erfassung der Betriebstättenhierarchie gemäß KBV"/>
+  <title value="Extension zur Erfassung der Betriebstättenhierarchie gemäß KBV" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2017-09-15" />
@@ -174,8 +174,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.value[x]">
+    <element id="Extension.value[x]:valueCode">
       <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
       <short value="BSNR | NBSNR" />
       <definition value="BSNR | NBSNR" />
       <comment value="A stream of bytes, base64 encoded" />
@@ -223,8 +224,9 @@
       <path value="Extension.url" />
       <fixedUri value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
     </element>
-    <element id="Extension.value[x]">
+    <element id="Extension.value[x]:valueCode">
       <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
       <short value="BSNR | NBSNR" />
       <definition value="BSNR | NBSNR" />
       <type>
