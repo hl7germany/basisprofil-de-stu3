@@ -17,7 +17,7 @@
       <value value="http://hl7.de/technische-komitees/fhir/" />
     </telecom>
   </contact>
-  <description value="Personenname mit in Deutschland üblichen Erweiterungen  " />
+  <description value="Personenname mit in Deutschland üblichen Erweiterungen" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <mapping>
@@ -438,14 +438,6 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3100" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3100" />
-      </mapping>
     </element>
     <element id="HumanName.family.extension:namenszusatz.id">
       <path value="HumanName.family.extension.id" />
@@ -559,7 +551,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.extension:namenszusatz.valueString:valueString">
+    <element id="HumanName.family.extension:namenszusatz.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Namenszusatz" />
@@ -590,6 +582,14 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3100" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3100" />
       </mapping>
     </element>
     <element id="HumanName.family.extension:nachname">
@@ -641,14 +641,6 @@
       <mapping>
         <identity value="rim" />
         <map value="ENXP where Qualifiers = (BR)" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3101" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3101" />
       </mapping>
     </element>
     <element id="HumanName.family.extension:nachname.id">
@@ -763,7 +755,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.extension:nachname.valueString:valueString">
+    <element id="HumanName.family.extension:nachname.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -794,6 +786,14 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3101" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3101" />
       </mapping>
     </element>
     <element id="HumanName.family.extension:vorsatzwort">
@@ -845,14 +845,6 @@
       <mapping>
         <identity value="rim" />
         <map value="ENXP where Qualifiers = (VV, R)" />
-      </mapping>
-      <mapping>
-        <identity value="BDT" />
-        <map value="3120" />
-      </mapping>
-      <mapping>
-        <identity value="KVDT" />
-        <map value="3120" />
       </mapping>
     </element>
     <element id="HumanName.family.extension:vorsatzwort.id">
@@ -967,7 +959,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="HumanName.family.extension:vorsatzwort.valueString:valueString">
+    <element id="HumanName.family.extension:vorsatzwort.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -998,6 +990,14 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3120" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3120" />
       </mapping>
     </element>
     <element id="HumanName.family.value">
@@ -1255,161 +1255,6 @@
         <map value="ENXP.qualifier" />
       </mapping>
     </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.id">
-      <path value="HumanName.prefix.extension.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.extension">
-      <path value="HumanName.prefix.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.url">
-      <path value="HumanName.prefix.extension.url" />
-      <representation value="xmlAttr" />
-      <short value="identifies the meaning of the extension" />
-      <definition value="Source of the definition for the extension code - a logical name or a URL." />
-      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Extension.url" />
-        <min value="1" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.valueCode:valueCode">
-      <path value="HumanName.prefix.extension.valueCode" />
-      <sliceName value="valueCode" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
-      <comment value="A stream of bytes, base64 encoded" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Extension.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="code" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="EntityNamePartQualifier" />
-        </extension>
-        <strength value="required" />
-        <description value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/name-part-qualifier" />
-        </valueSetReference>
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="HumanName.prefix.value">
       <path value="HumanName.prefix.value" />
       <representation value="xmlAttr" />
@@ -1532,6 +1377,161 @@
         <map value="./StartDate and ./EndDate" />
       </mapping>
     </element>
+    <element id="HumanName.period.id">
+      <path value="HumanName.period.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="HumanName.period.extension">
+      <path value="HumanName.period.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="HumanName.period.start">
+      <path value="HumanName.period.start" />
+      <short value="Starting time with inclusive boundary" />
+      <definition value="The start of the period. The boundary is inclusive." />
+      <comment value="If the low element is missing, the meaning is that the low boundary is not known." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Period.start" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./low" />
+      </mapping>
+    </element>
+    <element id="HumanName.period.end">
+      <path value="HumanName.period.end" />
+      <short value="End time with inclusive boundary, if not ongoing" />
+      <definition value="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." />
+      <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Period.end" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <meaningWhenMissing value="If the end of the period is missing, it means that the period is ongoing" />
+      <condition value="ele-1" />
+      <condition value="per-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="DR.2" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./high" />
+      </mapping>
+    </element>
   </snapshot>
   <differential>
     <element id="HumanName">
@@ -1598,11 +1598,7 @@
       <path value="HumanName.family.extension" />
       <sliceName value="namenszusatz" />
       <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
-      </type>
-      <mapping>
+	  <mapping>
         <identity value="KVDT" />
         <map value="3100" />
       </mapping>
@@ -1610,21 +1606,22 @@
         <identity value="BDT" />
         <map value="3100" />
       </mapping>
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
+      </type>
     </element>
-    <element id="HumanName.family.extension:namenszusatz.valueString:valueString">
+    <element id="HumanName.family.extension:namenszusatz.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
+      
     </element>
     <element id="HumanName.family.extension:nachname">
       <path value="HumanName.family.extension" />
       <sliceName value="nachname" />
       <short value="Nachname ohne Vor- und Zusätze" />
       <definition value="Nachname ohne Vor- und Zusätze.&#xD;&#xA;Dient z.B. der alphabetischen Einordnung des Namens." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
-      </type>
-      <mapping>
+	  <mapping>
         <identity value="KVDT" />
         <map value="3101" />
       </mapping>
@@ -1632,20 +1629,21 @@
         <identity value="BDT" />
         <map value="3101" />
       </mapping>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
+      </type>
     </element>
-    <element id="HumanName.family.extension:nachname.valueString:valueString">
+    <element id="HumanName.family.extension:nachname.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
+      
     </element>
     <element id="HumanName.family.extension:vorsatzwort">
       <path value="HumanName.family.extension" />
       <sliceName value="vorsatzwort" />
       <short value="Vorsatzwort" />
       <definition value="Vorsatzwort wie z.B.: von, van, zu&#xD;&#xA;Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
-      </type>
       <mapping>
         <identity value="BDT" />
         <map value="3120" />
@@ -1654,10 +1652,15 @@
         <identity value="KVDT" />
         <map value="3120" />
       </mapping>
+	  <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
+      </type>
     </element>
-    <element id="HumanName.family.extension:vorsatzwort.valueString:valueString">
+    <element id="HumanName.family.extension:vorsatzwort.value[x]">
       <path value="HumanName.family.extension.valueString" />
       <sliceName value="valueString" />
+      
     </element>
     <element id="HumanName.given">
       <path value="HumanName.given" />
@@ -1703,10 +1706,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
       </type>
-    </element>
-    <element id="HumanName.prefix.extension:prefix-qualifier.valueCode:valueCode">
-      <path value="HumanName.prefix.extension.valueCode" />
-      <sliceName value="valueCode" />
     </element>
     <element id="HumanName.suffix">
       <path value="HumanName.suffix" />
