@@ -1,0 +1,2355 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://fhir.de/ValueSet/edqm/darreichungsform"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.2.6.60.4.11.27"/>
+    </identifier>
+    <version value="2018-05-09T00:00:00"/>
+    <name value="edqm-darreichungsform"/>
+    <title value="EDQMDoseForm"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+    <contact>
+        <name value="HL7 Deutschland e. V."/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.de"/>
+        </telecom>
+    </contact>
+    <description value="EDQMDoseForm"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="urn:uuid:5092e95e-27f2-4fa2-a13c-ea79b7102e46"/>
+        <timestamp value="2018-05-13T09:55:06Z"/>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10101000"/>
+            <display value="Tropfen zum Einnehmen, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10102000"/>
+            <display value="Tropfen zum Einnehmen, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10103000"/>
+            <display value="Tropfen zum Einnehmen, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10104000"/>
+            <display value="Fl&#252;ssigkeit zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10105000"/>
+            <display value="L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10106000"/>
+            <display value="Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10107000"/>
+            <display value="Emulsion zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10108000"/>
+            <display value="Gel zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10109000"/>
+            <display value="Paste zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10110000"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10111000"/>
+            <display value="Pulver zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10112000"/>
+            <display value="Granulat zur Herstellung einer L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10113000"/>
+            <display value="Granulat zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10114000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10115000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10116000"/>
+            <display value="Lyophilisat zur Herstellung einer Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10117000"/>
+            <display value="Sirup"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10118000"/>
+            <display value="Pulver zur Herstellung eines Sirups"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10119000"/>
+            <display value="Granulat zur Herstellung eines Sirups"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10120000"/>
+            <display value="Tablette zur Herstellung einer L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10121000"/>
+            <display value="Tablette zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10122000"/>
+            <display value="Arzneitee"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10201000"/>
+            <display value="Pulver zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10202000"/>
+            <display value="Teeaufgusspulver"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10203000"/>
+            <display value="Brausepulver"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10204000"/>
+            <display value="Granulat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10205000"/>
+            <display value="Brausegranulat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10206000"/>
+            <display value="magensaftresistentes Granulat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10207000"/>
+            <display value="Retardgranulat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10208000"/>
+            <display value="Granulat mit ver&#228;nderter Wirkstofffreisetzung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10209000"/>
+            <display value="Oblatenkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10210000"/>
+            <display value="Hartkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10211000"/>
+            <display value="Weichkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10212000"/>
+            <display value="magensaftresistente Hartkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10213000"/>
+            <display value="magensaftresistente Weichkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10214000"/>
+            <display value="Weichkapsel zum Zerbei&#223;en"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10215000"/>
+            <display value="Hartkapsel, retardiert"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10216000"/>
+            <display value="Weichkapsel, retardiert"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10217000"/>
+            <display value="Hartkapsel mit ver&#228;nderter Wirkstofffreisetzung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10218000"/>
+            <display value="Weichkapsel mit ver&#228;nderter Wirkstofffreisetzung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10219000"/>
+            <display value="Tablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10220000"/>
+            <display value="&#252;berzogene Tablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10221000"/>
+            <display value="Filmtablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10222000"/>
+            <display value="Brausetablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10223000"/>
+            <display value="Schmelztablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10224000"/>
+            <display value="Lyophilisat zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10225000"/>
+            <display value="magensaftresistente Tablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10226000"/>
+            <display value="Retardtablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10227000"/>
+            <display value="Tablette mit ver&#228;nderter Wirkstofffreisetzung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10228000"/>
+            <display value="Kautablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10229000"/>
+            <display value="wirkstoffhaltiges Kaugummi"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10230000"/>
+            <display value="Lutschpastille"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10231000"/>
+            <display value="Streuk&#252;gelchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10236100"/>
+            <display value="Schmelzfilm"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10301000"/>
+            <display value="Gurgell&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10302000"/>
+            <display value="Konzentrat zur Herstellung einer Gurgell&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10303000"/>
+            <display value="Pulver zur Herstellung einer Gurgell&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10304000"/>
+            <display value="Tablette zur Herstellung einer Gurgell&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10305000"/>
+            <display value="L&#246;sung zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10306000"/>
+            <display value="Suspension zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10307000"/>
+            <display value="Tropfen zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10308000"/>
+            <display value="Spray zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10309000"/>
+            <display value="Sublingualspray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10310000"/>
+            <display value="Mundwasser"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10311000"/>
+            <display value="Tablette zur Herstellung eines Mundwassers"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10312000"/>
+            <display value="L&#246;sung zur Anwendung am Zahnfleisch"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10313000"/>
+            <display value="Gel zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10314000"/>
+            <display value="Paste zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10314005"/>
+            <display value="Salbe zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10314010"/>
+            <display value="Creme zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10314011"/>
+            <display value="Buccalfilm"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10315000"/>
+            <display value="Gel zur Anwendung am Zahnfleisch"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10316000"/>
+            <display value="Paste zur Anwendung am Zahnfleisch"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10317000"/>
+            <display value="Kapsel zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10318000"/>
+            <display value="Sublingualtablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10319000"/>
+            <display value="mucoadh&#228;sive Buccaltablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10320000"/>
+            <display value="Buccaltablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10321000"/>
+            <display value="Lutschtablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10322000"/>
+            <display value="Lutschtablette, gepresst"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10323000"/>
+            <display value="Pastille"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10401000"/>
+            <display value="Pulver zur periodontalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10402000"/>
+            <display value="Dentalgel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10403000"/>
+            <display value="Dentalstift"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10404000"/>
+            <display value="Insert f&#252;r Parodontaltaschen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10405000"/>
+            <display value="Dentalpulver"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10406000"/>
+            <display value="Dentall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10407000"/>
+            <display value="Dentalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10408000"/>
+            <display value="Dentalemulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10409000"/>
+            <display value="Zahnpaste"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10410000"/>
+            <display value="Gel zur periodontalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10411000"/>
+            <display value="Insert zur periodontalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10501000"/>
+            <display value="Badezusatz"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10502000"/>
+            <display value="Creme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10503000"/>
+            <display value="Gel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10504000"/>
+            <display value="Salbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10505000"/>
+            <display value="Paste zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10506000"/>
+            <display value="wirkstoffhaltiges Pflaster"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10507000"/>
+            <display value="Schaum zur  Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10508000"/>
+            <display value="Shampoo"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10509000"/>
+            <display value="Spray zur Anwendung auf der Haut, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10510000"/>
+            <display value="Spray zur Anwendung auf der Haut, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10511000"/>
+            <display value="Pulver-Spray zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10512000"/>
+            <display value="Fl&#252;ssigkeit zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10513000"/>
+            <display value="L&#246;sung zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10514000"/>
+            <display value="Konzentrat zur Herstellung einer L&#246;sung zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10515000"/>
+            <display value="Suspension zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10516000"/>
+            <display value="Emulsion zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10517000"/>
+            <display value="Pulver zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10517500"/>
+            <display value="Kutanes Pflaster"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10518000"/>
+            <display value="L&#246;sung zur Iontophorese"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10519000"/>
+            <display value="transdermales Pflaster"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10520000"/>
+            <display value="filmbildende Fl&#252;ssigkeit"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10521000"/>
+            <display value="wirkstoffhaltiger Nagellack"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10521500"/>
+            <display value="Nail solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10522000"/>
+            <display value="Umschlagpaste"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10523000"/>
+            <display value="Stift zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10524000"/>
+            <display value="Schw&#228;mmchen zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10525000"/>
+            <display value="impr&#228;gnierter Verband"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10539500"/>
+            <display value="Scrub"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10546500"/>
+            <display value="transdermales Spray, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10547000"/>
+            <display value="transdermales System"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10548000"/>
+            <display value="Pricktestl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10549000"/>
+            <display value="Scratchtestl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10550000"/>
+            <display value="Pflaster f&#252;r Provokationstest"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10601000"/>
+            <display value="Augencreme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10602000"/>
+            <display value="Augengel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10603000"/>
+            <display value="Augensalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10604000"/>
+            <display value="Augentropfen, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10604500"/>
+            <display value="Augentropfen, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10605000"/>
+            <display value="Augentropfensuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10606000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung von Augentropfen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10607000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Augentropfensuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10608000"/>
+            <display value="L&#246;sungsmittel zur Herstellung von Augentropfen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10609000"/>
+            <display value="Augentropfen mit verl&#228;ngerter Wirkungsdauer"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10610000"/>
+            <display value="Augenbad"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10611000"/>
+            <display value="L&#246;sungsmittel zur Herstellung eines Augenbades"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10612000"/>
+            <display value="Augeninsert"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10613000"/>
+            <display value="Teststreifen zur Anwendung am Auge"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10701000"/>
+            <display value="Ohrencreme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10702000"/>
+            <display value="Ohrengel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10703000"/>
+            <display value="Ohrensalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10704000"/>
+            <display value="Ohrentropfen, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10705000"/>
+            <display value="Ohrentropfen, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10706000"/>
+            <display value="Ohrentropfen, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10707000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Ohrentropfensuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10708000"/>
+            <display value="Ohrenpulver"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10709000"/>
+            <display value="Ohrenspray, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10710000"/>
+            <display value="Ohrenspray, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10711000"/>
+            <display value="Ohrenspray, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10712000"/>
+            <display value="Ohrensp&#252;ll&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10713000"/>
+            <display value="Ohrensp&#252;lung, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10714000"/>
+            <display value="Ohrentampon"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10715000"/>
+            <display value="Ohrenst&#228;bchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10801000"/>
+            <display value="Nasencreme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10802000"/>
+            <display value="Nasengel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10803000"/>
+            <display value="Nasensalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10804000"/>
+            <display value="Nasentropfen, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10805000"/>
+            <display value="Nasentropfen, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10806000"/>
+            <display value="Nasentropfen, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10807000"/>
+            <display value="Nasenpulver"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10808000"/>
+            <display value="Nasenspray, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10809000"/>
+            <display value="Nasenspray, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10810000"/>
+            <display value="Nasenspray, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10811000"/>
+            <display value="Nasensp&#252;lung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10812000"/>
+            <display value="Nasenstift"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10900500"/>
+            <display value="Intravaginal ring"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10901000"/>
+            <display value="Vaginalcreme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10902000"/>
+            <display value="Vaginalgel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10903000"/>
+            <display value="Vaginalsalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10904000"/>
+            <display value="Vaginalschaum"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10905000"/>
+            <display value="Vaginall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10906000"/>
+            <display value="Vaginalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10907000"/>
+            <display value="Vaginalemulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10908000"/>
+            <display value="Tablette zur Herstellung einer Vaginall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10909000"/>
+            <display value="Vaginalz&#228;pfchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10910000"/>
+            <display value="Hartkapsel zur vaginalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10911000"/>
+            <display value="Weichkapsel zur vaginalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10912000"/>
+            <display value="Vaginaltablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10913000"/>
+            <display value="Schaumovula"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10914000"/>
+            <display value="Wirkstoffhaltiger Vaginaltampon"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10915000"/>
+            <display value="vaginales Wirkstofffreisetzungssystem"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="10916000"/>
+            <display value="Schw&#228;mmchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11001000"/>
+            <display value="Rektalcreme"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11002000"/>
+            <display value="Rektalgel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11003000"/>
+            <display value="Rektalsalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11004000"/>
+            <display value="Rektalschaum"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11005000"/>
+            <display value="Rektall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11006000"/>
+            <display value="Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11007000"/>
+            <display value="Rektalemulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11008000"/>
+            <display value="Konzentrat zur Herstellung einer Rektall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11009000"/>
+            <display value="Pulver zur Herstellung einer Rektall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11010"/>
+            <display value="Tropfen zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11010000"/>
+            <display value="Pulver zur Herstellung einer Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11011000"/>
+            <display value="Tablette zur Herstellung einer Rektall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11012000"/>
+            <display value="Tablette zur Herstellung einer Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11013000"/>
+            <display value="Z&#228;pfchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11014000"/>
+            <display value="Rektalkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11015000"/>
+            <display value="Rektaltampon"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11050"/>
+            <display value="Fl&#252;ssigkeit zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11101000"/>
+            <display value="L&#246;sung f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11102000"/>
+            <display value="Suspension f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11103000"/>
+            <display value="Pulver zur Herstellung einer Suspension f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11104000"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11105000"/>
+            <display value="Emulsion f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11106000"/>
+            <display value="Druckgasinhalation, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11107000"/>
+            <display value="Druckgasinhalation, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11108000"/>
+            <display value="Druckgasinhalation, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11109000"/>
+            <display value="Pulver zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11110000"/>
+            <display value="Hartkapsel mit Pulver zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11111000"/>
+            <display value="einzeldosiertes Pulver zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11112000"/>
+            <display value="Pulver zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11113000"/>
+            <display value="Kapsel zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11114000"/>
+            <display value="L&#246;sung zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11115000"/>
+            <display value="Tablette zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11116000"/>
+            <display value="Salbe zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11117000"/>
+            <display value="Fl&#252;ssigkeit zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11118000"/>
+            <display value="Inhalationsgas"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11201000"/>
+            <display value="Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11202000"/>
+            <display value="Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11203000"/>
+            <display value="Emulsion zur Injektion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11204000"/>
+            <display value="Gel zur Injektion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11205000"/>
+            <display value="Pulver zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11206000"/>
+            <display value="Pulver zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11207000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11208000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11209000"/>
+            <display value="Konzentrat zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11210000"/>
+            <display value="Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11210500"/>
+            <display value="Infusionsl&#246;sung im Applikationssystem"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11211000"/>
+            <display value="Emulsion zur Infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11212000"/>
+            <display value="Pulver zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11213000"/>
+            <display value="Konzentrat zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11214000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11214500"/>
+            <display value="Lyophilisat und L&#246;sungsmittel zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11215000"/>
+            <display value="Lyophilisat zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11216000"/>
+            <display value="L&#246;sungsmittel zur Herstellung von Parenteralia"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11217000"/>
+            <display value="Lyophilisat zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11218000"/>
+            <display value="Lyophilisat zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11301000"/>
+            <display value="Implantat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11302000"/>
+            <display value="Tablette zur Implantation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11303000"/>
+            <display value="Kette zur Implantation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11303500"/>
+            <display value="Suspension zur Implantation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11304000"/>
+            <display value="Pulver und Dispersionsmittel zur Herstellung einer Paste f&#252;r Implantate"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11401000"/>
+            <display value="Peritonealdialysel&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11402000"/>
+            <display value="H&#228;mofiltrationsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11403000"/>
+            <display value="H&#228;modiafiltrationsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11404000"/>
+            <display value="H&#228;modialysel&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11405000"/>
+            <display value="Konzentrat zur Herstellung einer H&#228;modialysel&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11501000"/>
+            <display value="L&#246;sung zur intravesikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11502000"/>
+            <display value="Blasensp&#252;ll&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11503000"/>
+            <display value="Pulver zur Herstellung einer Blasensp&#252;ll&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11504000"/>
+            <display value="Gel zur Anwendung in der Harnr&#246;hre"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11505000"/>
+            <display value="St&#228;bchen zur Anwendung in der Harnr&#246;hre"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11601000"/>
+            <display value="L&#246;sung zur endotracheopulmonalen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11602000"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung zur endotracheopulmonalen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11603000"/>
+            <display value="Suspension zur endotracheopulmonalen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11604000"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur endotracheopulmonalen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11701000"/>
+            <display value="Gel zur endozervikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11702000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung eines Gels zur endozervikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11901000"/>
+            <display value="Intrauterines Wirkstofffreisetzungssystem"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11902000"/>
+            <display value="L&#246;sung zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11903000"/>
+            <display value="Suspension zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11904000"/>
+            <display value="Emulsion zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11905000"/>
+            <display value="Tablette zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11906000"/>
+            <display value="Kapsel zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12004000"/>
+            <display value="L&#246;sung f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12100"/>
+            <display value="Kapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12100500"/>
+            <display value="Absorbable coated sponge"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12101000"/>
+            <display value="Lack f&#252;r die Gebisskontaktfl&#228;che"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12102000"/>
+            <display value="Stabilisatorl&#246;sung f&#252;r Blutkonserven"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12103000"/>
+            <display value="L&#246;sung zur Modifikation einer Blutfraktion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12104000"/>
+            <display value="Wundst&#228;bchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12105000"/>
+            <display value="Markerzubereitung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12106000"/>
+            <display value="Radionuklidgenerator"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12107000"/>
+            <display value="Kit f&#252;r ein radioaktives Arzneimittel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12108000"/>
+            <display value="L&#246;sung zur gastrointestinalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12109000"/>
+            <display value="Dispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12109500"/>
+            <display value="Fibrin sealant-powder and solvent for fibrin sealant"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12110000"/>
+            <display value="Suspension zur gastrointestinalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12111000"/>
+            <display value="Emulsion zur gastrointestinalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12112000"/>
+            <display value="Organkonservierungsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12113000"/>
+            <display value="Sp&#252;ll&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12114000"/>
+            <display value="Magensp&#252;lfl&#252;ssigkeit"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12115000"/>
+            <display value="Gewebekleber"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12115500"/>
+            <display value="Solution of perfusion of organs"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12116000"/>
+            <display value="Pulver und L&#246;sungsmittel f&#252;r einen Gewebekleber"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12117000"/>
+            <display value="Impr&#228;gnierter Tampon"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12118000"/>
+            <display value="lebendes Gewebe&#228;quivalent"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12119000"/>
+            <display value="wirkstoffhaltiges Schw&#228;mmchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12120"/>
+            <display value="magensaftresistente Kapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12120000"/>
+            <display value="Gel zur intestinalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12130000"/>
+            <display value="wirkstoffhaltiger Faden"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12131000"/>
+            <display value="Provokationstestl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12150"/>
+            <display value="Retardkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12200"/>
+            <display value="Tablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12301000"/>
+            <display value="Gas zur medizinischen Anwendung, druckverdichtet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12302000"/>
+            <display value="Gas zur medizinischen Anwendung, k&#228;lteverfl&#252;ssigt"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12303000"/>
+            <display value="Gas zur medizinischen Anwendung, verfl&#252;ssigt"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="13050"/>
+            <display value="Fl&#252;ssigkeit zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="13220"/>
+            <display value="Lutschtablette"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="14050"/>
+            <display value="Dentalfl&#252;ssigkeit"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="15090"/>
+            <display value="Spray zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="15130"/>
+            <display value="Fl&#252;ssigkeit zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="16040"/>
+            <display value="Augentropfen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="17040"/>
+            <display value="Ohrentropfen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="17090"/>
+            <display value="Ohrenspray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="17120"/>
+            <display value="Ohrensp&#252;lung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="18040"/>
+            <display value="Nasentropfen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="18080"/>
+            <display value="Nasenspray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="19050"/>
+            <display value="Fl&#252;ssigkeit zur vaginalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="19100"/>
+            <display value="Vaginalkapsel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="20050"/>
+            <display value="Klistier"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="21010"/>
+            <display value="Fl&#252;ssigkeit f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="21060"/>
+            <display value="Druckgasinhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="21100"/>
+            <display value="Pulver zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="21140"/>
+            <display value="Dampf zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="22010"/>
+            <display value="Injektion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="22050"/>
+            <display value="Pulver zur Herstellung einer Injektionszubereitung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="22090"/>
+            <display value="steriles Konzentrat"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="22100"/>
+            <display value="Infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="22120"/>
+            <display value="Pulver zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="26010"/>
+            <display value="L&#246;sung zur endotracheopulmonalen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="29020"/>
+            <display value="Fl&#252;ssigkeit zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="30047500"/>
+            <display value="Beutelchen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="31030"/>
+            <display value="Zubereitung zur Modifikation einer Blutfraktion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="31080"/>
+            <display value="Fl&#252;ssigkeit zur gastrointestinalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50001000"/>
+            <display value="Kautablette/Tablette zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50001250"/>
+            <display value="Befilmtes Granulat im Beutel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50001500"/>
+            <display value="Concentrate and diluent for solution for infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50002000"/>
+            <display
+                    value="Konzentrat und L&#246;sungsmittel f&#252;r ein Konzentrat zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50003000"/>
+            <display
+                    value="Konzentrat und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50004000"/>
+            <display value="Concentrate and solvent for cutaneous use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50005000"/>
+            <display value="Concentrate and solvent for injection"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50006000"/>
+            <display value="Konzentrat und L&#246;sungsmittel zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50007000"/>
+            <display value="Konzentrat und L&#246;sungsmittel zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50008000"/>
+            <display value="Konzentrat und L&#246;sungsmittel zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50009000"/>
+            <display value="Konzentrat zur Herstellung eines Sprays zur Anwendung auf der Haut, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50009300"/>
+            <display value="Konzentrat zur Herstellung einer Infusionsdispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50009500"/>
+            <display value="Konzentrat zur Herstellung einer Emulsion zur Infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50010000"/>
+            <display value="Konzentrat zur Herstellung einer L&#246;sung  zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50011000"/>
+            <display value="Konzentrat zur Herstellung einer L&#246;sung zum Einnehmen /Rektall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50012000"/>
+            <display value="Concentrate for peritoneal dialysis solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50013000"/>
+            <display value="Concentrate for solution for intravesical use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50013500"/>
+            <display value="Konzentrat zur Herstellung eines Sprays, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50014000"/>
+            <display value="Concentrate for suspension for infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50015000"/>
+            <display value="Cutaneous and nasal ointment"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50015300"/>
+            <display value="Cutaneous/oromucosal/oral solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50015400"/>
+            <display value="Cutaneous/oromucosal spray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50015500"/>
+            <display value="Spray zur Anwendung auf der Haut, Emulsion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50016000"/>
+            <display value="Spray zur Anwendung auf der Haut, Salbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50017000"/>
+            <display value="Dentalpaste"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50018000"/>
+            <display value="Augen-/Ohrentropfen, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50019000"/>
+            <display value="Augen-/Ohrensalbe"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50020000"/>
+            <display value="Ear/eye/nose drops, solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50020500"/>
+            <display value="Effervescent buccal tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50021000"/>
+            <display value="Emulsion zur Injektion/Infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50021500"/>
+            <display value="Emulsion und Suspension zur Herstellung einer Emulsion zur Injektion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50022000"/>
+            <display value="Nebenh&#246;hlensp&#252;lung, Suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50023000"/>
+            <display value="Augentropfen, L&#246;sung im Einzeldosisbeh&#228;ltnis"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50023500"/>
+            <display value="Film coated gastro-resistant tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50024000"/>
+            <display value="Gurgell&#246;sung/Mundsp&#252;lung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50025000"/>
+            <display value="Gastro-resistant coated tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50026000"/>
+            <display value="magensaftresistentes Granulat zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50026250"/>
+            <display value="Gastro-resistant prolonged-release tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50026500"/>
+            <display value="Granulat und L&#246;sungsmittel zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50027000"/>
+            <display value="Granulat und L&#246;sungsmittel zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50028000"/>
+            <display value="Granules for oral and rectal suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50029000"/>
+            <display value="Granules for oral drops, solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50029250"/>
+            <display value="Granulat zum Eingeben &#252;ber das Trinkwasser"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50029500"/>
+            <display value="Granulat zur Herstellung einer Vaginall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50029600"/>
+            <display value="Hard capsule with gastro-resistant pellets"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50029700"/>
+            <display value="Arzneitee im Beutel"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50030000"/>
+            <display value="Tablette mit Pulver zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50031000"/>
+            <display value="Brausetablette zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50032000"/>
+            <display value="Emulsion zur Herstellung eines Dampfs zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50033000"/>
+            <display value="Dampf zur Inhalation, impr&#228;gnierter Einsatz"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50033300"/>
+            <display value="Schaum zur intrauterinen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50033500"/>
+            <display value="intravitreales Implantat im Applikator"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50034000"/>
+            <display value="Liquefied gas for dental use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50035000"/>
+            <display value="Modified-release film-coated tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50036000"/>
+            <display
+                    value="Granulat mit ver&#228;nderter Wirkstofffreisetzung zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50036100"/>
+            <display value="Muco-adhesive buccal prolonged-release tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50036500"/>
+            <display value="L&#246;sung zur nasalen Anwendung/L&#246;sung zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50037000"/>
+            <display value="Nasal spray and oromucosal solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50037250"/>
+            <display value="Nasenspray, L&#246;sung im Einzeldosisbeh&#228;ltnis"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50037750"/>
+            <display value="Tropfen zum Einnehmen, Fl&#252;ssigkeit"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50038000"/>
+            <display value="Suspension zum Einnehmen/Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50038500"/>
+            <display
+                    value="L&#246;sung zum Einnehmen/ Konzentrat zur Herstellung einer L&#246;sung f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50039000"/>
+            <display value="Pflaster zur Anwendung in der Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50039300"/>
+            <display value="Pulverbeutelchen zur Anwendung in Mundh&#246;hle"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50039500"/>
+            <display value="L&#246;sung zur Anwendung in der Mundh&#246;hle/im Rachenraum und am Kehlkopf"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50040000"/>
+            <display value="Oromucosal/laryngopharyngeal solution/spray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50041000"/>
+            <display value="Streuk&#252;gelchen im Einzeldosisbeh&#228;ltnis"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50041500"/>
+            <display value="Pulver und L&#246;sung zur Herstellung einer Injektionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50042000"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel f&#252;r ein Konzentrat zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50043000"/>
+            <display value="Pulver f&#252;r ein Konzentrat zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50044000"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur Anwendung auf der Haut"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50044500"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektionsdispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50045000"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur Anwendung in den Nebenh&#246;hlen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50045500"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zum Auftragen auf die Wunde"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50046000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung eines Gels zur Anwendung am Zahnfleisch"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50047000"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur intraokularen Instillation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50047500"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung zur intravesikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50047700"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer L&#246;sung f&#252;r einen Vernebler"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Depot-Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048250"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektionsl&#246;sung in einer Fertigspritze"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048300"/>
+            <display
+                    value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektionssuspension in einer Fertigspritze"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048500"/>
+            <display value="Pulver und Suspension zur Herstellung einer Injektionssuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048600"/>
+            <display
+                    value="Pulver, Dispersion und L&#246;sungsmittel f&#252;r ein Konzentrat zur Herstellung einer Infusionsdispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50048750"/>
+            <display value="Pulver f&#252;r ein Konzentrat zur Herstellung einer Infusionsdispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049000"/>
+            <display value="Pulver f&#252;r ein Konzentrat zur Herstellung einer H&#228;modialysel&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049100"/>
+            <display
+                    value="Pulver f&#252;r ein Konzentrat zur Herstellung einer Suspension zur intravesikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049250"/>
+            <display value="Pulver f&#252;r ein Konzentrat zur Herstellung einer Injektions-/Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049270"/>
+            <display value="Pulver zur Herstellung einer Dentall&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049300"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung zum Auftragen auf die Wunde"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50049500"/>
+            <display value="Pulver zur Herstellung einer Suspension zur Implantation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50050000"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung zur intravesikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50051000"/>
+            <display value="Pulver zur Herstellung einer Suspensionen zur intravesikalen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50051100"/>
+            <display value="Powder for mouth wash"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50052000"/>
+            <display value="Pulver zur Herstellung einer Suspension zum Einnehmen/Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50053000"/>
+            <display value="Pulver zur Herstellung einer Injektions- bzw. Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50053500"/>
+            <display value="Pulver zur Herstellung einer Injektions-/Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50054000"/>
+            <display value="Powder for solution for intravesical use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50055000"/>
+            <display value="Powder for solution for nasal spray"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50055500"/>
+            <display value="Prolonged-release film-coated tablet"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50056000"/>
+            <display value="Retardgranulat zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50056500"/>
+            <display value="Markerzubereitung, L&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50057000"/>
+            <display value="H&#228;modialysel&#246;sung/H&#228;mofiltrationsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50058000"/>
+            <display value="Solution for infusion and oral solution"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50059000"/>
+            <display value="Solution for injection/concentrate for solution for infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060000"/>
+            <display value="Injektions-/Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060100"/>
+            <display value="Injektionsl&#246;sung in einer Patrone"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060200"/>
+            <display value="Injektionsl&#246;sung im Fertigpen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060300"/>
+            <display value="Injektionsl&#246;sung in einer Fertigspritze"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060400"/>
+            <display value="Solution for injection in pre-filled syringe with automatic needle guard"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50060500"/>
+            <display value="Injektions-/Infusionsl&#246;sung in einer Fertigspritze"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50061000"/>
+            <display value="Solution for intraperitoneal use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50061300"/>
+            <display value="L&#246;sung zum Eingeben &#252;ber das Trinkwasser"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50061500"/>
+            <display value="L&#246;sung f&#252;r Gewebekleber"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50061600"/>
+            <display value="Solvent for nasal use"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50062000"/>
+            <display value="Suspension und Brausegranulat zur Herstellung einer Suspension zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50062500"/>
+            <display value="Suspension und L&#246;sung zur Herstellung eines Sprays"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50063000"/>
+            <display value="Suspension for infusion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50063100"/>
+            <display value="Injektionssuspension in einer Patrone"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50063200"/>
+            <display value="Injektionssuspension in einem Fertigpen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50063300"/>
+            <display value="Injektionssuspension in einer Fertigspritze"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50063500"/>
+            <display value="Suspension zum Eingeben &#252;ber das Trinkwasser"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50064000"/>
+            <display value="Tabletten und L&#246;sungsmittel zur Herstellung einer Rektalsuspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50065000"/>
+            <display value="Tabletten und Pulver zur Herstellung einer L&#246;sung zum Einnehmen"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50066000"/>
+            <display value="Tablet for oral suspension"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50070000"/>
+            <display value="Oral suspension for use in drinking water"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50071000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung eines Dentalgels"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50072000"/>
+            <display value="Pulver zum Eingeben &#252;ber das Trinkwasser"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50073000"/>
+            <display value="Pulver zur Herstellung einer L&#246;sung zur intraokularen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50074000"/>
+            <display value="L&#246;sungsmittel zur Herstellung einer L&#246;sung zur intraokularen Anwendung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50076000"/>
+            <display value="L&#246;sungsmittel zur Herstellung einer Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50077000"/>
+            <display value="Dispersion zur Injektion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50078000"/>
+            <display value="Gas und L&#246;sungsmittel zur Herstellung einer Injektions-/Infusionsdispersion"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50079000"/>
+            <display value="Konzentrat zur Herstellung einer Injektions- /Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50080000"/>
+            <display value="Pulver und L&#246;sungsmittel zur Herstellung einer Injektions-/Infusionsl&#246;sung"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50081000"/>
+            <display value="L&#246;sung zur Inhalation"/>
+        </contains>
+        <contains>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="50082000"/>
+            <display value="Pulver zur Herstellung von Tropfen zum Einnehmen, Suspension"/>
+        </contains>
+    </expansion>
+</ValueSet>

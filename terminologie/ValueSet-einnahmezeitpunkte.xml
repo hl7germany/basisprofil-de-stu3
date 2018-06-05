@@ -1,0 +1,57 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+	</meta>
+	<url value="http://fhir.de/ValueSet/einnahmezeitpunkte"/>
+	<version value="0.2-WORK"/>
+	<name value="einnahmezeitpunkte"/> 
+	<status value="draft"/>
+	<date value="2017-08-08T21:30:00+02:00"/>
+	<description value="ValueSet zur Codierung von Einnahmezeitpunkten"/>
+	<compose> 
+		<include>
+			<system value="http://hl7.org/fhir/v3/TimingEvent"/>
+			<concept>
+				<code value="CM"/>
+				<display value="Morgens"/>
+			</concept>
+			<concept>
+				<code value="CD"/>
+				<display value="Mittags"/>
+			</concept>
+			<concept>
+				<code value="CV"/>
+				<display value="Abends"/>
+			</concept>
+			<concept>
+				<code value="HS"/>
+				<display value="zur Nacht"/>
+			</concept>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="urn:uuid:25ae81b1-0341-4bfc-b300-f12a63cc7234"/>
+		<timestamp value="2017-08-08T22:33:00"/>
+		<total value="4"/>
+		<contains>
+			<system value="http://hl7.org/fhir/v3/TimingEvent"/>
+			<code value="CD" />
+			<display value="Mittags" />
+		</contains>
+		<contains>
+			<system value="http://hl7.org/fhir/v3/TimingEvent"/>
+			<code value="CM" />
+			<display value="Morgens" />
+		</contains>
+		<contains>
+			<system value="http://hl7.org/fhir/v3/TimingEvent"/>
+			<code value="CV" />
+			<display value="Abends" />
+		</contains>
+		<contains>
+			<system value="http://hl7.org/fhir/v3/TimingEvent"/>
+			<code value="HS" />
+			<display value="zur Nacht" />
+		</contains>
+	</expansion>
+</ValueSet>

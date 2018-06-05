@@ -1,0 +1,227 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="http://fhir.de/ValueSet/kbv/s-bmp-dosiereinheit" />
+	<identifier>
+		<system value="urn:ietf:rfc:3986" />
+		<value value="1.2.276.0.76.3.1.1.5.2.41" />
+	</identifier>
+	<version value="0.2-WORK" />
+	<name value="kbv-s-bmp-dosiereinheit" />
+	<status value="draft" />
+	<date value="2017-08-08" />
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<contact>
+		<telecom>
+			<system value="other" />
+			<value value="http://hl7.de/technische-komitees/fhir/" />
+		</telecom>
+	</contact>
+	<description value="Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP)." />
+	<compose>
+		<include>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="37a113bc-3fb8-42c1-6e53-4c11363b0d20" />
+		<timestamp value="2017-08-08T18:41:49" />
+		<total value="33" />
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="#" />
+			<display value="Messlöffel" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="0" />
+			<display value="Messbecher" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="1" />
+			<display value="Stück" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="2" />
+			<display value="Pkg." />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="3" />
+			<display value="Flasche" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="4" />
+			<display value="Beutel" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="5" />
+			<display value="Hub" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="6" />
+			<display value="Tropfen" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="7" />
+			<display value="Teelöffel" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="8" />
+			<display value="Esslöffel" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="9" />
+			<display value="E" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="a" />
+			<display value="Tasse" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="b" />
+			<display value="Applikatorfüllung" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="c" />
+			<display value="Augenbadewanne" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="d" />
+			<display value="Dosierbriefchen" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="e" />
+			<display value="Dosierpipette" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="f" />
+			<display value="Dosierspritze" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="g" />
+			<display value="Einzeldosis" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="h" />
+			<display value="Glas" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="i" />
+			<display value="Likörglas" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="j" />
+			<display value="Messkappe" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="k" />
+			<display value="Messschale" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="l" />
+			<display value="Mio E" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="m" />
+			<display value="Mio IE" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="n" />
+			<display value="Pipettenteilstrich" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="o" />
+			<display value="Sprühstoß" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="p" />
+			<display value="IE" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="q" />
+			<display value="cm" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="r" />
+			<display value="l" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="s" />
+			<display value="ml" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="t" />
+			<display value="g" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="u" />
+			<display value="kg" />
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<version value="1.00" />
+			<code value="v" />
+			<display value="mg" />
+		</contains>
+	</expansion>
+</ValueSet>

@@ -1,0 +1,154 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <url value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="1.2.276.0.76.3.1.1.5.2.41"/>
+    </identifier>
+    <version value="1.00"/>
+    <name value="kbv-s-bmp-dosiereinheit"/>
+    <status value="draft"/>
+    <date value="2017-08-08"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+    <contact>
+        <telecom>
+            <system value="other"/>
+            <value value="http://hl7.de/technische-komitees/fhir/"/>
+        </telecom>
+    </contact>
+    <description
+            value="Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP)."/>
+    <valueSet value="http://fhir.de/ValueSet/kbv/s-bmp-dosiereinheit"/>
+    <content value="complete"/>
+    <concept>
+        <code value="#"/>
+        <display value="Messlöffel"/>
+    </concept>
+    <concept>
+        <code value="0"/>
+        <display value="Messbecher"/>
+    </concept>
+    <concept>
+        <code value="1"/>
+        <display value="Stück"/>
+    </concept>
+    <concept>
+        <code value="2"/>
+        <display value="Pkg."/>
+    </concept>
+    <concept>
+        <code value="3"/>
+        <display value="Flasche"/>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="Beutel"/>
+    </concept>
+    <concept>
+        <code value="5"/>
+        <display value="Hub"/>
+    </concept>
+    <concept>
+        <code value="6"/>
+        <display value="Tropfen"/>
+    </concept>
+    <concept>
+        <code value="7"/>
+        <display value="Teelöffel"/>
+    </concept>
+    <concept>
+        <code value="8"/>
+        <display value="Esslöffel"/>
+    </concept>
+    <concept>
+        <code value="9"/>
+        <display value="E"/>
+    </concept>
+    <concept>
+        <code value="a"/>
+        <display value="Tasse"/>
+    </concept>
+    <concept>
+        <code value="b"/>
+        <display value="Applikatorfüllung"/>
+    </concept>
+    <concept>
+        <code value="c"/>
+        <display value="Augenbadewanne"/>
+    </concept>
+    <concept>
+        <code value="d"/>
+        <display value="Dosierbriefchen"/>
+    </concept>
+    <concept>
+        <code value="e"/>
+        <display value="Dosierpipette"/>
+    </concept>
+    <concept>
+        <code value="f"/>
+        <display value="Dosierspritze"/>
+    </concept>
+    <concept>
+        <code value="g"/>
+        <display value="Einzeldosis"/>
+    </concept>
+    <concept>
+        <code value="h"/>
+        <display value="Glas"/>
+    </concept>
+    <concept>
+        <code value="i"/>
+        <display value="Likörglas"/>
+    </concept>
+    <concept>
+        <code value="j"/>
+        <display value="Messkappe"/>
+    </concept>
+    <concept>
+        <code value="k"/>
+        <display value="Messschale"/>
+    </concept>
+    <concept>
+        <code value="l"/>
+        <display value="Mio E"/>
+    </concept>
+    <concept>
+        <code value="m"/>
+        <display value="Mio IE"/>
+    </concept>
+    <concept>
+        <code value="n"/>
+        <display value="Pipettenteilstrich"/>
+    </concept>
+    <concept>
+        <code value="o"/>
+        <display value="Sprühstoß"/>
+    </concept>
+    <concept>
+        <code value="p"/>
+        <display value="IE"/>
+    </concept>
+    <concept>
+        <code value="q"/>
+        <display value="cm"/>
+    </concept>
+    <concept>
+        <code value="r"/>
+        <display value="l"/>
+    </concept>
+    <concept>
+        <code value="s"/>
+        <display value="ml"/>
+    </concept>
+    <concept>
+        <code value="t"/>
+        <display value="g"/>
+    </concept>
+    <concept>
+        <code value="u"/>
+        <display value="kg"/>
+    </concept>
+    <concept>
+        <code value="v"/>
+        <display value="mg"/>
+    </concept>
+</CodeSystem>
