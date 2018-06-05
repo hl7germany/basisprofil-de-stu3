@@ -2568,7 +2568,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept">
       <path value="Medication.ingredient.itemCodeableConcept" />
       <sliceName value="itemCodeableConcept" />
       <short value="The product contained" />
@@ -2577,7 +2577,7 @@
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Medication.ingredient.itemCodeableConcept" />
+        <path value="Medication.ingredient.item[x]" />
         <min value="1" />
         <max value="1" />
       </base>
@@ -2621,7 +2621,7 @@
         <map value=".player" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.id">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.id">
       <path value="Medication.ingredient.itemCodeableConcept.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -2650,7 +2650,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.extension">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.extension">
       <path value="Medication.ingredient.itemCodeableConcept.extension" />
       <slicing>
         <discriminator>
@@ -2699,7 +2699,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <slicing>
         <discriminator>
@@ -2760,7 +2760,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <sliceName value="atc" />
       <short value="Code defined by a terminology system" />
@@ -2815,7 +2815,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.id">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.id">
       <path value="Medication.ingredient.itemCodeableConcept.coding.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -2844,7 +2844,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.extension">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.extension">
       <path value="Medication.ingredient.itemCodeableConcept.coding.extension" />
       <slicing>
         <discriminator>
@@ -2893,7 +2893,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.system">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.system">
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -2936,7 +2936,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.version">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.version">
       <path value="Medication.ingredient.itemCodeableConcept.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -2977,7 +2977,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.code">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.code">
       <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -3019,7 +3019,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.display">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3064,7 +3064,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:atc.userSelected">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:atc.userSelected">
       <path value="Medication.ingredient.itemCodeableConcept.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -3106,7 +3106,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <sliceName value="edqm" />
       <short value="Code defined by a terminology system" />
@@ -3161,7 +3161,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.id">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.id">
       <path value="Medication.ingredient.itemCodeableConcept.coding.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3190,7 +3190,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.extension">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.extension">
       <path value="Medication.ingredient.itemCodeableConcept.coding.extension" />
       <slicing>
         <discriminator>
@@ -3239,7 +3239,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.system">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.system">
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -3282,7 +3282,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.version">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.version">
       <path value="Medication.ingredient.itemCodeableConcept.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -3323,7 +3323,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.code">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.code">
       <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -3365,7 +3365,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.display">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3410,7 +3410,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding:edqm.userSelected">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding:edqm.userSelected">
       <path value="Medication.ingredient.itemCodeableConcept.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -3452,7 +3452,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.text">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6240,14 +6240,14 @@
       <path value="Medication.ingredient" />
       <sliceName value="ingredientCodiert" />
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept">
       <path value="Medication.ingredient.itemCodeableConcept" />
       <sliceName value="itemCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Medication.ingredient:ingredientCodiert.itemCodeableConcept.coding">
+    <element id="Medication.ingredient:ingredientCodiert.item[x]:itemCodeableConcept.coding">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <slicing>
         <discriminator>
