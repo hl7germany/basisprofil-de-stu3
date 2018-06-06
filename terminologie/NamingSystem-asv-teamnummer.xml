@@ -28,7 +28,7 @@ Identifikationsmerkmal für Teams in der ambulanten spezialärztlichen Versorgun
 (BSNR) aufgebaut. Die neun Stellen der ASV-Teamnummer setzen sich wie folgt zusammen: 
 Die ersten beiden Stellen „00“ kennzeichnen die ASV. Die dritte bis achte Stelle 
 ist eine fortlaufende Nummer, die eine eindeutige Zuordnung des ASV-Teams 
-ermöglicht. Die neunte Stelle ist eine Prüfziffer. [Q: KBV]"/>
+ermöglicht. Die neunte Stelle ist eine Prüfziffer. [Q: KBV]. Vgl. auch https://www.asv-servicestelle.de/"/>
 	<!-- Stand 06.06.2018: es existiert noch keine OID
 	<uniqueId>
 		<type value="oid"/>
@@ -37,7 +37,7 @@ ermöglicht. Die neunte Stelle ist eine Prüfziffer. [Q: KBV]"/>
 	-->
 	<uniqueId>
 		<type value="uri"/>
-		<value value="http://fhir.de/NamingSystem/kbv/asv-teamnummer"/>
+		<value value="http://fhir.de/NamingSystem/asv/teamnummer"/>
 		<preferred value="true"/>
 		<period>
 			<start value="2018-06-06"/>

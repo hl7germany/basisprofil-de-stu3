@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="ASV-Team-Mitgliedschaft eines Arztes" />
-  <purpose value="ASV-Teams werden im Rahmen der ambulanten spezialärztlichen Versorgung (ASV) gebildet.&#xD;&#xA;Zu Details vgl. http://www.kbv.de/html/asv.php" />
+  <purpose value="ASV-Teams werden im Rahmen der ambulanten spezialärztlichen Versorgung (ASV) gebildet.&#xD;&#xA;Zu Details vgl. http://www.kbv.de/html/asv.php und https://www.asv-servicestelle.de/" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -1009,7 +1009,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/NamingSystem/kbv/asv-teamnummer" />
+      <fixedUri value="http://fhir.de/NamingSystem/asv/teamnummer" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -2117,7 +2117,7 @@
     <element id="PractitionerRole.organization.identifier.system">
       <path value="PractitionerRole.organization.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://fhir.de/NamingSystem/kbv/asv-teamnummer" />
+      <fixedUri value="http://fhir.de/NamingSystem/asv/teamnummer" />
     </element>
     <element id="PractitionerRole.organization.identifier.value">
       <path value="PractitionerRole.organization.identifier.value" />
