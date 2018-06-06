@@ -550,8 +550,8 @@
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
-      <short value="Practitioner that is able to provide the defined services for the organation" />
-      <definition value="Practitioner that is able to provide the defined services for the organation." />
+      <short value="Arzt" />
+      <definition value="Der Arzt, der Mitglied im ASV-Team ist" />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="1" />
       <max value="1" />
@@ -599,9 +599,9 @@
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
-      <short value="Organization where the roles are available" />
-      <definition value="The organization where the Practitioner performs the roles associated." />
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
+      <short value="ASV-Team" />
+      <definition value="ASV-Teamnummer, wie von der ASV-Servicestelle vergeben" />
+      <comment value="In der Regel werden zum ASV-Team keine weiteren Daten außer der ASV-Teamnummer erfasst.&#xD;&#xA;Daher ist diese als organization.identifier definiert.&#xD;&#xA;Unabhängig davon kann bei Bedarf das ASV-Team zusätzlich auch in einer Organization-Ressource erfasst und hier referenziert werden." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2104,10 +2104,15 @@
   <differential>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
+      <short value="Arzt" />
+      <definition value="Der Arzt, der Mitglied im ASV-Team ist" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
+      <short value="ASV-Team" />
+      <definition value="ASV-Teamnummer, wie von der ASV-Servicestelle vergeben" />
+      <comment value="In der Regel werden zum ASV-Team keine weiteren Daten außer der ASV-Teamnummer erfasst.&#xD;&#xA;Daher ist diese als organization.identifier definiert.&#xD;&#xA;Unabhängig davon kann bei Bedarf das ASV-Team zusätzlich auch in einer Organization-Ressource erfasst und hier referenziert werden." />
       <min value="1" />
     </element>
     <element id="PractitionerRole.organization.identifier">
