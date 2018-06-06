@@ -3,9 +3,17 @@
   <url value="http://fhir.de/StructureDefinition/freitext/0.2" />
   <version value="0.2-WORK" />
   <name value="freitext-0.2" />
-  <title value="Freiext-Extension (Version 0.2)" />
+  <title value="Freitext-Extension (Version 0.2)" />
   <status value="draft" />
   <experimental value="true" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,21 +27,12 @@
       <path value="Extension" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element" />
         <min value="0" />
         <max value="*" />
       </base>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
       <constraint>
         <key value="ext-1" />
         <severity value="error" />
@@ -41,10 +40,6 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
