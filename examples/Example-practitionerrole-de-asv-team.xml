@@ -1,0 +1,14 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://example.org/fhir/StructureDefinition/practitionerrole-de-asv-teamnummer/0.2"/>
+	</meta>
+	<practitioner>
+		<reference value="Practitioner/67890"/>
+	</practitioner>
+	<organization>
+        <identifier>
+            <system value="http://fhir.de/NamingSystem/asv/teamnummer"/>
+            <value value="003456789"/>
+        </identifier>
+	</organization>
+</Practitioner>

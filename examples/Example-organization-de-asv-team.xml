@@ -1,0 +1,11 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2"/>
+	</meta>
+	<!-- ASV-Teamnummer des ASV-Teams -->
+    <identifier>
+        <system value="http://fhir.de/NamingSystem/asv/teamnummer"/>
+        <value value="003456789"/>
+    </identifier>
+	<name value="ASV-Team 003456789"/>
+</Organization>
