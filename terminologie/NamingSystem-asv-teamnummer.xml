@@ -2,7 +2,7 @@
 	<meta>
 		<profile value="http://fhir.de/StructureDefinition/namingsystem-de-basis"/>
 	</meta>
-	<name value="kbv-asv-teamnummer"/>
+	<name value="asv-teamnummer"/>
 	<status value="draft"/>
 	<kind value="identifier"/>
 	<date value="2018-06-06"/>
