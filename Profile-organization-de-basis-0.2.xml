@@ -2149,7 +2149,7 @@
       <path value="Organization.identifier" />
       <sliceName value="ASV-Teamnummer" />
       <short value="Die ASV-Teamnummer" />
-      <definition value="ASV-Teamnummer. Wird nur für Organizationss vom Typ ASV-Team vergeben." />
+      <definition value="ASV-Teamnummer. Wird nur für Organizations vom Typ ASV-Team vergeben." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
       <max value="1" />
@@ -5427,7 +5427,7 @@
       <path value="Organization.identifier" />
       <sliceName value="ASV-Teamnummer" />
       <short value="Die ASV-Teamnummer" />
-      <definition value="ASV-Teamnummer. Wird nur für Organizationss vom Typ ASV-Team vergeben." />
+      <definition value="ASV-Teamnummer. Wird nur für Organizations vom Typ ASV-Team vergeben." />
       <max value="1" />
     </element>
     <element id="Organization.identifier:ASV-Teamnummer.system">
