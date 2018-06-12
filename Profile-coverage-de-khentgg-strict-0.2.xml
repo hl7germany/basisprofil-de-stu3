@@ -325,9 +325,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Coverage.extension:einlesedatum-egk">
+    <element id="Coverage.extension:einlesedatum-karte">
       <path value="Coverage.extension" />
-      <sliceName value="einlesedatum-egk" />
+      <sliceName value="einlesedatum-karte" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -342,7 +342,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-karte/0.2" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -543,8 +543,8 @@
     <element id="Coverage.extension:gkv-onlinepruefung-egk">
       <path value="Coverage.extension" />
       <sliceName value="gkv-onlinepruefung-egk" />
-      <short value="Informationen zur Onlineprüfung und -aktualisierung " />
-      <definition value="Informationen zur Onlineprüfung und -aktualisierung  " />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -5515,35 +5515,81 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Coverage.extension:einlesedatum-egk">
+    <element id="Coverage.extension">
       <path value="Coverage.extension" />
-      <sliceName value="einlesedatum-egk" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Coverage.extension:einlesedatum-karte">
+      <path value="Coverage.extension" />
+      <sliceName value="einlesedatum-karte" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-karte/0.2" />
+      </type>
     </element>
     <element id="Coverage.extension:generation-egk">
       <path value="Coverage.extension" />
       <sliceName value="generation-egk" />
+      <short value="eGK Generation ( 1 | 1+ | 2 )" />
+      <definition value="Angabe der Generation der Versichertenkarte  " />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/generation-egk/0.2" />
+      </type>
     </element>
     <element id="Coverage.extension:version-egk">
       <path value="Coverage.extension" />
       <sliceName value="version-egk" />
+      <short value="eGK Version (z.B.  5.2.0)" />
+      <definition value="Extension zur Erfassung der Version des VSDM-Datensatzes auf der eGK" />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/version-egk/0.2" />
+      </type>
     </element>
     <element id="Coverage.extension:gkv-zusatzinfo-geschuetzt">
       <path value="Coverage.extension" />
       <sliceName value="gkv-zusatzinfo-geschuetzt" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-geschuetzt/0.2" />
+      </type>
     </element>
     <element id="Coverage.extension:gkv-zusatzinfos-allgemein">
       <path value="Coverage.extension" />
       <sliceName value="gkv-zusatzinfos-allgemein" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein/0.2" />
+      </type>
     </element>
     <element id="Coverage.extension:gkv-onlinepruefung-egk">
       <path value="Coverage.extension" />
       <sliceName value="gkv-onlinepruefung-egk" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <max value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/onlinepruefung-egk/0.2" />
+      </type>
     </element>
     <element id="Coverage.identifier:Krankenversichertennummer">
       <path value="Coverage.identifier" />

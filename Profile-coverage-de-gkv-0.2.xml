@@ -350,9 +350,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Coverage.extension:einlesedatum-egk">
+    <element id="Coverage.extension:einlesedatum-karte">
       <path value="Coverage.extension" />
-      <sliceName value="einlesedatum-egk" />
+      <sliceName value="einlesedatum-karte" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -367,7 +367,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-karte/0.2" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5554,13 +5554,13 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Coverage.extension:einlesedatum-egk">
+    <element id="Coverage.extension:einlesedatum-karte">
       <path value="Coverage.extension" />
-      <sliceName value="einlesedatum-egk" />
+      <sliceName value="einlesedatum-karte" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
+        <profile value="http://fhir.de/StructureDefinition/gkv/einlesedatum-karte/0.2" />
       </type>
     </element>
     <element id="Coverage.extension:generation-egk">
