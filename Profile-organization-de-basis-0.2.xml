@@ -8,7 +8,7 @@
   <name value="organization-de-basis-0.2" />
   <title value="Organisation, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
-  <date value="2018-06-06" />
+  <date value="2018-06-18" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -362,7 +362,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+        <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie/0.2" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5329,7 +5329,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+        <profile value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie/0.2" />
       </type>
     </element>
     <element id="Organization.identifier">

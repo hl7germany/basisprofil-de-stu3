@@ -7,7 +7,7 @@
   <version value="0.1" />
   <name value="humanname-de-basis" />
   <title value="HumanName, deutsches Basisprofil" />
-  <status value="draft" />
+  <status value="retired" />
   <experimental value="true" />
   <date value="2017-09-15" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />

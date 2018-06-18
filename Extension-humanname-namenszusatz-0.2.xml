@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-09T14:37:26.16-07:00" />
+    <lastUpdated value="2017-09-09T14:57:09.543-08:00" />
   </meta>
-  <url value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
-  <version value="0.1" />
-  <name value="betriebsstaetten-hierarchie" />
-  <title value="Extension zur Erfassung der Betriebstättenhierarchie gemäß KBV" />
+  <url value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
+  <version value="0.2-WORK" />
+  <name value="humanname-namenszusatz-0.2" />
+  <title value="Extension zur Erfassung der VSDM Namensbestandteile (Version 0.2)" />
   <status value="draft" />
-  <experimental value="true" />
-  <date value="2017-09-15" />
+  <date value="2018-06-18" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
-      <system value="other" />
+      <system value="url" />
       <value value="http://hl7.de/technische-komitees/fhir/" />
     </telecom>
   </contact>
-  <description value="Extension zur Codierung der Hierarchieebene der Betriebstätte (Haupt/Neben) gemäß KBV" />
+  <description value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert.&#xD;&#xA;Beispiele: Gräfin, Prinz oder Fürst" />
   <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Organization" />
+  <contextType value="datatype" />
+  <context value="HumanName.family" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <snapshot>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Betriebsstätten-Hierarchie (Haupt/Nebenbetriebsstätte)" />
-      <definition value="Für Betriebsstätten gemäß KBV ist die Angabe erforderlich, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt.&#xD;&#xA;Bei der Modellierung von Betriebsstätten als Organization-Resource ist daher eine Extension erforderlich um diese Eigenschaft abzubilden." />
+      <short value="Namenszusatz gemäß VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
+      <definition value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert.&#xD;&#xA;Beispiele: Gräfin, Prinz oder Fürst" />
+      <comment value="Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile &quot;Namenszusatz&quot; und &quot;Vorsatzwort&quot; getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt.&#xD;&#xA;Das Vorsatzwort kann durch die Core-Extension http://build.fhir.org/extension-humanname-own-name.html abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -156,7 +156,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+      <fixedUri value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -174,11 +174,11 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.value[x]:valueCode">
-      <path value="Extension.valueCode" />
-      <sliceName value="valueCode" />
-      <short value="BSNR | NBSNR" />
-      <definition value="BSNR | NBSNR" />
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Namenszusatz" />
+      <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
       <max value="1" />
@@ -188,7 +188,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="code" />
+        <code value="string" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -198,12 +198,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -217,27 +211,22 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Betriebsstätten-Hierarchie (Haupt/Nebenbetriebsstätte)" />
-      <definition value="Für Betriebsstätten gemäß KBV ist die Angabe erforderlich, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt.&#xD;&#xA;Bei der Modellierung von Betriebsstätten als Organization-Resource ist daher eine Extension erforderlich um diese Eigenschaft abzubilden." />
+      <short value="Namenszusatz gemäß VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
+      <definition value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert.&#xD;&#xA;Beispiele: Gräfin, Prinz oder Fürst" />
+      <comment value="Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile &quot;Namenszusatz&quot; und &quot;Vorsatzwort&quot; getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt.&#xD;&#xA;Das Vorsatzwort kann durch die Core-Extension http://build.fhir.org/extension-humanname-own-name.html abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie" />
+      <fixedUri value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
     </element>
-    <element id="Extension.value[x]:valueCode">
-      <path value="Extension.valueCode" />
-      <sliceName value="valueCode" />
-      <short value="BSNR | NBSNR" />
-      <definition value="BSNR | NBSNR" />
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Namenszusatz" />
+      <definition value="Namenszusatz zum Nachnamen z.B. Gräfin, Prinz oder Fürst" />
       <type>
-        <code value="code" />
+        <code value="string" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://fhir.de/ValueSet/kbv/betriebsstaetten-hierarchie" />
-        </valueSetReference>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

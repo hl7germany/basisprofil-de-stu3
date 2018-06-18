@@ -4,7 +4,7 @@
 		<profile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2"/>
 	</meta>
 	<!-- Die Angabe, ob es sich um eine Haupt- oder Nebenbetriebsstätte handelt, ist verpflichtend-->
-	<extension url="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie">
+	<extension url="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie/0.2">
 		<valueCode value="BSNR"/>
 	</extension>
 	<!-- BSNR der Betriebsstätte mit optionaler Angabe des Gültigkeitszeitraumes und der zuständigen KV-->
