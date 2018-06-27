@@ -3,15 +3,11 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
 	<url value="http://fhir.de/ValueSet/kbv/s-kbv-dmp"/>
-	<identifier>
-		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:oid:1.2.276.0.76.5.223"/>
-	</identifier>
 	<version value="0.2-WORK"/>
 	<name value="kbv-s-kbv-dmp"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-10-20"/>
+	<date value="2018-07-01"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
@@ -19,7 +15,7 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 3. Stelle."/>
+	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS."/>
 	<compose>
 		<include>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
@@ -27,42 +23,48 @@
 	</compose>
 	<expansion>
 		<identifier value="a37c3b9e-66e4-4a47-7cbb-c5ade01a7096"/>
-		<timestamp value="2017-10-20"/>
-		<total value="6"/>
+		<timestamp value="2018-07-01"/>
+		<total value="7"/>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="1"/>
+			<version value="1.02"/>
+			<code value="00"/>
+			<display value="nicht gesetzt"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
+			<version value="1.02"/>
+			<code value="01"/>
 			<display value="DM2"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="2"/>
+			<version value="1.02"/>
+			<code value="02"/>
 			<display value="BRK"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="3"/>
+			<version value="1.02"/>
+			<code value="03"/>
 			<display value="KHK"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="4"/>
+			<version value="1.02"/>
+			<code value="04"/>
 			<display value="DM1"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="5"/>
+			<version value="1.02"/>
+			<code value="05"/>
 			<display value="Asthma"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.01"/>
-			<code value="6"/>
+			<version value="1.02"/>
+			<code value="06"/>
 			<display value="COPD"/>
 		</contains>
 	</expansion>

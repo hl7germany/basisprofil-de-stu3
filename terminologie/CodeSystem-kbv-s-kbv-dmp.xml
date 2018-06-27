@@ -7,11 +7,11 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.5.223"/>
 	</identifier>
-	<version value="1.01"/>
+	<version value="1.02"/>
 	<name value="kbv-s-kbv-dmp"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-10-20"/>
+	<date value="2018-07-01"/>
 	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
 	<contact>
 		<telecom>
@@ -19,33 +19,37 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 3. Stelle."/>
+	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp"/>
 	<content value="complete"/>
 	<concept>
-		<code value="1"/>
+		<code value="00"/>
+		<display value="nicht gesetzt"/>
+	</concept>
+	<concept>
+		<code value="01"/>
 		<display value="DM2"/>
 	</concept>
 	<concept>
-		<code value="2"/>
+		<code value="02"/>
 		<display value="BRK"/>
 	</concept>
 	<concept>
-		<code value="3"/>
+		<code value="03"/>
 		<display value="KHK"/>
 	</concept>
 	<concept>
-		<code value="4"/>
+		<code value="04"/>
 		<display value="DM1"/>
 	</concept>
 	<concept>
-		<code value="5"/>
+		<code value="05"/>
 		<display value="Asthma"/>
 	</concept>
 	<concept>
-		<code value="6"/>
+		<code value="06"/>
 		<display value="COPD"/>
 	</concept>
 </CodeSystem>

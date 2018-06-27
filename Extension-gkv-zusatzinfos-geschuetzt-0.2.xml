@@ -8,7 +8,7 @@
   <name value="gkv-zusatzinfos-geschuetzt-0.2" />
   <title value="Extension für geschützte VSDM-Daten von eGKs (Version 0.2)" />
   <status value="draft" />
-  <date value="2017-10-21T23:20:58.564+02:00" />
+  <date value="2018-06-27" />
   <description value="Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
   <fhirVersion value="3.0.1" />
   <mapping>
@@ -144,7 +144,7 @@
       <path value="Extension.extension" />
       <sliceName value="besonderePersonengruppe" />
       <short value="Additional Content defined by implementations" />
-      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;4 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;6 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;7 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;8 = SVAKennzeichnung, Pauschal, &#xD;&#xA;9 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
+      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
       <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
@@ -339,7 +339,7 @@
       <path value="Extension.extension" />
       <sliceName value="dmpKennzeichnung" />
       <short value="Additional Content defined by implementations" />
-      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;1 = Diabetes mellitus Typ 2, &#xD;&#xA;2 = Brustkrebs, &#xD;&#xA;3 = Koronare Herzkrankheit, &#xD;&#xA;4 = Diabetes mellitus Typ 1, &#xD;&#xA;5 = Asthma bronchiale, &#xD;&#xA;6 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
+      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
       <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3114,7 +3114,7 @@
     <element id="Extension.extension:besonderePersonengruppe">
       <path value="Extension.extension" />
       <sliceName value="besonderePersonengruppe" />
-      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;4 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;6 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;7 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;8 = SVAKennzeichnung, Pauschal, &#xD;&#xA;9 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
+      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
       <comment value=" " />
       <max value="1" />
       <mapping>
@@ -3141,7 +3141,7 @@
     <element id="Extension.extension:dmpKennzeichnung">
       <path value="Extension.extension" />
       <sliceName value="dmpKennzeichnung" />
-      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;1 = Diabetes mellitus Typ 2, &#xD;&#xA;2 = Brustkrebs, &#xD;&#xA;3 = Koronare Herzkrankheit, &#xD;&#xA;4 = Diabetes mellitus Typ 1, &#xD;&#xA;5 = Asthma bronchiale, &#xD;&#xA;6 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
+      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
       <comment value=" " />
       <max value="1" />
       <mapping>
