@@ -18,7 +18,7 @@
 	<verificationStatus value="provisional"/>
 	<code>
 		<coding>
-			<system value="http://hl7.org/fhir/sid/icd-10-de"/>
+			<system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
 			<version value="2017"/>
 			<code value="I21.9"/>
 			<display value="Herzinfarkt"/>
