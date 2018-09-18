@@ -21,7 +21,7 @@
 	</contact>
 	<description value=" Angaben zur Diagnosesicherheit gemäß ICD-10-GM"/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
-	<caseSensitive value="false"/>
+	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-icd-diagnosesicherheit"/>
 	<content value="complete"/>
 	<concept>

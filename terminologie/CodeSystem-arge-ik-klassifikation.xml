@@ -17,7 +17,7 @@
 	</contact>
 	<description value="Klassifikationen und deren Geltungsbereiche, Regionalschlüssel, Seriennummern-Kontingente und Vergabestellen"/>
 	<copyright value="HL7 Deutschland e.V."/>
-	<caseSensitive value="false"/>
+	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/arge-ik/klassifikation"/>
 	<content value="complete"/>
 	<concept>

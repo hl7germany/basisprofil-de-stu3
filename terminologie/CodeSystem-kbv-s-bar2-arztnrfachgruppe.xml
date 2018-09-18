@@ -21,7 +21,7 @@
 	</contact>
 	<description value="Liste der Arztnummerfachgruppen der Kassenärztliche Bundesvereinigung."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
-	<caseSensitive value="false"/>
+	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe"/>
 	<content value="complete"/>
 	<concept>

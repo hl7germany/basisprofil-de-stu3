@@ -22,7 +22,7 @@
 	<description
 			value=" Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
-	<caseSensitive value="false"/>
+	<caseSensitive value="true"/>
 	<valueSet value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation"/>
 	<content value="complete"/>
 	<concept>
