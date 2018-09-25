@@ -2199,8 +2199,8 @@
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
-      <short value="Any restrictions on medication substitution" />
-      <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done." />
+      <short value="aut-idem-Regelung" />
+      <definition value="Gibt an, ob ein alternatives Präparat (identischer Wirkstoff, Dosis, Form) angegegeben werden darf.&#xD;&#xA;Vgl. Definition des allowed-Elements" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -2356,8 +2356,8 @@
     </element>
     <element id="MedicationRequest.substitution.allowed">
       <path value="MedicationRequest.substitution.allowed" />
-      <short value="Whether substitution is allowed or not" />
-      <definition value="True if the prescriber allows a different drug to be dispensed from what was prescribed." />
+      <short value="aut-idem" />
+      <definition value="aut-idem-Regelung.&#xD;&#xA;false === aut-idem := KEIN Ersetzen durch Produkt eines anderen Herstellers erlaubt&#xD;&#xA;true === NICHT aut-idem := Ersetzen durch Produkt eines anderen Herstellers erlaubt" />
       <comment value="This element is labeled as a modifer because whether substitution is allow or not cannot be ignored." />
       <min value="1" />
       <max value="1" />
@@ -2625,8 +2625,6 @@
       <sliceName value="rezept-zusatzinfos" />
       <short value="Rezept-Zusatzinformationen" />
       <definition value="Zusatzinformationen im Kontext von Rezepten (Medikations-Verordnungen)" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/rezept-zusatzinfos/0.2" />
@@ -2764,6 +2762,16 @@
         <code value="Reference" />
         <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2" />
       </type>
+    </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution" />
+      <short value="aut-idem-Regelung" />
+      <definition value="Gibt an, ob ein alternatives Präparat (identischer Wirkstoff, Dosis, Form) angegegeben werden darf.&#xD;&#xA;Vgl. Definition des allowed-Elements" />
+    </element>
+    <element id="MedicationRequest.substitution.allowed">
+      <path value="MedicationRequest.substitution.allowed" />
+      <short value="aut-idem" />
+      <definition value="aut-idem-Regelung.&#xD;&#xA;false === aut-idem := KEIN Ersetzen durch Produkt eines anderen Herstellers erlaubt&#xD;&#xA;true === NICHT aut-idem := Ersetzen durch Produkt eines anderen Herstellers erlaubt" />
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
