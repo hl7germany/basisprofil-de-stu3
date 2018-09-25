@@ -1,0 +1,25 @@
+<Procedure xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://fhir.de/StructureDefinition/procedure-de-basis/0.2"/>
+    </meta>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2018"/>
+            <code value="5-320.1"/>
+            <display value="Exzision und Destruktion von erkranktem Gewebe eines Bronchus. Durch Thorakotomie"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/12345"/>
+    </subject>
+    <performer>
+        <actor>
+            <reference value="Practitioner/9876"/>
+        </actor>
+    </performer>
+    <reasonReference>
+        <reference value="Condition/246810"/>
+    </reasonReference>
+</Procedure>
