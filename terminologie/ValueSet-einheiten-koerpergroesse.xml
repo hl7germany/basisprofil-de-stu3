@@ -1,0 +1,48 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://fhir.de/ValueSet/einheiten-koerpergroesse"/>
+	<version value="0.2-WORK"/>
+	<name value="einheiten-koerpergroesse"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-09-25"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="Erlaubte Einheiten für die Angabe der Körpergröße"/>
+	<copyright value="HL7 Deutschland e.V."/>
+	<compose>
+		<include>
+            <system value="http://unitsofmeasure.org"/>
+			<concept>
+				<code value="cm"/>
+				<display value="cm"/>
+			</concept>
+			<concept>
+				<code value="m"/>
+				<display value="m"/>
+			</concept>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="urn:uuid:69823442-8278-4f83-9f9e-ed7862341118"/>
+		<timestamp value="2018-09-25T19:00:00+02:00"/>
+		<total value="2"/>
+		<contains>
+            <system value="http://unitsofmeasure.org"/>
+			<code value="cm"/>
+			<display value="cm"/>
+		</contains>
+		<contains>
+            <system value="http://unitsofmeasure.org"/>
+			<code value="m"/>
+			<display value="m"/>
+		</contains>
+	</expansion>
+</ValueSet>
