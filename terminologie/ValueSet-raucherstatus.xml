@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <url value="http://fhir.de/ValueSet/raucherstatus" />
+    <version value="0.2" />
+    <name value="raucherstatus" />
+    <status value="draft" />
+    <experimental value="false"/>
+    <date value="2018-09-27"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+    <description value="Raucherstatus" />
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/raucherstatus" />
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="8d7fc231-e003-4058-7fb0-16ae4188773b"/>
+        <timestamp value="2018-09-27" />
+        <total value="4" />
+        <contains>
+            <system value="http://fhir.de/CodeSystem/raucherstatus" />
+            <code value="raucher"/>
+            <display value="Raucher"/>
+        </contains>
+        <contains>
+            <system value="http://fhir.de/CodeSystem/raucherstatus" />
+            <code value="exraucher"/>
+            <display value="Ex-Raucher"/>
+        </contains>
+        <contains>
+            <system value="http://fhir.de/CodeSystem/raucherstatus" />
+            <code value="nieraucher"/>
+            <display value="Nieraucher"/>
+        </contains>
+        <contains>
+            <system value="http://fhir.de/CodeSystem/raucherstatus" />
+            <code value="unbekannt"/>
+            <display value="unbekannt"/>
+        </contains>
+    </expansion>
+</ValueSet>

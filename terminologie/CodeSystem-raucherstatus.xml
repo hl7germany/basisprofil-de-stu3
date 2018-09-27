@@ -1,0 +1,32 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+    </meta>
+    <url value="http://fhir.de/CodeSystem/raucherstatus"/>
+    <version value="0.2"/>
+    <name value="raucherstatus"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2018-09-27"/>
+    <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+    <description value="Raucherstatus"/>
+    <caseSensitive value="true"/>
+    <valueSet value="http://fhir.de/ValueSet/raucherstatus"/>
+    <content value="complete"/>
+    <concept>
+        <code value="raucher"/>
+        <display value="Raucher"/>
+    </concept>
+    <concept>
+        <code value="exraucher"/>
+        <display value="Ex-Raucher"/>
+    </concept>
+    <concept>
+        <code value="nieraucher"/>
+        <display value="Nieraucher"/>
+    </concept>
+    <concept>
+        <code value="unbekannt"/>
+        <display value="unbekannt"/>
+    </concept>
+</CodeSystem>
