@@ -5,7 +5,7 @@
   <name value="observation-de-puls-0.2" />
   <title value="Puls eines Patienten (Version 0.2)" />
   <status value="draft" />
-  <date value="2018-09-27" />
+  <date value="2018-10-01" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -827,7 +827,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -3579,7 +3579,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>

@@ -8,7 +8,7 @@
   <name value="organization-de-basis-0.2" />
   <title value="Organisation, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
-  <date value="2018-09-26" />
+  <date value="2018-10-01" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -444,10 +444,6 @@
         <discriminator>
           <type value="value" />
           <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="value" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -5336,10 +5332,6 @@
         <discriminator>
           <type value="value" />
           <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="value" />
         </discriminator>
         <rules value="open" />
       </slicing>
