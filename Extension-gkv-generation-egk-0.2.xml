@@ -170,7 +170,6 @@
       <sliceName value="valueCode" />
       <short value="eGK Generation ( 1 | 1+ | 2 )" />
       <definition value="Angabe der Generation der Versichertenkarte" />
-      <comment value="  " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -215,7 +214,6 @@
       <sliceName value="valueCode" />
       <short value="eGK Generation ( 1 | 1+ | 2 )" />
       <definition value="Angabe der Generation der Versichertenkarte" />
-      <comment value="  " />
       <min value="1" />
       <type>
         <code value="code" />

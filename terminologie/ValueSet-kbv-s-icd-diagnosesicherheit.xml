@@ -12,7 +12,7 @@
 			<value value="http://hl7.de/technische-komitees/fhir/"/>
 		</telecom>
 	</contact>
-	<description value=" Angaben zur Diagnosesicherheit gemäß ICD-10-GM"/>
+	<description value="Angaben zur Diagnosesicherheit gemäß ICD-10-GM"/>
 	<copyright value="HL7 Deutschland e.V."/>
 	<compose>
 		<include>

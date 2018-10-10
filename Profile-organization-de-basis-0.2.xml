@@ -1956,7 +1956,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value=" http://fhir.de/NamingSystem/arge-ik/iknr" />
+      <fixedUri value="http://fhir.de/NamingSystem/arge-ik/iknr" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -3379,7 +3379,6 @@
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung" />
       <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value=" " />
       <min value="0" />
       <max value="*" />
       <base>
@@ -4562,7 +4561,6 @@
       <path value="Organization.address.country" />
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
-      <comment value=" " />
       <min value="0" />
       <max value="1" />
       <base>
@@ -5404,7 +5402,7 @@
       <path value="Organization.identifier.system" />
       <short value="Namespace für Instituskennzeichen." />
       <min value="1" />
-      <fixedUri value=" http://fhir.de/NamingSystem/arge-ik/iknr" />
+      <fixedUri value="http://fhir.de/NamingSystem/arge-ik/iknr" />
     </element>
     <element id="Organization.identifier:Institutionskennzeichen.value">
       <path value="Organization.identifier.value" />

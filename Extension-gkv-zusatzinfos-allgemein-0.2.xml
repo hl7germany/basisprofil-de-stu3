@@ -9,7 +9,7 @@
   <title value="Extension für allgemeine VSDM-Daten von eGKs (Version 0.2)" />
   <status value="draft" />
   <date value="2017-10-21T23:20:58.564+02:00" />
-  <description value=" Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
+  <description value="Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
   <fhirVersion value="3.0.1" />
   <mapping>
     <identity value="KVDT" />
@@ -145,7 +145,6 @@
       <sliceName value="versichertenart" />
       <short value="Versichertenart" />
       <definition value="Gibt die Versichertenart des Versicherten an." />
-      <comment value="  " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -340,7 +339,6 @@
       <sliceName value="wop" />
       <short value="Kennzeichen Wohnortprinzip" />
       <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
-      <comment value="  " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -535,7 +533,6 @@
       <sliceName value="kostenerstattung" />
       <short value="Additional Content defined by implementations" />
       <definition value="Gibt an, welche Kostenerstattungen der Versicherte nach § 13 SGB V gewählt hat." />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -655,7 +652,6 @@
       <sliceName value="aerztlicheVersorgung" />
       <short value="Kostenerstattung für die ärztliche Versorgung" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für die ärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für ärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für ärztliche Versorgung &#xD;" />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -843,7 +839,6 @@
       <sliceName value="zahnaerztlicheVersorgung" />
       <short value="Kostenerstattung für zahnärztliche" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für zahnärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für zahnärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für zahnärztliche Versorgung &#xD;" />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1029,9 +1024,8 @@
     <element id="Extension.extension:kostenerstattung.extension:stationaererBereich">
       <path value="Extension.extension.extension" />
       <sliceName value="stationaererBereich" />
-      <short value=" Kostenerstattung für den stationären" />
+      <short value="Kostenerstattung für den stationären" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für den stationären&#xD;&#xA;Bereich an.&#xD;&#xA;1 (true) = Kostenerstattung für stationären Bereich&#xD;&#xA;0 (false) = keine Kostenerstattung für stationären Bereich " />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1219,7 +1213,6 @@
       <sliceName value="veranlassteLeistungen" />
       <short value="Kostenerstattung für veranlasste Leistungen" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für veranlasste&#xD;&#xA;Leistungen an.&#xD;&#xA;1 (true) = Kostenerstattung für veranlasste Leistungen&#xD;&#xA;0 (false) = keine Kostenerstattung für veranlasste Leistungen " />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1773,7 +1766,6 @@
       <sliceName value="versichertenart" />
       <short value="Versichertenart" />
       <definition value="Gibt die Versichertenart des Versicherten an." />
-      <comment value="  " />
       <max value="1" />
       <mapping>
         <identity value="KVDT" />
@@ -1803,7 +1795,6 @@
       <sliceName value="wop" />
       <short value="Kennzeichen Wohnortprinzip" />
       <definition value="Das Kennzeichen WOP ist gemäß § 2 Abs. 2 der Vereinbarung zur&#xD;&#xA;Festsetzung des Durchschnittsbetrages gemäß Artikel 2 § 2 Abs. 2 des&#xD;&#xA;Gesetzes zur Einführung des Wohnortprinzips bei Honorarvereinbarungen für&#xD;&#xA;Ärzte und Zahnärzte und zur Krankenversichertenkarte gemäß § 291 Abs. 2&#xD;&#xA;Fünftes Sozialgesetzbuch (SGB V) erforderlich. " />
-      <comment value="  " />
       <max value="1" />
       <mapping>
         <identity value="KVDT" />
@@ -1830,7 +1821,6 @@
       <path value="Extension.extension" />
       <sliceName value="kostenerstattung" />
       <definition value="Gibt an, welche Kostenerstattungen der Versicherte nach § 13 SGB V gewählt hat." />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension">
@@ -1848,7 +1838,6 @@
       <sliceName value="aerztlicheVersorgung" />
       <short value="Kostenerstattung für die ärztliche Versorgung" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für die ärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für ärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für ärztliche Versorgung &#xD;" />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:aerztlicheVersorgung.url">
@@ -1869,7 +1858,6 @@
       <sliceName value="zahnaerztlicheVersorgung" />
       <short value="Kostenerstattung für zahnärztliche" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für zahnärztliche&#xD;&#xA;Versorgung an.&#xD;&#xA;1 (true) = Kostenerstattung für zahnärztliche Versorgung&#xD;&#xA;0 (false) = keine Kostenerstattung für zahnärztliche Versorgung &#xD;" />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung.url">
@@ -1888,9 +1876,8 @@
     <element id="Extension.extension:kostenerstattung.extension:stationaererBereich">
       <path value="Extension.extension.extension" />
       <sliceName value="stationaererBereich" />
-      <short value=" Kostenerstattung für den stationären" />
+      <short value="Kostenerstattung für den stationären" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für den stationären&#xD;&#xA;Bereich an.&#xD;&#xA;1 (true) = Kostenerstattung für stationären Bereich&#xD;&#xA;0 (false) = keine Kostenerstattung für stationären Bereich " />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:stationaererBereich.url">
@@ -1911,7 +1898,6 @@
       <sliceName value="veranlassteLeistungen" />
       <short value="Kostenerstattung für veranlasste Leistungen" />
       <definition value="Gibt die vom Versicherten gewählte Kostenerstattung für veranlasste&#xD;&#xA;Leistungen an.&#xD;&#xA;1 (true) = Kostenerstattung für veranlasste Leistungen&#xD;&#xA;0 (false) = keine Kostenerstattung für veranlasste Leistungen " />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:kostenerstattung.extension:veranlassteLeistungen.url">

@@ -25,7 +25,6 @@
     <element id="Extension.value[x]:valueDateTime">
       <path value="Extension.valueDateTime" />
       <sliceName value="valueDateTime" />
-      <comment value="  " />
       <min value="1" />
       <type>
         <code value="dateTime" />

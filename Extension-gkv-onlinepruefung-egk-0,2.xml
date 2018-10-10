@@ -137,7 +137,6 @@
       <sliceName value="timestamp" />
       <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -291,7 +290,6 @@
       <sliceName value="valueDateTime" />
       <short value="Zeitpunkt der Onlineprüfung " />
       <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
-      <comment value="  " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -328,7 +326,6 @@
       <sliceName value="ergebnis" />
       <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -482,7 +479,6 @@
       <sliceName value="valueCode" />
       <short value="Ergebniscode" />
       <definition value="Ergebniscode (1-6)" />
-      <comment value=" " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -520,7 +516,6 @@
       <sliceName value="errorCode" />
       <short value="Error-Code" />
       <definition value="ErrorCode" />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -712,7 +707,6 @@
       <sliceName value="pruefzifferFachdienst" />
       <short value="Prüfziffer des Fachdienstes" />
       <definition value="Prüfziffer des Fachdienstes" />
-      <comment value=" " />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1092,7 +1086,6 @@
       <sliceName value="timestamp" />
       <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
       <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
-      <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1105,7 +1098,6 @@
       <sliceName value="valueDateTime" />
       <short value="Zeitpunkt der Onlineprüfung " />
       <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
-      <comment value="  " />
       <min value="1" />
       <type>
         <code value="dateTime" />
@@ -1120,7 +1112,6 @@
       <sliceName value="ergebnis" />
       <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
-      <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1133,7 +1124,6 @@
       <sliceName value="valueCode" />
       <short value="Ergebniscode" />
       <definition value="Ergebniscode (1-6)" />
-      <comment value=" " />
       <min value="1" />
       <type>
         <code value="code" />
@@ -1149,7 +1139,6 @@
       <sliceName value="errorCode" />
       <short value="Error-Code" />
       <definition value="ErrorCode" />
-      <comment value=" " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1178,7 +1167,6 @@
       <sliceName value="pruefzifferFachdienst" />
       <short value="Prüfziffer des Fachdienstes" />
       <definition value="Prüfziffer des Fachdienstes" />
-      <comment value=" " />
       <max value="1" />
     </element>
     <element id="Extension.extension:pruefzifferFachdienst.url">

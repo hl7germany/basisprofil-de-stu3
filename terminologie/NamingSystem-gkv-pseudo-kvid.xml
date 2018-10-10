@@ -22,7 +22,6 @@
 	</type>
 	<description
 			value="pseudonymisierte Versichertennummer für die Meldung an Register"/>
-	<usage value="  "/>
 	<!--
 	<uniqueId>
 		<type value="oid"/>

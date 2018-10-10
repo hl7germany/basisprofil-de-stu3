@@ -20,7 +20,7 @@
 		</telecom>
 	</contact>
 	<description
-			value=" Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
+			value="Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
 	<copyright value="HL7 Deutschland e.V."/>
 	<compose>
 		<include>

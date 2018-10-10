@@ -171,7 +171,6 @@
       <sliceName value="valueCode" />
       <short value="eGK Version (z.B.  5.2.0)" />
       <definition value="Version des VSDM-Datensatzes auf der eGK" />
-      <comment value="  " />
       <min value="1" />
       <max value="1" />
       <base>
@@ -216,7 +215,6 @@
       <sliceName value="valueCode" />
       <short value="eGK Version (z.B.  5.2.0)" />
       <definition value="Version des VSDM-Datensatzes auf der eGK" />
-      <comment value="  " />
       <min value="1" />
       <type>
         <code value="code" />
