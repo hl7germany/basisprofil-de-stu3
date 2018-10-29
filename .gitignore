@@ -74,6 +74,7 @@ local.properties
 .worksheet
 ### NetBeans template
 nbproject/private/
+nbproject/*.*
 build/
 nbbuild/
 dist/
