@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-12-05T18:56:56.374+01:00" />
@@ -8,7 +8,7 @@
   <name value="patient-de-vsdm-0.2" />
   <title value="Patient, deutsches VSDM-Profil (Version 0.2)" />
   <status value="draft" />
-  <date value="2018-06-18" />
+  <date value="2018-11-06" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -1428,7 +1428,7 @@
       <path value="Patient.name" />
       <short value="Personenname nach deutschem Profil" />
       <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
       <min value="1" />
       <max value="*" />
@@ -1694,6 +1694,9 @@
         <code value="string" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-1" />
+      <condition value="hum-2" />
+      <condition value="hum-3" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -1826,6 +1829,7 @@
         <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-1" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -1878,6 +1882,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-2" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -2083,6 +2088,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-3" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -2365,6 +2371,7 @@
       </type>
       <orderMeaning value="Prefixes appear in the correct order for presenting the name" />
       <condition value="ele-1" />
+      <condition value="hum-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -2497,6 +2504,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -3189,7 +3197,7 @@
     <element id="Patient.gender">
       <path value="Patient.gender" />
       <short value="male | female | other | unknown" />
-      <definition value="Geschlecht.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt.&#xD;&#xA;" />
+      <definition value="Geschlecht.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
       <comment value="The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error." />
       <requirements value="Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes." />
       <min value="1" />
@@ -3591,6 +3599,7 @@
         <valueCode value="both" />
       </example>
       <condition value="ele-1" />
+      <condition value="add-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -3681,6 +3690,7 @@
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung" />
       <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <requirements value="home | work | temp | old - purpose of this address." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -3708,6 +3718,12 @@
         </valueString>
       </example>
       <condition value="ele-1" />
+      <condition value="add-1" />
+      <condition value="add-2" />
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-5" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -3828,7 +3844,7 @@
       <path value="Patient.address.line.extension" />
       <sliceName value="Strasse" />
       <short value="Strassenname (ohne Hausnummer)" />
-      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. " />
+      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -3844,6 +3860,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-2" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -4045,6 +4063,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-1" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -4246,6 +4266,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-5" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -4447,6 +4468,9 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -4870,6 +4894,7 @@
       <path value="Patient.address.country" />
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
+      <comment value="ISO 3166 3 letter codes can be used in place of a full country name." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -5552,7 +5577,7 @@
       <path value="Patient.contact.name" />
       <short value="Personenname nach deutschem Profil." />
       <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person." />
       <min value="0" />
       <max value="*" />
@@ -7006,7 +7031,7 @@
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
-      <definition value="Geschlecht.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt.&#xD;&#xA;" />
+      <definition value="Geschlecht.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
       <min value="1" />
       <mustSupport value="true" />
     </element>

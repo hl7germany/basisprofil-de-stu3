@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-11-08T18:33:28.283+01:00" />
@@ -8,7 +8,7 @@
   <name value="humanname-de-basis-0.2" />
   <title value="HumanName, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
-  <date value="2018-06-18" />
+  <date value="2018-11-06" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -37,7 +37,7 @@
       <path value="HumanName" />
       <short value="Personenname" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -284,6 +284,9 @@
         <code value="string" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-1" />
+      <condition value="hum-2" />
+      <condition value="hum-3" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -415,6 +418,7 @@
         <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-1" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -466,6 +470,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-2" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -670,6 +675,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-3" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -950,6 +956,7 @@
       </type>
       <orderMeaning value="Prefixes appear in the correct order for presenting the name" />
       <condition value="ele-1" />
+      <condition value="hum-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -1081,6 +1088,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
       </type>
       <condition value="ele-1" />
+      <condition value="hum-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -1392,7 +1400,6 @@
       <path value="HumanName" />
       <short value="Personenname" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.  " />
       <constraint>
         <key value="hum-1" />
         <severity value="error" />
@@ -1429,6 +1436,9 @@
       <path value="HumanName.family" />
       <short value="Familienname" />
       <definition value="Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt." />
+      <condition value="hum-1" />
+      <condition value="hum-2" />
+      <condition value="hum-3" />
       <mapping>
         <identity value="BDT" />
         <map value="3120 + 3100 + 3101" />
@@ -1456,6 +1466,7 @@
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz/0.2" />
       </type>
+      <condition value="hum-1" />
       <mapping>
         <identity value="KVDT" />
         <map value="3100" />
@@ -1474,6 +1485,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
       </type>
+      <condition value="hum-2" />
       <mapping>
         <identity value="KVDT" />
         <map value="3101" />
@@ -1496,6 +1508,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
       </type>
+      <condition value="hum-3" />
       <mapping>
         <identity value="BDT" />
         <map value="3120" />
@@ -1526,6 +1539,7 @@
       <path value="HumanName.prefix" />
       <short value="Namensteile vor dem Vornamen" />
       <definition value="Namensteile vor dem Vornamen, z.B. akademischer Titel." />
+      <condition value="hum-4" />
       <mapping>
         <identity value="KVDT" />
         <map value="3104" />
@@ -1553,6 +1567,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
       </type>
+      <condition value="hum-4" />
     </element>
     <element id="HumanName.prefix.extension:prefix-qualifier.valueCode:valueCode">
       <path value="HumanName.prefix.extension.valueCode" />

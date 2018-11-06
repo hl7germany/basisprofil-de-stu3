@@ -9,7 +9,7 @@
   <title value="Adresse, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2017-09-15" />
+  <date value="2018-11-06" />
   <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
   <contact>
     <telecom>
@@ -38,7 +38,7 @@
     <element id="Address">
       <path value="Address" />
       <short value="Eine Adresse gemäß postalischer Konventionen" />
-      <definition value="Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.&#xD;&#xA;&#xD;&#xA;Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.&#xD;&#xA;&#xD;&#xA;Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.&#xD;&#xA;" />
+      <definition value="Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.&#xD;&#xA;&#xD;&#xA;Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.&#xD;&#xA;&#xD;&#xA;Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend." />
       <comment value="Note: address is for postal addresses, not physical locations." />
       <min value="0" />
       <max value="*" />
@@ -273,6 +273,7 @@
         <valueCode value="both" />
       </example>
       <condition value="ele-1" />
+      <condition value="add-4" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -363,6 +364,7 @@
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung" />
       <definition value="Diese Komponente kann Straßennamen, Hausnummer, Appartmentnummer, Postfach, c/o sowie weitere Zustellungshinweise enthalten. Die Informationen können in mehrere line-Komponenten aufgeteilt werden.&#xD;&#xA;Bei Verwendung der Extensions, um Straße, Hausnnummer und Postleitzahl strukturiert zu übermitteln, müssen diese Informationen stets vollständig auch in der line-Komponente, die sie erweitern, enthalten sein, um es Systemen, die diese Extensions nicht verwenden zu ermöglichen, auf diese Informationen zugreifen zu können." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <requirements value="home | work | temp | old - purpose of this address." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -390,6 +392,12 @@
         </valueString>
       </example>
       <condition value="ele-1" />
+      <condition value="add-1" />
+      <condition value="add-2" />
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-5" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -509,7 +517,7 @@
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
       <short value="Strassenname (ohne Hausnummer)" />
-      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. " />
+      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -525,6 +533,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-2" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -672,6 +682,39 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Address.line.extension:Strasse.valueString:valueString">
+      <path value="Address.line.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Address.line.extension:Hausnummer">
       <path value="Address.line.extension" />
       <sliceName value="Hausnummer" />
@@ -692,6 +735,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-1" />
+      <condition value="add-6" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -839,6 +884,39 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Address.line.extension:Hausnummer.valueString:valueString">
+      <path value="Address.line.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Address.line.extension:Adresszusatz">
       <path value="Address.line.extension" />
       <sliceName value="Adresszusatz" />
@@ -859,6 +937,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" />
       </type>
       <condition value="ele-1" />
+      <condition value="add-5" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
@@ -1006,6 +1085,97 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Address.line.extension:Adresszusatz.valueString:valueString">
+      <path value="Address.line.extension.valueString" />
+      <sliceName value="valueString" />
+      <short value="Value of extension" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
+      <comment value="A stream of bytes, base64 encoded" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Extension.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Address.line.extension:Postfach">
+      <path value="Address.line.extension" />
+      <sliceName value="Postfach" />
+      <short value="Postfach" />
+      <definition value="Postfach-Adresse.&#xD;&#xA;Bei Angabe eines Postfaches in dieser Extension muss das Postfach auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden.&#xD;&#xA;Eine Postfach-Adresse darf nicht in Verbindung mit Address.type &quot;physical&quot; oder &quot;both&quot; verwendet werden." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
+      </type>
+      <condition value="ele-1" />
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-6" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="ADXP[partType=POB]" />
+      </mapping>
+      <mapping>
+        <identity value="KVDT" />
+        <map value="3123" />
+      </mapping>
+      <mapping>
+        <identity value="BDT" />
+        <map value="3123" />
+      </mapping>
+    </element>
     <element id="Address.line.extension:Postfach.id">
       <path value="Address.line.extension.id" />
       <representation value="xmlAttr" />
@@ -1118,7 +1288,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.line.extension:Postfach">
+    <element id="Address.line.extension:Postfach.valueString:valueString">
       <path value="Address.line.extension.valueString" />
       <sliceName value="valueString" />
       <short value="Value of extension" />
@@ -1127,7 +1297,7 @@
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Element.extension" />
+        <path value="Extension.value[x]" />
         <min value="0" />
         <max value="1" />
       </base>
@@ -1150,6 +1320,33 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+    </element>
+    <element id="Address.line.value">
+      <path value="Address.line.value" />
+      <representation value="xmlAttr" />
+      <short value="Primitive value for string" />
+      <definition value="Primitive value for string" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="string.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string" />
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576" />
     </element>
     <element id="Address.city">
       <path value="Address.city" />
@@ -1254,7 +1451,7 @@
     <element id="Address.state">
       <path value="Address.state" />
       <short value="Bundesland" />
-      <definition value="Name (oder Kürzel) des Bundeslandes. " />
+      <definition value="Name (oder Kürzel) des Bundeslandes." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <alias value="Province" />
       <alias value="Territory" />
@@ -1364,6 +1561,7 @@
       <path value="Address.country" />
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
+      <comment value="ISO 3166 3 letter codes can be used in place of a full country name." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -1648,7 +1846,7 @@
     <element id="Address">
       <path value="Address" />
       <short value="Eine Adresse gemäß postalischer Konventionen" />
-      <definition value="Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.&#xD;&#xA;&#xD;&#xA;Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.&#xD;&#xA;&#xD;&#xA;Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.&#xD;&#xA;" />
+      <definition value="Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.&#xD;&#xA;&#xD;&#xA;Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.&#xD;&#xA;&#xD;&#xA;Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend." />
       <example>
         <label value="Beispiel für einfache Adresse" />
         <valueAddress>
@@ -1698,6 +1896,7 @@
     </element>
     <element id="Address.type">
       <path value="Address.type" />
+      <condition value="add-4" />
       <mapping>
         <identity value="BDT" />
         <map value="1202 (1=physical, 2=postal)" />
@@ -1718,6 +1917,12 @@
           </extension>
         </valueString>
       </example>
+      <condition value="add-1" />
+      <condition value="add-2" />
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-5" />
+      <condition value="add-6" />
       <mapping>
         <identity value="KVDT" />
         <map value="3107 + 3109 + 3115 oder 3123" />
@@ -1741,12 +1946,14 @@
       <path value="Address.line.extension" />
       <sliceName value="Strasse" />
       <short value="Strassenname (ohne Hausnummer)" />
-      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden. " />
+      <definition value="Strassenname (ohne Hausnummer)&#xD;&#xA;Bei Angabe einer Strasse in dieser Extension muss diese auch in Address.line angegeben werden um die Interoperabilität mit Systemen zu gewährleisten, die diese Extension nicht verwenden." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
       </type>
+      <condition value="add-2" />
+      <condition value="add-6" />
       <mapping>
         <identity value="KVDT" />
         <map value="3107" />
@@ -1770,6 +1977,8 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
       </type>
+      <condition value="add-1" />
+      <condition value="add-6" />
       <mapping>
         <identity value="KVDT" />
         <map value="3109" />
@@ -1793,6 +2002,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" />
       </type>
+      <condition value="add-5" />
       <mapping>
         <identity value="KVDT" />
         <map value="3115" />
@@ -1816,6 +2026,9 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
       </type>
+      <condition value="add-3" />
+      <condition value="add-4" />
+      <condition value="add-6" />
       <mapping>
         <identity value="KVDT" />
         <map value="3123" />
@@ -1847,7 +2060,7 @@
     <element id="Address.state">
       <path value="Address.state" />
       <short value="Bundesland" />
-      <definition value="Name (oder Kürzel) des Bundeslandes. " />
+      <definition value="Name (oder Kürzel) des Bundeslandes." />
       <binding>
         <strength value="preferred" />
         <valueSetUri value="http://fhir.de/ValueSet/iso/bundeslaender" />
