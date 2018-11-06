@@ -85,6 +85,8 @@ nbdist/
 *.xsd
 definitions.xml/
 /utilized_extensions/
+utilized_extensions/
+nbproject/
 
 ### macOS template
 # General
@@ -135,5 +137,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
