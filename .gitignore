@@ -86,6 +86,7 @@ nbdist/
 definitions.xml/
 /utilized_extensions/
 utilized_extensions/
+utilized_extension/
 nbproject/
 
 ### macOS template
