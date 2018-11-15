@@ -1,0 +1,21 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/medication-de-basis/0.2"/>
+	</meta>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+			<code value="87776663"/>
+		</coding>
+	</code>
+	<form>
+		<coding>
+			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="12200"/>
+		</coding>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform"/>
+			<code value="TAB"/>
+		</coding>
+	</form>
+</Medication>

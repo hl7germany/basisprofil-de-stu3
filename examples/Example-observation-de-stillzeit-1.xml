@@ -1,0 +1,16 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/observation-de-stillzeit/0.2"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="63895-7"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
+	<valueBoolean value="true"/>
+</Observation>

@@ -1,0 +1,21 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/observation-de-koerpertemperatur/0.2"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="8310-5"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
+	<valueQuantity>
+		<value value="38.4"/>
+		<unit value="°C"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="Cel"/>
+	</valueQuantity>
+</Observation>

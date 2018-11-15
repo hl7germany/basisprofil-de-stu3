@@ -1,0 +1,32 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/medicationstatement-de-basis/0.2" />
+	</meta>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="/Medication/987654"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value = "2017-08-08"/>
+	</effectivePeriod>
+	<dateAsserted value="2017-08-01"/>
+	<subject>
+		<reference value="Patient/13345"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<timing>
+			<code>
+				<coding>
+					<system value=" http://hl7.org/fhir/v3/TimingEvent"/>
+					<code value="CV"/>
+				</coding>
+			</code>
+		</timing>
+		<doseQuantity>
+			<value value="1"/>
+			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-dosiereinheit" />
+			<code value="1" />
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>

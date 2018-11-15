@@ -1,0 +1,23 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/allergyintolerance-de-basis/0.2"/>
+	</meta>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<type value="intolerance"/>
+	<patient>
+		<reference value="Patient/12345"/>
+	</patient>
+	<assertedDate value="2012-02-03"/>
+	<asserter>
+		<reference value="Practitioner/9876"/>
+	</asserter>
+	<reaction>
+		<substance>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+				<code value="87776663"/>
+			</coding>
+		</substance>
+	</reaction>
+</AllergyIntolerance>

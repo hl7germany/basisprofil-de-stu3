@@ -1,0 +1,21 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/observation-de-puls/0.2"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="8867-4"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
+	<valueQuantity>
+		<value value="87"/>
+		<unit value="/min"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="/min"/>
+	</valueQuantity>
+</Observation>

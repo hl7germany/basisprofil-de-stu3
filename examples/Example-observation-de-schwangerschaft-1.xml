@@ -1,0 +1,25 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/observation-de-schwangerschaft/0.2"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="11449-6"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
+	<valueBoolean value="true"/>
+	<component>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11778-8"/>
+			</coding>
+		</code>
+		<valueDateTime value="2019-05-12"/>
+	</component>
+</Observation>

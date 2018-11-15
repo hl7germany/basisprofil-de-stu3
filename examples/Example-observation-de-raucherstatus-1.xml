@@ -1,0 +1,21 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://fhir.de/StructureDefinition/observation-de-raucherstatus/0.2"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72166-2"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/12345"/>
+	</subject>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/raucherstatus"/>
+			<code value="raucher"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>
