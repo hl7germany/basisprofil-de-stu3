@@ -1,4 +1,4 @@
-<Observation xmlns="http://hl7.org/fhir">
+<MedicationRequest xmlns="http://hl7.org/fhir">
 	<meta>
 		<profile value="http://fhir.de/StructureDefinition/medicationrequest-de-basis/0.2"/>
 	</meta>
@@ -26,4 +26,4 @@
 	<substitution>
 		<allowed value="true"/>
 	</substitution>
-</Observation>
+</MedicationRequest>
