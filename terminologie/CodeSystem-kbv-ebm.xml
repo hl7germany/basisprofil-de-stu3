@@ -1,0 +1,21 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+	</meta>
+	<url value="http://fhir.de/ValueSet/kbv/ebm"/>
+	<name value="ebm"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-11-17"/>
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.de/technische-komitees/fhir/"/>
+		</telecom>
+	</contact>
+	<description value="EBM Platzhalter-CodeSystem"/>
+	<copyright value="Kassenärztliche Bundesvereinigung"/>
+	<caseSensitive value="true"/>
+	<content value="not-present"/>
+</CodeSystem>
