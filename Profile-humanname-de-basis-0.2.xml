@@ -37,7 +37,7 @@
       <path value="HumanName" />
       <short value="Personenname" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
-      <comment value="Hinweis zur Repräsentstion von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
+      <comment value="Hinweis zur Repräsentation von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -1400,7 +1400,7 @@
       <path value="HumanName" />
       <short value="Personenname" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
-      <comment value="Hinweis zur Repräsentstion von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
+      <comment value="Hinweis zur Repräsentation von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
       <constraint>
         <key value="hum-1" />
         <severity value="error" />
