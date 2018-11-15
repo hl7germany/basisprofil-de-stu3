@@ -1,7 +1,4 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<meta>
-		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
-	</meta>
 	<url value="http://fhir.de/CodeSystem/ifa/pzn"/>
 	<name value="pzn"/>
 	<status value="draft"/>

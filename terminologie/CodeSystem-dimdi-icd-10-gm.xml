@@ -1,7 +1,4 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<meta>
-		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
-	</meta>
 	<url value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
 	<name value="icd-10-gm"/>
 	<status value="draft"/>
