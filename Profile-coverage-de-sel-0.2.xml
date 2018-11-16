@@ -4,7 +4,7 @@
     <lastUpdated value="2017-09-14T14:03:29.723-08:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/coverage-de-sel/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="coverage-de-sel-0.2" />
   <title value="Coverage, deutsches Selbstzahlerprofil (Version 0.2)" />
   <status value="draft" />

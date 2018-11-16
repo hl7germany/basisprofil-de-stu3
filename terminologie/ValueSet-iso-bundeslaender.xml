@@ -3,7 +3,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
 	<url value="http://fhir.de/ValueSet/iso/bundeslaender"/>
-	<version value="0.2-WORK"/>
+	<version value="0.2"/>
 	<name value="iso-bundeslaender"/>
 	<status value="draft"/>
 	<experimental value="true"/>
@@ -28,7 +28,7 @@
             <total value="16"/>
             <parameter>
                 <name value="version"/>
-                <valueUri value="urn:iso:std:iso:3166-2:de|0.2-WORK"/>
+                <valueUri value="urn:iso:std:iso:3166-2:de|0.2"/>
             </parameter>
             <contains>
                 <system value="urn:iso:std:iso:3166-2:de"/>

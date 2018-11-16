@@ -6,7 +6,7 @@
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">Definition für NamingSystem-Ressourcen in deutschen Profilen</div></text>
   <url value="http://fhir.de/StructureDefinition/namingsystem-de-basis/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="namingsystem-de-basis-0.2" />
   <title value="Namingsystem, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />

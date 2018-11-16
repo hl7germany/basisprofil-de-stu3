@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">  
 	<url value="http://fhir.de/ValueSet/ifa/pzn" />
-	<version value="0.2-WORK" />
+	<version value="0.2" />
 	<name value="ifa-pzn" />
 	<status value="draft" />
 	<experimental value="true" />

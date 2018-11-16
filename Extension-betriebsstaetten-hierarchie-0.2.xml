@@ -4,7 +4,7 @@
     <lastUpdated value="2017-09-09T14:37:26.16-07:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/betriebsstaetten-hierarchie/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="betriebsstaetten-hierarchie-0.2" />
   <title value="Extension zur Erfassung der Betriebstättenhierarchie gemäß KBV (Version 0.2)" />
   <status value="draft" />

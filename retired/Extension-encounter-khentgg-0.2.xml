@@ -4,7 +4,7 @@
     <lastUpdated value="2018-02-01T10:37:12.126-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/encounter-khentgg-extension/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="encounter-khentgg-extension-0.2" />
   <title value="Encounter-Extension für §21 KHEntgG Datenübermittlung (Version 0.2)" />
   <status value="draft" />

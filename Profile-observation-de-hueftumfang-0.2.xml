@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-de-hueftumfang/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="observation-de-hueftumfang-0.2" />
   <title value="Hüftumfang eines Patienten (Version 0.2)" />
   <status value="draft" />

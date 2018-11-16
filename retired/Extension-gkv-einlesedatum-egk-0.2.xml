@@ -4,7 +4,7 @@
     <lastUpdated value="2017-10-27T23:12:56.636+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/einlesedatum-egk/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="gkv-einlesedatum-egk-0.2" />
   <title value="Extension zur Erfassung des eGK-Einlesedatums (Version 0.2)" />
   <status value="retired" />

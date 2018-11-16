@@ -4,7 +4,7 @@
     <lastUpdated value="2018-02-01T15:51:23.893-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/encounter-de-khentgg-strict/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="encounter-de-khentg-strict-0.2" />
   <title value="Encounter-Profil für Datenübermittlung gemäß §21 KHEntgG (Version 0.2)" />
   <status value="draft" />

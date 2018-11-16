@@ -4,7 +4,7 @@
     <lastUpdated value="2018-04-08T14:05:14.857+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/condition-de-basis/0.2" />
-  <version value="0.2-WORK" />
+  <version value="0.2" />
   <name value="condition-de-basis-0.2" />
   <title value="Deutsches Basisprofil einer Condition (Version 0.2)" />
   <status value="draft" />
