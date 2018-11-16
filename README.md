@@ -9,7 +9,7 @@ Die Diskussion der Profile findet auf Zulip statt. Implementierer und Interessen
 
 Die derzeit veröffentlichten Profile und Resourcen sind experimentell!
 
-Eine formelle Abstimmung folgt.
+Die neueste stabile Fassung findet sich unter http://ig.fhir.de/basisprofile-de/stable/
 
 ## Hinweis zur Versionierung
 
