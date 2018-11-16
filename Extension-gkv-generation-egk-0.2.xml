@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-11-06T17:47:49.566+01:00" />
@@ -21,7 +21,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="eGK Generation ( 1 | 1+ | 2 )" />
-      <definition value="Angabe der Generation der Versichertenkarte  " />
+      <definition value="Angabe der Generation der Versichertenkarte" />
       <min value="0" />
       <max value="*" />
       <base>
@@ -170,6 +170,7 @@
       <sliceName value="valueCode" />
       <short value="eGK Generation ( 1 | 1+ | 2 )" />
       <definition value="Angabe der Generation der Versichertenkarte" />
+      <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
       <base>
@@ -203,7 +204,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="eGK Generation ( 1 | 1+ | 2 )" />
-      <definition value="Angabe der Generation der Versichertenkarte  " />
+      <definition value="Angabe der Generation der Versichertenkarte" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

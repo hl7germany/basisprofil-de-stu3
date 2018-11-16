@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-04-08T14:05:14.857+01:00" />
@@ -1312,7 +1312,7 @@
     <element id="Condition.code.coding:ICD-10-GM.code">
       <path value="Condition.code.coding.code" />
       <short value="Der ICD-10-Code" />
-      <definition value="Der ICD-10-Code, einschließlich verbundener Codes (Kreuz-Stern-Notation, Ausrufezeichen-Notation. Vgl. hierzu auch die Dokumentation zu iCD in der FHIR-Spezifikation.&#xD;&#xA;Die Einzelbestandteile von postkoordinierten Codes (einzelne ICD-10-GM-Codes) können über die im Profil definierten Extensions einzeln dokumentiert werden. Die Angabe des postkoordinierten Codes ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Seitenlokalisaion und Diagnosesichrheit sollten, soweit vorhanden, in den Elementen bodySite bzw. clinicalStatus/verificationStatus codiert werden. Für die Diagnosesicherkeit kann zusätzlich auch die entsprechende Extension verwendet werden. Die Angabe von clinicalStatus und/oder verificationStatus ist jedoch in diesen Fällen zwingend, da es sich hierbei um modifizierende Angaben (modyfiers) handelt.&#xD;&#xA;&#xD;&#xA;" />
+      <definition value="Der ICD-10-Code, einschließlich verbundener Codes (Kreuz-Stern-Notation, Ausrufezeichen-Notation. Vgl. hierzu auch die Dokumentation zu iCD in der FHIR-Spezifikation.&#xD;&#xA;Die Einzelbestandteile von postkoordinierten Codes (einzelne ICD-10-GM-Codes) können über die im Profil definierten Extensions einzeln dokumentiert werden. Die Angabe des postkoordinierten Codes ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Seitenlokalisaion und Diagnosesichrheit sollten, soweit vorhanden, in den Elementen bodySite bzw. clinicalStatus/verificationStatus codiert werden. Für die Diagnosesicherkeit kann zusätzlich auch die entsprechende Extension verwendet werden. Die Angabe von clinicalStatus und/oder verificationStatus ist jedoch in diesen Fällen zwingend, da es sich hierbei um modifizierende Angaben (modyfiers) handelt." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
       <min value="1" />
@@ -3282,7 +3282,7 @@
     <element id="Condition.code.coding:ICD-10-GM.code">
       <path value="Condition.code.coding.code" />
       <short value="Der ICD-10-Code" />
-      <definition value="Der ICD-10-Code, einschließlich verbundener Codes (Kreuz-Stern-Notation, Ausrufezeichen-Notation. Vgl. hierzu auch die Dokumentation zu iCD in der FHIR-Spezifikation.&#xD;&#xA;Die Einzelbestandteile von postkoordinierten Codes (einzelne ICD-10-GM-Codes) können über die im Profil definierten Extensions einzeln dokumentiert werden. Die Angabe des postkoordinierten Codes ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Seitenlokalisaion und Diagnosesichrheit sollten, soweit vorhanden, in den Elementen bodySite bzw. clinicalStatus/verificationStatus codiert werden. Für die Diagnosesicherkeit kann zusätzlich auch die entsprechende Extension verwendet werden. Die Angabe von clinicalStatus und/oder verificationStatus ist jedoch in diesen Fällen zwingend, da es sich hierbei um modifizierende Angaben (modyfiers) handelt.&#xD;&#xA;&#xD;&#xA;" />
+      <definition value="Der ICD-10-Code, einschließlich verbundener Codes (Kreuz-Stern-Notation, Ausrufezeichen-Notation. Vgl. hierzu auch die Dokumentation zu iCD in der FHIR-Spezifikation.&#xD;&#xA;Die Einzelbestandteile von postkoordinierten Codes (einzelne ICD-10-GM-Codes) können über die im Profil definierten Extensions einzeln dokumentiert werden. Die Angabe des postkoordinierten Codes ist in diesem Fall dennoch zwingend.&#xD;&#xA;&#xD;&#xA;Seitenlokalisaion und Diagnosesichrheit sollten, soweit vorhanden, in den Elementen bodySite bzw. clinicalStatus/verificationStatus codiert werden. Für die Diagnosesicherkeit kann zusätzlich auch die entsprechende Extension verwendet werden. Die Angabe von clinicalStatus und/oder verificationStatus ist jedoch in diesen Fällen zwingend, da es sich hierbei um modifizierende Angaben (modyfiers) handelt." />
       <min value="1" />
     </element>
     <element id="Condition.bodySite.extension">

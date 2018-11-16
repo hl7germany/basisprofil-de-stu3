@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-de-basis/0.2" />
   <version value="0.2" />
@@ -26,7 +26,7 @@
     <element id="Observation">
       <path value="Observation" />
       <short value="Measurements and simple assertions" />
-      <definition value="Measurements and simple assertions made about a patient, device or other subject." />
+      <definition value="Measurements and simple assertions made about a patient, device or other subject. " />
       <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc." />
       <alias value="Vital Signs" />
       <alias value="Measurement" />
@@ -2795,6 +2795,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <definition value="Measurements and simple assertions made about a patient, device or other subject. " />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-04-08T13:37:26.132+01:00" />
@@ -468,7 +468,7 @@
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
       <path value="Extension.valueCodeableConcept.coding.version" />
       <short value="Die Jahresversion von ICD-10-GM. Angegeben wird immer die vierstellige Jahreszahl (z.B. &quot;2017&quot;)" />
-      <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt.&#xD;&#xA;" />
+      <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt." />
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="1" />
       <max value="1" />
@@ -711,7 +711,7 @@
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
       <path value="Extension.valueCodeableConcept.coding.version" />
       <short value="Die Jahresversion von ICD-10-GM. Angegeben wird immer die vierstellige Jahreszahl (z.B. &quot;2017&quot;)" />
-      <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt.&#xD;&#xA;" />
+      <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt." />
       <min value="1" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">

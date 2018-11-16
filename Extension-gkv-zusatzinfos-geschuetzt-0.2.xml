@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-12-05T18:08:57.049+01:00" />
@@ -144,7 +144,8 @@
       <path value="Extension.extension" />
       <sliceName value="besonderePersonengruppe" />
       <short value="Additional Content defined by implementations" />
-      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
+      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG)" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -338,7 +339,8 @@
       <path value="Extension.extension" />
       <sliceName value="dmpKennzeichnung" />
       <short value="Additional Content defined by implementations" />
-      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
+      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -533,6 +535,7 @@
       <sliceName value="ruhenderLeistungsanspruch" />
       <short value="Ruhender Leistungsanspruch" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -650,8 +653,9 @@
     <element id="Extension.extension:ruhenderLeistungsanspruch.extension:beginn">
       <path value="Extension.extension.extension" />
       <sliceName value="beginn" />
-      <short value="Beginn des ruhenden Leistungsanspruchs " />
-      <definition value="Gibt den Beginn des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <short value="Beginn des ruhenden Leistungsanspruchs" />
+      <definition value="Gibt den Beginn des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -837,7 +841,8 @@
       <path value="Extension.extension.extension" />
       <sliceName value="ende" />
       <short value="Ende des ruhenden Leistungsanspruchs" />
-      <definition value="Gibt das Ende des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <definition value="Gibt das Ende des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1024,6 +1029,7 @@
       <sliceName value="art" />
       <short value="Art des Ruhens" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -1387,7 +1393,8 @@
       <path value="Extension.extension" />
       <sliceName value="zuzahlungsstatus" />
       <short value="Zuzahlungsstaus" />
-      <definition value="Gibt an, ob und bis wann für den Versicherten eine Befreiung von der Zuzahlungspflicht nach&#xD;&#xA;§ 62 Abs. 3 SGB V vorliegt. " />
+      <definition value="Gibt an, ob und bis wann für den Versicherten eine Befreiung von der Zuzahlungspflicht nach&#xD;&#xA;§ 62 Abs. 3 SGB V vorliegt." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1507,6 +1514,7 @@
       <sliceName value="status" />
       <short value="Additional Content defined by implementations" />
       <definition value="Gibt an, ob für den Versicheren eine Befreiung von der Zuzahlungspflicht nach $ 62 SGB V vorliegt.&#xD;&#xA;1 = von Zuzahlung befreit&#xD;&#xA;2 = von Zuzahlung nicht befreit" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -1694,6 +1702,7 @@
       <sliceName value="gueltigBis" />
       <short value="Additional Content defined by implementations" />
       <definition value="Gibt die gültigkeit der Befreiung von der Zuzahlungspflicht nach $62 SGB V an.&#xD;&#xA;Wird nur angegeben, wenn der Status Zuzahlung mit 1 (=befreit) angegeben ist." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -2057,6 +2066,7 @@
       <sliceName value="selektivvertraege" />
       <short value="Angaben zu Selektivverträgen" />
       <definition value="Gibt an, welche Selektivverträge für den Versicherten vorliegen" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -2176,6 +2186,7 @@
       <sliceName value="aerztlich" />
       <short value="Kennzeichen ärztlicher Selektivvertrag" />
       <definition value="Gibt an, ob für den Versicheren ein ärztlicher Selektivvertrag vorliegt.&#xD;&#xA;1 = ärztlicher Selektivvertrag liegt vor&#xD;&#xA;0 = ärztlicher Selektivvertrag liegt nicht vor&#xD;&#xA;9 = ärztliches Selektivvertragskennzeichen wird nicht genutzt" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -2363,6 +2374,7 @@
       <sliceName value="zahnaerztlich" />
       <short value="Kennzeichen zahnärztlicher Selektivvertrag" />
       <definition value="Gibt an, ob für den Versicheren ein ärztlicher Selektivvertrag vorliegt.&#xD;&#xA;1 = zahnärztlicher Selektivvertrag liegt vor&#xD;&#xA;0 = zahnärztlicher Selektivvertrag liegt nicht vor&#xD;&#xA;9 = zahnärztliches Selektivvertragskennzeichen wird nicht genutzt" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -2549,7 +2561,8 @@
       <path value="Extension.extension.extension" />
       <sliceName value="art" />
       <short value="Atr des Selektivvertrages" />
-      <definition value="Die Angaben gelten für folgende Selektivverträge:&#xD;&#xA;1. Stelle: Hausarztzentrierte Versorgung (§73b)&#xD;&#xA;2. Stelle: Besondere ambulante ärztliche Versorgung (§73c)&#xD;&#xA;3. Stelle: Strukturierte Behandlungsprogramme (§137f)&#xD;&#xA;4. Stelle: Integrierte Versorgung (§140a) &#xD;&#xA;&#xD;&#xA;Die Stellen 1 und 3 koennen den Wert = 1 (true) nur annehmen, wenn Aerztlich&#xD;&#xA;= 1 (true) ist.&#xD;&#xA;Die Stellen 2 und 4 können sowohl zur Kennzeichnung ärztlicher als auch&#xD;&#xA;zahnärztlicher Selektivverträge genutzt werden.&#xD;&#xA;Beispiel: 1000&#xD;&#xA;Es liegt ein Selektivvertrag für die Hausarztzentrierte Versorgung nach §73b&#xD;&#xA;vor. " />
+      <definition value="Die Angaben gelten für folgende Selektivverträge:&#xD;&#xA;1. Stelle: Hausarztzentrierte Versorgung (§73b)&#xD;&#xA;2. Stelle: Besondere ambulante ärztliche Versorgung (§73c)&#xD;&#xA;3. Stelle: Strukturierte Behandlungsprogramme (§137f)&#xD;&#xA;4. Stelle: Integrierte Versorgung (§140a) &#xD;&#xA;&#xD;&#xA;Die Stellen 1 und 3 koennen den Wert = 1 (true) nur annehmen, wenn Aerztlich&#xD;&#xA;= 1 (true) ist.&#xD;&#xA;Die Stellen 2 und 4 können sowohl zur Kennzeichnung ärztlicher als auch&#xD;&#xA;zahnärztlicher Selektivverträge genutzt werden.&#xD;&#xA;Beispiel: 1000&#xD;&#xA;Es liegt ein Selektivvertrag für die Hausarztzentrierte Versorgung nach §73b&#xD;&#xA;vor." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -3101,7 +3114,7 @@
     <element id="Extension.extension:besonderePersonengruppe">
       <path value="Extension.extension" />
       <sliceName value="besonderePersonengruppe" />
-      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG) " />
+      <definition value="Gibt die Zugehörigkeit des Versicherten zu einer besonderen Personengruppe&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;04 = BSHG (Bundessozialhilfegesetz) § 264 SGB V, &#xD;&#xA;06 = BVG (Gesetz über die Versorgung der Opfer des Krieges), &#xD;&#xA;07 = SVA-Kennzeichnung für zwischenstaatliches Krankenversicherungsrecht: - Personen mit&#xD;&#xA;Wohnsitz im Inland, Abrechnung nach Aufwand, &#xD;&#xA;08 = SVAKennzeichnung, Pauschal, &#xD;&#xA;09 = Empfänger von Gesundheitsleistungen nach §§ 4 und 6 des Asylbewerberleistungsgesetzes (AsylbLG)" />
       <max value="1" />
       <mapping>
         <identity value="KVDT" />
@@ -3127,7 +3140,7 @@
     <element id="Extension.extension:dmpKennzeichnung">
       <path value="Extension.extension" />
       <sliceName value="dmpKennzeichnung" />
-      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet. " />
+      <definition value="Gibt die Teilnahme des Versicherten an einem Disease Management Program&#xD;&#xA;an. &#xD;&#xA;Schlüsselverzeichnis:&#xD;&#xA;00 = nicht gesetzt&#xD;&#xA;01 = Diabetes mellitus Typ 2, &#xD;&#xA;02 = Brustkrebs, &#xD;&#xA;03 = Koronare Herzkrankheit, &#xD;&#xA;04 = Diabetes mellitus Typ 1, &#xD;&#xA;05 = Asthma bronchiale, &#xD;&#xA;06 = COPD (chronic obstructive pulmonary disease) &#xD;&#xA;&#xD;&#xA;Das DMP-Kennzeichen findet derzeit aufgrund bilateraler vertraglicher&#xD;&#xA;Verpflichtungen von einzelnen Kostenträgern und Leistungserbringern noch&#xD;&#xA;Verwendung. Das DMP-Kennzeichen wird in diesem Zusammenhang als&#xD;&#xA;Angabe zum Nachweis von Wahltarifen nach § 53 SGB V bzw. der Angaben&#xD;&#xA;zum Nachweis von zusätzlichen Vertragsverhältnissen verwendet." />
       <max value="1" />
       <mapping>
         <identity value="KVDT" />
@@ -3169,8 +3182,8 @@
     <element id="Extension.extension:ruhenderLeistungsanspruch.extension:beginn">
       <path value="Extension.extension.extension" />
       <sliceName value="beginn" />
-      <short value="Beginn des ruhenden Leistungsanspruchs " />
-      <definition value="Gibt den Beginn des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <short value="Beginn des ruhenden Leistungsanspruchs" />
+      <definition value="Gibt den Beginn des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -3190,7 +3203,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="ende" />
       <short value="Ende des ruhenden Leistungsanspruchs" />
-      <definition value="Gibt das Ende des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an. " />
+      <definition value="Gibt das Ende des ruhenden Leistungsanspruchs des Versicherten bei dem&#xD;&#xA;unter Klasse Kostenträger angegebenen Kostenträger an." />
       <max value="1" />
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.extension:ende.url">
@@ -3236,7 +3249,7 @@
       <path value="Extension.extension" />
       <sliceName value="zuzahlungsstatus" />
       <short value="Zuzahlungsstaus" />
-      <definition value="Gibt an, ob und bis wann für den Versicherten eine Befreiung von der Zuzahlungspflicht nach&#xD;&#xA;§ 62 Abs. 3 SGB V vorliegt. " />
+      <definition value="Gibt an, ob und bis wann für den Versicherten eine Befreiung von der Zuzahlungspflicht nach&#xD;&#xA;§ 62 Abs. 3 SGB V vorliegt." />
       <max value="1" />
     </element>
     <element id="Extension.extension:zuzahlungsstatus.extension">
@@ -3358,7 +3371,7 @@
       <path value="Extension.extension.extension" />
       <sliceName value="art" />
       <short value="Atr des Selektivvertrages" />
-      <definition value="Die Angaben gelten für folgende Selektivverträge:&#xD;&#xA;1. Stelle: Hausarztzentrierte Versorgung (§73b)&#xD;&#xA;2. Stelle: Besondere ambulante ärztliche Versorgung (§73c)&#xD;&#xA;3. Stelle: Strukturierte Behandlungsprogramme (§137f)&#xD;&#xA;4. Stelle: Integrierte Versorgung (§140a) &#xD;&#xA;&#xD;&#xA;Die Stellen 1 und 3 koennen den Wert = 1 (true) nur annehmen, wenn Aerztlich&#xD;&#xA;= 1 (true) ist.&#xD;&#xA;Die Stellen 2 und 4 können sowohl zur Kennzeichnung ärztlicher als auch&#xD;&#xA;zahnärztlicher Selektivverträge genutzt werden.&#xD;&#xA;Beispiel: 1000&#xD;&#xA;Es liegt ein Selektivvertrag für die Hausarztzentrierte Versorgung nach §73b&#xD;&#xA;vor. " />
+      <definition value="Die Angaben gelten für folgende Selektivverträge:&#xD;&#xA;1. Stelle: Hausarztzentrierte Versorgung (§73b)&#xD;&#xA;2. Stelle: Besondere ambulante ärztliche Versorgung (§73c)&#xD;&#xA;3. Stelle: Strukturierte Behandlungsprogramme (§137f)&#xD;&#xA;4. Stelle: Integrierte Versorgung (§140a) &#xD;&#xA;&#xD;&#xA;Die Stellen 1 und 3 koennen den Wert = 1 (true) nur annehmen, wenn Aerztlich&#xD;&#xA;= 1 (true) ist.&#xD;&#xA;Die Stellen 2 und 4 können sowohl zur Kennzeichnung ärztlicher als auch&#xD;&#xA;zahnärztlicher Selektivverträge genutzt werden.&#xD;&#xA;Beispiel: 1000&#xD;&#xA;Es liegt ein Selektivvertrag für die Hausarztzentrierte Versorgung nach §73b&#xD;&#xA;vor." />
       <max value="1" />
     </element>
     <element id="Extension.extension:selektivvertraege.extension:art.url">

@@ -43,7 +43,7 @@
     <element id="Coverage">
       <path value="Coverage" />
       <short value="Versicherungsdaten" />
-      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
+      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -5539,7 +5539,7 @@
   <differential>
     <element id="Coverage">
       <path value="Coverage" />
-      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland" />
+      <definition value="Kostenübernahme im Rahmen eines gesetzlichen Versicherungsverhältnisses in Deutschland." />
     </element>
     <element id="Coverage.extension">
       <path value="Coverage.extension" />

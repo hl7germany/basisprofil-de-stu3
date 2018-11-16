@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-11-06T17:37:05.859+01:00" />
@@ -171,6 +171,7 @@
       <sliceName value="valueCode" />
       <short value="eGK Version (z.B.  5.2.0)" />
       <definition value="Version des VSDM-Datensatzes auf der eGK" />
+      <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
       <base>

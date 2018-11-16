@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-11-07T17:59:17.163+01:00" />
@@ -135,8 +135,9 @@
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
-      <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
-      <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
+      <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung" />
+      <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -288,8 +289,9 @@
     <element id="Extension.extension:timestamp.value[x]:valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <sliceName value="valueDateTime" />
-      <short value="Zeitpunkt der Onlineprüfung " />
+      <short value="Zeitpunkt der Onlineprüfung" />
       <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
+      <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
       <base>
@@ -324,8 +326,9 @@
     <element id="Extension.extension:ergebnis">
       <path value="Extension.extension" />
       <sliceName value="ergebnis" />
-      <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
+      <short value="Ergebnis der Onlineprüfung und -aktualisierung" />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -479,6 +482,7 @@
       <sliceName value="valueCode" />
       <short value="Ergebniscode" />
       <definition value="Ergebniscode (1-6)" />
+      <comment value="A stream of bytes, base64 encoded" />
       <min value="1" />
       <max value="1" />
       <base>
@@ -516,6 +520,7 @@
       <sliceName value="errorCode" />
       <short value="Error-Code" />
       <definition value="ErrorCode" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="1" />
@@ -707,6 +712,7 @@
       <sliceName value="pruefzifferFachdienst" />
       <short value="Prüfziffer des Fachdienstes" />
       <definition value="Prüfziffer des Fachdienstes" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
@@ -1084,8 +1090,8 @@
     <element id="Extension.extension:timestamp">
       <path value="Extension.extension" />
       <sliceName value="timestamp" />
-      <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
-      <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung " />
+      <short value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung" />
+      <definition value="Datum und Uhrzeit der Onlineprüfung und -aktualisierung" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -1096,7 +1102,7 @@
     <element id="Extension.extension:timestamp.value[x]:valueDateTime">
       <path value="Extension.extension.valueDateTime" />
       <sliceName value="valueDateTime" />
-      <short value="Zeitpunkt der Onlineprüfung " />
+      <short value="Zeitpunkt der Onlineprüfung" />
       <definition value="Zeitpunkt der Onlineprüfung als Zeitstempel" />
       <min value="1" />
       <type>
@@ -1110,7 +1116,7 @@
     <element id="Extension.extension:ergebnis">
       <path value="Extension.extension" />
       <sliceName value="ergebnis" />
-      <short value="Ergebnis der Onlineprüfung und -aktualisierung " />
+      <short value="Ergebnis der Onlineprüfung und -aktualisierung" />
       <definition value="Ergebnis der Onlineprüfung und -aktualisierung &#xD;&#xA;(Code 1-6)" />
       <min value="1" />
       <max value="1" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/kbv/skt-zusatzangabe/0.2" />
   <version value="0.2" />
@@ -28,12 +28,21 @@
       <path value="Extension" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Element" />
         <min value="0" />
         <max value="*" />
       </base>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <constraint>
         <key value="ext-1" />
         <severity value="error" />
@@ -41,6 +50,10 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -195,25 +208,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
       <max value="1" />
-      <base>
-        <path value="Element" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

@@ -1428,7 +1428,7 @@
       <path value="Patient.name" />
       <short value="Personenname nach deutschem Profil" />
       <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden.&#xD;&#xA;In diesem Profil sind die Kardinalitäten gemäß VSDM-Spezifikation berücksichtigt." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <comment value="Hinweis zur Repräsentation von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
       <min value="1" />
       <max value="*" />
@@ -5577,7 +5577,7 @@
       <path value="Patient.contact.name" />
       <short value="Personenname nach deutschem Profil." />
       <definition value="Personenname nach deutschem Profil.&#xD;&#xA;Dieser enthält bestimmte Extensions, die in Deutschland Verwendung finden." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <comment value="Hinweis zur Repräsentation von Anreden: Diese sollten, sofern erforderlich, ausschließlich in HumanName.text erscheinen (z.B. &quot;Frsu Dr. Martha Musterfrau&quot;).&#xD;&#xA;Nach Möglichkeit sollte die Anrede aus dem Geschlecht der Person abgeleitet werden.&#xD;&#xA;Das Element prefix wird nur für akademische Titel und andere Namensbestandteile verwendet." />
       <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person." />
       <min value="0" />
       <max value="*" />
