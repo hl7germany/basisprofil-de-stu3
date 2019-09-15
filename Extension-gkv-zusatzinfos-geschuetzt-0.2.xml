@@ -1209,10 +1209,10 @@
         <expression value="matches('[12]')" />
       </constraint>
       <constraint>
-        <key value="foo" />
-        <severity value="warning" />
-        <human value="test" />
-        <expression value="hasValue().not()" />
+        <key value="gkv-debug" />
+        <severity value="error" />
+        <human value="I am a debug message, please ignore me." />
+        <expression value="matches('1')" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3276,10 +3276,10 @@
         <expression value="matches('[12]')" />
       </constraint>
       <constraint>
-        <key value="foo" />
-        <severity value="warning" />
-        <human value="test" />
-        <expression value="hasValue().not()" />
+        <key value="gkv-debug" />
+        <severity value="error" />
+        <human value="I am a debug message, please ignore me." />
+        <expression value="matches('1')" />
       </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.url">
