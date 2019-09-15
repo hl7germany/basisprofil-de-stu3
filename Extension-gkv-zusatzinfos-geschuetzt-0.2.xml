@@ -1208,6 +1208,12 @@
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
       </constraint>
+      <constraint>
+        <key value="gkv-31" />
+        <severity value="warning" />
+        <human value="bla" />
+        <expression value="matches('[12]')" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -3267,6 +3273,12 @@
         <key value="gkv-3" />
         <severity value="warning" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
+        <expression value="matches('[12]')" />
+      </constraint>
+      <constraint>
+        <key value="gkv-31" />
+        <severity value="warning" />
+        <human value="bla" />
         <expression value="matches('[12]')" />
       </constraint>
     </element>
