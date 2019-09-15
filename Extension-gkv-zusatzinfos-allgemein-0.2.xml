@@ -830,7 +830,7 @@
       </constraint>
       <constraint>
         <key value="gkv-13" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für ärztliche Versorgung&quot;) oder  0 (&quot;keine Kostenerstattung für ärztliche Versorgung&quot;) erlaubt." />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1023,7 +1023,7 @@
       </constraint>
       <constraint>
         <key value="gkv-10" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für zahnärztliche Versorgung&quot;) oder 2 (&quot;keine Kostenerstattung für zahnärztliche Versorgung&quot;) erlaubt" />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1216,7 +1216,7 @@
       </constraint>
       <constraint>
         <key value="gkv-11" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;keine Kostenerstattung für stationären Bereich&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1409,7 +1409,7 @@
       </constraint>
       <constraint>
         <key value="gkv-12" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;keine Kostenerstattung für veranlasste Leistungen&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1880,7 +1880,7 @@
       </type>
       <constraint>
         <key value="gkv-13" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für ärztliche Versorgung&quot;) oder  0 (&quot;keine Kostenerstattung für ärztliche Versorgung&quot;) erlaubt." />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1905,7 +1905,7 @@
       </type>
       <constraint>
         <key value="gkv-10" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für zahnärztliche Versorgung&quot;) oder 2 (&quot;keine Kostenerstattung für zahnärztliche Versorgung&quot;) erlaubt" />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1930,7 +1930,7 @@
       </type>
       <constraint>
         <key value="gkv-11" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;keine Kostenerstattung für stationären Bereich&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
@@ -1955,7 +1955,7 @@
       </type>
       <constraint>
         <key value="gkv-12" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;keine Kostenerstattung für veranlasste Leistungen&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>

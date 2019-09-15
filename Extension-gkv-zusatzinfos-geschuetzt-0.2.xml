@@ -1204,15 +1204,9 @@
       </constraint>
       <constraint>
         <key value="gkv-3" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
-      </constraint>
-      <constraint>
-        <key value="gkv-debug" />
-        <severity value="error" />
-        <human value="I am a debug message, please ignore me." />
-        <expression value="matches('[123]')" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2571,7 +2565,7 @@
       </constraint>
       <constraint>
         <key value="gkv-6" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;0&quot; (zahnärztlicher Selektivvertrag liegt nicht vor), &quot;1&quot; (zahnärztlicher Selektivvertrag liegt vor) oder &quot;9&quot; (zahnärztliches Selektivvertragskennzeichen wird nicht genutzt) erlaubt." />
         <expression value="matches('[019]')" />
       </constraint>
@@ -2764,7 +2758,7 @@
       </constraint>
       <constraint>
         <key value="gkv-5" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur vierstellige numerische Werte erlaubt" />
         <expression value="matches('[0-1]{4}')" />
       </constraint>
@@ -3271,15 +3265,9 @@
       </type>
       <constraint>
         <key value="gkv-3" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
-      </constraint>
-      <constraint>
-        <key value="gkv-debug" />
-        <severity value="error" />
-        <human value="I am a debug message, please ignore me." />
-        <expression value="matches('[123]')" />
       </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.url">
@@ -3423,7 +3411,7 @@
       <patternCode value="[019]" />
       <constraint>
         <key value="gkv-6" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;0&quot; (zahnärztlicher Selektivvertrag liegt nicht vor), &quot;1&quot; (zahnärztlicher Selektivvertrag liegt vor) oder &quot;9&quot; (zahnärztliches Selektivvertragskennzeichen wird nicht genutzt) erlaubt." />
         <expression value="matches('[019]')" />
       </constraint>
@@ -3448,7 +3436,7 @@
       </type>
       <constraint>
         <key value="gkv-5" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur vierstellige numerische Werte erlaubt" />
         <expression value="matches('[0-1]{4}')" />
       </constraint>
