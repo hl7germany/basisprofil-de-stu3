@@ -1204,15 +1204,9 @@
       </constraint>
       <constraint>
         <key value="gkv-3" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
-      </constraint>
-      <constraint>
-        <key value="foo-1" />
-        <severity value="warning" />
-        <human value="hasValue().not()" />
-        <expression value="hasValue().not()" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3271,15 +3265,9 @@
       </type>
       <constraint>
         <key value="gkv-3" />
-        <severity value="warning" />
+        <severity value="error" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
-      </constraint>
-      <constraint>
-        <key value="foo-1" />
-        <severity value="warning" />
-        <human value="hasValue().not()" />
-        <expression value="hasValue().not()" />
       </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.url">
