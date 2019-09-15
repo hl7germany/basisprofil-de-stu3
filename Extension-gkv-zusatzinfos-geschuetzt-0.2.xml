@@ -1057,12 +1057,6 @@
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
       </constraint>
-      <constraint>
-        <key value="gkv-3" />
-        <severity value="warning" />
-        <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
-        <expression value="value.matches('[12]')" />
-      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1213,6 +1207,12 @@
         <severity value="warning" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
+      </constraint>
+      <constraint>
+        <key value="foo" />
+        <severity value="warning" />
+        <human value="test" />
+        <expression value="hasValue().not()" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3257,12 +3257,6 @@
       <definition value="Gibt die Art des ruhenden Leistungsanspruchs an.&#xD;&#xA;Dieses Datenfeld ist besonders schützenswert und daher nicht frei auslesbar,&#xD;&#xA;sondern nur berechtigten Personen zugänglich. &#xD;&#xA;1 = vollständig&#xD;&#xA;2 = eingeschränkt" />
       <min value="1" />
       <max value="1" />
-      <constraint>
-        <key value="gkv-3" />
-        <severity value="warning" />
-        <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
-        <expression value="value.matches('[12]')" />
-      </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.extension:art.url">
       <path value="Extension.extension.extension.url" />
@@ -3280,6 +3274,12 @@
         <severity value="warning" />
         <human value="Es sind nur die Werte &quot;1&quot; (vollständig) und &quot;2&quot; (eingeschränkt) erlaubt." />
         <expression value="matches('[12]')" />
+      </constraint>
+      <constraint>
+        <key value="foo" />
+        <severity value="warning" />
+        <human value="test" />
+        <expression value="hasValue().not()" />
       </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.url">
