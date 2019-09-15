@@ -1212,7 +1212,7 @@
         <key value="gkv-debug" />
         <severity value="error" />
         <human value="I am a debug message, please ignore me." />
-        <expression value="matches('1')" />
+        <expression value="matches('[123]')" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -3279,7 +3279,7 @@
         <key value="gkv-debug" />
         <severity value="error" />
         <human value="I am a debug message, please ignore me." />
-        <expression value="matches('1')" />
+        <expression value="matches('[123]')" />
       </constraint>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch.url">
