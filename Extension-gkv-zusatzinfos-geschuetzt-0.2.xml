@@ -1210,7 +1210,7 @@
       </constraint>
       <constraint>
         <key value="foo-1" />
-        <severity value="error" />
+        <severity value="warning" />
         <human value="hasValue().not()" />
         <expression value="hasValue().not()" />
       </constraint>
@@ -3277,7 +3277,7 @@
       </constraint>
       <constraint>
         <key value="foo-1" />
-        <severity value="error" />
+        <severity value="warning" />
         <human value="hasValue().not()" />
         <expression value="hasValue().not()" />
       </constraint>
