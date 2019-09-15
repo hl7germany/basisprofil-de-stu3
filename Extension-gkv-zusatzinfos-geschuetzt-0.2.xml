@@ -9,7 +9,7 @@
   <title value="Extension für geschützte VSDM-Daten von eGKs (Version 0.2)" />
   <status value="draft" />
   <date value="2018-06-27" />
-  <description value="Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1" />
+  <description value="Vgl.:&#xD;&#xA;Anwendung der eGK  Technische Anlage zu Anlage 4a (BMV-Ä)  Verarbeitung KVK/eGK im Rahmen der vertragsärztlichen Abrechnung im Basis-Rollout  [KBV_ITA_VGEX_Mapping_KVK.pdf]  Kapitel 2.2.1.1 " />
   <fhirVersion value="3.0.1" />
   <mapping>
     <identity value="KVDT" />
