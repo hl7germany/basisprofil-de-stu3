@@ -820,7 +820,6 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[01]" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -828,6 +827,12 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="gkv-13" />
+        <severity value="warning" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für ärztliche Versorgung&quot;) oder  0 (&quot;keine Kostenerstattung für ärztliche Versorgung&quot;) erlaubt." />
+        <expression value="matches('[01]')" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1008,7 +1013,6 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[01]" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1213,7 +1217,7 @@
       <constraint>
         <key value="gkv-11" />
         <severity value="warning" />
-        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;kein Kostenerstattung für stationären Bereich&quot;)" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;keine Kostenerstattung für stationären Bereich&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
       <mapping>
@@ -1406,7 +1410,7 @@
       <constraint>
         <key value="gkv-12" />
         <severity value="warning" />
-        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;kein Kostenerstattung für veranlasste Leistungen&quot;)" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;keine Kostenerstattung für veranlasste Leistungen&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
       <mapping>
@@ -1874,7 +1878,12 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[01]" />
+      <constraint>
+        <key value="gkv-13" />
+        <severity value="warning" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für ärztliche Versorgung&quot;) oder  0 (&quot;keine Kostenerstattung für ärztliche Versorgung&quot;) erlaubt." />
+        <expression value="matches('[01]')" />
+      </constraint>
     </element>
     <element id="Extension.extension:kostenerstattung.extension:zahnaerztlicheVersorgung">
       <path value="Extension.extension.extension" />
@@ -1894,7 +1903,6 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[01]" />
       <constraint>
         <key value="gkv-10" />
         <severity value="warning" />
@@ -1923,7 +1931,7 @@
       <constraint>
         <key value="gkv-11" />
         <severity value="warning" />
-        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;kein Kostenerstattung für stationären Bereich&quot;)" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für stationären Bereich&quot;) oder 0 (&quot;keine Kostenerstattung für stationären Bereich&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
     </element>
@@ -1948,7 +1956,7 @@
       <constraint>
         <key value="gkv-12" />
         <severity value="warning" />
-        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;kein Kostenerstattung für veranlasste Leistungen&quot;)" />
+        <human value="Es sind nur die Werte 1 (&quot;Kostenerstattung für veranlasste Leistungen&quot;) oder 0 (&quot;keine Kostenerstattung für veranlasste Leistungen&quot;)" />
         <expression value="matches('[01]')" />
       </constraint>
     </element>
