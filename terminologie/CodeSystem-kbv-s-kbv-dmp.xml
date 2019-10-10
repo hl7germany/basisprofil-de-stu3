@@ -1,28 +1,24 @@
-<CodeSystem xmlns="http://hl7.org/fhir">
-	<meta>
-		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
-	</meta>
-	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:ns2="http://www.w3.org/1999/xhtml">
+	<url value="https://fhir.kbv.de/CodeSystem/74_CS_SFHIR_KBV_DMP"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.5.223"/>
 	</identifier>
-	<version value="1.02"/>
-	<name value="kbv-s-kbv-dmp"/>
-	<status value="draft"/>
-	<experimental value="true"/>
-	<date value="2018-07-01"/>
-	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)"/>
+	<version value="1.03"/>
+	<name value="74_CS_SFHIR_KBV_DMP"/>
+	<status value="active"/>
+	<date value="2019-01-01"/>
+	<publisher value="Kassenärztliche Bundesvereinigung"/>
 	<contact>
 		<telecom>
-			<system value="other"/>
-			<value value="http://hl7.de/technische-komitees/fhir/"/>
+			<system value="url"/>
+			<value value="http://www.kbv.de"/>
 		</telecom>
 	</contact>
-	<description value="DMP Status gibt an, ob ein Versicherter an einem DMP Porgramm teilnimmt. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS."/>
+	<description value="DMP-Kennzeichen: gibt an, in welchen DMPs ein Versicherter eingeschrieben ist (§ 267 Abs. 2 Satz 4 SGB V). Die Angabe ist auf der EGK vorhanden und auf der KVK Teil des Feldes: Statusergänzung."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-dmp"/>
 	<content value="complete"/>
 	<concept>
 		<code value="00"/>
@@ -51,5 +47,17 @@
 	<concept>
 		<code value="06"/>
 		<display value="COPD"/>
+	</concept>
+	<concept>
+		<code value="07"/>
+		<display value="HI"/>
+	</concept>
+	<concept>
+		<code value="08"/>
+		<display value="Depression"/>
+	</concept>
+	<concept>
+		<code value="09"/>
+		<display value="Rueckenschmerz"/>
 	</concept>
 </CodeSystem>
