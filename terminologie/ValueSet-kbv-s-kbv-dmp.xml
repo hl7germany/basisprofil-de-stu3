@@ -22,50 +22,58 @@
 		</include>
 	</compose>
 	<expansion>
-		<identifier value="a37c3b9e-66e4-4a47-7cbb-c5ade01a7096"/>
-		<timestamp value="2018-07-01"/>
-		<total value="7"/>
+		<identifier value="db9f5caa-6ed9-432e-b5b9-94513b2afd60"/>
+		<timestamp value="2019-10-10T14:05:19+00:00"/>
+		<total value="10"/>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="00"/>
 			<display value="nicht gesetzt"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="01"/>
 			<display value="DM2"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="02"/>
 			<display value="BRK"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="03"/>
 			<display value="KHK"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="04"/>
 			<display value="DM1"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="05"/>
 			<display value="Asthma"/>
 		</contains>
 		<contains>
 			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
-			<version value="1.02"/>
 			<code value="06"/>
 			<display value="COPD"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
+			<code value="07"/>
+			<display value="HI"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
+			<code value="08"/>
+			<display value="Depression"/>
+		</contains>
+		<contains>
+			<system value="http://fhir.de/CodeSystem/kbv/s-kbv-dmp"/>
+			<code value="09"/>
+			<display value="Rueckenschmerz"/>
 		</contains>
 	</expansion>
 </ValueSet>
