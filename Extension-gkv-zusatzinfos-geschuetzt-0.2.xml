@@ -2554,7 +2554,6 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[019]" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3408,7 +3407,6 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[019]" />
       <constraint>
         <key value="gkv-6" />
         <severity value="error" />

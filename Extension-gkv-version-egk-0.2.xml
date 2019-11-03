@@ -35,7 +35,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -75,7 +75,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -113,7 +113,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <constraint>
@@ -154,7 +154,7 @@
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mapping>
@@ -182,14 +182,19 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
         <severity value="error" />
         <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="gkv-1" />
+        <severity value="warning" />
+        <human value="Die Versionsnummer muss dem Schema [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} entsprechen (z.B. &quot;5.2.1&quot;)!" />
+        <expression value="matches('[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}')" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -220,7 +225,12 @@
       <type>
         <code value="code" />
       </type>
-      <patternCode value="[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" />
+      <constraint>
+        <key value="gkv-1" />
+        <severity value="warning" />
+        <human value="Die Versionsnummer muss dem Schema [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} entsprechen (z.B. &quot;5.2.1&quot;)!" />
+        <expression value="matches('[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}')" />
+      </constraint>
     </element>
   </differential>
 </StructureDefinition>
