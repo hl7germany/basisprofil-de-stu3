@@ -39,6 +39,7 @@
   <abstract value="false" />
   <type value="Coverage" />
   <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-basis/0.2" />
+  <derivation value="constraint" />
   <snapshot>
     <element id="Coverage">
       <path value="Coverage" />
