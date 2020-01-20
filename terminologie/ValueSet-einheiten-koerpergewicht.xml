@@ -3,7 +3,7 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
 	<url value="http://fhir.de/ValueSet/einheiten-koerpergewicht"/>
-	<version value="0.2"/>
+	<version value="0.2.3"/>
 	<name value="einheiten-koerpergewicht"/>
 	<status value="draft"/>
 	<experimental value="true"/>

@@ -7,7 +7,7 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.5.233"/>
 	</identifier>
-	<version value="0.2"/>
+	<version value="0.2.3"/>
 	<name value="kbv-s-kbv-kv"/>
 	<status value="draft"/>
 	<experimental value="true"/>

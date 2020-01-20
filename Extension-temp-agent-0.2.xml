@@ -4,7 +4,7 @@
     <lastUpdated value="2017-11-07T10:34:13.031+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/temp/agent/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="agent-0.2" />
   <title value="agent-Extension für STU3 DocumentReference (Version 0.2)" />
   <status value="draft" />

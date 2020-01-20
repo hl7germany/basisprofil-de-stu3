@@ -4,7 +4,7 @@
     <lastUpdated value="2018-02-01T14:34:07.894-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/procedure-de-basis/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="procedure-de-basis-0.2" />
   <title value="Procedure, Deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />

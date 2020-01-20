@@ -4,7 +4,7 @@
     <lastUpdated value="2017-10-20T11:01:15.167+02:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/organization-de-basis/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="organization-de-basis-0.2" />
   <title value="Organisation, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />

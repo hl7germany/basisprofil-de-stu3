@@ -3,7 +3,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
     </meta>
     <url value="http://fhir.de/CodeSystem/raucherstatus"/>
-    <version value="0.2"/>
+    <version value="0.2.3"/>
     <name value="raucherstatus"/>
     <status value="draft"/>
     <experimental value="false"/>
