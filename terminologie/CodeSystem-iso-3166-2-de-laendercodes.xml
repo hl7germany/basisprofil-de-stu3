@@ -3,7 +3,7 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
 	<url value="urn:iso:std:iso:3166-2:de"/>
-	<version value="0.2"/>
+	<version value="0.2.3"/>
 	<name value="CodeSystem-iso-3166-2:de-laendercodes"/>
 	<status value="draft"/>
 	<experimental value="true"/>

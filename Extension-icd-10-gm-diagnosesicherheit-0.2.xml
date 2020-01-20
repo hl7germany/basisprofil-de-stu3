@@ -4,7 +4,7 @@
     <lastUpdated value="2018-04-08T13:43:27.677+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="icd-10-gm-diagnosesicherheit-0.2" />
   <title value="Extension zur Erfassung der Diagnosesicherheit (Version 0.2)" />
   <status value="draft" />

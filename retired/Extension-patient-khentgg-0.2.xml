@@ -4,7 +4,7 @@
     <lastUpdated value="2018-02-01T11:01:15.072-06:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/patient-khentgg-extension/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="patient-khentgg-extension-0.2" />
   <title value="Patient-Extension für §21 KHEntgG Datenübermittlung (Version 0.2)" />
   <status value="draft" />

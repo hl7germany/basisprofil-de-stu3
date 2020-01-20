@@ -3,7 +3,7 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
 	</meta>
 	<url value="http://fhir.de/ValueSet/einnahmezeitpunkte"/>
-	<version value="0.2"/>
+	<version value="0.2.3"/>
 	<name value="einnahmezeitpunkte"/> 
 	<status value="draft"/>
 	<date value="2017-08-08T21:30:00+02:00"/>

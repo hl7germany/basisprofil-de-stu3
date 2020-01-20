@@ -4,7 +4,7 @@
     <lastUpdated value="2017-11-08T18:33:28.283+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/humanname-de-basis/0.2" />
-  <version value="0.2" />
+  <version value="0.2.3" />
   <name value="humanname-de-basis-0.2" />
   <title value="HumanName, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
