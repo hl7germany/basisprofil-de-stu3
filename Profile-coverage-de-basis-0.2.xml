@@ -1813,7 +1813,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis" />
+        <targetProfile value="http://fhir.de/StructureDefinition/organization-de-basis/0.2" />
       </type>
       <type>
         <code value="Reference" />
