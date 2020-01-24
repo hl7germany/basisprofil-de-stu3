@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/allergyintolerance-de-basis/0.2" />
-  <version value="0.2.3" />
+ <version value="0.2.4" />
   <name value="allergyintolerance-de-basis-0.2" />
   <title value="AllergyIntolerance, deutsches Basisprofil (Version 0.2)" />
   <status value="draft" />
