@@ -4,7 +4,7 @@
     <lastUpdated value="2017-11-08T18:58:00.445+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/chargeitem-ebm/0.2" />
-  <version value="0.2.3" />
+ <version value="0.2.4" />
   <name value="chargeitem-ebm-0.2" />
   <title value="ChargeItem für EBM-Ziffer als Abrechnungsposition (Version 0.2)" />
   <status value="draft" />

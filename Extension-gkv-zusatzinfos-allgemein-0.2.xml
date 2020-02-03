@@ -4,7 +4,7 @@
     <lastUpdated value="2017-12-05T18:33:36.883+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/zusatzinfos-allgemein/0.2" />
-  <version value="0.2.3" />
+ <version value="0.2.4" />
   <name value="gkv-zusatzinfos-allgemein-0.2" />
   <title value="Extension für allgemeine VSDM-Daten von eGKs (Version 0.2)" />
   <status value="draft" />

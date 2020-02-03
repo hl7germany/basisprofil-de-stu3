@@ -4,7 +4,7 @@
     <lastUpdated value="2017-11-06T17:37:05.859+01:00" />
   </meta>
   <url value="http://fhir.de/StructureDefinition/gkv/version-egk/0.2" />
-  <version value="0.2.3" />
+ <version value="0.2.4" />
   <name value="gkv-version-egk-0.2" />
   <title value="Extension zur Erfassung der Version des CDM-Datensatzes auf der eGK (Version 0.2)" />
   <status value="draft" />

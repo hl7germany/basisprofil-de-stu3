@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <url value="http://fhir.de/ValueSet/raucherstatus" />
-    <version value="0.2.3" />
+   <version value="0.2.4" />
     <name value="raucherstatus" />
     <status value="draft" />
     <experimental value="false"/>
