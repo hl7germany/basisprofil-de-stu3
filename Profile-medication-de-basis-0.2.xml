@@ -1739,7 +1739,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-bmp-darreichungsform" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1864,7 +1864,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+      <fixedUri value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4859,13 +4859,13 @@
       <sliceName value="BMP-Darreichungsform" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-bmp-darreichungsform" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
       </binding>
     </element>
     <element id="Medication.form.coding:BMP-Darreichungsform.system">
       <path value="Medication.form.coding.system" />
       <min value="1" />
-      <fixedUri value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+      <fixedUri value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
     </element>
     <element id="Medication.form.coding:BMP-Darreichungsform.code">
       <path value="Medication.form.coding.code" />

@@ -2,7 +2,7 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
-	<url value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/>
+	<url value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.5.114"/>
@@ -22,7 +22,7 @@
 	<description value="Fachgruppen-Codes nach Weiterbildungsordnung Bundesarztregister."/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-bar-wbo2"/>
+	<valueSet value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_WBO"/>
 	<content value="complete"/>
 	<concept><code value="001"/><display value="Praktischer Arzt; obsolet"/></concept>
 	<concept><code value="002"/><display value="Arzt obsolet"/></concept>

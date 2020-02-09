@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<url value="http://fhir.de/ValueSet/kbv/s-bmp-darreichungsform" />
+	<url value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 	<identifier>
 		<system value="urn:ietf:rfc:3986" />
 		<value value="1.2.276.0.76.3.1.1.5.2.40" />
@@ -18,7 +18,7 @@
 	<description value="Die Schlüsseltabelle enthält eine Liste von kodierten Darreichungsformen, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (Anhang 3 zu Anlage 3 Vereinbarung BMP)." />
 	<compose>
 		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 		</include>
 	</compose>
 	<expansion>
@@ -26,1489 +26,1489 @@
 		<timestamp value="2017-08-08T17:36:46" />
 		<total value="248" />
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AEO" />
 			<display value="Ätherisches Öl" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AMP" />
 			<display value="Ampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="APA" />
 			<display value="Ampullenpaare" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ASN" />
 			<display value="Augen- und Nasensalbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ASO" />
 			<display value="Augen- und Ohrensalbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ATO" />
 			<display value="Augen- und Ohrentropfen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ATR" />
 			<display value="Augentropfen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AUB" />
 			<display value="Augenbad" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AUC" />
 			<display value="Augencreme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AUG" />
 			<display value="Augengel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="AUS" />
 			<display value="Augensalbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BAD" />
 			<display value="Bad" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BAL" />
 			<display value="Balsam" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BAN" />
 			<display value="Bandage" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BEU" />
 			<display value="Beutel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BIN" />
 			<display value="Binden" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BON" />
 			<display value="Bonbons" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BPL" />
 			<display value="Basisplatte" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BRE" />
 			<display value="Brei" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="BTA" />
 			<display value="Brausetabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="CRE" />
 			<display value="Creme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DFL" />
 			<display value="Durchstechflaschen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DIL" />
 			<display value="Dilution" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DIS" />
 			<display value="Depot-Injektionssuspension" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DKA" />
 			<display value="Dragees in Kalenderpackung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DOS" />
 			<display value="Dosieraerosol" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DRA" />
 			<display value="Dragees" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DRM" />
 			<display value="Dragees magensaftresistent" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DSC" />
 			<display value="Dosierschaum" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="DSS" />
 			<display value="Dosierspray" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="EDP" />
 			<display value="Einzeldosis-Pipetten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="EIN" />
 			<display value="Einreibung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ELE" />
 			<display value="Elektroden" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ELI" />
 			<display value="Elixier" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="EMU" />
 			<display value="Emulsion" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ESS" />
 			<display value="Essenz" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ESU" />
 			<display value="Erwachsenen-Suppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="EXT" />
 			<display value="Extrakt" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FBE" />
 			<display value="Filterbeutel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FBW" />
 			<display value="Franzbranntwein" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FDA" />
 			<display value="Filmdragees" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FER" />
 			<display value="Fertigspritzen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FET" />
 			<display value="Fettsalbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FLA" />
 			<display value="Flasche" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FLE" />
 			<display value="Flüssigkeit zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FLU" />
 			<display value="Flüssigkeit" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FMR" />
 			<display value="Filmtabletten magensaftresistent" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FOL" />
 			<display value="Folie" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FRB" />
 			<display value="Beutel mit retardierten Filmtabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FSE" />
 			<display value="Flüssigseife" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="FTA" />
 			<display value="Filmtabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GEL" />
 			<display value="Gel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GLI" />
 			<display value="Gas und Lösungsmittel zur Herstellung einer Injektions/Infusionsdispersion" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GLO" />
 			<display value="Globuli" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GMR" />
 			<display value="Magensaftresitentes Granulat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GPA" />
 			<display value="Gelplatte" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GRA" />
 			<display value="Granulat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GSE" />
 			<display value="Granulat zur Herstellung einer Suspension zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="GUL" />
 			<display value="Gurgellösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="HAS" />
 			<display value="Handschuhe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="HKM" />
 			<display value="Magensaftresistente Hartkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="HKP" />
 			<display value="Hartkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="HPI" />
 			<display value="Hartkapseln mit Pulver zur Inhalation" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="HVW" />
 			<display value="Hartkapseln mit veränderter Wirkstofffreisetzung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFA" />
 			<display value="Infusionsampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFB" />
 			<display value="Infusionsbeutel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFF" />
 			<display value="Infusionsflaschen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFK" />
 			<display value="Infusionslösungskonzentrat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFL" />
 			<display value="Injektionsflaschen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IFS" />
 			<display value="Infusionsset" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IHA" />
 			<display value="Inhalationsampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IHP" />
 			<display value="Inhalationspulver" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IIL" />
 			<display value="Injekts-, Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IKA" />
 			<display value="Inhalationskapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ILO" />
 			<display value="Injektionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IMP" />
 			<display value="Implantat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="INF" />
 			<display value="Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="INH" />
 			<display value="Inhalat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="INI" />
 			<display value="Injekts-, Infusionsflaschen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="INL" />
 			<display value="Inhalationslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="INS" />
 			<display value="Instanttee" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IST" />
 			<display value="Instillation" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ISU" />
 			<display value="Injektionssuspension" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="IUP" />
 			<display value="Intrauterinpessar" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KAN" />
 			<display value="Kanülen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KAP" />
 			<display value="Kapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KAT" />
 			<display value="Katheter" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KDA" />
 			<display value="Kaudragees" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KEG" />
 			<display value="Kegel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KER" />
 			<display value="Kerne" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KGU" />
 			<display value="Kaugummi" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KII" />
 			<display value="Konzentrat zur Herstellung einer Injektions- oder Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KKS" />
 			<display value="Kleinkindersuppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KLI" />
 			<display value="Klistiere" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KLT" />
 			<display value="Klistier-Tabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KMP" />
 			<display value="Hartkapsel mit Magensaftresistent überzogene Pellets" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KMR" />
 			<display value="Hartkapsel magensaftresistent" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KOD" />
 			<display value="Kondome" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KOM" />
 			<display value="Kompressen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KON" />
 			<display value="Konzentrat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KPG" />
 			<display value="Kombipackung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KRI" />
 			<display value="Kristallsuspension" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KSS" />
 			<display value="Kinder- und Säuglingssuppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KSU" />
 			<display value="Kindersuppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="KTA" />
 			<display value="Kautabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LAN" />
 			<display value="Lanzetten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LII" />
 			<display value="Lösung zur Injektion, Infusion und Inhalation" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LIQ" />
 			<display value="Liquidum" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LOE" />
 			<display value="Lösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LOT" />
 			<display value="Lotion" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LOV" />
 			<display value="Lösung für einen Vernebler" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LSE" />
 			<display value="Lösung zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LTA" />
 			<display value="Lacktabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LUP" />
 			<display value="Lutschpastillen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="LUT" />
 			<display value="Lutschtabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MIL" />
 			<display value="Milch" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MIX" />
 			<display value="Mixtur" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MRG" />
 			<display value="Magensaftresistentes Retardgranulat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MRP" />
 			<display value="Magensaftresistente Pellets" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MTA" />
 			<display value="Manteltabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="MUW" />
 			<display value="Mundwasser" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NAG" />
 			<display value="Nasengel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NAO" />
 			<display value="Nasenöl" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NAS" />
 			<display value="Nasenspray" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NAW" />
 			<display value="Wirkstoffhaltiger Nagellack" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NDS" />
 			<display value="Nasendosierspray" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NSA" />
 			<display value="Nasensalbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="NTR" />
 			<display value="Nasentropfen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="OCU" />
 			<display value="Occusert" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="OEL" />
 			<display value="Öl" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="OHT" />
 			<display value="Ohrentropfen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="OVU" />
 			<display value="Ovula" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PAS" />
 			<display value="Pastillen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PEL" />
 			<display value="Pellets" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PEN" />
 			<display value="Injektionslösung in einem Fertigpen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PER" />
 			<display value="Perlen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PFL" />
 			<display value="Pflaster" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PFT" />
 			<display value="Pflaster transdermal" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PHI" />
 			<display value="Pulver zur Herstellung einer Injektions-, Infusions-oder Inhalationslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PIF" />
 			<display value="Pulver zu Herstellung einer Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PII" />
 			<display value="Pulver zur Herstellung einer Injektions- oder Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PIJ" />
 			<display value="Pulver zur Herstellung einer Injektionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PIK" />
 			<display value="Pulver zur Herstellung eines Infusionslösungskonzentrats" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PIV" />
 			<display value="Pulver zur Herstellung einer Injektions- bzw. Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLE" />
 			<display value="Pulver zur Herstellung einer Lösung zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLF" />
 			<display value="Pulver und Lösungsmittel zur Herstellung einer Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLG" />
 			<display value="Perlongetten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLH" />
 			<display value="Pulver und Lösungsmittel zur Herstellung einer Injektions-bzw. Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLI" />
 			<display value="Pulver und Lösungsmittel zur Herstellung einer Injektionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLK" />
 			<display value="Pulver und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionslösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PLV" />
 			<display value="Pulver und Lösungsmittel zur Herstellung einer Lösung zur intravesikalen Anwendung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PPL" />
 			<display value="Pumplösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PRS" />
 			<display value="Presslinge" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PSE" />
 			<display value="Pulver zu Herstellung einer Suspension zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PST" />
 			<display value="Paste" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PUD" />
 			<display value="Puder" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="PUL" />
 			<display value="Pulver" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RED" />
 			<display value="Retard-Dragees" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="REK" />
 			<display value="Retard-Kapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RET" />
 			<display value="Retard-Tabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RGR" />
 			<display value="Retard-Granulat" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RKA" />
 			<display value="Rektalkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RSC" />
 			<display value="Rektalschaum" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="RUT" />
 			<display value="Retard-überzogenen Tabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SAF" />
 			<display value="Saft" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SAL" />
 			<display value="Salbe" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SAM" />
 			<display value="Salbe zur Anwendung in der Mundhöhle" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SCH" />
 			<display value="Schaum" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SEI" />
 			<display value="Seife" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SHA" />
 			<display value="Shampoo" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SIR" />
 			<display value="Sirup" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SMF" />
 			<display value="Schmelzfilm" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SMT" />
 			<display value="Schmelztabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SMU" />
 			<display value="Suppositorien m. Mulleinlage" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SPA" />
 			<display value="Spritzampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SPF" />
 			<display value="Sprühflasche" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SPL" />
 			<display value="Spüllösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SPR" />
 			<display value="Spray" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SRI" />
 			<display value="Spritzen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SSU" />
 			<display value="Säuglingssuppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="STA" />
 			<display value="Stechampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="STB" />
 			<display value="Stäbchen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="STI" />
 			<display value="Stifte" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="STR" />
 			<display value="Streifen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUB" />
 			<display value="Substanz" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUE" />
 			<display value="Suspension zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUP" />
 			<display value="Suppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUS" />
 			<display value="Suspension" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUT" />
 			<display value="Sublingualtabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SUV" />
 			<display value="Suspension für einen Vernebler" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="SWA" />
 			<display value="Schwämme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TAB" />
 			<display value="Tabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TAE" />
 			<display value="Täfelchen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TAM" />
 			<display value="Trockenampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TEE" />
 			<display value="Tee" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TEI" />
 			<display value="Tropfen zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TES" />
 			<display value="Test" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TIN" />
 			<display value="Tinktur" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TKA" />
 			<display value="Tabletten in Kalenderpackung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TMR" />
 			<display value="Tabletten magensaftresistent" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TON" />
 			<display value="Tonikum" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TPN" />
 			<display value="Tampon" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TPO" />
 			<display value="Tamponaden" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TRA" />
 			<display value="Trinkampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TRI" />
 			<display value="Trituration" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TRO" />
 			<display value="Tropfen zum Einnehmen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TRS" />
 			<display value="Trockensubstanz mit Lösungsmittel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TRT" />
 			<display value="Trinktabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TSA" />
 			<display value="Trockensaft" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TSD" />
 			<display value="Tabletten zur Herstellung einer Suspension zum Einnehmen für einen Dosierspender" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TSS" />
 			<display value="Trockensubstanz ohne Lösungsmittel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TST" />
 			<display value="Teststäbchen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TSY" />
 			<display value="Transdermales System" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TTR" />
 			<display value="Teststreifen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TUB" />
 			<display value="Tube" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TUE" />
 			<display value="Tücher" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="TUP" />
 			<display value="Tupfer" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="UTA" />
 			<display value="überzogene Tabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VAL" />
 			<display value="Vaginallösung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VAR" />
 			<display value="Vaginalring" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VCR" />
 			<display value="Vaginalcreme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VER" />
 			<display value="Verband" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VGE" />
 			<display value="Vaginalgel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VKA" />
 			<display value="Vaginalkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VLI" />
 			<display value="Vlies" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VOV" />
 			<display value="Vaginalovula" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VST" />
 			<display value="Vaginalstäbchen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VSU" />
 			<display value="Vaginalsuppositorien" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="VTA" />
 			<display value="Vaginaltabletten" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="WAT" />
 			<display value="Watte" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="WGA" />
 			<display value="Wundgaze" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="WKA" />
 			<display value="Weichkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="WKM" />
 			<display value="Magensaftresistente Weichkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="WUE" />
 			<display value="Würfel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XDG" />
 			<display value="Duschgel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XDS" />
 			<display value="Deo-Spray" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XFE" />
 			<display value="Festiger" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XGM" />
 			<display value="Gesichtsmaske" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XHS" />
 			<display value="Haarspülung" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XNC" />
 			<display value="Nachtcreme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XPK" />
 			<display value="Körperpflege" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="XTC" />
 			<display value="Tagescreme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZAM" />
 			<display value="Zylinderampullen" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZBU" />
 			<display value="Zahnbürste" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZCR" />
 			<display value="Zahncreme" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZGE" />
 			<display value="Zahngel" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZKA" />
 			<display value="Zerbeißkapseln" />
 		</contains>
 		<contains>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bmp-darreichungsform" />
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM" />
 			<version value="1.02" />
 			<code value="ZPA" />
 			<display value="Zahnpasta" />

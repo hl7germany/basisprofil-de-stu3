@@ -2,7 +2,7 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://fhir.de/ValueSet/kbv/s-bar-wbo2"/>
+	<url value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_WBO"/>
 	<version value="0.2.3"/>
 	<name value="kbv-s-bar-wbo2"/>
 	<status value="draft"/>
@@ -19,196 +19,196 @@
 	<copyright value="HL7 Deutschland e.V."/>
 	<compose>
 		<include>
-			<system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
 		</include>
 	</compose>
 	<expansion>
 		<identifier value="60cec33b-73db-4c9a-8732-c0bd8cca9a82"/>
 		<timestamp value="2018-11-12"/>
 		<total value="184"/>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="001"/><display value="Praktischer Arzt; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="002"/><display value="Arzt obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="010"/><display value="FA Allgemeinmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="020"/><display value="FA Anästhesiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="022"/><display value="FA Anästhesiologie und Intensivtherapie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="030"/><display value="FA Augenheilkunde"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="040"/><display value="FA Chirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="041"/><display value="TG Kinderchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="042"/><display value="SP Unfallchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="043"/><display value="SP Gefäßchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="044"/><display value="TG Plastische Chirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="045"/><display value="TG Thorax- und Kardiovaskularchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="046"/><display value="SP Thoraxchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="047"/><display value="TG Herz- und Gefäßchirurgie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="048"/><display value="SP Visceralchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="050"/><display value="FA Frauenheilkunde und Geburtshilfe"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="060"/><display value="FA Hals-, Nasen-, Ohrenheilkunde"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="061"/><display value="SP Phoniatrie und Pädaudiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="062"/><display value="TG Audiologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="063"/><display value="TG Phoniatrie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="070"/><display value="FA Haut- und Geschlechtskrankheiten"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="080"/><display value="FA Innere Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="081"/><display value="SP Gastroenterologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="082"/><display value="SP Kardiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="083"/><display value="SP Pneumologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="084"/><display value="SP Endokrinologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="085"/><display value="TG Hämatologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="086"/><display value="SP Nephrologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="087"/><display value="SP Rheumatologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="088"/><display value="TG Diabetologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="089"/><display value="TG Infektions- und Tropenmedizin; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="090"/><display value="FA Kinderheilkunde; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="091"/><display value="SP Kinderkardiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="092"/><display value="TG Kinderneuropsychiatrie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="093"/><display value="SP Neonatologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="094"/><display value="TG Kindergastroenterologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="095"/><display value="TG Kinderhämatologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="096"/><display value="TG Kindernephrologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="097"/><display value="TG Kinder-Lungen- u. Bronchialheilkunde; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="098"/><display value="TG Kinderrheumatologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="099"/><display value="TG Kinderdiabetologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="100"/><display value="FA Kinder- und Jugendpsychiatrie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="102"/><display value="FA Kinder- und Jugendpsychiatrie und -psychotherapie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="110"/><display value="FA Laboratoriumsmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="111"/><display value="FA Mikrobiologie und Infektionsepidemiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="112"/><display value="TG Mikrobiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="120"/><display value="FA Lungenarzt; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="125"/><display value="FA Magenarzt; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="130"/><display value="FA Mund-Kiefer-Gesichts-Chirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="131"/><display value="FA Kieferchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="140"/><display value="FA Nervenheilkunde; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="141"/><display value="FA Psychiatrie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="142"/><display value="FA Neurologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="143"/><display value="Psychotherapeutisch tätiger Arzt (obs.)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="144"/><display value="Psychotherapeutisch tätiger Arzt (Zusatzbezeichnung)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="145"/><display value="FA Neurologie und Psychiatrie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="146"/><display value="TG Kinderneuropsychiatrie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="147"/><display value="FA Psychiatrie und Psychotherapie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="148"/><display value="FA Psychotherapeutische Medizin; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="149"/><display value="FA Neurologie, Psychiatrie und Psychotherapie; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="150"/><display value="FA Neurochirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="160"/><display value="FA Orthopädie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="161"/><display value="SP Rheumatologie (der ehemaligen Orthopädie); obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="170"/><display value="FA Pathologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="171"/><display value="TG Neuropathologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="180"/><display value="FA Pharmakologie und Toxikologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="181"/><display value="TG Klinische Pharmakologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="190"/><display value="FA Radiologie (alte (M-)WBO); obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="191"/><display value="TG Strahlentherapie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="192"/><display value="TG Neuroradiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="194"/><display value="FA Radiologische Diagnostik; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="195"/><display value="FA Diagnostische Radiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="196"/><display value="SP Kinderradiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="197"/><display value="SP Neuroradiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="199"/><display value="FA Strahlentherapie und Radiologische Diagnostik; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="200"/><display value="FA Urologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="210"/><display value="FA Arbeitsmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="220"/><display value="FA Nuklearmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="230"/><display value="FA Öffentliches Gesundheitswesen"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="240"/><display value="FA Rechtsmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="250"/><display value="FA Hygiene und Umweltmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="271"/><display value="FA Neuropathologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="281"/><display value="FA Klinische Pharmakologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="291"/><display value="FA Strahlentherapie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="301"/><display value="FA Anatomie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="302"/><display value="FA Biochemie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="303"/><display value="FA Transfusionsmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="304"/><display value="FA Kinderchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="305"/><display value="Medizinische Genetik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="306"/><display value="Medizinische Informatik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="307"/><display value="Pathologische Physiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="308"/><display value="FA Physiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="309"/><display value="FA Physiotherapie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="310"/><display value="FA Psychotherapie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="311"/><display value="FA Sozialhygiene; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="312"/><display value="FA Sportmedizin; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="313"/><display value="FA Herzchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="314"/><display value="FA Humangenetik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="315"/><display value="FA Immunologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="317"/><display value="Physiologische Chemie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="320"/><display value="SP Thoraxchirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="321"/><display value="SP Echokardiologie herznaher Gefäße; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="322"/><display value="FA Plastische Chirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="324"/><display value="FA Phoniatrie und Pädaudiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="326"/><display value="SP Angiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="327"/><display value="SP Hämatologie und internistische Onkologie obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="328"/><display value="SP Geriatrie (Innere Medizin); (vor 2003 in Muster-WBO der BÄK); obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="330"/><display value="FA Physikalische und Rehabilitative Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="340"/><display value="FA Arzt für Kinder- und Jugendmedizin; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="341"/><display value="FA Kinder-und Jugendmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="342"/><display value="FA Kinder-und Jugendmedizin; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="343"/><display value="FA Kinder-und Jugendarzt; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="344"/><display value="FA Facharzt für Kinderheilkunde und Jugendmedizin; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="350"/><display value="Biomathematik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="351"/><display value="Biophysik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="352"/><display value="Geschichte der Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="353"/><display value="Industrietoxikologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="354"/><display value="Klinische Strahlenphysik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="355"/><display value="Medizinische Wissenschaftsinformation"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="356"/><display value="Medizinische Physik und Biophysik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="357"/><display value="FA Experimentelle und diagnostische Mikrobiologie; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="358"/><display value="Fachbiologie der Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="359"/><display value="Fachzahnarzt für Mikrobiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="360"/><display value="Fachzahnarzt für Kieferchirurgie (§ 6 Abs. 1 BMV)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="361"/><display value="Fachzahnarzt für theoretisch-experimentelle Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="371"/><display value="Fachwissenschaftler Chemie und Labordiagnostik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="372"/><display value="Fachwissenschaftler Genetik"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="373"/><display value="Fachwissenschaftler Immunologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="374"/><display value="Fachwissenschaftler Zytologie/Histologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="470"/><display value="Psychologischer Psychotherapeut"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="471"/><display value="Kinder- und Jugendlichen-Psychotherapeut"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="500"/><display value="FA Arbeitshygiene; neue Bundesländer; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="501"/><display value="FA Blutspende- und Transfusionsmedizin; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="502"/><display value="FA Hygiene; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="503"/><display value="SP Infektiologie; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="504"/><display value="TG Lungen- u. Bronchialheilkunde; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="505"/><display value="SP Infektiologie; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="506"/><display value="FA Pathologische Anatomie; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="510"/><display value="FA Allgemeine Chirurgie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="511"/><display value="FA Gefäßchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="512"/><display value="FA Orthopädie und Unfallchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="513"/><display value="FA Thoraxchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="514"/><display value="FA Visceralchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="515"/><display value="SP Gynäkologische Onkologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="516"/><display value="SP Gynäkologische Endokrinologie und Reproduktionsmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="517"/><display value="SP Spezielle Geburtshilfe und Perinatalmedizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="518"/><display value="FA Sprach-, Stimm- und kindliche Hörstörungen"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="520"/><display value="FA Innere und Allgemeinmedizin (Hausarzt)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="521"/><display value="FA Innere Medizin und (SP) Angiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="522"/><display value="FA Innere Medizin und (SP) Endokrinologie und Diabetologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="523"/><display value="FA Innere Medizin und (SP) Gastroenterologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="524"/><display value="FA Innere Medizin und (SP) Hämatologie und Onkologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="525"/><display value="FA Innere Medizin und (SP) Kardiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="526"/><display value="FA Innere Medizin und (SP) Nephrologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="527"/><display value="FA Innere Medizin und (SP) Pneumologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="528"/><display value="FA Innere Medizin und (SP) Rheumatologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="529"/><display value="TG Kardiologie und Angiologie; kammerindividuell; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="530"/><display value="SP Kinder-Hämatologie und -Onkologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="531"/><display value="SP Neuropädiatrie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="532"/><display value="FA Mikrobiologie, Virologie und Infektionsepidemiologie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="533"/><display value="SP Forensische Psychiatrie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="534"/><display value="FA Psychosomatische Medizin und Psychotherapie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="535"/><display value="FA Radiologie (neue (M-)WBO)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="536"/><display value="SP Kinder-Endokrinologie und -Diabetologie, kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="537"/><display value="SP Kinder-Gastroenterologie, kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="538"/><display value="SP Kinder-Nephrologie, kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="539"/><display value="SP Kinder-Pneumologie, kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="540"/><display value="FA Innere Medizin und SP gesamte Innere Medizin"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="541"/><display value="FA Innere Medizin und SP Geriatrie; kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="542"/><display value="FA Plastische und Ästhetische Chirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="543"/><display value="SP Endokrinologie und Diabetologie; kammerindividuell, obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="544"/><display value="FA Allgemeinchirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="545"/><display value="TG Nephrologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="546"/><display value="SP Plastische Chirurgie"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="547"/><display value="SP Geriatrie (Allgemeinmedizin); kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="548"/><display value="SP Geriatrie (Innere Medizin); kammerindividuell (seit 2013 in WBO der LÄK RLP)"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="549"/><display value="SP Geriatrie (Neurologie); kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="550"/><display value="SP Geriatrie (Psychiatrie); kammerindividuell"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="551"/><display value="TG Endokrinologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="552"/><display value="TG Gastroenterologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="553"/><display value="TG Kardiologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="554"/><display value="TG Rheumatologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="555"/><display value="FA Dermatologie und Venerologie; obsolet"/></contains>
-		<contains><system value="http://fhir.de/CodeSystem/kbv/s-bar-wbo2"/><code value="556"/><display value="TG Unfallchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="001"/><display value="Praktischer Arzt; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="002"/><display value="Arzt obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="010"/><display value="FA Allgemeinmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="020"/><display value="FA Anästhesiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="022"/><display value="FA Anästhesiologie und Intensivtherapie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="030"/><display value="FA Augenheilkunde"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="040"/><display value="FA Chirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="041"/><display value="TG Kinderchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="042"/><display value="SP Unfallchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="043"/><display value="SP Gefäßchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="044"/><display value="TG Plastische Chirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="045"/><display value="TG Thorax- und Kardiovaskularchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="046"/><display value="SP Thoraxchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="047"/><display value="TG Herz- und Gefäßchirurgie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="048"/><display value="SP Visceralchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="050"/><display value="FA Frauenheilkunde und Geburtshilfe"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="060"/><display value="FA Hals-, Nasen-, Ohrenheilkunde"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="061"/><display value="SP Phoniatrie und Pädaudiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="062"/><display value="TG Audiologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="063"/><display value="TG Phoniatrie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="070"/><display value="FA Haut- und Geschlechtskrankheiten"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="080"/><display value="FA Innere Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="081"/><display value="SP Gastroenterologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="082"/><display value="SP Kardiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="083"/><display value="SP Pneumologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="084"/><display value="SP Endokrinologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="085"/><display value="TG Hämatologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="086"/><display value="SP Nephrologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="087"/><display value="SP Rheumatologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="088"/><display value="TG Diabetologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="089"/><display value="TG Infektions- und Tropenmedizin; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="090"/><display value="FA Kinderheilkunde; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="091"/><display value="SP Kinderkardiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="092"/><display value="TG Kinderneuropsychiatrie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="093"/><display value="SP Neonatologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="094"/><display value="TG Kindergastroenterologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="095"/><display value="TG Kinderhämatologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="096"/><display value="TG Kindernephrologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="097"/><display value="TG Kinder-Lungen- u. Bronchialheilkunde; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="098"/><display value="TG Kinderrheumatologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="099"/><display value="TG Kinderdiabetologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="100"/><display value="FA Kinder- und Jugendpsychiatrie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="102"/><display value="FA Kinder- und Jugendpsychiatrie und -psychotherapie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="110"/><display value="FA Laboratoriumsmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="111"/><display value="FA Mikrobiologie und Infektionsepidemiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="112"/><display value="TG Mikrobiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="120"/><display value="FA Lungenarzt; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="125"/><display value="FA Magenarzt; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="130"/><display value="FA Mund-Kiefer-Gesichts-Chirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="131"/><display value="FA Kieferchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="140"/><display value="FA Nervenheilkunde; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="141"/><display value="FA Psychiatrie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="142"/><display value="FA Neurologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="143"/><display value="Psychotherapeutisch tätiger Arzt (obs.)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="144"/><display value="Psychotherapeutisch tätiger Arzt (Zusatzbezeichnung)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="145"/><display value="FA Neurologie und Psychiatrie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="146"/><display value="TG Kinderneuropsychiatrie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="147"/><display value="FA Psychiatrie und Psychotherapie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="148"/><display value="FA Psychotherapeutische Medizin; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="149"/><display value="FA Neurologie, Psychiatrie und Psychotherapie; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="150"/><display value="FA Neurochirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="160"/><display value="FA Orthopädie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="161"/><display value="SP Rheumatologie (der ehemaligen Orthopädie); obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="170"/><display value="FA Pathologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="171"/><display value="TG Neuropathologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="180"/><display value="FA Pharmakologie und Toxikologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="181"/><display value="TG Klinische Pharmakologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="190"/><display value="FA Radiologie (alte (M-)WBO); obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="191"/><display value="TG Strahlentherapie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="192"/><display value="TG Neuroradiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="194"/><display value="FA Radiologische Diagnostik; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="195"/><display value="FA Diagnostische Radiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="196"/><display value="SP Kinderradiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="197"/><display value="SP Neuroradiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="199"/><display value="FA Strahlentherapie und Radiologische Diagnostik; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="200"/><display value="FA Urologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="210"/><display value="FA Arbeitsmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="220"/><display value="FA Nuklearmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="230"/><display value="FA Öffentliches Gesundheitswesen"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="240"/><display value="FA Rechtsmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="250"/><display value="FA Hygiene und Umweltmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="271"/><display value="FA Neuropathologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="281"/><display value="FA Klinische Pharmakologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="291"/><display value="FA Strahlentherapie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="301"/><display value="FA Anatomie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="302"/><display value="FA Biochemie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="303"/><display value="FA Transfusionsmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="304"/><display value="FA Kinderchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="305"/><display value="Medizinische Genetik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="306"/><display value="Medizinische Informatik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="307"/><display value="Pathologische Physiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="308"/><display value="FA Physiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="309"/><display value="FA Physiotherapie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="310"/><display value="FA Psychotherapie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="311"/><display value="FA Sozialhygiene; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="312"/><display value="FA Sportmedizin; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="313"/><display value="FA Herzchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="314"/><display value="FA Humangenetik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="315"/><display value="FA Immunologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="317"/><display value="Physiologische Chemie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="320"/><display value="SP Thoraxchirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="321"/><display value="SP Echokardiologie herznaher Gefäße; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="322"/><display value="FA Plastische Chirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="324"/><display value="FA Phoniatrie und Pädaudiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="326"/><display value="SP Angiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="327"/><display value="SP Hämatologie und internistische Onkologie obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="328"/><display value="SP Geriatrie (Innere Medizin); (vor 2003 in Muster-WBO der BÄK); obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="330"/><display value="FA Physikalische und Rehabilitative Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="340"/><display value="FA Arzt für Kinder- und Jugendmedizin; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="341"/><display value="FA Kinder-und Jugendmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="342"/><display value="FA Kinder-und Jugendmedizin; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="343"/><display value="FA Kinder-und Jugendarzt; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="344"/><display value="FA Facharzt für Kinderheilkunde und Jugendmedizin; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="350"/><display value="Biomathematik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="351"/><display value="Biophysik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="352"/><display value="Geschichte der Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="353"/><display value="Industrietoxikologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="354"/><display value="Klinische Strahlenphysik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="355"/><display value="Medizinische Wissenschaftsinformation"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="356"/><display value="Medizinische Physik und Biophysik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="357"/><display value="FA Experimentelle und diagnostische Mikrobiologie; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="358"/><display value="Fachbiologie der Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="359"/><display value="Fachzahnarzt für Mikrobiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="360"/><display value="Fachzahnarzt für Kieferchirurgie (§ 6 Abs. 1 BMV)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="361"/><display value="Fachzahnarzt für theoretisch-experimentelle Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="371"/><display value="Fachwissenschaftler Chemie und Labordiagnostik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="372"/><display value="Fachwissenschaftler Genetik"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="373"/><display value="Fachwissenschaftler Immunologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="374"/><display value="Fachwissenschaftler Zytologie/Histologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="470"/><display value="Psychologischer Psychotherapeut"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="471"/><display value="Kinder- und Jugendlichen-Psychotherapeut"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="500"/><display value="FA Arbeitshygiene; neue Bundesländer; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="501"/><display value="FA Blutspende- und Transfusionsmedizin; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="502"/><display value="FA Hygiene; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="503"/><display value="SP Infektiologie; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="504"/><display value="TG Lungen- u. Bronchialheilkunde; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="505"/><display value="SP Infektiologie; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="506"/><display value="FA Pathologische Anatomie; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="510"/><display value="FA Allgemeine Chirurgie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="511"/><display value="FA Gefäßchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="512"/><display value="FA Orthopädie und Unfallchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="513"/><display value="FA Thoraxchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="514"/><display value="FA Visceralchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="515"/><display value="SP Gynäkologische Onkologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="516"/><display value="SP Gynäkologische Endokrinologie und Reproduktionsmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="517"/><display value="SP Spezielle Geburtshilfe und Perinatalmedizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="518"/><display value="FA Sprach-, Stimm- und kindliche Hörstörungen"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="520"/><display value="FA Innere und Allgemeinmedizin (Hausarzt)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="521"/><display value="FA Innere Medizin und (SP) Angiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="522"/><display value="FA Innere Medizin und (SP) Endokrinologie und Diabetologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="523"/><display value="FA Innere Medizin und (SP) Gastroenterologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="524"/><display value="FA Innere Medizin und (SP) Hämatologie und Onkologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="525"/><display value="FA Innere Medizin und (SP) Kardiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="526"/><display value="FA Innere Medizin und (SP) Nephrologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="527"/><display value="FA Innere Medizin und (SP) Pneumologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="528"/><display value="FA Innere Medizin und (SP) Rheumatologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="529"/><display value="TG Kardiologie und Angiologie; kammerindividuell; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="530"/><display value="SP Kinder-Hämatologie und -Onkologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="531"/><display value="SP Neuropädiatrie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="532"/><display value="FA Mikrobiologie, Virologie und Infektionsepidemiologie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="533"/><display value="SP Forensische Psychiatrie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="534"/><display value="FA Psychosomatische Medizin und Psychotherapie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="535"/><display value="FA Radiologie (neue (M-)WBO)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="536"/><display value="SP Kinder-Endokrinologie und -Diabetologie, kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="537"/><display value="SP Kinder-Gastroenterologie, kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="538"/><display value="SP Kinder-Nephrologie, kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="539"/><display value="SP Kinder-Pneumologie, kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="540"/><display value="FA Innere Medizin und SP gesamte Innere Medizin"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="541"/><display value="FA Innere Medizin und SP Geriatrie; kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="542"/><display value="FA Plastische und Ästhetische Chirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="543"/><display value="SP Endokrinologie und Diabetologie; kammerindividuell, obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="544"/><display value="FA Allgemeinchirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="545"/><display value="TG Nephrologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="546"/><display value="SP Plastische Chirurgie"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="547"/><display value="SP Geriatrie (Allgemeinmedizin); kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="548"/><display value="SP Geriatrie (Innere Medizin); kammerindividuell (seit 2013 in WBO der LÄK RLP)"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="549"/><display value="SP Geriatrie (Neurologie); kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="550"/><display value="SP Geriatrie (Psychiatrie); kammerindividuell"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="551"/><display value="TG Endokrinologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="552"/><display value="TG Gastroenterologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="553"/><display value="TG Kardiologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="554"/><display value="TG Rheumatologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="555"/><display value="FA Dermatologie und Venerologie; obsolet"/></contains>
+		<contains><system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/><code value="556"/><display value="TG Unfallchirurgie; obsolet"/></contains>
 	</expansion>
 </ValueSet>

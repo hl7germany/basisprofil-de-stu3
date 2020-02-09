@@ -4384,7 +4384,7 @@
         <strength value="preferred" />
         <description value="Specific qualification the practitioner has to provide a service" />
         <valueSetReference>
-          <reference value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe" />
+          <reference value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4648,7 +4648,7 @@
         </extension>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe" />
+          <reference value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
         </valueSetReference>
       </binding>
     </element>

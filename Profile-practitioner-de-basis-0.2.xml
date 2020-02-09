@@ -1565,7 +1565,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Specific qualification the practitioner has to provide a service" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1827,7 +1827,7 @@
           <valueString value="Qualification" />
         </extension>
         <strength value="preferred" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
       </binding>
     </element>
   </differential>

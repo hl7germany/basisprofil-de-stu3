@@ -324,7 +324,7 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1814,7 +1814,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-versichertenstatus" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" />
       </binding>
     </element>
     <element id="Extension.extension:wop">

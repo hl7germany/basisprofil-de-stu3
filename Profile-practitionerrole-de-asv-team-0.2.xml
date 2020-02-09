@@ -1324,7 +1324,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Specific specialty associated with the agency" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-bar2-arztnrfachgruppe" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
       </binding>
       <mapping>
         <identity value="rim" />

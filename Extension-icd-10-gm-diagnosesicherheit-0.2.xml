@@ -313,7 +313,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-icd-diagnosesicherheit" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -438,7 +438,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/CodeSystem/kbv/s-icd-diagnosesicherheit" />
+      <fixedUri value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -700,13 +700,13 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-icd-diagnosesicherheit" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
       </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.valueCodeableConcept.coding.system" />
       <min value="1" />
-      <fixedUri value="http://fhir.de/CodeSystem/kbv/s-icd-diagnosesicherheit" />
+      <fixedUri value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
       <path value="Extension.valueCodeableConcept.coding.code" />
