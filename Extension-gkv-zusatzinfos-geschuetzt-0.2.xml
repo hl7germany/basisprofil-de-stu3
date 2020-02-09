@@ -519,7 +519,7 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3185,7 +3185,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-dmp" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP" />
       </binding>
     </element>
     <element id="Extension.extension:ruhenderLeistungsanspruch">

@@ -519,7 +519,7 @@
       </constraint>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1841,7 +1841,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-kbv-kv" />
+        <valueSetUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE" />
       </binding>
     </element>
     <element id="Extension.extension:kostenerstattung">

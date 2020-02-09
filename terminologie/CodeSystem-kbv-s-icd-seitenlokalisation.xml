@@ -2,7 +2,7 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
-	<url value="http://fhir.de/CodeSystem/kbv/s-icd-seitenlokalisation"/>
+	<url value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.3.1.1.5.1.22"/>
@@ -23,7 +23,7 @@
 			value="Angaben zur Lokalisation (Seitigkeit - links, recht, beidseitig) von Organen. Zusatzangabe zur Spezifikation der Diagnosen (ICD-10) oder Operationen und Prozeduren (OPS) bei paarigen Organen oder Körperteilen.  "/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation"/>
+	<valueSet value="https://fhir.kbv.de/ValueSet/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"/>
 	<content value="complete"/>
 	<concept>
 		<code value="B"/>

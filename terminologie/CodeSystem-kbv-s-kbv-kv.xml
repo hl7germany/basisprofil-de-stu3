@@ -2,7 +2,7 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
 	</meta>
-	<url value="http://fhir.de/CodeSystem/kbv/s-kbv-kv"/>
+	<url value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_KV"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:1.2.276.0.76.5.233"/>
@@ -22,7 +22,7 @@
 	<description value="KV Landes- oder Bezirksstellenschlüssel"/>
 	<copyright value="Kassenärztliche Bundesvereinigung"/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://fhir.de/ValueSet/kbv/s-kbv-kv"/>
+	<valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE"/>
 	<content value="complete"/>
 	<concept>
 		<code value="01"/>
