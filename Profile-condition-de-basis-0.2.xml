@@ -1902,7 +1902,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/kbv/s_icd_seitenlokalisation" />
+        <valueSetUri value="http://fhir.de/ValueSet/kbv/s-icd-seitenlokalisation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2027,7 +2027,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.de/CodeSystem/kbv/s_icd_seitenlokalisation" />
+      <fixedUri value="http://fhir.de/CodeSystem/kbv/s-icd-seitenlokalisation" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
